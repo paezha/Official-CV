@@ -26,7 +26,9 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 library(here)
 library(readr)
+library(scholar)
 library(tibble)
+library(tidyverse)
 library(vitae)
 ```
 
@@ -64,6 +66,39 @@ read_csv(paste0(here(),"/assets/employment.csv")) %>%
 ```{r}
 
 ```
+
+# Research Impact
+
+Fig. \ref{fig:citations} is a summary of research impact according to Google Scholar.
+
+```{r citations-plot, out.width="0.7\\linewidth", fig.align='center', fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+id <- "bLY377kAAAAJ"
+citations_scholar <- scholar::get_citation_history(id)
+
+citations_scholar %>%
+  ggplot() + geom_col(aes(x = year, 
+                          y = cites)) + 
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 950, 
+           hjust = 0,
+           label = paste0("Total cites = ", 
+                          prettyNum(get_profile(id)$total_cites, big.mark = ","))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 900, 
+           hjust = 0,
+           label = paste0("h-index = ", 
+                          as.character(get_profile(id)$h_index))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 850, 
+           hjust = 0,
+           label = paste0("i10-index = ", 
+                          as.character(get_profile(id)$i10_index))) +
+  ggthemes::theme_tufte()
+```
+
 
 
 # Peer-Reviewed Journal Articles
