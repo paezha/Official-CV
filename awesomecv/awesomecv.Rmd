@@ -1,0 +1,73 @@
+---
+name: Antonio
+surname: Páez
+position: "Professor"
+address: "School of Earth, Environment and Society, McMaster University, 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4"
+phone: +1 905 525 9140
+www: experts.mcmaster.ca/display/paezha
+email: "paezha@mcmaster.ca"
+orcid: 0000-0001-6912-9919
+github: paezha
+publons: 2897251
+#researchgate: 7004827878
+googlescholar: paezha
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE)
+library(here)
+library(readr)
+library(tibble)
+library(vitae)
+```
+
+# About me
+
+ * I trained in civil engineering before being adopted into geography.
+ * My areas of interest are spatial analysis, spatial statistics, transportation, travel behavior, cities.
+ * At this rate my only hope of being recognized is as most promising oldest researcher in my discipline.
+
+# Education
+
+```{r education-details}
+read_csv(paste0(here(),"/assets/education.csv")) %>% 
+  detailed_entries(what = Degree, 
+                   when = Year, 
+                   with = Institution,
+                   where = Where, 
+                   why = Thesis,
+                   .protect = FALSE)
+```
+
+# Academic Employment
+
+```{r employment-details}
+read_csv(paste0(here(),"/assets/employment.csv")) %>% 
+  detailed_entries(what = Position, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+# Employment in Industry
+
+```{r}
+
+```
+
+
+# Peer-Reviewed Journal Articles
+
+```{r}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+
