@@ -2,7 +2,10 @@
 name: Antonio
 surname: Páez
 position: "Professor"
-address: "School of Earth, Environment and Society, McMaster University, 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4"
+address: |
+         | School of Earth, Environment and Society
+         | McMaster University
+         | 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4
 phone: +1 905 525 9140
 www: experts.mcmaster.ca/display/paezha
 email: "paezha@mcmaster.ca"
