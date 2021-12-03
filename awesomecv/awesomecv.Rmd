@@ -50,7 +50,13 @@ read_csv(paste0(here(),"/assets/education.csv")) %>%
                    .protect = FALSE)
 ```
 
-# Academic Employment
+# Current Status at McMaster
+
+Full Professor in the School of Earth, Environment and Society since 2014. Tenured since 2007.
+
+# Employment History
+
+## Academic
 
 ```{r employment-details}
 read_csv(paste0(here(),"/assets/employment.csv")) %>% 
@@ -61,17 +67,87 @@ read_csv(paste0(here(),"/assets/employment.csv")) %>%
                    .protect = FALSE)
 ```
 
-# Employment in Industry
+# Industry
 
-```{r}
+Surveyor and construction site supervisor (August 1993 – March 1995) Topographical
+survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz. These projects involved in-field data collection and computer aided design. Construction site supervision.
 
+# Areas of Interest
+
+Spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
+
+# Honours
+
+## Visiting Professorships
+
+```{r professorship-details}
+read_csv(paste0(here(),"/assets/honors.csv")) %>%
+  dplyr::filter(Type == "Professorship") %>% 
+  detailed_entries(what = Honor, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
 ```
+
+## Scholarships
+
+```{r scholarships-details}
+read_csv(paste0(here(),"/assets/honors.csv")) %>%
+  dplyr::filter(Type == "Scholarship") %>% 
+  detailed_entries(what = Honor, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+## Scientific Awards
+
+```{r scientific-awards-details}
+read_csv(paste0(here(),"/assets/honors.csv")) %>%
+  dplyr::filter(Type == "Scientific Awards") %>% 
+  detailed_entries(what = Honor, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   why = With,
+                   .protect = FALSE)
+```
+
+## Trainee Honours
+
+```{r trainee-honors-details}
+read_csv(paste0(here(),"/assets/honors.csv")) %>%
+  dplyr::filter(Type == "Trainee") %>% 
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = With,
+                   where = Honor,
+                   .protect = FALSE)
+```
+
+# Supervisorships
+
+## Undergraduate
+
+## Diploma and Certificate
+
+## Master
+
+## Ph.D.
+
+# Supervisory Committees
+
+# Examination Committees
+
+# Research and Other Funding
 
 # Research Impact
 
 Fig. \ref{fig:citations} is a summary of research impact according to Google Scholar.
 
-```{r citations-plot, out.width="0.7\\linewidth", fig.align='center', fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+```{r citations-plot, fig.show='asis', out.width="0.7\\linewidth", fig.align='center', fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
 id <- "bLY377kAAAAJ"
 citations_scholar <- scholar::get_citation_history(id)
 
@@ -99,13 +175,48 @@ citations_scholar %>%
   ggthemes::theme_tufte()
 ```
 
+# Lifetime Publications
 
+## Peer-Reviewed 
 
-# Peer-Reviewed Journal Articles
+### Edited Books
+
+### Book Chapters
+
+### Journal Articles
 
 ```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
+#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
+### Conference Presentations and Proceedings
 
+## Accepted for Publication in Final Form
+
+```{r}
+bibliography_entries(paste0(here(),"/assets/accepted-for-publication.bib")) %>%
+#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+## Submitted for Publication
+
+```{r}
+bibliography_entries(paste0(here(),"/assets/submitted-for-publication.bib")) %>%
+#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+# Invited Talks, Seminars and Courses
+
+```{r talks-courses-details}
+read_csv(paste0(here(),"/assets/talks.csv")) %>%
+  #dplyr::filter(Type == "Trainee") %>% 
+  detailed_entries(what = What, 
+                   when = Year, 
+                   with = Role,
+                   where = Where,
+                   .protect = FALSE)
+```
