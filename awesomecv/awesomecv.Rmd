@@ -18,12 +18,19 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv:
     page_total: true
+    extra_dependencies: ["flafter"]
 ---
 
-```{r setup, include=FALSE}
+```{r knitr-setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
-                      message = FALSE)
+                      message = FALSE,
+                      fig.show='asis', 
+                      out.width="0.7\\linewidth", 
+                      fig.align='center')
+```
+
+```{r load-packages}
 library(here)
 library(readr)
 library(scholar)
@@ -67,10 +74,74 @@ read_csv(paste0(here(),"/assets/employment.csv")) %>%
                    .protect = FALSE)
 ```
 
-# Industry
+## Industry
 
 Surveyor and construction site supervisor (August 1993 – March 1995) Topographical
 survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz. These projects involved in-field data collection and computer aided design. Construction site supervision.
+
+# Scholarly and Professional Activities
+
+## Editor-in-Chief:
+
+Journal of Geographical Systems (January, 2008-present)
+
+## Associate Editor:
+
+Papers in Regional Science (November, 2016-August, 2019)
+
+## Editorial Board Membership
+
+```{r editorial-board-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) %>%
+  detailed_entries(what = Journal, 
+                   when = Year,
+                   .protect = FALSE)
+```
+## Journal Referee
+
+```{r journal-referee}
+current_year <- 2021 # Update
+
+referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) %>% 
+  pivot_longer(-Journal, 
+               names_to = "Year", 
+               values_to = "Reviews")
+```
+
+### Number of Total Lifetime Reviews
+
+`r sum(referee$Reviews)`
+
+### Number of Reviews in `r current_year`
+
+`r referee %>% filter(Year == current_year) %>% pull(Reviews) %>% sum()`
+
+### Reviews per Year
+
+Fig. \ref{fig:reviews-annual-summary} is a summary of journal reviews per year.
+
+```{r reviews-per-year, fig.cap="\\label{fig:reviews-annual-summary}Number of journal reviews per year"}
+referee %>%
+  group_by(Year) %>%
+  summarize(Reviews = sum(Reviews),
+            .groups = "drop") %>%
+  ggplot() +
+  geom_col(aes(x = Year, y = Reviews)) +
+  ggthemes::theme_tufte() +
+  theme(axis.text = element_text(angle = 45))
+```
+
+### Reviews per journal
+
+```{r journa-referee-details}
+referee %>%
+  group_by(Journal) %>% 
+  summarize(Reviews = sum(Reviews), 
+            .groups = "drop") %>%
+  detailed_entries(what = Journal, 
+                   when = Reviews,
+                   .protect = FALSE)
+```
 
 # Areas of Interest
 
@@ -147,8 +218,8 @@ read_csv(paste0(here(),"/assets/honors.csv")) %>%
 
 Fig. \ref{fig:citations} is a summary of research impact according to Google Scholar.
 
-```{r citations-plot, fig.show='asis', out.width="0.7\\linewidth", fig.align='center', fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
-id <- "bLY377kAAAAJ"
+```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 citations_scholar <- scholar::get_citation_history(id)
 
 citations_scholar %>%
@@ -196,7 +267,7 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
 ## Accepted for Publication in Final Form
 
 ```{r}
-bibliography_entries(paste0(here(),"/assets/accepted-for-publication.bib")) %>%
+bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib")) %>%
 #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
@@ -204,7 +275,7 @@ bibliography_entries(paste0(here(),"/assets/accepted-for-publication.bib")) %>%
 ## Submitted for Publication
 
 ```{r}
-bibliography_entries(paste0(here(),"/assets/submitted-for-publication.bib")) %>%
+bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib")) %>%
 #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
