@@ -26,9 +26,15 @@ knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE, 
                       message = FALSE,
                       fig.show='asis', 
-                      out.width="0.7\\linewidth", 
+                      out.width="0.6\\linewidth", 
                       fig.align='center')
 ```
+
+```{r current-year}
+# Retrieve current year
+current_year <- as.numeric(as.character(Sys.time(), '%Y')) # Update year
+```
+
 
 ```{r load-packages}
 library(here)
@@ -42,8 +48,10 @@ library(vitae)
 # About me
 
  * I trained in civil engineering before being adopted into geography.
- * My areas of interest are spatial analysis, spatial statistics, transportation, travel behavior, cities.
- * At this rate my only hope of being recognized is as most promising oldest researcher in my discipline.
+ * My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
+ * Also, too, mathematics, computer languages, science fiction, poetry, and memes.
+ * I have been known to look professorial on occasion.
+ * At this rate my only hope of being recognized is as the most promising oldest researcher in my discipline.
 
 # Education
 
@@ -79,6 +87,8 @@ read_csv(paste0(here(),"/assets/employment.csv")) %>%
 Surveyor and construction site supervisor (August 1993 – March 1995) Topographical
 survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz. These projects involved in-field data collection and computer aided design. Construction site supervision.
 
+\newpage
+
 # Scholarly and Professional Activities
 
 ## Editor-in-Chief:
@@ -100,8 +110,6 @@ read_csv(paste0(here(),"/assets/editorial-board.csv")) %>%
 ## Journal Referee
 
 ```{r journal-referee}
-current_year <- 2021 # Update
-
 referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) %>% 
   pivot_longer(-Journal, 
                names_to = "Year", 
@@ -116,11 +124,11 @@ referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) %>%
 
 `r referee %>% filter(Year == current_year) %>% pull(Reviews) %>% sum()`
 
-### Reviews per Year
+### Reviews-to-Publications per Year
 
-Fig. \ref{fig:reviews-annual-summary} is a summary of journal reviews per year.
+Fig. \ref{fig:reviews-pubs} is a summary of journal reviews-to-publications per year showing contributions to peer-review relative to demands on peer-review.
 
-```{r reviews-per-year, fig.cap="\\label{fig:reviews-annual-summary}Number of journal reviews per year"}
+```{r reviews-per-year, include=FALSE, fig.cap="\\label{fig:reviews-annual-summary}Number of journal reviews per year"}
 referee %>%
   group_by(Year) %>%
   summarize(Reviews = sum(Reviews),
@@ -131,9 +139,39 @@ referee %>%
   theme(axis.text = element_text(angle = 45))
 ```
 
+```{r review-to-publication, fig.cap="\\label{fig:reviews-pubs}Reviews-to-publications by year"}
+# Check publication vs. review activity
+df_pubs <- bibliography_entries(paste0(here(),"/assets/refereed-publications.bib"))
+df_pubs <- data.frame(Year = df_pubs$issued %>% 
+                        unlist()) %>%
+  group_by(Year) %>%
+  summarize(items = n(),
+            .groups = "drop") %>%
+  mutate(type = "Publication")
+
+df_referee <- referee %>%
+  group_by(Year) %>%
+  summarize(items = sum(Reviews),
+            .groups = "drop") %>%
+  mutate(type = "Paper Review")
+
+rbind(df_pubs,
+      df_referee) %>%
+  ggplot() +
+  geom_col(aes(x = Year,
+               y = items,
+               fill = type),
+           color = "black",
+           position = position_dodge(preserve = "single")) +
+  scale_fill_manual(values = c("Publication" = "white", "Paper Review" = "black")) +
+  ggthemes::theme_tufte() +
+  theme(axis.text.x = element_text(angle = 45),
+        legend.title = element_blank())
+```
+
 ### Reviews per journal
 
-```{r journa-referee-details}
+```{r journal-referee-details}
 referee %>%
   group_by(Journal) %>% 
   summarize(Reviews = sum(Reviews), 
@@ -198,6 +236,20 @@ read_csv(paste0(here(),"/assets/honors.csv")) %>%
                    .protect = FALSE)
 ```
 
+## Other
+
+```{r other-honors-details}
+read_csv(paste0(here(),"/assets/honors.csv")) %>%
+  dplyr::filter(Type == "Other") %>% 
+  mutate(Year = current_year) %>%
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Honor,
+                   why = With,
+                   .protect = FALSE) %>%
+  mutate(Year = current_year)
+```
+
 # Supervisorships
 
 ## Undergraduate
@@ -223,8 +275,11 @@ id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 citations_scholar <- scholar::get_citation_history(id)
 
 citations_scholar %>%
-  ggplot() + geom_col(aes(x = year, 
-                          y = cites)) + 
+  ggplot() + 
+  geom_col(aes(x = year, 
+               y = cites),
+           color = "black",
+           fill = "white") + 
   annotate(geom = "text", 
            x = 2004, 
            y = 950, 
