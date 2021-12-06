@@ -1,0 +1,2131 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.2)  6 DEC 2021 12:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**twentysecondscv.tex
+(./twentysecondscv.tex
+LaTeX2e <2021-11-15>
+L3 programming layer <2021-11-22> (./twentysecondcv.cls
+Document Class: twentysecondcv 2018/11/24 CV class
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/clearsans/ClearSa
+ns.sty
+Package: ClearSans 2019/10/16 (Bob Tennent) Supports Clear-Sans fonts for all L
+aTeX engines.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.s
+ty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.
+sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.s
+ty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval
+.tex
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutil
+s.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/xkeyval/keyval.
+tex))
+\XKV@depth=\count191
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontaxes/fontaxes
+.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+ClearSans-TLF on inp
+ut line 112.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/clearsans/T1Clear
+Sans-TLF.fd
+File: T1ClearSans-TLF.fd 2019/10/16 (autoinst) Font definitions for T1/ClearSan
+s-TLF.
+)
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <10> not availabl
+e
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
+put line 112.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 112.
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer
+/tikz.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pg
+f.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+rcs.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-common.tex
+\pgfutil@everybye=\toks20
+\pgfutil@tempdima=\dimen139
+\pgfutil@tempdimb=\dimen140
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-common-lists.tex))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfutil-latex.def
+\pgfutil@abb=\box50
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfrcs.code.tex
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/pgf.revisio
+n.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pg
+fcore.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx
+.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics
+.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/grap
+hics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdft
+ex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/p
+gfsys.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeys.code.tex
+\pgfkeys@pathtoks=\toks21
+\pgfkeys@temptoks=\toks22
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks23
+))
+\pgf@x=\dimen143
+\pgf@y=\dimen144
+\pgf@xa=\dimen145
+\pgf@ya=\dimen146
+\pgf@xb=\dimen147
+\pgf@yb=\dimen148
+\pgf@xc=\dimen149
+\pgf@yc=\dimen150
+\pgf@xd=\dimen151
+\pgf@yd=\dimen152
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count192
+\c@pgf@countb=\count193
+\c@pgf@countc=\count194
+\c@pgf@countd=\count195
+\t@pgf@toka=\toks24
+\t@pgf@tokb=\toks25
+\t@pgf@tokc=\toks26
+\pgf@sys@id@count=\count196
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count197
+\pgfsyssoftpath@bigbuffer@items=\count198
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
+/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/colo
+r.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hcalc.code.tex
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hutil.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hparser.code.tex
+\pgfmath@dimen=\dimen153
+\pgfmath@count=\count199
+\pgfmath@box=\box51
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.code.tex
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.basic.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.trigonometric.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.random.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.comparison.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.base.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.round.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.misc.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfunctions.integerarithmetics.code.tex)))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+hfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count266
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint
+.code.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen154
+\pgf@picmaxx=\dimen155
+\pgf@picminy=\dimen156
+\pgf@picmaxy=\dimen157
+\pgf@pathminx=\dimen158
+\pgf@pathmaxx=\dimen159
+\pgf@pathminy=\dimen160
+\pgf@pathmaxy=\dimen161
+\pgf@xx=\dimen162
+\pgf@xy=\dimen163
+\pgf@yx=\dimen164
+\pgf@yy=\dimen165
+\pgf@zx=\dimen166
+\pgf@zy=\dimen167
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen168
+\pgf@path@lasty=\dimen169
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen170
+\pgf@shorten@start@additional=\dimen171
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count267
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen172
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen173
+\pgf@pt@y=\dimen174
+\pgf@pt@temp=\dimen175
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen176
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen177
+\pgf@sys@shading@range@num=\count268
+\pgf@shadingcount=\count269
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box55
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
+pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+moduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box56
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+moduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
+/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen178
+\pgf@nodesepend=\dimen179
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
+/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+for.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgf
+keys.sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gfkeys.code.tex))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.
+sty
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
+gffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
+h.code.tex)
+\pgffor@iter=\dimen180
+\pgffor@skip=\dimen181
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
+er/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/p
+gflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count270
+\pgfplotmarksize=\dimen182
+)
+\tikz@lastx=\dimen183
+\tikz@lasty=\dimen184
+\tikz@lastxsaved=\dimen185
+\tikz@lastysaved=\dimen186
+\tikz@lastmovetox=\dimen187
+\tikz@lastmovetoy=\dimen188
+\tikzleveldistance=\dimen189
+\tikzsiblingdistance=\dimen190
+\tikz@figbox=\box57
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
+\tikztreelevel=\count271
+\tikznumberofchildren=\count272
+\tikznumberofcurrentchild=\count273
+\tikz@fig@count=\count274
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
+modulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count275
+\pgfmatrixcurrentcolumn=\count276
+\pgf@matrix@numberofcolumns=\count277
+)
+\tikz@expandcount=\count278
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
+er/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fonta
+wesome.sty
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fonta
+wesomesymbols-generic.tex)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/fonta
+wesomesymbols-pdftex.tex))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textpos/textpos.s
+ty
+Package: textpos 2020/09/26 v1.10
+Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
+Package textpos Info: choosing support for LaTeX3 on input line 61.
+\TP@textbox=\box61
+\TP@holdbox=\box62
+\TPHorizModule=\dimen191
+\TPVertModule=\dimen192
+\TP@margin=\dimen193
+\TP@absmargin=\dimen194
+Grid set 16 x 16 = 38.39343pt x 49.68562pt
+\TPboxrulesize=\dimen195
+\TP@ox=\dimen196
+\TP@oy=\dimen197
+\TP@tbargs=\toks32
+TextBlockOrigin set to 0pt x 0pt
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e
+.sty
+Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+\CenteringLeftskip=\skip49
+\RaggedLeftLeftskip=\skip50
+\RaggedRightLeftskip=\skip51
+\CenteringRightskip=\skip52
+\RaggedLeftRightskip=\skip53
+\RaggedRightRightskip=\skip54
+\CenteringParfillskip=\skip55
+\RaggedLeftParfillskip=\skip56
+\RaggedRightParfillskip=\skip57
+\JustifyingParfillskip=\skip58
+\CenteringParindent=\skip59
+\RaggedLeftParindent=\skip60
+\RaggedRightParindent=\skip61
+\JustifyingParindent=\skip62
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox
+.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count279
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ifmtarg/ifmtarg.s
+ty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/marvosym/marvosym
+.sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/parskip/parskip.s
+ty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptio
+ns.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds
+.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvset
+keys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry
+.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.st
+y
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen198
+\Gm@wd@mp=\dimen199
+\Gm@odd@mp=\dimen256
+\Gm@even@mp=\dimen257
+\Gm@layoutwidth=\dimen258
+\Gm@layoutheight=\dimen259
+\Gm@layouthoffset=\dimen260
+\Gm@layoutvoffset=\dimen261
+\Gm@dimlist=\toks33
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr
+.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+)
+\imagewidth=\skip72
+\imagescale=\skip73
+\TotalSectionLength=\skip74
+\SectionTitleLength=\skip75
+\c@colorCounter=\count283
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref
+.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdft
+excmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kv
+definekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfes
+cape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.s
+ty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letlt
+xmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.s
+ty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen262
+\Hy@linkcounter=\count284
+\Hy@pagecounter=\count285
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.d
+ef
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref
+-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
+nguages
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc
+.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcm
+ds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count286
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.de
+f
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count287
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen263
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.s
+ty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigi
+ntcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count288
+\Field@Width=\dimen264
+\Fld@charsize=\dimen265
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx
+.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count289
+\c@Item=\count290
+\c@Hfootnote=\count291
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.
+def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-lt
+x.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count292
+\c@bookmark@seq@number=\count293
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/re
+runfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/u
+niquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip76
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/dejavu/DejaVuSans
+Mono.sty
+Package: DejaVuSansMono 2011/06/01 Style file for DejaVuSansMono.
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.st
+y
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.sty
+Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+\csq@reset=\count294
+\csq@gtype=\count295
+\csq@glevel=\count296
+\csq@qlevel=\count297
+\csq@maxlvl=\count298
+\csq@tshold=\count299
+\csq@ltx@everypar=\toks34
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.def
+File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes
+.cfg
+File: csquotes.cfg 
+))
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs
+.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen266
+\lightrulewidth=\dimen267
+\cmidrulewidth=\dimen268
+\belowrulesep=\dimen269
+\belowbottomsep=\dimen270
+\aboverulesep=\dimen271
+\abovetopsep=\dimen272
+\cmidrulesep=\dimen273
+\cmidrulekern=\dimen274
+\defaultaddspace=\dimen275
+\@cmidla=\count300
+\@cmidlb=\count301
+\@aboverulesep=\dimen276
+\@belowrulesep=\dimen277
+\@thisruleclass=\count302
+\@lastruleclass=\count303
+\@thisrulewidth=\dimen278
+)
+\cslhangindent=\skip77
+\csllabelwidth=\skip78
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count304
+\calc@Bcount=\count305
+\calc@Adimen=\dimen279
+\calc@Bdimen=\dimen280
+\calc@Askip=\skip79
+\calc@Bskip=\skip80
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count306
+\calc@Cskip=\skip81
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
+nd-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count307
+\l__pdf_internal_box=\box63
+) (./twentysecondscv.aux)
+\openout1 = `twentysecondscv.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+\c@mv@tabular=\count308
+\c@mv@boldtabular=\count309
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
+opdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/latexconfig/epsto
+pdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(216.2411pt, 352.81403pt, 28.45274pt)
+* v-part:(T,H,B)=(2.84544pt, 839.35596pt, 2.84544pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=352.81403pt
+* \textheight=839.35596pt
+* \oddsidemargin=143.97112pt
+* \evensidemargin=143.97112pt
+* \topmargin=-69.42455pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=0.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 94.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
+sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount
+.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/
+gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count310
+)
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
+(./twentysecondscv.out) (./twentysecondscv.out)
+\@outlinefile=\write4
+\openout4 = `twentysecondscv.out'.
+
+<mariecurie.jpg, id=39, 354.32375pt x 481.8pt>
+File: mariecurie.jpg Graphic file (type jpg)
+<use mariecurie.jpg>
+Package pdftex.def Info: mariecurie.jpg  used on input line 103.
+(pdftex.def)             Requested size: 142.26378pt x 193.45174pt.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <20.74> not avail
+able
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
+put line 103.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 20.74pt on input line 103.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <14.4> not availa
+ble
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
+put line 103.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 103.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 103.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
+ut line 103.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontawesome/ufont
+awesometwo.fd
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+Underfull \hbox (badness 1769) in paragraph at lines 103--103
+[]\T1/ClearSans-TLF/regular/n/10 School of Earth, En-vi-ron-ment
+ []
+
+
+Overfull \hbox (29.17053pt too wide) in paragraph at lines 103--103
+[]\T1/ClearSans-TLF/regular/n/10 McMaster
+ []
+
+
+Overfull \hbox (4.8506pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 Uni-
+ []
+
+
+Overfull \hbox (3.8736pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 ver-
+ []
+
+
+Overfull \hbox (1.75061pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 sity| 
+ []
+
+
+Overfull \hbox (9.71962pt too wide) in paragraph at lines 103--103
+[]\T1/ClearSans-TLF/regular/n/10 1280
+ []
+
+
+Overfull \hbox (7.1016pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 Main
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 St
+ []
+
+
+Overfull \hbox (10.34358pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 West,
+ []
+
+
+Overfull \hbox (15.2796pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 Hamil-
+ []
+
+
+Overfull \hbox (3.2736pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 ton,
+ []
+
+
+Overfull \hbox (2.15062pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 On-
+ []
+
+
+Overfull \hbox (9.42159pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 tario,
+ []
+
+
+Overfull \hbox (19.74757pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 Canada
+ []
+
+
+Overfull \hbox (2.63362pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 L8S
+ []
+
+
+Overfull \hbox (4.10863pt too wide) in paragraph at lines 103--103
+\T1/ClearSans-TLF/regular/n/10 1S4| 
+ []
+
+
+Overfull \hbox (23.70387pt too wide) in paragraph at lines 103--103
+[][]\T1/ClearSans-TLF/regular/n/10 experts.mcmaster.ca/display/paezha[]| 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+DejaVuSansMono-TLF o
+n input line 103.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/dejavu/T1DejaVuSa
+nsMono-TLF.fd
+File: T1DejaVuSansMono-TLF.fd 2011/06/01 Font definitions for T1/DejaVuSansMono
+-TLF.
+)
+LaTeX Font Info:    Font shape `T1/DejaVuSansMono-TLF/m/n' will be
+(Font)              scaled to size 8.6pt on input line 103.
+LaTeX Font Info:    Trying to load font information for TS1+ClearSans-TLF on in
+put line 114.
+
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/clearsans/TS1Clea
+rSans-TLF.fd
+File: TS1ClearSans-TLF.fd 2019/10/16 (autoinst) Font definitions for TS1/ClearS
+ans-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/m/n' in size <10> not availab
+le
+(Font)              Font shape `TS1/ClearSans-TLF/regular/n' tried instead on i
+nput line 114.
+LaTeX Font Info:    Font shape `TS1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 114.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <8> not available
+
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
+put line 138.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 8.0pt on input line 138.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--146
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/n' in size <12> not availabl
+e
+(Font)              Font shape `T1/ClearSans-TLF/regular/n' tried instead on in
+put line 157.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 157.
+
+Overfull \hbox (77.29207pt too wide) in alignment at lines 161--167
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--168
+
+ []
+
+[1
+
+{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map} <./mariecurie.jpg>]
+Overfull \hbox (78.77608pt too wide) in alignment at lines 200--214
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--215
+
+ []
+
+<twentysecondscv_files/figure-latex/review-to-publication-1.pdf, id=59, 469.755
+pt x 325.215pt>
+File: twentysecondscv_files/figure-latex/review-to-publication-1.pdf Graphic fi
+le (type pdf)
+<use twentysecondscv_files/figure-latex/review-to-publication-1.pdf>
+Package pdftex.def Info: twentysecondscv_files/figure-latex/review-to-publicati
+on-1.pdf  used on input line 241.
+(pdftex.def)             Requested size: 211.69057pt x 146.55382pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--321
+
+ []
+
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sl' in size <10> not availab
+le
+(Font)              Font shape `T1/ClearSans-TLF/regular/sl' tried instead on i
+nput line 323.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/sl' in size <10> not a
+vailable
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
+nput line 323.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 323.
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[2]
+Overfull \vbox (1123.1364pt too high) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[3 <./twentysecondscv_files/figure-latex/review-to-publication-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 336--339
+
+ []
+
+
+Overfull \hbox (85.38507pt too wide) in alignment at lines 345--348
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--349
+
+ []
+
+
+Overfull \hbox (3.8492pt too wide) in alignment at lines 355--366
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--381
+
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 393--393
+\T1/ClearSans-TLF/regular/n/10 ing ac-ces-si-bil-ity: Pos-i-tive and nor-ma-tiv
+e as-
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 393--393
+\T1/ClearSans-TLF/regular/n/10 pects of var-i-ous ac-ces-si-bil-ity in-di-ca-to
+rs, Jour-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--395
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[4]
+<twentysecondscv_files/figure-latex/citations-plot-1.pdf, id=97, 469.755pt x 32
+5.215pt>
+File: twentysecondscv_files/figure-latex/citations-plot-1.pdf Graphic file (typ
+e pdf)
+<use twentysecondscv_files/figure-latex/citations-plot-1.pdf>
+Package pdftex.def Info: twentysecondscv_files/figure-latex/citations-plot-1.pd
+f  used on input line 428.
+(pdftex.def)             Requested size: 211.69057pt x 146.55382pt.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not availab
+le
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on i
+nput line 457.
+LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
+(Font)              scaled to size 10.0pt on input line 457.
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 451--458
+[] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 459--466
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 467--474
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 475--481
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 482--488
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 489--495
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 496--503
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[5 <./twentysecondscv_files/figure-latex/citations-plot-1.pdf>]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 504--511
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 512--519
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 520--527
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 528--537
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 538--545
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 551--551
+[]\T1/ClearSans-TLF/regular/n/10 Sarlas, G., Paez, A., & Ax-hausen, K. W. (2020
+). Betweenness-
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 546--552
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 553--560
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 561--568
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 576--576
+[]\T1/ClearSans-TLF/regular/n/10 Paez, A., An-jum, Z., Dickson-Anderson, S. E.,
+ Schuster-Wallace, C.
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 569--577
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 578--583
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 584--589
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 590--597
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 598--605
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 606--613
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[6]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 614--621
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 622--629
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 630--636
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 637--643
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 644--651
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 652--659
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 660--667
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 668--675
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 676--683
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 684--690
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 691--698
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 699--706
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 707--713
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 714--721
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 722--728
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 729--736
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 737--744
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[7]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 745--751
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 752--758
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 759--765
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 766--772
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 773--779
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 780--787
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 788--795
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 796--803
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 804--811
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 812--818
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 819--825
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 826--833
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 834--841
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 842--849
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 850--857
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 858--864
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[8]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 865--871
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 872--878
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 879--886
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 887--894
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 895--901
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 902--909
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 910--917
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 918--925
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 926--934
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 935--941
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 942--949
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 950--956
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 957--964
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 965--972
+[][] [] 
+ []
+
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ClearSans-TLF in TS1 encoding.
+(textcomp)             Default family used instead on input line 978.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 9
+78.
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+978.
+(c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (1.8pt too wide) in paragraph at lines 973--979
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 980--987
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[9]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 988--994
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 995--1001
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1002--1009
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1010--1016
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1017--1024
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1025--1032
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1033--1040
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1041--1048
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1049--1057
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1058--1065
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1066--1073
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1074--1081
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1082--1089
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1090--1096
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1097--1103
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[10]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1104--1111
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1112--1119
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1120--1126
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1127--1135
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1136--1143
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1144--1151
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1152--1158
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1159--1165
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1166--1173
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1174--1181
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1182--1188
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1189--1195
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1196--1203
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1204--1211
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1212--1220
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1221--1228
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[11]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1229--1235
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1236--1243
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1244--1251
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1252--1259
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1260--1267
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1268--1275
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1276--1282
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1283--1290
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1291--1297
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1298--1304
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1305--1312
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1313--1320
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1321--1327
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1328--1335
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1336--1344
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[12]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1345--1352
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1353--1360
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1361--1366
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1372--1372
+[]\T1/ClearSans-TLF/regular/n/10 Paez, A. (2004). Anisotropic vari-ance func-ti
+ons in ge-o-graph-i-cally
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 1372--1372
+\T1/ClearSans-TLF/regular/n/10 weighted re-gres-sion mod-els [Jour-nal Ar-ti-cl
+e]. \T1/ClearSans-TLF/regular/it/10 Ge-o-graph-i-cal Anal-y-
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1367--1373
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1374--1380
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1381--1387
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1388--1394
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1395--1403
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1404--1411
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1412--1419
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1420--1426
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1427--1433
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1434--1441
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1442--1449
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1450--1456
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1457--1462
+[][] [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[13]
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1463--1469
+[][] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1478 \hypertarget{bibliography}{}
+                                   
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1479--1485
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1486--1492
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1493--1499
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1500--1507
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1508--1514
+[][] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1518 \hypertarget{bibliography}{}
+                                   
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1519--1525
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1526--1532
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1533--1539
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1540--1546
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1547--1553
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1554--1560
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1561--1567
+[][] [] 
+ []
+
+
+Overfull \hbox (28.05817pt too wide) in alignment at lines 1574--1577
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1578
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[14] (./twentysecondscv.aux)
+Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
+(rerunfilecheck)             Checksum: C78AD170CB7BF5F63642C5A294528D61;1351.
+ )
+(\end occurred when \ifnum on line 31 was incomplete) 
+Here is how much of TeX's memory you used:
+ 23494 strings out of 480313
+ 441677 string characters out of 5895696
+ 720017 words of memory out of 5000000
+ 40738 multiletter control sequences out of 15000+600000
+ 441439 words of font info for 46 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 115i,12n,118p,593b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <c:/Users/paezha/AppData/
+Roaming/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcsi1000.600pk>{c:/Users/
+paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.
+enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/
+dejavumono_t1-type1.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/Users/paezha/AppData/Roaming/Ti
+nyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc}<c:/Users/paezha/AppD
+ata/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb
+><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsan
+s/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
+ts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/Tiny
+TeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
+Output written on twentysecondscv.pdf (14 pages, 168040 bytes).
+PDF statistics:
+ 578 PDF objects out of 1000 (max. 8388607)
+ 541 compressed objects within 6 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+

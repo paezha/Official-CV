@@ -6,6 +6,7 @@ address: |
          | School of Earth, Environment and Society
          | McMaster University
          | 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4
+profilepic: mariecurie.jpg
 phone: +1 905 525 9140
 www: experts.mcmaster.ca/display/paezha
 email: "paezha@mcmaster.ca"
@@ -15,10 +16,8 @@ publons: 2897251
 #researchgate: 7004827878
 googlescholar: paezha
 date: "`r format(Sys.time(), '%B %Y')`"
-output: 
-  vitae::awesomecv:
-    page_total: true
-    extra_dependencies: ["flafter"]
+aboutme: "This is me."
+output: vitae::twentyseconds
 ---
 
 ```{r knitr-setup, include=FALSE}
