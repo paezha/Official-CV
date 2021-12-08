@@ -6,4 +6,5 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-I plan to post my cv here.
+Check out my CV on GitHub pages.
+[![“”](web-cv-preview.png)](https://paezha.github.io/Official-CV/)

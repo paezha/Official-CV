@@ -10,40 +10,52 @@ output:
 knit: pagedown::chrome_print
 ---
 
+```{r knitr-setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      fig.show='asis', 
+                      out.width="0.6\\linewidth", 
+                      fig.align='center')
+```
+
+```{r load-packages}
+library(glue)
+library(here)
+library(readr)
+library(scholar)
+library(tibble)
+library(tidyverse)
+library(vitae)
+```
+
 Aside
 ================================================================================
 
-
 ![Antonio Paez](https://avatars.githubusercontent.com/u/30074724)
-
 
 Contact Info {#contact}
 --------------------------------------------------------------------------------
 
 - <i class="fa fa-envelope"></i> paezha@mcmaster.ca
 - <i class="fa fa-github"></i> [github.com/paezha](https://github.com/paezha)
-- <i class="fa fa-phone"></i> +1 000-000-0000
-- For more information, please contact me via email.
+- School of Earth, Environment and Society, McMaster University
+- 1280 Main Street West, Hamilton, Ontario, L8S 4K1 Canada
+- The full version of this CV is available [here](https://github.com/paezha/Official-CV/blob/master/awesomecv/awesomecv.pdf).
 
 
-Skills {#skills}
+About me {#about-me}
 --------------------------------------------------------------------------------
 
-- Experienced in statistical analysis, statistical learning models, and optimization methods.
-
-- Full experience with next generation sequencing data analysis.
-
-- Highly skilled in R, Bash, Perl, Python, LaTeX
-
+- I trained in civil engineering before being adopted into geography.
+- My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-This resume was made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+Made in `R` with [**pagedown**](https://github.com/rstudio/pagedown).
 
 Last updated on `r Sys.Date()`.
-
-
 
 Main
 ================================================================================
@@ -51,70 +63,101 @@ Main
 Antonio Páez {#title}
 --------------------------------------------------------------------------------
 
-### Professor
-
+### Professor, School of Earth, Environment and Society
+### McMaster University
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-### Beijing University of Chemical Technology
+```{r process-education-details}
+df <- read_csv(paste0(here(),"/assets/education.csv")) %>%
+  replace_na(list(Thesis = "")) %>%
+  mutate(across(.cols = everything(),
+                ~ replace_na(.x, "")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{a\\}",
+                                  "á")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{e\\}",
+                                  "é")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{i\\}",
+                                  "í")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{o\\}",
+                                  "ó")),
+         across(.cols = everything(),
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{u\\}",
+                                  "ú")))
+```
 
-B.S. in Information and Computing Sciences
+```{r education-details, results='asis'}
+df %>% 
+  glue_data(
+   "### {Institution}",
+   "\n\n",
+   "{Degree}",
+   "\n\n",
+   "{Where}",
+   "\n\n",
+   "{Year}", 
+   "\n\n",
+   "{Thesis}",
+   "\n\n\n"
+ )
+```
 
-Beijing, China
-
-2010
-
-Thesis: Dyadic wavelet and its application in edge detection
-
-### University of Chinese Academy of Sciences
-
-M.S. in Bioinformatics
-
-Beijing, China
-
-2014
-
-Thesis: A multi-omics study for intra-individual divergence of the distributions between mRNA isoforms in mammals
-
-
-Research Experience {data-icon=laptop}
+Academic Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Graduate Research Assistant
+```{r process-employment-details}
+df <- read_csv(paste0(here(),"/assets/employment.csv"))  %>%
+  select(-Type) %>%
+  #replace_na(list(Thesis = "")) %>%
+  mutate(across(.cols = everything(),
+                ~ replace_na(.x, "")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{a\\}",
+                                  "á")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{e\\}",
+                                  "é")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{i\\}",
+                                  "í")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{o\\}",
+                                  "ó")),
+         across(.cols = everything(),
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{u\\}",
+                                  "ú")))
+```
 
-Beijing Institute of Genomics, Chinese Academy of Sciences
+```{r employment-details, results='asis'}
+df %>% 
+  glue_data(
+   "### {Position}",
+   "\n\n",
+   "{Organization}",
+   "\n\n",
+   "{Where}",
+   "\n\n",
+   "{Year}",
+   "\n\n\n"
+ )
+```
 
-Beijing, China
-
-2011 - 2014
-
-- Performed computational biology research towards understanding regulation of alternative splicing in human and mouse transcriptome.
-- Found EGFR pathway related mutations, aimed to understand the impacts of cancer mutations on EGFR signaling pathway.
-
-### Bioinformatican
-
-My Health Gene Technology Co., Ltd.
-
-Beijing, China
-
-2015 - 2016
-
-- Investigated how cancer cells spread to other parts of the body at the single cell level.
-
-### Visiting Scientist
-
-University of Alabama at Birmingham
-
-AL, USA
-
-2016 - 2018
-
-- Investigated the role of mitochondria in development of cancer.
-- Investigated the evolution of genome architecture and its role in important evolutionary events.
-- Detected thrombotic thrombocytopenic purpura related mutations in mutiple patients' blood genome.
-  
-
+<!--
 Professional Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
@@ -156,37 +199,26 @@ Teaching Experience {data-icon=chalkboard-teacher}
 Instructor of R and Data Mining Training Courses at SupStat Inc.
 
 Beijing, China
+-->
 
-2014
-
-### Computational Biology and Bioinformatics.
-
-Teaching assistant of GBS CB2-201 courses at UAB
-
-AL, USA
-
-2016 - 2017
-
-
-Selected Publications and Posters {data-icon=file}
+Selected Publications {data-icon=file}
 --------------------------------------------------------------------------------
 
-### Genetic and epigenetic signals are found predictive to the distribution of intra-individual divergence of alternative splicing.
+```{r selected-publications, results='asis'}
+id <- "bLY377kAAAAJ"
+get_publications(id) %>% 
+  arrange(desc(cites)) %>% 
+  slice_head(n = 10) %>%
+  glue_data(
+   "### {author} ({year})",
+   "\n\n",
+   "{title}. {journal}, {number}",
+   "\n\n",
+   "Number of cites (Google Scholar): {cites}",
+   "\n\n",
+   " ",
+   "\n\n\n"
+ )
 
-Poster for 2013 International Conference of Genomics
+```
 
-Qingdao, China
-
-2014
-
-**Yu L**, Chen B, Zhang Z.
-
-### ESCRT-0 complex modulates Rbf mutant cell survival by regulating Rhomboid endosomal trafficking and EGFR signaling.
-
-J Cell Sci. 2016 May 15;129(10):2075-84.
-
-N/A
-
-2016 
-
-Sheng Z, **Yu L**, Zhang T, Pei X, Li X, Zhang Z and Du W. 
