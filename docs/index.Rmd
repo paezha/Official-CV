@@ -64,6 +64,7 @@ Antonio Páez {#title}
 --------------------------------------------------------------------------------
 
 ### Professor, School of Earth, Environment and Society
+
 ### McMaster University
 
 Education {data-icon=graduation-cap data-concise=true}
@@ -222,3 +223,53 @@ get_publications(id) %>%
 
 ```
 
+
+Selected Talks, Courses, Seminars, and Panels {data-icon=file}
+--------------------------------------------------------------------------------
+
+```{r process-talks-courses-details}
+df <- read_csv(paste0(here(),"/assets/talks.csv"))  %>%
+  #select(-Type) %>%
+  #replace_na(list(Thesis = "")) %>%
+  mutate(across(.cols = everything(),
+                ~ replace_na(.x, "")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{a\\}",
+                                  "á")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{e\\}",
+                                  "é")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{i\\}",
+                                  "í")),
+         across(.cols = everything(), 
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{o\\}",
+                                  "ó")),
+         across(.cols = everything(),
+                ~ str_replace_all(.x, 
+                                  "\\\\\'\\{u\\}",
+                                  "ú")),
+         across(.cols = everything(),
+                ~ replace_na(.x, "")))
+```
+
+```{r talks-courses-details, results='asis'}
+df %>%
+  slice_head(n = 10) %>%
+  glue_data(
+   "### {Title}",
+   "\n\n",
+   "{What}, {Role}",
+   "\n\n",
+   "{Where}",
+   "\n\n",
+   "{Year}",
+   "\n\n",
+   "{Organization}",
+   "\n\n\n"
+ )
+```
