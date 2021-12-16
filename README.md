@@ -7,4 +7,4 @@
 <!-- badges: end -->
 
 Check out my CV on GitHub pages.
-[![“”](web-cv-preview.png)](https://paezha.github.io/Official-CV/)
+[![“”](docs/images/web-cv-preview.png)](https://paezha.github.io/Official-CV/)
