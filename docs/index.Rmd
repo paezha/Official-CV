@@ -223,7 +223,6 @@ get_publications(id) %>%
 
 ```
 
-
 Selected Talks, Courses, Seminars, and Panels {data-icon=file}
 --------------------------------------------------------------------------------
 
