@@ -352,3 +352,13 @@ read_csv(paste0(here(),"/assets/talks.csv")) %>%
                    why = paste0(What, ", ", Role),
                    .protect = FALSE)
 ```
+
+# Departmental, Faculty, University Service
+
+```{r internal-service-details}
+read_csv(paste0(here(),"/assets/internal-service.csv")) %>%
+  detailed_entries(what = Position, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where)
+```

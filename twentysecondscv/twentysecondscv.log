@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.8)  11 MAR 2022 09:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.8)  11 MAR 2022 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2119,20 +2119,14 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [14]
-Underfull \hbox (badness 1264) in paragraph at lines 1655--1655
+Underfull \hbox (badness 1264) in paragraph at lines 1660--1660
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-s
 i-dad Autónoma de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1665--1665
+Underfull \hbox (badness 10000) in paragraph at lines 1670--1670
 []\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
- []
-
-
-Underfull \hbox (badness 5970) in paragraph at lines 1910--1910
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
-ad Polit[][e]cnica de
  []
 
 
@@ -2142,8 +2136,9 @@ ad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1955--1955
-[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
+Underfull \hbox (badness 5970) in paragraph at lines 1920--1920
+[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
+ad Polit[][e]cnica de
  []
 
 
@@ -2152,17 +2147,22 @@ Underfull \hbox (badness 2245) in paragraph at lines 1960--1960
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2055--2055
+Underfull \hbox (badness 2245) in paragraph at lines 1965--1965
+[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2060--2060
 []\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
  []
 
 
-Overfull \hbox (55.12814pt too wide) in alignment at lines 1610--2126
+Overfull \hbox (55.12814pt too wide) in alignment at lines 1610--2131
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1610--2127
+Underfull \hbox (badness 10000) in paragraph at lines 1610--2132
 
  []
 
@@ -2180,7 +2180,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [15]
-Overfull \vbox (4899.57664pt too high) has occurred while \output is active []
+Overfull \vbox (4973.17006pt too high) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2196,6 +2196,15 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [16]
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2139--2158
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2159
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2215,10 +2224,10 @@ Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
  )
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
- 23463 strings out of 480236
- 441217 string characters out of 5894133
- 831058 words of memory out of 5000000
- 40782 multiletter control sequences out of 15000+600000
+ 23465 strings out of 480236
+ 441297 string characters out of 5894133
+ 832664 words of memory out of 5000000
+ 40783 multiletter control sequences out of 15000+600000
  507268 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,12n,118p,593b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2234,10 +2243,10 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb
 s/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1346039 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1347369 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 219 named destinations out of 1000 (max. 500000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 220 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
