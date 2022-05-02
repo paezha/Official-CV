@@ -316,27 +316,25 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
 
 ### Book Chapters
 
-### Journal Articles
+### Journal Articles (Published)
 
-```{r refereed-publications}
+```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
 #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-### Conference Presentations and Proceedings
+### Journal Articles (Accepted for Publication in Final Form)
 
-## Accepted for Publication in Final Form
-
-```{r refereed-accepted-for-publication}
+```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib")) %>%
 #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-## Submitted for Publication
+### Journal Articles (Submitted for Publication)
 
-```{r refereed-submitted-for-publication}
+```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib")) %>%
 #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))

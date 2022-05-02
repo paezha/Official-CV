@@ -314,7 +314,7 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
 
 ### Book Chapters
 
-### Journal Articles
+### Journal Articles (Published)
 
 ```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
@@ -322,9 +322,7 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-### Conference Presentations and Proceedings
-
-## Accepted for Publication in Final Form
+### Journal Articles (Accepted for Publication in Final Form)
 
 ```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib")) %>%
@@ -332,14 +330,7 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib")
   arrange(desc(issued), desc(author$family))
 ```
 
-## Submitted for Publication
-
-```{r}
-bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib")) %>%
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
-  arrange(desc(issued), desc(author$family))
-```
-
+### Journal Articles (Submitted for Publication)
 # Invited Talks, Seminars, Workshops, Courses, and Panels
 
 ```{r talks-courses-details}
