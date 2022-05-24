@@ -15,10 +15,10 @@ Ecological Applications,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
 Economia Aplicada,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Economic Modelling,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
 Environment and Planning A,0,0,0,1,1,1,2,2,2,2,1,1,1,0,0,1,0,0,0,0,0
-Environment and Planning B,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0
+Environment and Planning B,0,0,0,0,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,1
 Environmental Modelling \& Assessment,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
 Findings,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0
-Geographical Analysis,0,0,2,1,1,2,1,2,1,1,1,2,1,1,0,1,1,2,1,2,1
+Geographical Analysis,0,0,2,1,1,2,1,2,1,1,1,2,1,1,0,1,1,2,1,2,2
 Geo-Spatial Information Science,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 Health and Place,0,0,0,1,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0
 Health Policy and Technology,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
@@ -33,7 +33,7 @@ Journal of Regional Science,0,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,1,0
 Journal of the Eastern Asia Society for Transportation Studies,3,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Journal of Transport and Health,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0
 Journal of Transport and Land Use,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0
-Journal of Transport Geography,0,0,0,0,0,0,0,2,2,5,1,3,0,0,2,0,2,4,2,1,0
+Journal of Transport Geography,0,0,0,0,0,0,0,2,2,5,1,3,0,0,2,0,2,4,2,1,1
 Land Use Policy,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
 Landscape and Urban Planning,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,2,0
 Landscape Ecology,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
@@ -46,7 +46,7 @@ Regional Science and Urban Economics,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
 Regional Studies,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
 Research in Transportation Economics,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 Social Networks,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
-Social Science and Medicine,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,0
+Social Science and Medicine,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,1,1
 Socio-economic Planning Sciences,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
 Spatial Economic Analysis,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
 Studies in Regional Science,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
