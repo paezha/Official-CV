@@ -340,6 +340,19 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib"
   arrange(desc(issued), desc(author$family))
 ```
 
+# Unsolicited Advice
+
+```{r unsolicited-advice-details}
+read_csv(paste0(here(),"/assets/talks.csv")) %>%
+  filter(What == "Unsolicited Advice") %>%
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
 # Invited Talks, Seminars, Workshops, Courses, and Panels
 
 ```{r talks-courses-details}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  24 MAY 2022 18:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  28 MAY 2022 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2065,57 +2065,39 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1548--1554
 [][] [] 
  []
 
-
-Overfull \hbox (17.97098pt too wide) in paragraph at lines 1561--1562
-[][]
+pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1559 \hypertarget{bibliography}{}
+                                   
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1560--1566
+[] [] 
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 1625--1625
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-s
-i-dad Autónoma de
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1567--1574
+[][] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
-[]\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1575--1581
+[][] [] 
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1880--1880
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
-ad Polit[][e]cnica de
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1582--1588
+[][] [] 
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1885--1885
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
-ad Polit[][e]cnica de
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1589--1595
+[][] [] 
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 1925--1925
-[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 1930--1930
-[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2025--2025
-[]\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
- []
-
-
-Overfull \hbox (55.12814pt too wide) in alignment at lines 1565--2096
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1565--2097
-
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1596--1602
+[][] [] 
  []
 
 
@@ -2132,7 +2114,82 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [14]
-Overfull \vbox (5065.52495pt too high) has occurred while \output is active []
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1603--1609
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1610--1615
+[][] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1616--1621
+[][] [] 
+ []
+
+
+Overfull \hbox (0.5352pt too wide) in alignment at lines 1627--1638
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1639
+
+ []
+
+
+Overfull \hbox (17.97098pt too wide) in paragraph at lines 1642--1643
+[][][]
+ []
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 1721--1721
+[][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-s
+i-dad Autónoma de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1731
+[]\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 1976--1976
+[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
+ad Polit[][e]cnica de
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 1981--1981
+[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
+ad Polit[][e]cnica de
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 2021--2021
+[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 2026--2026
+[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
+[]\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
+ []
+
+
+Overfull \hbox (55.12814pt too wide) in alignment at lines 1646--2192
+[] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1646--2193
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2148,12 +2205,28 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [15]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2104--2123
+Overfull \vbox (5198.75902pt too high) has occurred while \output is active []
+
+
+Package fancyhdr Warning: \headheight is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
+
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 15.4pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.4pt}.
+
+[16]
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2200--2219
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2104--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2200--2220
 
  []
 
@@ -2170,16 +2243,16 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 15.4pt, for example:
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
-[16] (./twentysecondscv.aux)
+[17] (./twentysecondscv.aux)
 Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
 (rerunfilecheck)             Checksum: 412C32EE7953E8C069D98E4ED0632833;1805.
  )
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
- 23458 strings out of 480236
- 441191 string characters out of 5894132
- 836275 words of memory out of 5000000
- 40783 multiletter control sequences out of 15000+600000
+ 23470 strings out of 480236
+ 441416 string characters out of 5894132
+ 839261 words of memory out of 5000000
+ 40784 multiletter control sequences out of 15000+600000
  507268 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,12n,118p,593b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2195,10 +2268,10 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb
 s/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (16 pages, 1345953 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1349304 bytes).
 PDF statistics:
- 594 PDF objects out of 1000 (max. 8388607)
- 555 compressed objects within 6 object streams
- 213 named destinations out of 1000 (max. 500000)
+ 613 PDF objects out of 1000 (max. 8388607)
+ 573 compressed objects within 6 object streams
+ 224 named destinations out of 1000 (max. 500000)
  100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
