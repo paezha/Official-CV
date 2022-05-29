@@ -355,6 +355,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) %>%
 
 ```{r talks-courses-details}
 read_csv(paste0(here(),"/assets/talks.csv")) %>%
+  filter(What != "Unsolicited Advice") %>%
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,

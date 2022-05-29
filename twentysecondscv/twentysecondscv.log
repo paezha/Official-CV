@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  28 MAY 2022 21:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  28 MAY 2022 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2144,50 +2144,50 @@ Overfull \hbox (17.97098pt too wide) in paragraph at lines 1642--1643
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 1721--1721
+Underfull \hbox (badness 1264) in paragraph at lines 1711--1711
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-s
 i-dad Autónoma de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1731--1731
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
 []\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1976--1976
+Underfull \hbox (badness 5970) in paragraph at lines 1966--1966
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
 ad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1981--1981
+Underfull \hbox (badness 5970) in paragraph at lines 1971--1971
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
 ad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2021--2021
+Underfull \hbox (badness 2245) in paragraph at lines 2011--2011
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2026--2026
+Underfull \hbox (badness 2245) in paragraph at lines 2016--2016
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2121--2121
+Underfull \hbox (badness 10000) in paragraph at lines 2111--2111
 []\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
  []
 
 
-Overfull \hbox (55.12814pt too wide) in alignment at lines 1646--2192
+Overfull \hbox (55.12814pt too wide) in alignment at lines 1646--2182
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--2193
+Underfull \hbox (badness 10000) in paragraph at lines 1646--2183
 
  []
 
@@ -2205,7 +2205,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [15]
-Overfull \vbox (5198.75902pt too high) has occurred while \output is active []
+Overfull \vbox (5106.19664pt too high) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -2221,12 +2221,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [16]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2200--2219
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2190--2209
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2200--2220
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2210
 
  []
 
@@ -2251,7 +2251,7 @@ Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
 Here is how much of TeX's memory you used:
  23470 strings out of 480236
  441416 string characters out of 5894132
- 839261 words of memory out of 5000000
+ 836647 words of memory out of 5000000
  40784 multiletter control sequences out of 15000+600000
  507268 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2268,7 +2268,7 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb
 s/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1349304 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1349126 bytes).
 PDF statistics:
  613 PDF objects out of 1000 (max. 8388607)
  573 compressed objects within 6 object streams
