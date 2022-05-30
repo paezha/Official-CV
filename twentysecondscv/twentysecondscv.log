@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  28 MAY 2022 22:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.21)  30 MAY 2022 17:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1212,12 +1212,12 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 486--493
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 494--500
+Overfull \hbox (1.8pt too wide) in paragraph at lines 494--501
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 501--508
+Overfull \hbox (1.8pt too wide) in paragraph at lines 502--508
 [][] [] 
  []
 
@@ -1239,8 +1239,8 @@ y}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.509 \leavevmode
-                 \vadjust pre{\hypertarget{ref-RN6395}{}}% <./twentysecondscv_f
-iles/figure-latex/citations-plot-1.pdf>]
+                 \vadjust pre{\hypertarget{ref-whalen2021student}{}}% <./twenty
+secondscv_files/figure-latex/citations-plot-1.pdf>]
 Overfull \hbox (1.8pt too wide) in paragraph at lines 509--516
 [][] [] 
  []
@@ -1251,22 +1251,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 517--524
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 525--531
+Overfull \hbox (1.8pt too wide) in paragraph at lines 525--532
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 532--538
+Overfull \hbox (1.8pt too wide) in paragraph at lines 533--539
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 539--545
+Overfull \hbox (1.8pt too wide) in paragraph at lines 540--546
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 546--553
+Overfull \hbox (1.8pt too wide) in paragraph at lines 547--553
 [][] [] 
  []
 
@@ -1286,12 +1286,12 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 570--577
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 578--587
+Overfull \hbox (1.8pt too wide) in paragraph at lines 578--585
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 588--595
+Overfull \hbox (1.8pt too wide) in paragraph at lines 586--595
 [][] [] 
  []
 
@@ -1301,18 +1301,18 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 596--603
  []
 
 
-Underfull \hbox (badness 2626) in paragraph at lines 609--609
+Overfull \hbox (1.8pt too wide) in paragraph at lines 604--611
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 617--617
 []\T1/ClearSans-TLF/regular/n/10 Sarlas, G., Paez, A., & Ax-hausen, K. W. (2020
 ). Betweenness-
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 604--610
-[][] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 611--618
+Overfull \hbox (1.8pt too wide) in paragraph at lines 612--618
 [][] [] 
  []
 
@@ -1335,28 +1335,28 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [6]
-Underfull \hbox (badness 1028) in paragraph at lines 634--634
+Overfull \hbox (1.8pt too wide) in paragraph at lines 627--634
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 642--642
 []\T1/ClearSans-TLF/regular/n/10 Paez, A., An-jum, Z., Dickson-Anderson, S. E.,
  Schuster-Wallace, C.
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 627--635
+Overfull \hbox (1.8pt too wide) in paragraph at lines 635--643
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 636--641
+Overfull \hbox (1.8pt too wide) in paragraph at lines 644--649
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 642--647
-[][] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 648--655
+Overfull \hbox (1.8pt too wide) in paragraph at lines 650--655
 [][] [] 
  []
 
@@ -1381,17 +1381,17 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 680--687
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 688--694
+Overfull \hbox (1.8pt too wide) in paragraph at lines 688--695
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 695--701
+Overfull \hbox (1.8pt too wide) in paragraph at lines 696--702
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 702--709
+Overfull \hbox (1.8pt too wide) in paragraph at lines 703--709
 [][] [] 
  []
 
@@ -1416,7 +1416,7 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 734--741
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 742--748
+Overfull \hbox (1.8pt too wide) in paragraph at lines 742--749
 [][] [] 
  []
 
@@ -1434,7 +1434,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [7]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 749--756
+Overfull \hbox (1.8pt too wide) in paragraph at lines 750--756
 [][] [] 
  []
 
@@ -1444,22 +1444,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 757--764
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 765--771
+Overfull \hbox (1.8pt too wide) in paragraph at lines 765--772
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 772--779
+Overfull \hbox (1.8pt too wide) in paragraph at lines 773--779
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 780--786
+Overfull \hbox (1.8pt too wide) in paragraph at lines 780--787
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 787--794
+Overfull \hbox (1.8pt too wide) in paragraph at lines 788--794
 [][] [] 
  []
 
@@ -1469,32 +1469,32 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 795--802
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 803--809
+Overfull \hbox (1.8pt too wide) in paragraph at lines 803--810
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 810--816
+Overfull \hbox (1.8pt too wide) in paragraph at lines 811--817
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 817--823
+Overfull \hbox (1.8pt too wide) in paragraph at lines 818--824
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 824--830
+Overfull \hbox (1.8pt too wide) in paragraph at lines 825--831
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 831--837
+Overfull \hbox (1.8pt too wide) in paragraph at lines 832--838
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 838--845
+Overfull \hbox (1.8pt too wide) in paragraph at lines 839--845
 [][] [] 
  []
 
@@ -1527,17 +1527,17 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [8]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 870--876
+Overfull \hbox (1.8pt too wide) in paragraph at lines 870--877
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 877--883
+Overfull \hbox (1.8pt too wide) in paragraph at lines 878--884
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 884--891
+Overfull \hbox (1.8pt too wide) in paragraph at lines 885--891
 [][] [] 
  []
 
@@ -1557,22 +1557,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 908--915
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 916--922
+Overfull \hbox (1.8pt too wide) in paragraph at lines 916--923
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 923--929
+Overfull \hbox (1.8pt too wide) in paragraph at lines 924--930
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 930--936
+Overfull \hbox (1.8pt too wide) in paragraph at lines 931--937
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 937--944
+Overfull \hbox (1.8pt too wide) in paragraph at lines 938--944
 [][] [] 
  []
 
@@ -1582,12 +1582,12 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 945--952
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 953--959
+Overfull \hbox (1.8pt too wide) in paragraph at lines 953--960
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 960--967
+Overfull \hbox (1.8pt too wide) in paragraph at lines 961--967
 [][] [] 
  []
 
@@ -1602,7 +1602,7 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 976--983
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 984--992
+Overfull \hbox (1.8pt too wide) in paragraph at lines 984--991
 [][] [] 
  []
 
@@ -1620,22 +1620,22 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [9]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 993--999
+Overfull \hbox (1.8pt too wide) in paragraph at lines 992--1000
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1000--1007
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1001--1007
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1008--1014
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1008--1015
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1015--1022
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1016--1022
 [][] [] 
  []
 
@@ -1644,50 +1644,50 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1023--1030
 [][] [] 
  []
 
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1031--1038
+[][] [] 
+ []
+
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ClearSans-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 1036.
+(textcomp)             Default family used instead on input line 1044.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-036.
+044.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-1036.
+1044.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1031--1037
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1039--1045
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1038--1045
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1046--1053
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1046--1052
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1054--1060
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1053--1059
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1061--1067
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1060--1067
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1068--1075
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1068--1074
-[][] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1075--1082
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1076--1082
 [][] [] 
  []
 
@@ -1707,7 +1707,7 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1099--1106
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1107--1115
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1107--1114
 [][] [] 
  []
 
@@ -1725,7 +1725,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [10]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1116--1123
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1115--1123
 [][] [] 
  []
 
@@ -1745,17 +1745,17 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1140--1147
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1148--1154
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1148--1155
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1155--1161
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1156--1162
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1162--1169
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1163--1169
 [][] [] 
  []
 
@@ -1765,17 +1765,17 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1170--1177
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1178--1184
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1178--1185
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1185--1193
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1186--1192
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1194--1201
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1193--1201
 [][] [] 
  []
 
@@ -1785,17 +1785,17 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1202--1209
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1210--1216
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1210--1217
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1217--1223
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1218--1224
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1224--1231
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1225--1231
 [][] [] 
  []
 
@@ -1818,17 +1818,17 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [11]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1240--1246
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1240--1247
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1247--1253
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1248--1254
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1254--1261
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1255--1261
 [][] [] 
  []
 
@@ -1838,22 +1838,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1262--1269
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1270--1278
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1270--1277
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1279--1286
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1278--1286
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1287--1293
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1287--1294
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1294--1301
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1295--1301
 [][] [] 
  []
 
@@ -1878,17 +1878,17 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1326--1333
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1334--1340
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1334--1341
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1341--1348
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1342--1348
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1349--1355
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1349--1356
 [][] [] 
  []
 
@@ -1906,12 +1906,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [12]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1356--1362
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1357--1363
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1363--1370
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1364--1370
 [][] [] 
  []
 
@@ -1921,22 +1921,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1371--1378
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1379--1385
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1379--1386
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1386--1393
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1387--1393
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1394--1402
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1394--1401
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1403--1410
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1402--1410
 [][] [] 
  []
 
@@ -1946,49 +1946,49 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1411--1418
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1419--1424
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1419--1426
 [][] [] 
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1430--1430
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1427--1432
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1438--1438
 []\T1/ClearSans-TLF/regular/n/10 Paez, A. (2004). Anisotropic vari-ance func-ti
 ons in ge-o-graph-i-cally
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 1430--1430
+Underfull \hbox (badness 1215) in paragraph at lines 1438--1438
 \T1/ClearSans-TLF/regular/n/10 weighted re-gres-sion mod-els [Jour-nal Ar-ti-cl
 e]. \T1/ClearSans-TLF/regular/it/10 Ge-o-graph-i-cal Anal-y-
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1425--1431
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1433--1439
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1432--1438
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1440--1446
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1439--1445
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1447--1453
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1446--1452
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1454--1460
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1453--1461
-[][] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1462--1469
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1461--1469
 [][] [] 
  []
 
@@ -2011,17 +2011,17 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [13]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1478--1484
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1478--1485
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1485--1491
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1486--1492
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1492--1499
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1493--1499
 [][] [] 
  []
 
@@ -2031,37 +2031,22 @@ Overfull \hbox (1.8pt too wide) in paragraph at lines 1500--1507
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1508--1514
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1508--1515
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1515--1520
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1516--1522
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1521--1527
-[][] [] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1532 \hypertarget{bibliography}{}
-                                   
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1533--1539
-[] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1540--1547
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1523--1528
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1548--1554
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1529--1535
 [][] [] 
  []
 
@@ -2069,34 +2054,44 @@ pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1559 \hypertarget{bibliography}{}
+l.1540 \hypertarget{bibliography}{}
                                    
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1560--1566
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1541--1548
 [] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1567--1574
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1549--1555
+[][] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{bibliography}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1560 \hypertarget{bibliography}{}
+                                   
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1561--1567
+[] [] 
+ []
+
+
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1568--1575
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1575--1581
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1576--1582
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1582--1588
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1583--1589
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1589--1595
-[][] [] 
- []
-
-
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1596--1602
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1590--1596
 [][] [] 
  []
 
@@ -2114,80 +2109,85 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [14]
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1603--1609
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1597--1603
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1610--1615
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1604--1610
 [][] [] 
  []
 
 
-Overfull \hbox (1.8pt too wide) in paragraph at lines 1616--1621
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1611--1616
 [][] [] 
  []
 
 
-Overfull \hbox (0.5352pt too wide) in alignment at lines 1627--1638
+Overfull \hbox (1.8pt too wide) in paragraph at lines 1617--1622
+[][] [] 
+ []
+
+
+Overfull \hbox (0.5352pt too wide) in alignment at lines 1628--1639
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1639
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1640
 
  []
 
 
-Overfull \hbox (17.97098pt too wide) in paragraph at lines 1642--1643
+Overfull \hbox (17.97098pt too wide) in paragraph at lines 1643--1644
 [][][]
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 1711--1711
+Underfull \hbox (badness 1264) in paragraph at lines 1712--1712
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-s
 i-dad Autónoma de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
 []\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1966--1966
+Underfull \hbox (badness 5970) in paragraph at lines 1967--1967
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
 ad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1971--1971
+Underfull \hbox (badness 5970) in paragraph at lines 1972--1972
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-d
 ad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2011--2011
+Underfull \hbox (badness 2245) in paragraph at lines 2012--2012
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2016--2016
+Underfull \hbox (badness 2245) in paragraph at lines 2017--2017
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2111
+Underfull \hbox (badness 10000) in paragraph at lines 2112--2112
 []\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
  []
 
 
-Overfull \hbox (55.12814pt too wide) in alignment at lines 1646--2182
+Overfull \hbox (55.12814pt too wide) in alignment at lines 1647--2183
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--2183
+Underfull \hbox (badness 10000) in paragraph at lines 1647--2184
 
  []
 
@@ -2221,12 +2221,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [16]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2190--2209
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2191--2210
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2190--2210
+Underfull \hbox (badness 10000) in paragraph at lines 2191--2211
 
  []
 
@@ -2250,8 +2250,8 @@ Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
  23470 strings out of 480236
- 441416 string characters out of 5894132
- 836647 words of memory out of 5000000
+ 441404 string characters out of 5894132
+ 836671 words of memory out of 5000000
  40784 multiletter control sequences out of 15000+600000
  507268 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -2268,10 +2268,10 @@ ata/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb
 s/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/Tiny
 TeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1349126 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1349419 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 573 compressed objects within 6 object streams
+ 615 PDF objects out of 1000 (max. 8388607)
+ 575 compressed objects within 6 object streams
  224 named destinations out of 1000 (max. 500000)
  100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
