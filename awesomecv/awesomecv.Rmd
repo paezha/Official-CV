@@ -35,7 +35,6 @@ knitr::opts_chunk$set(echo = FALSE,
 current_year <- as.numeric(as.character(Sys.time(), '%Y')) # Update year
 ```
 
-
 ```{r load-packages}
 library(here)
 library(readr)
@@ -320,7 +319,6 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
 
 ```{r}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 

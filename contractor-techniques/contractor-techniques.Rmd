@@ -1,0 +1,19 @@
+---
+title: "Contractor Techniques"
+author: "Antonio Paez"
+date: "`r Sys.Date()`"
+output: word_document
+bibliography: refereed-publications.bib
+nocite: '@*'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+```
+ 
+```{r copy-bibliography, include=FALSE}
+file.copy(paste0(here(),"/assets/refereed-publications.bib"), 
+          paste0(here(),"/contractor-techniques/refereed-publications.bib"))
+```
+
