@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.28)  29 JUL 2022 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.8)  15 AUG 2022 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **twentysecondscv.tex
 (./twentysecondscv.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-07-15> (./twentysecondcv.cls
+L3 programming layer <2022-08-05> (./twentysecondcv.cls
 Document Class: twentysecondcv 2018/11/24 CV class
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -530,7 +530,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box64
 ) (./twentysecondscv.aux)
@@ -761,16 +761,16 @@ File: twentysecondscv_files/figure-latex/review-to-publication-1.pdf Graphic fil
 Package pdftex.def Info: twentysecondscv_files/figure-latex/review-to-publication-1.pdf  used on input line 241.
 (pdftex.def)             Requested size: 211.69057pt x 146.55382pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--321
+Underfull \hbox (badness 10000) in paragraph at lines 253--322
 
  []
 
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/sl' in size <10> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/sl' tried instead on input line 323.
+(Font)              Font shape `T1/ClearSans-TLF/regular/sl' tried instead on input line 324.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/sl' in size <10> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 323.
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 324.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 323.
+(Font)              scaled to size 10.0pt on input line 324.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -784,7 +784,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [2]
-Overfull \vbox (1123.1364pt too high) has occurred while \output is active []
+Overfull \vbox (1149.53636pt too high) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -799,47 +799,47 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [3 <./twentysecondscv_files/figure-latex/review-to-publication-1.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 336--339
+Underfull \hbox (badness 10000) in paragraph at lines 337--340
 
  []
 
 
-Overfull \hbox (85.38507pt too wide) in alignment at lines 345--348
+Overfull \hbox (85.38507pt too wide) in alignment at lines 346--349
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--349
+Underfull \hbox (badness 10000) in paragraph at lines 346--350
 
  []
 
 
-Overfull \hbox (3.8492pt too wide) in alignment at lines 355--366
+Overfull \hbox (3.8492pt too wide) in alignment at lines 356--367
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--367
+Underfull \hbox (badness 10000) in paragraph at lines 356--368
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--381
+Underfull \hbox (badness 10000) in paragraph at lines 374--382
 
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 393--393
+Underfull \hbox (badness 3158) in paragraph at lines 394--394
 \T1/ClearSans-TLF/regular/n/10 ing ac-ces-si-bil-ity: Pos-i-tive and nor-ma-tive as-
  []
 
 
-Underfull \hbox (badness 1354) in paragraph at lines 393--393
+Underfull \hbox (badness 1354) in paragraph at lines 394--394
 \T1/ClearSans-TLF/regular/n/10 pects of var-i-ous ac-ces-si-bil-ity in-di-ca-tors, Jour-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--395
+Underfull \hbox (badness 10000) in paragraph at lines 388--396
 
  []
 
@@ -859,12 +859,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 <twentysecondscv_files/figure-latex/citations-plot-1.pdf, id=101, 469.755pt x 325.215pt>
 File: twentysecondscv_files/figure-latex/citations-plot-1.pdf Graphic file (type pdf)
 <use twentysecondscv_files/figure-latex/citations-plot-1.pdf>
-Package pdftex.def Info: twentysecondscv_files/figure-latex/citations-plot-1.pdf  used on input line 428.
+Package pdftex.def Info: twentysecondscv_files/figure-latex/citations-plot-1.pdf  used on input line 429.
 (pdftex.def)             Requested size: 211.69057pt x 146.55382pt.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 449.
+(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 450.
 LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 449.
+(Font)              scaled to size 10.0pt on input line 450.
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -881,9 +881,9 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.510 \leavevmode
+l.511 \leavevmode
                  \vadjust pre{\hypertarget{ref-brown2022spatial}{}}% <./twentysecondscv_files/figure-latex/citations-plot-1.pdf>]
-Underfull \hbox (badness 2626) in paragraph at lines 625--625
+Underfull \hbox (badness 2626) in paragraph at lines 626--626
 []\T1/ClearSans-TLF/regular/n/10 Sarlas, G., Paez, A., & Ax-hausen, K. W. (2020). Betweenness-
  []
 
@@ -900,7 +900,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [6]
-Underfull \hbox (badness 1028) in paragraph at lines 650--650
+Underfull \hbox (badness 1028) in paragraph at lines 651--651
 []\T1/ClearSans-TLF/regular/n/10 Paez, A., An-jum, Z., Dickson-Anderson, S. E., Schuster-Wallace, C.
  []
 
@@ -982,12 +982,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [12]
-Underfull \hbox (badness 1490) in paragraph at lines 1446--1446
+Underfull \hbox (badness 1490) in paragraph at lines 1447--1447
 []\T1/ClearSans-TLF/regular/n/10 Paez, A. (2004). Anisotropic vari-ance func-tions in ge-o-graph-i-cally
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 1446--1446
+Underfull \hbox (badness 1215) in paragraph at lines 1447--1447
 \T1/ClearSans-TLF/regular/n/10 weighted re-gres-sion mod-els [Jour-nal Ar-ti-cle]. \T1/ClearSans-TLF/regular/it/10 Ge-o-graph-i-cal Anal-y-
  []
 
@@ -1007,12 +1007,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1548 \hypertarget{bibliography}{}
+l.1549 \hypertarget{bibliography}{}
                                    
 pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1561 \hypertarget{bibliography}{}
+l.1562 \hypertarget{bibliography}{}
                                    
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
@@ -1027,57 +1027,57 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [14]
-Underfull \hbox (badness 10000) in alignment at lines 1637--1638
+Underfull \hbox (badness 10000) in alignment at lines 1638--1639
 [][]
  []
 
 
-Overfull \hbox (17.97098pt too wide) in paragraph at lines 1642--1643
+Overfull \hbox (17.97098pt too wide) in paragraph at lines 1643--1644
 [][][]
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 1711--1711
+Underfull \hbox (badness 1264) in paragraph at lines 1712--1712
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-si-dad Autónoma de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
 []\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1966--1966
+Underfull \hbox (badness 5970) in paragraph at lines 1967--1967
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1971--1971
+Underfull \hbox (badness 5970) in paragraph at lines 1972--1972
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2011--2011
+Underfull \hbox (badness 2245) in paragraph at lines 2012--2012
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2016--2016
+Underfull \hbox (badness 2245) in paragraph at lines 2017--2017
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2111
+Underfull \hbox (badness 10000) in paragraph at lines 2112--2112
 []\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
  []
 
 
-Overfull \hbox (89.56909pt too wide) in alignment at lines 1646--2182
+Overfull \hbox (89.56909pt too wide) in alignment at lines 1647--2183
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--2183
+Underfull \hbox (badness 10000) in paragraph at lines 1647--2184
 
  []
 
@@ -1109,12 +1109,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [16]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2190--2209
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2191--2210
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2190--2210
+Underfull \hbox (badness 10000) in paragraph at lines 2191--2211
 
  []
 
@@ -1136,15 +1136,15 @@ Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
  )
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
- 23494 strings out of 479983
- 442219 string characters out of 5886310
- 845906 words of memory out of 5000000
- 41057 multiletter control sequences out of 15000+600000
+ 23494 strings out of 479638
+ 442219 string characters out of 5877111
+ 847573 words of memory out of 5000000
+ 41402 multiletter control sequences out of 15000+600000
  506074 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,12n,118p,593b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc}<c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1348801 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1348829 bytes).
 PDF statistics:
  610 PDF objects out of 1000 (max. 8388607)
  571 compressed objects within 6 object streams
