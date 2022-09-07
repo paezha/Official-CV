@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.8)  15 AUG 2022 11:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  7 SEP 2022 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **twentysecondscv.tex
 (./twentysecondscv.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-05> (./twentysecondcv.cls
+L3 programming layer <2022-08-30> (./twentysecondcv.cls
 Document Class: twentysecondcv 2018/11/24 CV class
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -530,7 +530,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box64
 ) (./twentysecondscv.aux)
@@ -1027,57 +1027,57 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [14]
-Underfull \hbox (badness 10000) in alignment at lines 1638--1639
+Underfull \hbox (badness 10000) in alignment at lines 1639--1640
 [][]
  []
 
 
-Overfull \hbox (17.97098pt too wide) in paragraph at lines 1643--1644
+Overfull \hbox (17.97098pt too wide) in paragraph at lines 1644--1645
 [][][]
  []
 
 
-Underfull \hbox (badness 1264) in paragraph at lines 1712--1712
+Underfull \hbox (badness 1264) in paragraph at lines 1713--1713
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-si-dad Autónoma de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1722--1722
+Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
 []\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1967--1967
+Underfull \hbox (badness 5970) in paragraph at lines 1968--1968
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 5970) in paragraph at lines 1972--1972
+Underfull \hbox (badness 5970) in paragraph at lines 1973--1973
 [][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2012--2012
+Underfull \hbox (badness 2245) in paragraph at lines 2013--2013
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 2017--2017
+Underfull \hbox (badness 2245) in paragraph at lines 2018--2018
 []\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2112--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2113--2113
 []\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
  []
 
 
-Overfull \hbox (89.56909pt too wide) in alignment at lines 1647--2183
+Overfull \hbox (89.56909pt too wide) in alignment at lines 1648--2184
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1647--2184
+Underfull \hbox (badness 10000) in paragraph at lines 1648--2185
 
  []
 
@@ -1109,12 +1109,12 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{15.4pt}.
 
 [16]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2191--2210
+Overfull \hbox (73.57008pt too wide) in alignment at lines 2192--2211
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2191--2211
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2212
 
  []
 
@@ -1136,15 +1136,15 @@ Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
  )
 (\end occurred when \ifnum on line 31 was incomplete) 
 Here is how much of TeX's memory you used:
- 23494 strings out of 479638
- 442219 string characters out of 5877111
- 847573 words of memory out of 5000000
- 41402 multiletter control sequences out of 15000+600000
+ 23496 strings out of 477035
+ 442273 string characters out of 5826645
+ 887869 words of memory out of 5000000
+ 44004 multiletter control sequences out of 15000+600000
  506074 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,12n,118p,593b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc}<c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1348829 bytes).
+Output written on twentysecondscv.pdf (17 pages, 1348836 bytes).
 PDF statistics:
  610 PDF objects out of 1000 (max. 8388607)
  571 compressed objects within 6 object streams
