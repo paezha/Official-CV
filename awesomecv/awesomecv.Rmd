@@ -1,6 +1,6 @@
 ---
 name: Antonio
-surname: Páez
+surname: Paez
 position: "Professor"
 address: |
          | School of Earth, Environment and Society
@@ -265,6 +265,16 @@ read_csv(paste0(here(),"/assets/honors.csv")) %>%
 # Examination Committees
 
 # Research and Other Funding
+
+```{r research-funding-details}
+read_csv(paste0(here(),"/assets/research-funding.csv")) %>%
+  detailed_entries(what = Title, 
+                   when = Year, 
+                   where = Amount,
+                   with = glue::glue("{Funder}, {Where}"),
+                   why = glue::glue("PI: {PI}; team size: {Participants} researchers"),
+                   .protect = FALSE)
+```
 
 # Research Impact
 
