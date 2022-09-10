@@ -83,7 +83,7 @@ read_csv(paste0(here(),"/assets/employment.csv")) %>%
 
 ## Industry
 
-Surveyor and construction site supervisor (August 1993 – March 1995) Topographical
+Surveyor and construction site supervisor (August 1993 - March 1995) Topographical
 survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz. These projects involved in-field data collection and computer aided design. Construction site supervision.
 
 \newpage
@@ -327,26 +327,39 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
 
 ### Journal Articles (Published)
 
-```{r}
+```{r journal-articles-published}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
 ### Journal Articles (Accepted for Publication in Final Form)
 
-```{r}
+```{r journal-articles-accepted-for-publication}
 bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib")) %>%
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
 ### Journal Articles (Submitted for Publication)
 
-```{r}
+```{r journal-articles-submitted-for-publication}
 bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib")) %>%
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
+
+# Peer-reviewed Conference Presentations
+
+```{r peer-reviewed-conference-presentations}
+bibliography_entries(paste0(here(),"/assets/conference-presentations-peer-reviewed.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+# Non-peer-reviewed Conference Presentations
+
+```{r not-peer-reviewed-conference-presentations}
+bibliography_entries(paste0(here(),"/assets/conference-presentations-not-peer-reviewed.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
 
 # Unsolicited Advice
 
