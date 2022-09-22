@@ -1,0 +1,3312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% Adapted to be an Rmarkdown template by Rob J Hyndman
+% 23 November 2018
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,]{twentysecondcv}
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{csquotes}
+
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+\usepackage{booktabs}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+% Profile pic
+\profilepic{apaez.jpg}
+
+\cvname{Antonio PÃ¡ez} % Your name
+
+\cvjobtitle{Professor} % Job title/career
+\cvdate{September 2022} % Date of birth or date of CV??
+\cvaddress{School of Earth, Environment and Society\\
+McMaster University\\
+1280 Main St West, Hamilton, Ontario, Canada L8S
+1S4} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 905 525 9140} % Phone number
+\cvsite{\href{http://experts.mcmaster.ca/display/paezha}{experts.mcmaster.ca/display/paezha}} % Personal website
+\cvmail{\href{mailto:paezha@mcmaster.ca}{\nolinkurl{paezha@mcmaster.ca}}} % Email address
+\cvtwitter{}
+\cvgithub{\href{https://github.com/paezha}{paezha}}
+\cvlinkedin{}
+
+\lfoot{\sf Curriculum Vitae: Antonio PÃ¡ez}
+\rfoot{\sf\thepage}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+\aboutme{This is me.}
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{{lovely/4},{narcissistic/3}}
+
+\makeprofile % Print the sidebar
+
+
+
+
+\hypertarget{about-me}{%
+\section{About me}\label{about-me}}
+
+\begin{itemize}
+\tightlist
+\item
+  I trained in civil engineering before being adopted into geography.
+\item
+  My areas of interest include spatial analysis, spatial statistics,
+  transportation, travel behavior, cities.
+\item
+  Also, too, mathematics, computer languages, science fiction, poetry,
+  and memes.
+\item
+  I have been known to look professorial on occasion.
+\item
+  At this rate my only hope of being recognized is as the most promising
+  oldest researcher in my discipline.
+\end{itemize}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{1997-2000}{PhD}{Tohoku Unversity}{Sendai, Japan\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Thesis Title: Applied Statistical Analysis of Geographically Detailed Data with Emphasis on Spatial Effects%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{1995-1997}{M.Sc.}{Tohoku Unversity}{Sendai, Japan\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Thesis Title: Evaluation of Environmental Changes Caused by Urbanization%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{1989-1993}{B.Eng.}{Instituto Tecnol\'{o}gico y de Estudios Superiores de Monterrey}{Monterrey, Mexico\par\empty}
+\end{twenty}
+
+\hypertarget{current-status-at-mcmaster}{%
+\section{Current Status at McMaster}\label{current-status-at-mcmaster}}
+
+Full Professor in the School of Earth, Environment and Society since
+2014. Tenured since 2007.
+
+\hypertarget{employment-history}{%
+\section{Employment History}\label{employment-history}}
+
+\hypertarget{academic}{%
+\subsection{Academic}\label{academic}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{July 2014-present}{Professor}{School of Earth, Society and Environment, McMaster University}{Hamilton, Canada\par\empty}
+    \twentyitem{July 2007-June 2014}{Associate Professor}{School of Earth, Environment and Society, McMaster University}{Hamilton, Canada\par\empty}
+    \twentyitem{July 2002-June 2007}{Assistant Professor}{School of Geography and Earth Sciences, McMaster University}{Hamilton, Canada\par\empty}
+    \twentyitem{October 2000-March 2002}{Research Fellow-Lecturer}{Center for Northeast Asian Studies, Tohoku University}{Sendai, Japan\par\empty}
+    \twentyitem{January 1993-December 1993}{Instructor-Topographical Survey Laboratory}{Dept. of Civil Engineering, Instituto Tecnol\'{o}gico y de Estudios Superiores de Monterrey}{Monterrey, Mexico\par\empty}
+\end{twenty}
+
+\hypertarget{industry}{%
+\subsection{Industry}\label{industry}}
+
+Surveyor and construction site supervisor (August 1993 - March 1995)
+Topographical survey projects in Nuevo LeÃ³n, Mexico, sponsored by
+various Municipal Public Works Departments (Monterrey, Guadalupe, Santa
+Catarina), and by Mercedes-Benz. These projects involved in-field data
+collection and computer aided design. Construction site supervision.
+
+\newpage
+
+\hypertarget{scholarly-and-professional-activities}{%
+\section{Scholarly and Professional
+Activities}\label{scholarly-and-professional-activities}}
+
+\hypertarget{editor-in-chief}{%
+\subsection{Editor-in-Chief:}\label{editor-in-chief}}
+
+Journal of Geographical Systems (January, 2008-present)
+
+\hypertarget{associate-editor}{%
+\subsection{Associate Editor:}\label{associate-editor}}
+
+Papers in Regional Science (November, 2016-August, 2019)
+
+\hypertarget{editorial-board-membership}{%
+\subsection{Editorial Board
+Membership}\label{editorial-board-membership}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{January 2012-December 2017}{Computers, Environment, and Urban Systems}{}{\empty\empty}
+    \twentyitem{April 2014-March 2017}{Decision Support Systems}{}{\empty\empty}
+    \twentyitem{January 2014-present}{Economic and Business Letters}{}{\empty\empty}
+    \twentyitem{January 2010-December 2017}{Environment and Planning A}{}{\empty\empty}
+    \twentyitem{2018-present}{Geographical Analysis}{}{\empty\empty}
+    \twentyitem{2015-present}{Ingenier\'{i}a de Transporte}{}{\empty\empty}
+    \twentyitem{January 2019-present}{International Journal of Geographic Information Science}{}{\empty\empty}
+    \twentyitem{2018-present}{Journal of Transport Geography}{}{\empty\empty}
+    \twentyitem{January, 2008-May, 2012}{Open Environmental Journal}{}{\empty\empty}
+    \twentyitem{January, 2008-May, 2012}{Open Geography Journal}{}{\empty\empty}
+    \twentyitem{January, 2008-May, 2012}{Open Urban Studies Journal}{}{\empty\empty}
+    \twentyitem{January 2015-present}{Papers in Regional Science}{}{\empty\empty}
+    \twentyitem{January 2012-present}{Transportation}{}{\empty\empty}
+\end{twenty}
+
+\hypertarget{journal-referee}{%
+\subsection{Journal Referee}\label{journal-referee}}
+
+\hypertarget{number-of-total-lifetime-reviews}{%
+\subsubsection{Number of Total Lifetime
+Reviews}\label{number-of-total-lifetime-reviews}}
+
+307
+
+\hypertarget{number-of-reviews-in-2022}{%
+\subsubsection{Number of Reviews in
+2022}\label{number-of-reviews-in-2022}}
+
+6
+
+\hypertarget{reviews-to-publications-per-year}{%
+\subsubsection{Reviews-to-Publications per
+Year}\label{reviews-to-publications-per-year}}
+
+Fig. \ref{fig:reviews-pubs} is a summary of journal
+reviews-to-publications per year showing contributions to peer-review
+relative to demands on peer-review.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{twentysecondscv_files/figure-latex/review-to-publication-1} 
+
+}
+
+\caption{\label{fig:reviews-pubs}Reviews-to-publications by year}\label{fig:review-to-publication}
+\end{figure}
+
+\hypertarget{reviews-per-journal}{%
+\subsubsection{Reviews per journal}\label{reviews-per-journal}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2}{Ageing and Society}{}{\empty\empty}
+    \twentyitem{4}{Annals of the Association of American Geographers}{}{\empty\empty}
+    \twentyitem{1}{Applied Geography}{}{\empty\empty}
+    \twentyitem{2}{Applied Spatial Analysis and Policy}{}{\empty\empty}
+    \twentyitem{1}{Automotives}{}{\empty\empty}
+    \twentyitem{1}{Canadian Journal of Regional Science}{}{\empty\empty}
+    \twentyitem{1}{Cartography and Geographic Information Science}{}{\empty\empty}
+    \twentyitem{1}{Case Studies in Transport Policy}{}{\empty\empty}
+    \twentyitem{1}{Computational and Mathematical Organization Theory}{}{\empty\empty}
+    \twentyitem{1}{Computers and Geosciences}{}{\empty\empty}
+    \twentyitem{14}{Computers, Environment and Urban Systems}{}{\empty\empty}
+    \twentyitem{1}{Decision Support Systems}{}{\empty\empty}
+    \twentyitem{1}{Ecological Applications}{}{\empty\empty}
+    \twentyitem{1}{Economia Aplicada}{}{\empty\empty}
+    \twentyitem{1}{Economic Modelling}{}{\empty\empty}
+    \twentyitem{15}{Environment and Planning A}{}{\empty\empty}
+    \twentyitem{5}{Environment and Planning B}{}{\empty\empty}
+    \twentyitem{1}{Environmental Modelling \& Assessment}{}{\empty\empty}
+    \twentyitem{4}{Findings}{}{\empty\empty}
+    \twentyitem{1}{Geo-Spatial Information Science}{}{\empty\empty}
+    \twentyitem{25}{Geographical Analysis}{}{\empty\empty}
+    \twentyitem{7}{Health and Place}{}{\empty\empty}
+    \twentyitem{1}{Health Policy and Technology}{}{\empty\empty}
+    \twentyitem{1}{IEEE Access}{}{\empty\empty}
+    \twentyitem{7}{International Journal of Geographic Information Science}{}{\empty\empty}
+    \twentyitem{1}{International Journal of Health Geographics}{}{\empty\empty}
+    \twentyitem{3}{International Journal of Sustainable Transportation}{}{\empty\empty}
+    \twentyitem{1}{International Journal of Transport Management}{}{\empty\empty}
+    \twentyitem{2}{International Regional Science Review}{}{\empty\empty}
+    \twentyitem{5}{Journal of Geographical Systems}{}{\empty\empty}
+    \twentyitem{5}{Journal of Regional Science}{}{\empty\empty}
+    \twentyitem{6}{Journal of the Eastern Asia Society for Transportation Studies}{}{\empty\empty}
+    \twentyitem{3}{Journal of Transport and Health}{}{\empty\empty}
+    \twentyitem{3}{Journal of Transport and Land Use}{}{\empty\empty}
+    \twentyitem{25}{Journal of Transport Geography}{}{\empty\empty}
+    \twentyitem{1}{Land Use Policy}{}{\empty\empty}
+    \twentyitem{4}{Landscape and Urban Planning}{}{\empty\empty}
+    \twentyitem{1}{Landscape Ecology}{}{\empty\empty}
+    \twentyitem{2}{Lowland Technology International Journal}{}{\empty\empty}
+    \twentyitem{6}{Papers in Regional Science}{}{\empty\empty}
+    \twentyitem{2}{PLoS ONE}{}{\empty\empty}
+    \twentyitem{2}{Proceedings of the National Academy of Sciences of the United States of America}{}{\empty\empty}
+    \twentyitem{2}{Professional Geographer}{}{\empty\empty}
+    \twentyitem{3}{Regional Science and Urban Economics}{}{\empty\empty}
+    \twentyitem{2}{Regional Studies}{}{\empty\empty}
+    \twentyitem{1}{Research in Transportation Economics}{}{\empty\empty}
+    \twentyitem{2}{Social Networks}{}{\empty\empty}
+    \twentyitem{5}{Social Science and Medicine}{}{\empty\empty}
+    \twentyitem{1}{Socio-economic Planning Sciences}{}{\empty\empty}
+    \twentyitem{3}{Spatial Economic Analysis}{}{\empty\empty}
+    \twentyitem{1}{Studies in Regional Science}{}{\empty\empty}
+    \twentyitem{9}{The Canadian Geographer}{}{\empty\empty}
+    \twentyitem{2}{The Open Urban Studies Journal}{}{\empty\empty}
+    \twentyitem{2}{Transport Policy}{}{\empty\empty}
+    \twentyitem{1}{Transport Reviews}{}{\empty\empty}
+    \twentyitem{19}{Transportation}{}{\empty\empty}
+    \twentyitem{1}{Transportation Letters}{}{\empty\empty}
+    \twentyitem{14}{Transportation Research A: Policy and Practice}{}{\empty\empty}
+    \twentyitem{5}{Transportation Research B: Methodological}{}{\empty\empty}
+    \twentyitem{3}{Transportation Research D: Transport and Environment}{}{\empty\empty}
+    \twentyitem{2}{Transportation Research F: Traffic Psychology}{}{\empty\empty}
+    \twentyitem{1}{Transportation Science}{}{\empty\empty}
+    \twentyitem{1}{Transportmetrica}{}{\empty\empty}
+    \twentyitem{1}{Transportmetrica A: Transport Science}{}{\empty\empty}
+    \twentyitem{46}{TRB-TRR}{}{\empty\empty}
+    \twentyitem{1}{Urban Geography}{}{\empty\empty}
+    \twentyitem{7}{Urban Studies}{}{\empty\empty}
+\end{twenty}
+
+\hypertarget{areas-of-interest}{%
+\section{Areas of Interest}\label{areas-of-interest}}
+
+Spatial data analysis and statistics; transportation modeling; travel
+behavior; health geography; Geographic Information Systems.
+
+\hypertarget{honours}{%
+\section{Honours}\label{honours}}
+
+\hypertarget{visiting-professorships}{%
+\subsection{Visiting Professorships}\label{visiting-professorships}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2008}{Visiting Professorship}{Universidad Polit\'{e}cnica de Madrid}{Madrid, Spain\par\empty}
+\end{twenty}
+
+\hypertarget{scholarships}{%
+\subsection{Scholarships}\label{scholarships}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{October, 1997-September, 2000}{Graduate Scholarship}{Japanese Ministry of Science, Education and Culture (Monbusho)}{Japan\par\empty}
+    \twentyitem{April, 1995-September, 1997}{Graduate Scholarship}{Japanese Ministry of Science, Education and Culture (Monbusho)}{Japan\par\empty}
+\end{twenty}
+
+\hypertarget{scientific-awards}{%
+\subsection{Scientific Awards}\label{scientific-awards}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{October, 2002}{Best Presentation Award}{Japan Society of Civil Engineers}{57th Annual Conference of the JSCE\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item K. Kawai, K. Miyamoto, V. Vichiensan, and Antonio P\'{a}ez%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2010}{Meredith F. Burrill Award for work of exceptional merit and quality that lies at or near the intersection of basic research in geography on the one hand, and practical applications or policy implications on the other}{Association of American Geographers}{\empty\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Antonio P\'{a}ez, Ruben G. Mercado, Steven Farber, Catherine Morency, and Matthew Roorda%
+\end{itemize}%
+\end{minipage}}
+\end{twenty}
+
+\hypertarget{trainee-honours}{%
+\subsection{Trainee Honours}\label{trainee-honours}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2021}{Transportation Geography Specialty Group of the Association of American Geographers}{Elise Desjardins}{Winner, Master's Competition\par\empty}
+    \twentyitem{2016}{International Transportation Forum}{Md Moniruzzaman}{Young Researcher Award\par\empty}
+    \twentyitem{2014}{Canadian Institutes for Health Research, Institute of Aging}{Md Moniruzzaman}{Age+ Prize\par\empty}
+    \twentyitem{2013}{World Conferende of Transport Research Society}{Md Moniruzzaman}{Ph.D. Prestige Grant\par\empty}
+    \twentyitem{2012}{Transportation Geography Specialty Group of the Association of American Geographers}{Md Moniruzzaman}{Winner, Master's Competition\par\empty}
+    \twentyitem{2011}{Transportation Geography Specialty Group of the Association of American Geographers}{Steven Farber}{Honorable Mention, Ph.D. Competition\par\empty}
+\end{twenty}
+
+\hypertarget{other}{%
+\subsection{Other}\label{other}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2022}{Web of Science}{Highly Cited Badge}{\empty\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item P\'{a}ez A, Scott DM, Morency C (2012) Measuring accessibility: Positive and normative aspects of various accessibility indicators, Journal of Transport Geography. 25 141-153 (doi: 10.1016/j.jtrangeo.2012.03.016)%
+\item P\'{a}ez A, Lopez FA, Menezes T, Cavalcanti R, Galdino da Rocha Pitta M (2021) A spatio-temporal analysis of the environmental correlates of COVID-19 incidence in Spain, Geographical Analysis , 53 (3) 397-421 (doi:10.1111/gean.12241)%
+\end{itemize}%
+\end{minipage}}
+\end{twenty}
+
+\hypertarget{supervisorships}{%
+\section{Supervisorships}\label{supervisorships}}
+
+\hypertarget{undergraduate}{%
+\subsection{Undergraduate}\label{undergraduate}}
+
+\hypertarget{diploma-and-certificate}{%
+\subsection{Diploma and Certificate}\label{diploma-and-certificate}}
+
+\hypertarget{master}{%
+\subsection{Master}\label{master}}
+
+\hypertarget{ph.d.}{%
+\subsection{Ph.D.}\label{ph.d.}}
+
+\hypertarget{supervisory-committees}{%
+\section{Supervisory Committees}\label{supervisory-committees}}
+
+\hypertarget{examination-committees}{%
+\section{Examination Committees}\label{examination-committees}}
+
+\hypertarget{research-and-other-funding}{%
+\section{Research and Other Funding}\label{research-and-other-funding}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{2011}{Enhancing the Mobility and Health of Older Adults}{Canadian Institutes of Health Research, Canada}{CAD 25,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Heather McKay; team size: 6 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2010-2016}{Walk the Talk: Transforming the Built Environment to Enhance Mobility in Seniors}{Canadian Institutes of Health Research, Canada}{CAD 1,500,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Heather McKay; team size: 10 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2010-2013}{Canadas Blood Futures: Geography, Demographic Change, and the Supply and Demand of Blood in Canada}{Canadian Institutes of Health Research, Canada}{CAD 240,723\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 4 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2011-2016}{Critical infrastructure: evaluating the effect of network topology and autocorrelation}{Natural Sciences and Engineering Research Council, Canada}{CAD 95,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2005}{International Workshop Frontiers in Transportation: Social and Spatial Interactions}{Natural Sciences and Engineering Research Council, Canada}{CAD 8,660\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 4 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2003-2007}{Modeling Continuous-space Contextual Effects in Transportation Systems}{Natural Sciences and Engineering Research Council, Canada}{CAD 105,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2020-2025}{Mobilizing Justice}{Social Sciences and Humanities Research Council, Canada}{CAD 2,498,195\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Steven Farber; team size: 10 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2020-2025}{CHildren's Independent Mobility Environments (CHIME)}{Social Sciences and Humanities Research Council, Canada}{CAD 296,830\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: E. Owen D. Waygood; team size: 4 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2017-2018}{Do Closed Schools Mean Disappearing Value? Exploring the Decapitalization of Education in Neighbourhood House Prices in Hamilton}{Social Sciences and Humanities Research Council, Canada}{CAD 49,705\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Christopher Higgins; team size: 2 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2010-2012}{Parks, shops, and friends: how do the built and social environments influence travel behavior?}{Social Sciences and Humanities Research Council, Canada}{CAD 91,550\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 2 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2008-2011}{Understanding barriers to participation in sport and other physical activities}{Social Sciences and Humanities Research Council, Canada}{CAD 106,500\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Darren M. Scott; team size: 2 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2007-2008}{Blood donor research: Individual determinants and geographical profile of blood donors}{Social Sciences and Humanities Research Council, Canada}{CAD 40,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 3 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2005-2007}{Social Influence on Travel Behavior: A Case Study of the Decision to Telecommute}{Social Sciences and Humanities Research Council, Canada}{CAD 88,212\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 2 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2003-2004}{Transportation Implications of Canadas Aging Society}{Geomatics for Informed Decisions (GEOIDE), Canada}{CAD 150,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Darren M. Scott; team size: 6 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2014-2015}{Technology for Optimal Aging: An exploratory study of the effects of automobile innovations on the lived experience of older drivers, their mobility, and social policy}{Labrage Optimal Aging Initiative, Canada}{CAD 50,449\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Amanda Grenier; team size: 4 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2018-2019}{Examining traffic safety challenges of older Pedestrians in Canada}{McMaster Interdisciplinary Research Fund, Canada}{CAD 42,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 4 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2010}{Conference Grant}{Arts and Research Board McMaster University, Canada}{CAD 1,326\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2007}{Conference Grant}{Arts and Research Board McMaster University, Canada}{CAD 2,045\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2005}{Conference Grant}{Arts and Research Board McMaster University, Canada}{CAD 2,703\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2014}{Incentive Funding}{McMaster University, Canada}{CAD 5,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2004}{Incentive Funding}{McMaster University, Canada}{CAD 5,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2002}{Start-up Funds}{McMaster University, Canada}{CAD 50,000\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2021-2022}{Publication and evaluation of the effectiveness of an open-source book to teach spatial statistics}{McPherson Institute-McMaster University Libraries, Canada}{CAD 4,932\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 2 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2004}{Using spreadsheets and graphics to improve mathematical intuition in geographical problem solving: The case of Locational Analysis}{Centre for Leadership in Learning McMaster University, Canada}{CAD 3,078\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2008}{Developing a web-based survey to collect student travel behavior information}{Centre for Leadership in Learning McMaster University, Canada}{CAD 800\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2008}{Travel Grant}{North American Regional Science Council, US}{USD 500\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 1 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2009}{Understanding the transportation situation of Canadian adults with disabilities: Identifying barriers for adults with disabilities who travel locally and long-distance}{Human Resources and Social Development Canada, Canada}{CAD 35,982\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 3 researchers%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{2008}{Spatial Mismatch in Canadian Communities: The Socio-economic Outcomes of Transportation Infrastructure and Access}{Human Resources and Social Development Canada, Canada}{CAD 56,804\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item PI: Antonio Páez; team size: 5 researchers%
+\end{itemize}%
+\end{minipage}}
+\end{twenty}
+
+\hypertarget{research-impact}{%
+\section{Research Impact}\label{research-impact}}
+
+Fig. \ref{fig:citations} is a summary of research impact according to
+Google Scholar.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{twentysecondscv_files/figure-latex/citations-plot-1} 
+
+}
+
+\caption{\label{fig:citations}Citations per year according to Google Scholar}\label{fig:citations-plot}
+\end{figure}
+
+\hypertarget{lifetime-publications}{%
+\section{Lifetime Publications}\label{lifetime-publications}}
+
+\hypertarget{peer-reviewed}{%
+\subsection{Peer-Reviewed}\label{peer-reviewed}}
+
+\hypertarget{edited-books}{%
+\subsubsection{Edited Books}\label{edited-books}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-franklin2018population}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Franklin, R. S., Leeuwen, E. S. van, \& Paez, A. (2018).
+\emph{Population loss: The role of transportation and other issues}.
+Academic Press.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-delmelle2015spatial}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Kanaroglou, P., Delmelle, E., \& Páez, A. (2015).
+\emph{Spatial analysis in health geography}. Ashgate Publishing, Ltd.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2009progress}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Páez, A., Gallo, J., Buliung, R. N., \& Dall'erba, S.
+(2009). \emph{Progress in spatial analysis: Methods and applications}.
+Springer Science \& Business Media.}
+
+\hypertarget{book-chapters}{%
+\subsubsection{Book Chapters}\label{book-chapters}}
+
+\hypertarget{journal-articles-published}{%
+\subsubsection{Journal Articles
+(Published)}\label{journal-articles-published}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-whalen2022reliability}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Whalen, K., \& Paez, A. (2022). Reliability of the
+reflective learning framework for assessing higher-order thinking in
+geography and sustainability courses {[}Journal Article{]}.
+\emph{Journal of Geography}, \emph{121}(1), 18--33.
+\url{https://doi.org/10.1080/00221341.2021.2003848}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6494}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Sears, S., Moataz, M., Ferguson, M., Razavi, S., \&
+Páez, A. (2022). Perceived barriers to the movement of goods in canada:
+A grounded theory investigation {[}Journal Article{]}.
+\emph{Transportation Research Part A: Policy and Practice}, \emph{162},
+27--45. https://doi.org/\url{https://doi.org/10.1016/j.tra.2022.05.011}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6502}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Desjardins, E., Higgins, C. D., Scott, D. M., Apatu, E.,
+\& Páez, A. (2022). Correlates of bicycling trip~flows in hamilton,
+ontario: Fastest, quietest, or balanced routes? {[}Journal Article{]}.
+\emph{Transportation}, \emph{49}(3), 867--895.
+\url{https://doi.org/10.1007/s11116-021-10197-1}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-desjardins2022examining}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Desjardins, E., Higgins, C. D., \& Páez, A. (2022).
+Examining equity in accessibility to bike share: A balanced floating
+catchment area approach. \emph{Transportation Research Part D: Transport
+and Environment}, \emph{102}, 103091.
+https://doi.org/\url{https://doi.org/10.1016/j.trd.2021.103091}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-demitiry2022accessibility}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{Demitiry, M., Higgins, C. D., Páez, A., \& Miller, E. J.
+(2022). Accessibility to primary care physicians: Comparing floating
+catchments with a utility-based approach. \emph{Journal of Transport
+Geography}, \emph{101}, 103356.
+https://doi.org/\url{https://doi.org/10.1016/j.jtrangeo.2022.103356}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-brown2022spatial}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{Brown, M. J., Scott, D. M., \& Páez, A. (2022). A
+spatial modeling approach to estimating bike share traffic volume from
+GPS data {[}Journal Article{]}. \emph{Sustainable Cities and Society},
+\emph{76}, 103401. \url{https://doi.org/10.1016/j.scs.2021.103401}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-whalen2021student}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{Whalen, K., \& Paez, A. (2021). Student perceptions of
+reflection and the acquisition of higher-order thinking skills in a
+university sustainability course {[}Journal Article{]}. \emph{Journal of
+Geography in Higher Education}, \emph{45}(1), 108--127.
+\url{https://doi.org/10.1080/03098265.2020.1804843}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6395}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{Pereira, R. H. M., Braga, C. K. V., Servo, L. M., Serra,
+B., Amaral, P., Gouveia, N., \& Paez, A. (2021). Geographic access to
+COVID-19 healthcare in brazil using a balanced float catchment area
+approach {[}Journal Article{]}. \emph{Social Science \& Medicine},
+\emph{273}. \url{https://doi.org/10.1016/j.socscimed.2021.113773}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6374}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{Paez, A., Lopez, F. A., Menezes, T., Cavalcanti, R., \&
+Rocha Pitta, M. G. da. (2021). A spatio-temporal analysis of the
+environmental correlates of COVID-19 incidence in spain {[}Journal
+Article{]}. \emph{Geographical Analysis}, \emph{53}(3), 397--421.
+\url{https://doi.org/10.1111/gean.12241}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2021examination}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{Páez, A., \& Higgins, C. D. (2021). An examination of
+the accessibility implications of a pilot COVID-19 vaccination program
+in hamilton, ontario {[}Journal Article{]}. \emph{Findings}.
+\url{https://doi.org/10.32866/001c.24082}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6283}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{Paez, A. (2021). Open spatial sciences: An introduction
+{[}Journal Article{]}. \emph{Journal of Geographical Systems},
+\emph{23}(4), 467--476.
+\url{https://doi.org/10.1007/s10109-021-00364-4}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6362}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{Lira, B. M., \& Paez, A. (2021). Do drivers dream of
+walking? An investigation of travel mode dissonance from the perspective
+of affective values {[}Journal Article{]}. \emph{Journal of Transport \&
+Health}, \emph{20}. \url{https://doi.org/10.1016/j.jth.2021.101015}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6396}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{Higgins, C. D., Paez, A., Kim, G., \& Wang, J. (2021).
+Changes in accessibility to emergency and community food services during
+COVID-19 and implications for low income populations in hamilton,
+ontario {[}Journal Article{]}. \emph{Social Science \& Medicine},
+\emph{291}. \url{https://doi.org/10.1016/j.socscimed.2021.114442}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6278}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{Eldeeb, G., Mohamed, M., \& Paez, A. (2021). Built for
+active travel? Investigating the contextual effects of the built
+environment on transportation mode choice {[}Journal Article{]}.
+\emph{Journal of Transport Geography}, \emph{96}.
+\url{https://doi.org/10.1016/j.jtrangeo.2021.103158}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6358}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{Doulabi, S., Hassan, H. M., Ferguson, M. R., Razavi, S.,
+\& Paez, A. (2021). Exploring the determinants of older adults'
+susceptibility to pedestrians' incidents {[}Journal Article{]}.
+\emph{Accident Analysis and Prevention}, \emph{155}.
+\url{https://doi.org/10.1016/j.aap.2021.106100}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6340}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{Desjardins, E., Higgins, C. D., Scott, D. M., Apatu, E.,
+\& Paez, A. (2021). Using environmental audits and photo-journeys to
+compare objective attributes and bicyclists' perceptions of bicycle
+routes {[}Journal Article{]}. \emph{Journal of Transport \& Health},
+\emph{22}. \url{https://doi.org/10.1016/j.jth.2021.101092}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6339}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{Desjardins, E., Apatu, E., Razavi, S. D., Higgins, C.
+D., Scott, D. M., \& Paez, A. (2021). {``Going through a little bit of
+growing pains''}: A qualitative study of the factors that influence the
+route choice of regular bicyclists in a developing cycling city
+{[}Journal Article{]}. \emph{Transportation Research Part F-Traffic
+Psychology and Behaviour}, \emph{81}, 431--444.
+\url{https://doi.org/10.1016/j.trf.2021.06.005}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-dearruda2021effect}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{de Arruda, R. G., de Menezes, T. A., dos Santos, J. M.
+A., Paez, A., \& Lopes, F. (2021). The effect of politician denialist
+approach on COVID-19 cases and deaths {[}Journal Article{]}.
+\emph{EconomiA}, \emph{22}(3), 214--224.
+https://doi.org/\url{https://doi.org/10.1016/j.econ.2021.11.007}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6353}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{Victoriano, R., Paez, A., \& Carrasco, J.-A. (2020).
+Time, space, money, and social interaction: Using machine learning to
+classify people's mobility strategies through four key dimensions
+{[}Journal Article{]}. \emph{Travel Behaviour and Society}, \emph{20},
+1--11. \url{https://doi.org/10.1016/j.tbs.2020.02.004}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6366}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{Sarlas, G., Paez, A., \& Axhausen, K. W. (2020).
+Betweenness-accessibility: Estimating impacts of accessibility on
+networks {[}Journal Article{]}. \emph{Journal of Transport Geography},
+\emph{84}. \url{https://doi.org/10.1016/j.jtrangeo.2020.102680}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6361}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{Romero, F., Gomez, J., Paez, A., \& Manuel Vassallo, J.
+(2020). Toll roads vs.~Public transportation: A study on the acceptance
+of congestion-calming measures in madrid {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{142},
+319--342. \url{https://doi.org/10.1016/j.tra.2020.11.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6335}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{Paez, A., Hassan, H., Ferguson, M., \& Razavi, S.
+(2020). A systematic assessment of the use of opponent variables, data
+subsetting and hierarchical specification in two-party crash severity
+analysis {[}Journal Article{]}. \emph{Accident Analysis and Prevention},
+\emph{144}. \url{https://doi.org/10.1016/j.aap.2020.105666}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6346}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{Paez, A., Anjum, Z., Dickson-Anderson, S. E.,
+Schuster-Wallace, C. J., Martin Ramos, B., \& Higgins, C. D. (2020).
+Comparing distance, time, and metabolic energy cost functions for
+walking accessibility in infrastructure-poor regions {[}Journal
+Article{]}. \emph{Journal of Transport Geography}, \emph{82}.
+\url{https://doi.org/10.1016/j.jtrangeo.2019.102564}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2020using}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{Páez, A. (2020). Using google community mobility reports
+to investigate the growth of COVID-19 in the united states {[}Journal
+Article{]}. \emph{Findings}. \url{https://doi.org/10.32866/001c.12976}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jamal2020changes}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{Jamal, S., \& Páez, A. (2020). Changes in trip-making
+frequency by mode during the COVID-19 emergency in bangladesh {[}Journal
+Article{]}. \emph{Findings}. \url{https://doi.org/10.32866/001c.17977}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6364}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{Jamal, S., Mohiuddin, H., \& Paez, A. (2020). How do the
+perceptions of neighborhood conditions impact active transportation? A
+study in rajshahi, bangladesh {[}Journal Article{]}.
+\emph{Transportation Research Part D-Transport and Environment},
+\emph{87}. \url{https://doi.org/10.1016/j.trd.2020.102525}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6382}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{He, L., Paez, A., Jiao, J., An, P., Lu, C., Mao, W., \&
+Long, D. (2020). Ambient population and larceny-theft: A spatial
+analysis using mobile phone data {[}Journal Article{]}. \emph{Isprs
+International Journal of Geo-Information}, \emph{9}(6).
+\url{https://doi.org/10.3390/ijgi9060342}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6384}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{Cupido, K., Jevtic, P., \& Paez, A. (2020). Spatial
+patterns of mortality in the united states: A spatial filtering approach
+{[}Journal Article{]}. \emph{Insurance Mathematics \& Economics},
+\emph{95}, 28--38.
+\url{https://doi.org/10.1016/j.insmatheco.2020.08.003}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6282}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{Whalen, K., \& Paez, A. (2019). Development of a new
+framework to guide, assess, and evaluate student reflections in a
+university sustainability course {[}Journal Article{]}. \emph{Teaching
+\& Learning Inquiry-the Issotl Journal}, \emph{7}(1), 55--77.
+\url{https://doi.org/10.20343/teachlearninqu.7.1.5}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6334}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{Paez, A., Lopez, F., Ruiz, M., \& Camacho, M. (2019).
+Inducing non-orthogonal and non-linear decision boundaries in decision
+trees via interactive basis functions {[}Journal Article{]}.
+\emph{Expert Systems with Applications}, \emph{122}, 183--206.
+\url{https://doi.org/10.1016/j.eswa.2018.12.041}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6369}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{Paez, A., Higgins, C. D., \& Vivona, S. F. (2019).
+Demand and level of service inflation in floating catchment area (FCA)
+methods {[}Journal Article{]}. \emph{Plos One}, \emph{14}(6).
+\url{https://doi.org/10.1371/journal.pone.0218773}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6327}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{Paez, A. (2019). Using spatial filters and exploratory
+data analysis to enhance regression models of spatial data {[}Journal
+Article{]}. \emph{Geographical Analysis}, \emph{51}(3), 314--338.
+\url{https://doi.org/10.1111/gean.12180}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6388}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{Martin, B., \& Paez, A. (2019). Individual and
+geographic variations in the propensity to travel by active modes in
+vitoria-gasteiz, spain {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{76}, 103--113.
+\url{https://doi.org/10.1016/j.jtrangeo.2019.03.005}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6385}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{Arranz-Lopez, A., Soria-Lara, J. A., Witlox, F., \&
+Paez, A. (2019). Measuring relative non-motorized accessibility to
+retail activities {[}Journal Article{]}. \emph{International Journal of
+Sustainable Transportation}, \emph{13}(9), 639--651.
+\url{https://doi.org/10.1080/15568318.2018.1498563}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6377}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{Lopez, F. A., Paez, A., Carrasco, J. A., \& Ruminot, N.
+A. (2017). Vulnerability of nodes under controlled network topology and
+flow autocorrelation conditions {[}Journal Article{]}. \emph{Journal of
+Transport Geography}, \emph{59}, 77--87.
+\url{https://doi.org/10.1016/j.jtrangeo.2017.02.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6325}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{Lopez, F. A., \& Paez, A. (2017). Spatial clustering of
+high-tech manufacturing and knowledge-intensive service firms in the
+greater toronto area {[}Journal Article{]}. \emph{Canadian
+Geographer-Geographe Canadien}, \emph{61}(2), 240--252.
+\url{https://doi.org/10.1111/cag.12326}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6380}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{He, L., Paez, A., \& Liu, D. (2017). Built environment
+and violent crime: An environmental audit approach using google street
+view {[}Journal Article{]}. \emph{Computers Environment and Urban
+Systems}, \emph{66}, 83--95.
+\url{https://doi.org/10.1016/j.compenvurbsys.2017.08.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6360}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{He, L., Paez, A., \& Liu, D. (2017). Persistence of
+crime hot spots: An ordered probit analysis {[}Journal Article{]}.
+\emph{Geographical Analysis}, \emph{49}(1), 3--22.
+\url{https://doi.org/10.1111/gean.12107}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6391}{}}%
+\CSLLeftMargin{39. }%
+\CSLRightInline{Rojas, C., Paez, A., Barbosa, O., \& Carrasco, J.
+(2016). Accessibility to urban green spaces in chilean cities using
+adaptive thresholds {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{57}, 227--240.
+\url{https://doi.org/10.1016/j.jtrangeo.2016.10.012}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6367}{}}%
+\CSLLeftMargin{40. }%
+\CSLRightInline{Moniruzzaman, M., \& Paez, A. (2016). An investigation
+of the attributes of walkable environments from the perspective of
+seniors in montreal {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{51}, 85--96.
+\url{https://doi.org/10.1016/j.jtrangeo.2015.12.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6387}{}}%
+\CSLLeftMargin{41. }%
+\CSLRightInline{Lopez, F. A., Matilla-Garcia, M., Mur, J., Paez, A., \&
+Ruiz, M. (2016). A note on the SG(m) test {[}Journal Article{]}.
+\emph{Journal of Geographical Systems}, \emph{18}(1), 87--96.
+\url{https://doi.org/10.1007/s10109-015-0221-7}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6277}{}}%
+\CSLLeftMargin{42. }%
+\CSLRightInline{Roofigari-Esfahan, N., Paez, A., \& Razavi, S. N.
+(2015). Location-aware scheduling and control of linear projects:
+Introducing space-time float prisms {[}Journal Article{]}. \emph{Journal
+of Construction Engineering and Management}, \emph{141}(1).
+\url{https://doi.org/10.1061/(asce)co.1943-7862.0000916}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6316}{}}%
+\CSLLeftMargin{43. }%
+\CSLRightInline{Neto, R. S., Duarte, G., \& Paez, A. (2015). Gender and
+commuting time in sao paulo metropolitan region {[}Journal Article{]}.
+\emph{Urban Studies}, \emph{52}(2), 298--313.
+\url{https://doi.org/10.1177/0042098014528392}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6326}{}}%
+\CSLLeftMargin{44. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., Scott, D., \& Morency, C.
+(2015). Trip generation of seniors and the geography of walking in
+montreal {[}Journal Article{]}. \emph{Environment and Planning a-Economy
+and Space}, \emph{47}(4), 957--976.
+\url{https://doi.org/10.1068/a130070p}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6394}{}}%
+\CSLLeftMargin{45. }%
+\CSLRightInline{Moniruzzaman, M., Chudyk, A., Paez, A., Winters, M.,
+Sims-Gould, J., \& McKay, H. (2015). Travel behavior of low income older
+adults and implementation of an accessibility calculator {[}Journal
+Article{]}. \emph{Journal of Transport \& Health}, \emph{2}(2),
+257--268. \url{https://doi.org/10.1016/j.jth.2015.02.006}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6331}{}}%
+\CSLLeftMargin{46. }%
+\CSLRightInline{He, L., Paez, A., Liu, D., \& Jiang, S. (2015). Temporal
+stability of model parameters in crime rate analysis: An empirical
+examination {[}Journal Article{]}. \emph{Applied Geography}, \emph{58},
+141--152. \url{https://doi.org/10.1016/j.apgeog.2015.02.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6352}{}}%
+\CSLLeftMargin{47. }%
+\CSLRightInline{Goetzke, F., Gerike, R., Paez, A., \& Dugundji, E.
+(2015). Social interactions in transportation: Analyzing groups and
+spatial networks {[}Journal Article{]}. \emph{Transportation},
+\emph{42}(5), 723--731. \url{https://doi.org/10.1007/s11116-015-9643-9}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6383}{}}%
+\CSLLeftMargin{48. }%
+\CSLRightInline{Farber, S., Ruiz Marin, M., \& Paez, A. (2015). Testing
+for spatial independence using similarity relations {[}Journal
+Article{]}. \emph{Geographical Analysis}, \emph{47}(2), 97--120.
+\url{https://doi.org/10.1111/gean.12044}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6393}{}}%
+\CSLLeftMargin{49. }%
+\CSLRightInline{Wheeler, D. C., Paez, A., Spinney, J., \& Waller, L. A.
+(2014). A bayesian approach to hedonic price analysis {[}Journal
+Article{]}. \emph{Papers in Regional Science}, \emph{93}(3), 663--683.
+\url{https://doi.org/10.1111/pirs.12003}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6293}{}}%
+\CSLLeftMargin{50. }%
+\CSLRightInline{Reyes, M., Paez, A., \& Morency, C. (2014). Walking
+accessibility to urban parks by children: A case study of montreal
+{[}Journal Article{]}. \emph{Landscape and Urban Planning}, \emph{125},
+38--47. \url{https://doi.org/10.1016/j.landurbplan.2014.02.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6373}{}}%
+\CSLLeftMargin{51. }%
+\CSLRightInline{Pouliou, T., Elliott, S. J., Paez, A., \& Newbold, K. B.
+(2014). Building obesity in canada: Understanding the individual-and
+neighbourhood-level determinants using a multi-level approach {[}Journal
+Article{]}. \emph{Geospatial Health}, \emph{9}(1), 45--55.
+\url{https://doi.org/10.4081/gh.2014.5}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6311}{}}%
+\CSLLeftMargin{52. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., \& Morency, C. (2014).
+Compliance potential mapping: A tool to assess potential contributions
+of walking towards physical activity guidelines {[}Journal Article{]}.
+\emph{Bmc Public Health}, \emph{14}.
+\url{https://doi.org/10.1186/1471-2458-14-511}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6392}{}}%
+\CSLLeftMargin{53. }%
+\CSLRightInline{Farber, S., Bartholomew, K., Li, X., Paez, A., \& Habib,
+K. M. N. (2014). Assessing social equity in distance based transit fares
+using a model of travel behavior {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{67},
+291--303. \url{https://doi.org/10.1016/j.tra.2014.07.013}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6310}{}}%
+\CSLLeftMargin{54. }%
+\CSLRightInline{Whalen, K. E., Paez, A., \& Carrasco, J. A. (2013). Mode
+choice of university students commuting to school and the role of active
+travel {[}Journal Article{]}. \emph{Journal of Transport Geography},
+\emph{31}, 132--142.
+\url{https://doi.org/10.1016/j.jtrangeo.2013.06.008}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-da2013isolamento}{}}%
+\CSLLeftMargin{55. }%
+\CSLRightInline{Silva, R. R. da, \& Páez, A. (2013). O isolamento
+geoeconômico dos municípios da região norte do brasil: Uma proposta para
+quantificá-lo. \emph{Revista Brasileira de Estudos Regionais e Urbanos},
+\emph{7}(1), 1--18.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6272}{}}%
+\CSLLeftMargin{56. }%
+\CSLRightInline{Scott, D. M., Dugundji, E. R., \& Paez, A. (2013). The
+social dimension of activity, travel and location choice behavior
+{[}Journal Article{]}. \emph{Journal of Transport Geography}, \emph{31},
+212--215. \url{https://doi.org/10.1016/j.jtrangeo.2013.06.009}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6323}{}}%
+\CSLLeftMargin{57. }%
+\CSLRightInline{Paez, A., Moniruzzaman, M., Bourbonnais, P.-L., \&
+Morency, C. (2013). Developing a web-based accessibility calculator
+prototype for the greater montreal area {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{58},
+103--115. \url{https://doi.org/10.1016/j.tra.2013.10.020}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6343}{}}%
+\CSLLeftMargin{58. }%
+\CSLRightInline{Paez, A., Lopez, F. A., Ruiz, M., \& Morency, C. (2013).
+Development of an indicator to assess the spatial fit of discrete choice
+models {[}Journal Article{]}. \emph{Transportation Research Part
+B-Methodological}, \emph{56}, 217--233.
+\url{https://doi.org/10.1016/j.trb.2013.08.009}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6365}{}}%
+\CSLLeftMargin{59. }%
+\CSLRightInline{Paez, A., Farber, S., Mercado, R., Roorda, M., \&
+Morency, C. (2013). Jobs and the single parent: An analysis of
+accessibility to employment in toronto {[}Journal Article{]}.
+\emph{Urban Geography}, \emph{34}(6), 815--842.
+\url{https://doi.org/10.1080/02723638.2013.778600}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6299}{}}%
+\CSLLeftMargin{60. }%
+\CSLRightInline{Paez, A., Esita, J., Newbold, K. B., Heddle, N. M., \&
+Blake, J. T. (2013). Exploring resource allocation and alternate clinic
+accessibility landscapes for improved blood donor turnout {[}Journal
+Article{]}. \emph{Applied Geography}, \emph{45}, 89--97.
+\url{https://doi.org/10.1016/j.apgeog.2013.08.008}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6289}{}}%
+\CSLLeftMargin{61. }%
+\CSLRightInline{Paez, A. (2013). Mapping travelers' attitudes: Does
+space matter? {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{26}, 117--125.
+\url{https://doi.org/10.1016/j.jtrangeo.2012.09.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6345}{}}%
+\CSLLeftMargin{62. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., Habib, K. M. N., \& Morency,
+C. (2013). Mode use and trip length of seniors in montreal {[}Journal
+Article{]}. \emph{Journal of Transport Geography}, \emph{30}, 89--99.
+\url{https://doi.org/10.1016/j.jtrangeo.2013.03.007}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6363}{}}%
+\CSLLeftMargin{63. }%
+\CSLRightInline{Le Gallo, J., \& Paez, A. (2013). Using synthetic
+variables in instrumental variable estimation of spatial series models
+{[}Journal Article{]}. \emph{Environment and Planning a-Economy and
+Space}, \emph{45}(9), 2227--2242. \url{https://doi.org/10.1068/a45443}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6312}{}}%
+\CSLLeftMargin{64. }%
+\CSLRightInline{Lavery, T. A., Paez, A., \& Kanaroglou, P. S. (2013).
+Driving out of choices: An investigation of transport modality in a
+university sample {[}Journal Article{]}. \emph{Transportation Research
+Part a-Policy and Practice}, \emph{57}, 37--46.
+\url{https://doi.org/10.1016/j.tra.2013.09.010}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6319}{}}%
+\CSLLeftMargin{65. }%
+\CSLRightInline{Whalen, K. E., Paez, A., Bhat, C., Moniruzzaman, M., \&
+Paleti, R. (2012). T-communities and sense of community in a university
+town: Evidence from a student sample using a spatial ordered-response
+model {[}Journal Article{]}. \emph{Urban Studies}, \emph{49}(6),
+1357--1376. \url{https://doi.org/10.1177/0042098011411942}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6338}{}}%
+\CSLLeftMargin{66. }%
+\CSLRightInline{Scott, D. M., Dam, I., Paez, A., \& Wilton, R. D.
+(2012). Investigating the effects of social influence on the choice to
+telework {[}Journal Article{]}. \emph{Environment and Planning A},
+\emph{44}(5), 1016--1031. \url{https://doi.org/10.1068/a43223}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6330}{}}%
+\CSLLeftMargin{67. }%
+\CSLRightInline{Ruiz, M., Lopez, F., \& Paez, A. (2012). Comparison of
+thematic maps using symbolic entropy {[}Journal Article{]}.
+\emph{International Journal of Geographical Information Science},
+\emph{26}(3), 413--439.
+\url{https://doi.org/10.1080/13658816.2011.586327}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6347}{}}%
+\CSLLeftMargin{68. }%
+\CSLRightInline{Paez, A., Trepanier, M., \& Morency, C. (2012). Modeling
+isoexposure to transit users for market potential analysis {[}Journal
+Article{]}. \emph{Transportation Research Part a-Policy and Practice},
+\emph{46}(10), 1517--1527.
+\url{https://doi.org/10.1016/j.tra.2012.07.004}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6337}{}}%
+\CSLLeftMargin{69. }%
+\CSLRightInline{Paez, A., Scott, D. M., \& Morency, C. (2012). Measuring
+accessibility: Positive and normative implementations of various
+accessibility indicators {[}Journal Article{]}. \emph{Journal of
+Transport Geography}, \emph{25}, 141--153.
+\url{https://doi.org/10.1016/j.jtrangeo.2012.03.016}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6381}{}}%
+\CSLLeftMargin{70. }%
+\CSLRightInline{Paez, A., Ruiz, M., Lopez, F., \& Logan, J. (2012).
+Measuring ethnic clustering and exposure with the q statistic: An
+exploratory analysis of irish, germans, and yankees in 1880 newark
+{[}Journal Article{]}. \emph{Annals of the Association of American
+Geographers}, \emph{102}(1), 84--102.
+\url{https://doi.org/10.1080/00045608.2011.620502}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6322}{}}%
+\CSLLeftMargin{71. }%
+\CSLRightInline{Paez, A., \& Farber, S. (2012). Participation and
+desire: Leisure activities among canadian adults with disabilities
+{[}Journal Article{]}. \emph{Transportation}, \emph{39}(6), 1055--1078.
+\url{https://doi.org/10.1007/s11116-012-9385-x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6290}{}}%
+\CSLLeftMargin{72. }%
+\CSLRightInline{Moniruzzaman, M., \& Paez, A. (2012). Accessibility to
+transit, by transit, and mode share: Application of a logistic model
+with spatial filters {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{24}, 198--205.
+\url{https://doi.org/10.1016/j.jtrangeo.2012.02.006}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6296}{}}%
+\CSLLeftMargin{73. }%
+\CSLRightInline{Moniruzzaman, M., \& Paez, A. (2012). A model-based
+approach to select case sites for walkability audits {[}Journal
+Article{]}. \emph{Health \& Place}, \emph{18}(6), 1323--1334.
+\url{https://doi.org/10.1016/j.healthplace.2012.09.013}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6386}{}}%
+\CSLLeftMargin{74. }%
+\CSLRightInline{Mercado, R. G., Paez, A., Farber, S., Roorda, M. J., \&
+Morency, C. (2012). Explaining transport mode use of low-income persons
+for journey to work in urban areas: A case study of ontario and quebec
+{[}Journal Article{]}. \emph{Transportmetrica}, \emph{8}(3), 157--179.
+\url{https://doi.org/10.1080/18128602.2010.539413}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6376}{}}%
+\CSLLeftMargin{75. }%
+\CSLRightInline{Mejia-Dorantes, L., Paez, A., \& Manuel Vassallo, J.
+(2012). Transportation infrastructure impacts on firm location: The
+effect of a new metro line in the suburbs of madrid {[}Journal
+Article{]}. \emph{Journal of Transport Geography}, \emph{22}, 236--250.
+\url{https://doi.org/10.1016/j.jtrangeo.2011.09.006}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-lopez2012distribution}{}}%
+\CSLLeftMargin{76. }%
+\CSLRightInline{López, F. A., \& Páez, A. (2012). Distribution-free
+inference for q (m) based on permutational bootstrapping: An application
+to the spatial co-location pattern of firms in madrid. \emph{Estadística
+Española}, \emph{54}(177), 135--156.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6389}{}}%
+\CSLLeftMargin{77. }%
+\CSLRightInline{Farber, S., Paez, A., \& Morency, C. (2012). Activity
+spaces and the measurement of clustering and exposure: A case study of
+linguistic groups in montreal {[}Journal Article{]}. \emph{Environment
+and Planning a-Economy and Space}, \emph{44}(2), 315--332.
+\url{https://doi.org/10.1068/a44203}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6271}{}}%
+\CSLLeftMargin{78. }%
+\CSLRightInline{Dugundji, E., Scott, D. M., Carrasco, J. A., \& Paez, A.
+(2012). Urban mobility and social-spatial contact-introduction
+{[}Journal Article{]}. \emph{Environment and Planning a-Economy and
+Space}, \emph{44}(5), 1011--1015. \url{https://doi.org/10.1068/a45183}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6281}{}}%
+\CSLLeftMargin{79. }%
+\CSLRightInline{Drackley, A., Newbold, K. B., Paez, A., \& Heddle, N.
+(2012). Forecasting ontario's blood supply and demand {[}Journal
+Article{]}. \emph{Transfusion}, \emph{52}(2), 366--374.
+\url{https://doi.org/10.1111/j.1537-2995.2011.03280.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-cimaroli2012individual}{}}%
+\CSLLeftMargin{80. }%
+\CSLRightInline{Cimaroli, K., Paez, A., Newbold, K. B., \& Heddle, N. M.
+(2012). Individual and contextual determinants of blood donation
+frequency with a focus on clinic accessibility: A case study of toronto,
+canada {[}Journal Article{]}. \emph{Health \& Place}, \emph{18}(2),
+424--433. \url{https://doi.org/10.1016/j.healthplace.2011.12.005}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6357}{}}%
+\CSLLeftMargin{81. }%
+\CSLRightInline{Barufi, A. M., Haddad, E., \& Paez, A. (2012). Infant
+mortality in brazil, 1980-2000: A spatial panel data analysis {[}Journal
+Article{]}. \emph{Bmc Public Health}, \emph{12}.
+\url{https://doi.org/10.1186/1471-2458-12-181}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6280}{}}%
+\CSLLeftMargin{82. }%
+\CSLRightInline{Wilton, R. D., Paez, A., \& Scott, D. M. (2011). Why do
+you care what other people think? A qualitative investigation of social
+influence and telecommuting {[}Journal Article{]}. \emph{Transportation
+Research Part a-Policy and Practice}, \emph{45}(4), 269--282.
+\url{https://doi.org/10.1016/j.tra.2011.01.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6359}{}}%
+\CSLLeftMargin{83. }%
+\CSLRightInline{Schettini, D., Azzoni, C. R., \& Paez, A. (2011).
+Neighborhood and efficiency in manufacturing in brazilian regions: A
+spatial markov chain analysis {[}Journal Article{]}. \emph{International
+Regional Science Review}, \emph{34}(4), 397--418.
+\url{https://doi.org/10.1177/0160017611403141}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6348}{}}%
+\CSLLeftMargin{84. }%
+\CSLRightInline{Paez, A., Trepanier, M., \& Morency, C. (2011).
+Geodemographic analysis and the identification of potential business
+partnerships enabled by transit smart cards {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{45}(7),
+640--652. \url{https://doi.org/10.1016/j.tra.2011.04.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6379}{}}%
+\CSLLeftMargin{85. }%
+\CSLRightInline{Paez, A., Farber, S., \& Wheeler, D. (2011). A
+simulation-based study of geographically weighted regression as a method
+for investigating spatially varying relationships {[}Journal Article{]}.
+\emph{Environment and Planning a-Economy and Space}, \emph{43}(12),
+2992--3010. \url{https://doi.org/10.1068/a44111}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6397}{}}%
+\CSLLeftMargin{86. }%
+\CSLRightInline{Morency, C., Paez, A., Roorda, M. J., Mercado, R., \&
+Farber, S. (2011). Distance traveled in three canadian cities: Spatial
+analysis from the perspective of vulnerable population segments
+{[}Journal Article{]}. \emph{Journal of Transport Geography},
+\emph{19}(1), 39--50.
+\url{https://doi.org/10.1016/j.jtrangeo.2009.09.013}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6378}{}}%
+\CSLLeftMargin{87. }%
+\CSLRightInline{Mejia Dorantes, L., Paez, A., \& Manuel Vassallo, J.
+(2011). Analysis of house prices to assess economic impacts of new
+public transport infrastructure madrid metro line 12 {[}Journal
+Article{]}. \emph{Transportation Research Record}, \emph{2245},
+131--139. \url{https://doi.org/10.3141/2245-16}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6354}{}}%
+\CSLLeftMargin{88. }%
+\CSLRightInline{Farber, S., Paez, A., Mercado, R. G., Roorda, M., \&
+Morency, C. (2011). A time-use investigation of shopping participation
+in three canadian cities: Is there evidence of social exclusion?
+{[}Journal Article{]}. \emph{Transportation}, \emph{38}(1), 17--44.
+\url{https://doi.org/10.1007/s11116-010-9282-0}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6368}{}}%
+\CSLLeftMargin{89. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2011). Running to stay in
+place: The time-use implications of automobile oriented land-use and
+travel {[}Journal Article{]}. \emph{Journal of Transport Geography},
+\emph{19}(4), 782--793.
+\url{https://doi.org/10.1016/j.jtrangeo.2010.09.008}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6336}{}}%
+\CSLLeftMargin{90. }%
+\CSLRightInline{Dugundji, E. R., Paez, A., Arentze, T. A., Walker, J.
+L., Carrasco, J. A., Marchal, F., \& Nakanishi, H. (2011).
+Transportation and social interactions {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{45}(4),
+239--247. \url{https://doi.org/10.1016/j.tra.2011.01.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6390}{}}%
+\CSLLeftMargin{91. }%
+\CSLRightInline{Schwanen, T., \& Paez, A. (2010). The mobility of older
+people - an introduction {[}Journal Article{]}. \emph{Journal of
+Transport Geography}, \emph{18}(5), 591--595.
+\url{https://doi.org/10.1016/j.jtrangeo.2010.06.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6333}{}}%
+\CSLLeftMargin{92. }%
+\CSLRightInline{Ruiz, M., Lopez, F., \& Paez, A. (2010). Testing for
+spatial association of qualitative data using symbolic dynamics
+{[}Journal Article{]}. \emph{Journal of Geographical Systems},
+\emph{12}(3), 281--309. \url{https://doi.org/10.1007/s10109-009-0100-1}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6398}{}}%
+\CSLLeftMargin{93. }%
+\CSLRightInline{Roorda, M. J., Paez, A., Morency, C., Mercado, R., \&
+Farber, S. (2010). Trip generation of vulnerable populations in three
+canadian cities: A spatial ordered probit approach {[}Journal
+Article{]}. \emph{Transportation}, \emph{37}(3), 525--548.
+\url{https://doi.org/10.1007/s11116-010-9263-3}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6329}{}}%
+\CSLLeftMargin{94. }%
+\CSLRightInline{Ribeiro, A., Antunes, A. P., \& Paez, A. (2010). Road
+accessibility and cohesion in lagging regions: Empirical evidence from
+portugal based on spatial econometric models {[}Journal Article{]}.
+\emph{Journal of Transport Geography}, \emph{18}(1), 125--132.
+\url{https://doi.org/10.1016/j.jtrangeo.2009.03.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6288}{}}%
+\CSLLeftMargin{95. }%
+\CSLRightInline{Paez, A., \& Whalen, K. (2010). Enjoyment of commute: A
+comparison of different transportation modes {[}Journal Article{]}.
+\emph{Transportation Research Part a-Policy and Practice}, \emph{44}(7),
+537--549. \url{https://doi.org/10.1016/j.tra.2010.04.003}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6349}{}}%
+\CSLLeftMargin{96. }%
+\CSLRightInline{Paez, A., Mercado, R. G., Farber, S., Morency, C., \&
+Roorda, M. (2010). Accessibility to health care facilities in montreal
+island: An application of relative accessibility indicators from the
+perspective of senior and non-senior residents {[}Journal Article{]}.
+\emph{International Journal of Health Geographics}, \emph{9}.
+\url{https://doi.org/10.1186/1476-072x-9-52}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6342}{}}%
+\CSLLeftMargin{97. }%
+\CSLRightInline{Paez, A., Mercado, R. G., Farber, S., Morency, C., \&
+Roorda, M. (2010). Relative accessibility deprivation indicators for
+urban settings: Definitions and application to food deserts in montreal
+{[}Journal Article{]}. \emph{Urban Studies}, \emph{47}(7), 1415--1438.
+\url{https://doi.org/10.1177/0042098009353626}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6371}{}}%
+\CSLLeftMargin{98. }%
+\CSLRightInline{Mercado, R., Paez, A., \& Newbold, K. B. (2010).
+Transport policy and the provision of mobility options in an aging
+society: A case study of ontario, canada {[}Journal Article{]}.
+\emph{Journal of Transport Geography}, \emph{18}(5), 649--661.
+\url{https://doi.org/10.1016/j.jtrangeo.2010.03.017}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6313}{}}%
+\CSLLeftMargin{99. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2010). Employment status and
+commute distance of canadians with disabilities {[}Journal Article{]}.
+\emph{Transportation}, \emph{37}(6), 931--952.
+\url{https://doi.org/10.1007/s11116-010-9268-y}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6324}{}}%
+\CSLLeftMargin{100. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2010). Spatial analysis in
+canada: introduction {[}Journal Article{]}. \emph{Canadian
+Geographer-Geographe Canadien}, \emph{54}(1), 1--3.
+\url{https://doi.org/10.1111/j.1541-0064.2009.00298.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6317}{}}%
+\CSLLeftMargin{101. }%
+\CSLRightInline{Scott, D. M., Newbold, K. B., Spinney, J. E. L.,
+Mercado, R., Paez, A., \& Kanaroglou, P. S. (2009). New insights into
+senior travel behavior: The canadian experience {[}Journal Article{]}.
+\emph{Growth and Change}, \emph{40}(1), 140--168.
+\url{https://doi.org/10.1111/j.1468-2257.2008.00464.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6285}{}}%
+\CSLLeftMargin{102. }%
+\CSLRightInline{Saberton, P. J., Paez, A., Newbold, K. B., \& Heddle, N.
+M. (2009). Geographical variations in the correlates of blood donor
+turnout rates: An investigation of canadian metropolitan areas
+{[}Journal Article{]}. \emph{International Journal of Health
+Geographics}, \emph{8}. \url{https://doi.org/10.1186/1476-072x-8-56}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6294}{}}%
+\CSLLeftMargin{103. }%
+\CSLRightInline{Paez, A. (2009). Recent research in spatial real estate
+hedonic analysis {[}Journal Article{]}. \emph{Journal of Geographical
+Systems}, \emph{11}(4), 311--316.
+\url{https://doi.org/10.1007/s10109-009-0103-y}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6306}{}}%
+\CSLLeftMargin{104. }%
+\CSLRightInline{Paez, A. (2009). Spatial analysis of economic systems
+and land use change {[}Journal Article{]}. \emph{Papers in Regional
+Science}, \emph{88}(2), 251--258.
+\url{https://doi.org/10.1111/j.1435-5957.2009.00246.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6286}{}}%
+\CSLLeftMargin{105. }%
+\CSLRightInline{Montero-Lorenzo, J.-M., Larraz-Iribas, B., \& Paez, A.
+(2009). Estimating commercial property prices: An application of
+cokriging with housing prices as ancillary information {[}Journal
+Article{]}. \emph{Journal of Geographical Systems}, \emph{11}(4),
+407--425. \url{https://doi.org/10.1007/s10109-009-0095-7}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6308}{}}%
+\CSLLeftMargin{106. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2009). Determinants of
+distance traveled with a focus on the elderly: A multilevel analysis in
+the hamilton CMA, canada {[}Journal Article{]}. \emph{Journal of
+Transport Geography}, \emph{17}(1), 65--76.
+\url{https://doi.org/10.1016/j.jtrangeo.2008.04.012}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6287}{}}%
+\CSLLeftMargin{107. }%
+\CSLRightInline{Maoh, H., Kanaroglou, P., Scott, D., Paez, A., \&
+Newbold, B. (2009). IMPACT: An integrated GIS-based model for simulating
+the consequences of demographic changes and population ageing on
+transportation {[}Journal Article{]}. \emph{Computers Environment and
+Urban Systems}, \emph{33}(3), 200--210.
+\url{https://doi.org/10.1016/j.compenvurbsys.2008.10.004}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6321}{}}%
+\CSLLeftMargin{108. }%
+\CSLRightInline{Kanaroglou, P. S., Maoh, H. F., Newbold, B., Scott, D.
+M., \& Paez, A. (2009). A demographic model for small area population
+projections: An application to the census metropolitan area of hamilton
+in ontario, canada {[}Journal Article{]}. \emph{Environment and Planning
+A}, \emph{41}(4), 964--979. \url{https://doi.org/10.1068/a40172}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6302}{}}%
+\CSLLeftMargin{109. }%
+\CSLRightInline{Farber, S., Paez, A., \& Volz, E. (2009). Topology and
+dependency tests in spatial and network autoregressive models {[}Journal
+Article{]}. \emph{Geographical Analysis}, \emph{41}(2), 158--180.
+\url{https://doi.org/10.1111/j.1538-4632.2009.00751.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6305}{}}%
+\CSLLeftMargin{110. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2009). My car, my friends, and
+me: A preliminary analysis of automobility and social activity
+participation {[}Journal Article{]}. \emph{Journal of Transport
+Geography}, \emph{17}(3), 216--225.
+\url{https://doi.org/10.1016/j.jtrangeo.2008.07.008}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6350}{}}%
+\CSLLeftMargin{111. }%
+\CSLRightInline{Paez, A., Scott, D. M., \& Volz, E. (2008). A
+discrete-choice approach to modeling social influence on individual
+decision making {[}Journal Article{]}. \emph{Environment and Planning
+B-Planning \& Design}, \emph{35}(6), 1055--1069.
+\url{https://doi.org/10.1068/b3320t}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6370}{}}%
+\CSLLeftMargin{112. }%
+\CSLRightInline{Paez, A., Scott, D. M., \& Volz, E. (2008). Weight
+matrices for social influence analysis: An investigation of measurement
+errors and their effect on model identification and estimation quality
+{[}Journal Article{]}. \emph{Social Networks}, \emph{30}(4), 309--317.
+\url{https://doi.org/10.1016/j.socnet.2008.05.001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6314}{}}%
+\CSLLeftMargin{113. }%
+\CSLRightInline{Paez, A., Long, F., \& Farber, S. (2008). Moving window
+approaches for hedonic price estimation: An empirical comparison of
+modelling techniques {[}Journal Article{]}. \emph{Urban Studies},
+\emph{45}(8), 1565--1581.
+\url{https://doi.org/10.1177/0042098008091491}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6309}{}}%
+\CSLLeftMargin{114. }%
+\CSLRightInline{Kanaroglou, P., Mercado, R., Mach, H., Paez, A., Scott,
+D. M., \& Newbold, B. (2008). Simulation framework for analysis of
+elderly mobility policies {[}Journal Article{]}. \emph{Transportation
+Research Record}, \emph{2078}, 62--71.
+\url{https://doi.org/10.3141/2078-09}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6273}{}}%
+\CSLLeftMargin{115. }%
+\CSLRightInline{Dugundji, E., Paez, A., \& Arentze, T. (2008). Social
+networks, choices, mobility, and travel introduction {[}Journal
+Article{]}. \emph{Environment and Planning B-Planning \& Design},
+\emph{35}(6), 956--960. \url{https://doi.org/10.1068/b3506ged}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6292}{}}%
+\CSLLeftMargin{116. }%
+\CSLRightInline{Paez, A., Scott, D., Potoglou, D., Kanaroglou, P., \&
+Newbold, K. B. (2007). Elderly mobility: Demographic and spatial
+analysis of trip making in the hamilton CMA, canada {[}Journal
+Article{]}. \emph{Urban Studies}, \emph{44}(1), 123--146.
+\url{https://doi.org/10.1080/00420980601023885}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6307}{}}%
+\CSLLeftMargin{117. }%
+\CSLRightInline{Paez, A., \& Scott, D. M. (2007). Social influence on
+travel behavior: A simulation example of the decision to telecommute
+{[}Journal Article{]}. \emph{Environment and Planning a-Economy and
+Space}, \emph{39}(3), 647--665. \url{https://doi.org/10.1068/a37424}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6301}{}}%
+\CSLLeftMargin{118. }%
+\CSLRightInline{Paez, A. (2007). Spatial perspectives on urban systems:
+Developments and directions {[}Journal Article{]}. \emph{Journal of
+Geographical Systems}, \emph{9}(1), 1--6.
+\url{https://doi.org/10.1007/s10109-007-0041-5}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mercado2007transport}{}}%
+\CSLLeftMargin{119. }%
+\CSLRightInline{Mercado, R., Páez, A., Scott, D. M., Newbold, K. B., \&
+Kanaroglou, P. (2007). Transport policy in aging societies: An
+international comparison and implications for canada. \emph{The Open
+Transportation Journal}, \emph{1}(1).
+\url{https://doi.org/10.2174/1874447800701010001}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6303}{}}%
+\CSLLeftMargin{120. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2007). A systematic
+investigation of cross-validation in GWR model estimation: Empirical
+analysis and monte carlo simulations {[}Journal Article{]}.
+\emph{Journal of Geographical Systems}, \emph{9}(4), 371--396.
+\url{https://doi.org/10.1007/s10109-007-0051-3}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6375}{}}%
+\CSLLeftMargin{121. }%
+\CSLRightInline{Vichiensan, V., Paez, A., Kawai, K., \& Miyamoto, K.
+(2006). Nonstationary spatial interpolation methad for urban model
+development {[}Conference Proceedings{]}. \emph{85th Annual Meeting of
+the Transportation-Research-Board}, 103--111.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6304}{}}%
+\CSLLeftMargin{122. }%
+\CSLRightInline{Paez, A. (2006). Exploring contextual variations in land
+use and transport analysis using a probit model with geographical
+weights {[}Journal Article{]}. \emph{Journal of Transport Geography},
+\emph{14}(3), 167--176.
+\url{https://doi.org/10.1016/j.jtrangeo.2005.11.002}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6284}{}}%
+\CSLLeftMargin{123. }%
+\CSLRightInline{Paez, A. (2005). Local analysis of spatial
+relationships: A comparison of GWR and the expansion method {[}Book
+Section{]}. In O. Gervasi, M. L. Gavrilova, V. Kumar, A. Lagana, H. P.
+Lee, Y. Mun, D. Taniar, \& C. J. K. Tan (Eds.), \emph{Computational
+science and its applications - iccsa 2005, pt 3} (Vol. 3482, pp.
+162--172). \url{://WOS:000229696900018}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-newbold2005travel}{}}%
+\CSLLeftMargin{124. }%
+\CSLRightInline{Newbold, K. B., Scott, D. M., Spinney, J. E.,
+Kanaroglou, P., \& Páez, A. (2005). Travel behavior within canada's
+older population: A cohort analysis. \emph{Journal of Transport
+Geography}, \emph{13}(4), 340--351.
+\url{https://doi.org/10.1016/j.jtrangeo.2004.07.007}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-mercado2005context}{}}%
+\CSLLeftMargin{125. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2005). Context and prospects
+for integrated urban models for metropolitan policy analysis and
+planning in developing countries: The case of metro manila.
+\emph{Journal of the Eastern Asia Society for Transportation Studies},
+\emph{6}, 3744--3759.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2004spatial}{}}%
+\CSLLeftMargin{126. }%
+\CSLRightInline{Páez, A., \& Scott, D. M. (2004). Spatial statistics for
+urban analysis: A review of techniques with examples. \emph{GeoJournal},
+\emph{61}(1), 53--67. \url{https://doi.org/10.1007/s10708-005-0877-5}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6318}{}}%
+\CSLLeftMargin{127. }%
+\CSLRightInline{Paez, A. (2004). Anisotropic variance functions in
+geographically weighted regression models {[}Journal Article{]}.
+\emph{Geographical Analysis}, \emph{36}(4), 299--314.
+\url{https://doi.org/10.1111/j.1538-4632.2004.tb01138.x}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6298}{}}%
+\CSLLeftMargin{128. }%
+\CSLRightInline{Paez, A. (2004). Network accessibility and the spatial
+distribution of economic activity in eastern asia {[}Journal Article{]}.
+\emph{Urban Studies}, \emph{41}(11), 2211--2230.
+\url{https://doi.org/10.1080/0042098042000268429}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6275}{}}%
+\CSLLeftMargin{129. }%
+\CSLRightInline{Miyamoto, K., Vichiensan, V., Shimomura, N., \& Paez, A.
+(2004). Discrete choice model with structuralized spatial effects for
+location analysis. \emph{Transportation Research Record}, 183--190.
+\url{https://doi.org/10.3141/1898-22}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-antonio2003spatial}{}}%
+\CSLLeftMargin{130. }%
+\CSLRightInline{Páez, A., Black, J., \& Suthanaya, P. (2003). Spatial
+and temporal analysis of zonal journey-to-work preference functions in
+sydney, 1961-1996. \emph{Journal of the Eastern Asia Society for
+Transportation Studies}, \emph{5}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6356}{}}%
+\CSLLeftMargin{131. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (2002). A general
+framework for estimation and inference of geographically weighted
+regression models: 1. Location-specific kernel bandwidths and a test for
+locational heterogeneity {[}Journal Article{]}. \emph{Environment and
+Planning A}, \emph{34}(4), 733--754.
+\url{https://doi.org/10.1068/a34110}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6355}{}}%
+\CSLLeftMargin{132. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (2002). A general
+framework for estimation and inference of geographically weighted
+regression models: 2. Spatial association and model specification tests
+{[}Journal Article{]}. \emph{Environment and Planning a-Economy and
+Space}, \emph{34}(5), 883--904. \url{https://doi.org/10.1068/a34133}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6274}{}}%
+\CSLLeftMargin{133. }%
+\CSLRightInline{Black, J. A., Paez, A., \& Suthanaya, P. A. (2002).
+Sustainable urban transportation: Performance indicators and some
+analytical approaches {[}Journal Article{]}. \emph{Journal of Urban
+Planning and Development}, \emph{128}(4), 184--209.
+\url{https://doi.org/10.1061/(asce)0733-9488(2002)128:4(184)}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6300}{}}%
+\CSLLeftMargin{134. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (2001). Spatial
+association and heterogeneity issues in land price models {[}Journal
+Article{]}. \emph{Urban Studies}, \emph{38}(9), 1493--1508.
+\url{https://doi.org/10.1080/00420980120076768}}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2001transportation}{}}%
+\CSLLeftMargin{135. }%
+\CSLRightInline{Páez, A., \& Suzuki, J. (2001). Transportation impacts
+on land use change: An assessment considering neighborhood effects.
+\emph{Journal of the Eastern Asia Society for Transportation Studies},
+\emph{4}(6), 47--59.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2001network}{}}%
+\CSLLeftMargin{136. }%
+\CSLRightInline{Páez, A., Miyamoto, K., Yamada, E., \& Kitazume, K.
+(2001). Transportation network and accessibility analysis in eastern
+asia based on a geographical information system. \emph{Journal of the
+Eastern Asia Society for Transportation Studies}, \emph{4}(6),
+221--225.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6315}{}}%
+\CSLLeftMargin{137. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (2000). Spatial
+economic externalities and coordinated land use-transportation planning
+{[}Conference Proceedings{]}. \emph{9th International Conference of the
+Cooperation for the Continuing Development of Urban and Suburban
+Transportation}, 649--655.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez1999spatial}{}}%
+\CSLLeftMargin{138. }%
+\CSLRightInline{Páez, A., Uchida, T., \& Miyamoto, K. (1999). A spatial
+analysis of external economies and its association with transportation
+infrastructure: The case of sendai city. \emph{Journal of the Eastern
+Asia Society for Transportation Studies}, \emph{3}(4), 149--164.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez1998urbanization}{}}%
+\CSLLeftMargin{139. }%
+\CSLRightInline{Páez, A., Uchida, T., \& Miyamoto, K. (1998).
+Urbanization and the urban heat island effect from a spatial descriptive
+approach. \emph{Papers on City Planning}, \emph{33}, 67--72.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-miyamoto1997gis}{}}%
+\CSLLeftMargin{140. }%
+\CSLRightInline{Miyamoto, K., Sugiki, N., Uchida, T., \& Páez, A.
+(1997). A GIS based land-use model dealing with building types by small
+unit of land in a metropolitan area. \emph{Journal of the Eastern Asia
+Society for Transportation Studies}, \emph{2}, 1943--1959.}
+
+\hypertarget{journal-articles-accepted-for-publication-in-final-form}{%
+\subsubsection{Journal Articles (Accepted for Publication in Final
+Form)}\label{journal-articles-accepted-for-publication-in-final-form}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-desjardins2022children}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Desjardins, E., Tavakoli, Z., Waygood, O., \& Páez, A.
+(2022). Children's active or independent travel to non-school
+destinations: A scoping review {[}Journal Article{]}.
+\emph{International Journal of Environmental Research and Public
+Health}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-paez2022reproducibility}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Paez, A. (2021). Reproducibility of research during
+COVID-19: Examining the case of population density and the basic
+reproductive rate from the perspective of spatial analysis {[}Journal
+Article{]}. \emph{Geographical Analysis}.
+\url{https://doi.org/10.1111/gean.12307}}
+
+\hypertarget{journal-articles-submitted-for-publication}{%
+\subsubsection{Journal Articles (Submitted for
+Publication)}\label{journal-articles-submitted-for-publication}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-soukhov2022introducing}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Soukhov, A., Páez, A., Higgins, C. D., \& Mohamed, M.
+(2022). Introducing spatial availability, a singly-constrained
+competitive-access accessibility measure {[}Journal Article{]}.
+\emph{PLoS ONE}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-soukhov2022tts}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Soukhov, A., \& Páez, A. (2022). TTS2016R: A data set to
+study population and employment patterns from the 2016 transportation
+tomorrow survey (TTS) in the greater toronto and hamilton area in canada
+{[}Journal Article{]}. \emph{Environment and Planning B: Urban Analytics
+and City Science}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rey2022using}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Rey Blanco, D., Arbués, P., López, F. A., \& Páez, A.
+(2022). Using machine learning to identify spatial market segments. A
+reproducible study of major spanish markets {[}Journal Article{]}.
+\emph{Environment and Planning B: Urban Analytics and City Science}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-rey2022geo}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Rey Blanco, D., Arbués, P., López, F. A., \& Páez, A.
+(2022). A geo-referenced micro-data set of real estate listings for
+spain's three largest cities {[}Journal Article{]}. \emph{Environment
+and Planning B: Urban Analytics and City Science}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-merrall2022school}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{Merral, J., Higgins, C. D., \& Páez, A. (2022). What's a
+school worth to a neighborhood? A spatial hedonic analysis of property
+prices in the context of accommodation reviews in ontario {[}Journal
+Article{]}. \emph{Urban Studies}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jamal2022wellbeing}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{Jamal, S., \& Páez, A. (2022). Well-being implications
+of immobility during COVID-19: Evidence from a student sample in
+bangladesh using the satisfaction with life scale {[}Journal Article{]}.
+\emph{Transportation}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jamal2022changes}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{Jamal, S., \& Páez, A. (2022). Changes in walking
+frequency and its equity implications during COVID-19 in bangladesh
+{[}Journal Article{]}. \emph{Transportation Research Part D: Transport
+and Environment}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jamal2022shift}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{Jamal, S., \& Páez, A. (2022). Exploring modal shift in
+non-active sustainable modes during the first wave of COVID-19 in
+bangladesh {[}Journal Article{]}. \emph{Transport Policy}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-desjardins2022framing}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{Desjardins, E., Lam, J., Darcy, R., Damian, C., Waygood,
+O., \& Páez, A. (2022). How is active school travel framed in ontario,
+canada? {[}Journal Article{]}. \emph{Transportation Research Part A:
+Policy and Practice}.}
+
+\hypertarget{peer-reviewed-conference-presentations}{%
+\section{Peer-reviewed Conference
+Presentations}\label{peer-reviewed-conference-presentations}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-RN6925}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Moniruzzaman, M., Chudyk, A., Paez, A., Winters, M.,
+Sims-Gould, J., \& McKay, H. (2015). Travel behavior of low income older
+adults and development of an accessibility calculator. \emph{94th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6927}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., \& Morency, C. (2014).
+Potential contributions of walking toward physical activity guidelines
+of seniors. \emph{93rd Annual Meeting of the Transportation Research
+Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6926}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Farber, S., Bartholomew, K., Li, X., Paez, A., \&
+Khandker, N. (2014). Social equity in distance-based transit fares.
+\emph{93rd Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6929}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Reyes, M., Paez, A., \& Morency, C. (2013).
+Accessibility to urban parks in montreal from the perspective of
+children. \emph{92nd Annual Meeting of the Transportation Research
+Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6928}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{Paez, A., Lopez, F., Ruiz, M., \& Morency, C. (2013).
+Development of indicator to assess spatial fit of discrete choice
+models. \emph{92nd Annual Meeting of the Transportation Research
+Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6932}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{Whalen, K., Paez, A., Bhat, C., Moniruzzaman, M., \&
+Paleti, R. (2012). Street networks, mode of travel, and sense of
+community in a university town. \emph{91st Annual Meeting of the
+Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6931}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{Paez, A., Trepanier, M., \& Morency, C. (2012). Modeling
+isoexposure to transit users for market potential analysis. \emph{91st
+Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6930}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{Paez, A., Moniruzzaman, M., Bourbonnais, P., \& Morency,
+C. (2012). Developing a web-based accessibility calculator prototype for
+the greater montreal area, canada. \emph{91st Annual Meeting of the
+Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6933}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{Moniruzzaman, M., \& Paez, A. (2012). From meso-scale
+analysis to micro-scale environments: A model-based approach to select
+case sites for conducting walkability audits. \emph{91st Annual Meeting
+of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6936}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{Paez, A., Trepanier, M., \& Morency, C. (2011).
+Identifying commercial partners for non-fare policies based on the use
+of transit smart cards: Geodemographic analysis of montreal metro.
+\emph{90th Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6934}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{Paez, A., \& Farber, S. (2011). Recreation and leisure
+by persons with disabilities: Analysis of transportation factors based
+on canada's participation activity limitation survey. \emph{90th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6935}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{Mejia, L., Dorantes, Paez, A., \& Vasallo, J. (2011).
+Transportation infrastructure impacts on firm location: The effect of a
+new metro line in the suburbs of madrid. \emph{90th Annual Meeting of
+the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6942}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{Ruminot, N., Paez, A., \& Carrasco, J. (2010). Network
+topology, autocorrelation, and node vulnerability. \emph{89th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6940}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{Mercado, R., Paez, A., Farber, S., Roorda, M., \&
+Morency, C. (2010). Journey-to-work in urban areas: Explaining travel
+mode choice of low-income persons in ontario and quebec. \emph{89th
+Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6938}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{Mejia, L., Dorantes, Vasallo, J., \& Paez, A. (2010).
+Analyzing the economic impact of a new metro line in house prices:
+Madrid line 12 case study. \emph{XVI Pan-American Conference of Traffic
+and Transportation Engineering and Logistics}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6937}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{Mejia, L., Dorantes, Paez, A., \& Vasallo, J. (2010).
+Assessment of the influence due to a new metro line on the promotion of
+business activities around stations: A case study of metrosur in madrid.
+\emph{12th World Conference for Transport Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6943}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{Farber, S., Paez, A., Mercado, R., Roorda, M., \&
+Morency, C. (2010). Transport and social exclusion: A time-use
+investigation of shopping participation in three canadian cities.
+\emph{89th Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6941}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2010). Employment status and
+commute distance of canadians with disabilities. \emph{89th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6939}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{Dam, I., Scott, D., Paez, A., \& Wilton, R. (2010).
+Exploring factors underlying the decision to telework. \emph{89th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6944}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{Roorda, M., Paez, A., Morency, C., Mercado, R., \&
+Farber, S. (2009). Trip generation of vulnerable populations in three
+canadian cities: A spatial ordered probit approach. \emph{88th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6948}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{Ribeiro, A., Antunes, A., \& Paez, A. (2009). Road
+accessibility and economic development: Empirical evidence from portugal
+based on spatial econometric models. \emph{88th Annual Meeting of the
+Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6946}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{Paez, A., Mercado, R., Farber, S., Morency, C., \&
+Roorda, M. (2009). At the intersection between opportunities and travel:
+Development of a new indicator of relative accessibility. \emph{88th
+Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6947}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{Paez, A., Habib, H., \& Bonin, J. (2009). A joint
+ordinal-continuous model for activity episode generation and duration
+analysis. \emph{88th Annual Meeting of the Transportation Research
+Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6945}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{Morency, C., Paez, A., Roorda, M., Mercado, R., \&
+Farber, S. (2009). Social and spatial dimensions of distance traveled in
+three canadian metropolitan areas. \emph{88th Annual Meeting of the
+Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6950}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{Kanaroglou, P., Mercado, R., Maoh, H., Paez, A., Scott,
+D., \& Newbold, K. (2008). Policy simulation framework for analyzing
+elderly mobility issues using IMPACT decision support system. \emph{87th
+Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6949}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{Kanaroglou, P., Maoh, H., Newbold, K., Scott, D., \&
+Paez, A. (2008). Demographic model for small-area population
+projections: Application to census metropolitan area of hamilton in
+ontario. \emph{87th Annual Meeting of the Transportation Research
+Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6951}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2008). Automobility and social
+activity participation: Preliminary analysis using data from a u.s.
+city. \emph{87th Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6953}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{Mercado, R., Paez, A., \& Newbold, K. (2007).
+Benchmarking transport policy in an ageing society in the ontario
+province, canada. \emph{11th World Conference for Transport Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6954}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2007). Mobility of canadian
+elderly: Multilevel analysis of distance traveled in the hamilton CMA,
+ontario, canada. \emph{86th Annual Meeting of the Transportation
+Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6952}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{Kanaroglou, P., Mercado, R., Maoh, H., Paez, A., Scott,
+D., \& Newbold, K. (2007). Simulating the impact of population aging on
+urban transportation infrastructure: An application to hamilton, canada.
+\emph{11th World Conference for Transport Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6955}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{Vichiensan, V., Paez, A., Kawai, K., \& Miyamoto, K.
+(2006). Non-stationary interpolation method for urban model development.
+\emph{85th Annual Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6956}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{Mercado, R., Paez, A., Newbold, K., Scott, D., \&
+Kanaroglou, P. (2006). Transport policy in ageing societies: An
+international comparison and implications for canada. \emph{85th Annual
+Meeting of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6958}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{Paez, A., \& Scott, D. (2005). Social influence and the
+decision to telecommute: A simulation example. \emph{84th Annual Meeting
+of the Transportation Research Board}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6957}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{Paez, A., Potoglou, D., Scott, D., Kanaroglou, P., \&
+Newbold, K. (2005). The spatial analysis of trip generation: A case
+study of the hamilton CMA. \emph{10th Conference on Computers in Urban
+Planning and Urban Management}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6959}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{Paez, A. (2004). Development of a binary probit model
+for continuous-space contextual effects. \emph{10th World Conference for
+Transport Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6960}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{Vichiensan, V., Paez, A., \& Miyamoto, K. (2003).
+Improvement of data accuracy in urban modeling by nonstationary
+interpolation method. \emph{9th Conference on Computers in Urban
+Planning and Urban Management}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6961}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{Paez, A. (2003). Spatial statistics for urban analysis:
+A review of new techniques with examples. \emph{9th Conference on
+Computers in Urban Planning and Urban Management}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6962}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{Paez, A., Suthanaya, P., \& Black, J. (2001). A spatial
+analysis of transportation mode-specific journey-to-work commuting
+preferences: Implications for sustainable transport policies. \emph{9th
+World Conference for Transport Research}.}
+
+\hypertarget{non-peer-reviewed-conference-presentations}{%
+\section{Non-peer-reviewed Conference
+Presentations}\label{non-peer-reviewed-conference-presentations}}
+
+\hypertarget{bibliography}{}
+\leavevmode\vadjust pre{\hypertarget{ref-RN6963}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Paez, A., Soares, S., \& Menezes, T. (2015). Assessing
+spatial inequalities based on the probabilities of an ordinal model.
+\emph{91th Annual Meeting of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6964}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Reyes, M., Paez, A., \& Morency, C. (2014). Accounting
+for facility crowding in individual-based estimates of accessibility.
+\emph{61th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6965}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Paez, A., Lopez, F., \& Ruiz, A. (2014). Statistical
+test of the difference between two moran's i coefficients. \emph{91th
+Annual Meeting of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6967}{}}%
+\CSLLeftMargin{4. }%
+\CSLRightInline{Paez, A., \& Esita, J. (2013). Gender or role? Analysis
+of activity participation of single?parent household heads in canada
+considering time?use patterns. \emph{60th Annual North American Meetings
+of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6966}{}}%
+\CSLLeftMargin{5. }%
+\CSLRightInline{Paez, A., Apparicio, P., \& Cloutier, M. (2013). The
+geography of altruism: The case of blood donor clusters in toronto.
+\emph{60th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6968}{}}%
+\CSLLeftMargin{6. }%
+\CSLRightInline{Higgins, C., Paez, A., \& Kanaroglou, P. (2013).
+Identifying highly knowledgeable, creative, and innovative individuals
+and their interactions with canadian cities. \emph{60th Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6974}{}}%
+\CSLLeftMargin{7. }%
+\CSLRightInline{Reyes, M., Paez, A., \& Morency, C. (2012).
+Accessibility to urban parks in montreal from the perspective of
+children. \emph{91th Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6975}{}}%
+\CSLLeftMargin{8. }%
+\CSLRightInline{Paez, A., Moniruzzaman, M., Bourbonnais, P., \& Morency,
+C. (2012). Developing a web-based accessibility calculator prototype for
+the greater montreal area. \emph{91th Annual Meeting of the Association
+of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6973}{}}%
+\CSLLeftMargin{9. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., \& Morency, C. (2012).
+Geographical variations in the walking trip length of seniors in
+montreal, 2003-2008. \emph{91th Annual Meeting of the Association of
+American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6969}{}}%
+\CSLLeftMargin{10. }%
+\CSLRightInline{Moniruzzaman, M., Paez, A., Habib, K., \& Morency, C.
+(2012). Mode of travel and trip length by seniors in montreal with a
+focus on walking. \emph{International Conference on Aging, Mobility and
+Quality of Life}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6972}{}}%
+\CSLLeftMargin{11. }%
+\CSLRightInline{Menezes, T., Paez, A., Silveira-Neto, R., Monteiro, C.,
+\& Ratton, J. (2012). A comparison of day and night crime patterns in
+recife, brazil. \emph{91th Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6971}{}}%
+\CSLLeftMargin{12. }%
+\CSLRightInline{Esita, J., Paez, A., Newbold, K., Blake, J., \& Heddle,
+N. (2012). Optimization of blood donation clinic resources: A case study
+of toronto CMA. \emph{91th Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6970}{}}%
+\CSLLeftMargin{13. }%
+\CSLRightInline{Cimaroli, K., Paez, A., Newbold, K., \& Heddle, N.
+(2012). Individual and contextual determinants on frequency of blood
+donation in canada with a focus on clinic accessibility. \emph{91th
+Annual Meeting of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6979}{}}%
+\CSLLeftMargin{14. }%
+\CSLRightInline{Paez, A., Moniruzzaman, M., Bourbonnais, P., \& Morency,
+C. (2011). Developing a web-based accessibility calculator prototype for
+the greater montreal area. \emph{58th Annual North American Meetings of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6985}{}}%
+\CSLLeftMargin{15. }%
+\CSLRightInline{Paez, A., \& Moniruzzaman, M. (2011). A model-based
+approach to select case sites for conducting walkability audits.
+\emph{3rd Annual TRANSLOG Conference}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6986}{}}%
+\CSLLeftMargin{16. }%
+\CSLRightInline{Paez, A., Lopez, F., Ruiz, M., \& Ortega, J. (2011).
+Co-occurrence of pediatric cancer types in murcia, spain: A geographical
+analysis. \emph{90th Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6981}{}}%
+\CSLLeftMargin{17. }%
+\CSLRightInline{Paez, A., Cespedes, N., \& Carrasco, J. (2011). Putting
+some sociology in w. \emph{51th European Congress of the Regional
+Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6982}{}}%
+\CSLLeftMargin{18. }%
+\CSLRightInline{Mur, A., \& Paez, A. (2011). Local weighting or the
+necessity of flexibility. \emph{51th European Congress of the Regional
+Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6983}{}}%
+\CSLLeftMargin{19. }%
+\CSLRightInline{Lopez, F., Ruiz, M., \& Paez, A. (2011). Comparison of
+thematic maps using symbolic entropy. \emph{51th European Congress of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6977}{}}%
+\CSLLeftMargin{20. }%
+\CSLRightInline{Lopez, F., \& Paez, A. (2011). An exploratory analysis
+of spatial clustering of high-tech industry and knowledge-intensive
+services in the greater toronto area. \emph{58th Annual North American
+Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6987}{}}%
+\CSLLeftMargin{21. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2011). Measuring segregation
+with spatially varying mobility metrics. \emph{90th Annual Meeting of
+the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6978}{}}%
+\CSLLeftMargin{22. }%
+\CSLRightInline{Esita, J., Paez, A., Newbold, K., Blake, J., \& Heddle,
+N. (2011). Accessibility and the allocation of clinic resources to
+optimize blood donor yield in the toronto CMA. \emph{58th Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6980}{}}%
+\CSLLeftMargin{23. }%
+\CSLRightInline{Da Silva, R., Bacha, C., \& Paez, A. (2011). Potencial
+de mercado da regiao norte do brasil: A proposta de um indicador para
+medir seu isolamento geoeconomico. \emph{IX Encontro Nacional Da
+Associacao Brasileira de Estudos Regionais e Urbanos}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6984}{}}%
+\CSLLeftMargin{24. }%
+\CSLRightInline{Cimaroli, K., Paez, A., Newbold, K., \& Heddle, N.
+(2011). The effect of clinic accessibility and individual determinants
+on frequency of blood donation. \emph{14th International Medical
+Geography Symposium}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6976}{}}%
+\CSLLeftMargin{25. }%
+\CSLRightInline{Barufi, A., Haddad, E., \& Paez, A. (2011). Infant
+mortality in brazil, 1980-2000: A spatial panel analysis. \emph{58th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6990}{}}%
+\CSLLeftMargin{26. }%
+\CSLRightInline{Whalen, K., Paez, A., Bhat, C., Moniruzzaman, M., \&
+Paleti, R. (2010). T-communities and sense of community: Evidence from a
+sample of university students in canada. \emph{57th Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6995}{}}%
+\CSLLeftMargin{27. }%
+\CSLRightInline{Trepanier, M., Morency, C., Pelletier, M.-P., \& Paez,
+A. (2010). Assessing the commercial use of transit smart card in
+montreal. \emph{2nd Annual Translog Conference}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6993}{}}%
+\CSLLeftMargin{28. }%
+\CSLRightInline{Schettini, D., Azzoni, C., \& Paez, A. (2010).
+Neighborhood and efficiency in manufacturing in brazilian regions: A
+spatial markov chain analysis. \emph{50th European Congress of the
+Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6997}{}}%
+\CSLLeftMargin{29. }%
+\CSLRightInline{Paez, A., \& Whalen, K. (2010). Enjoyment of commute: A
+comparison of different modes. \emph{2nd Annual TRANSLOG Conference}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6989}{}}%
+\CSLLeftMargin{30. }%
+\CSLRightInline{Paez, A., Saberton, P., Newbold, K., \& Heddle, N.
+(2010). Using visualization and filters to improve regression analysis
+of spatial data. \emph{57th Annual North American Meetings of the
+Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6999}{}}%
+\CSLLeftMargin{31. }%
+\CSLRightInline{Paez, A., Ruiz, M., Lopez, F., \& Logan, J. (2010).
+Yankees, irish, and germans: An exploratory analysis of co-location
+patterns in 1880 newarks. \emph{89th Annual Meeting of the Association
+of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6996}{}}%
+\CSLLeftMargin{32. }%
+\CSLRightInline{Paez, A., \& Farber, S. (2010). Leisure participation
+and wants of adult canadians with disabilities. \emph{2nd Annual
+TRANSLOG Conference}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6988}{}}%
+\CSLLeftMargin{33. }%
+\CSLRightInline{Paez, A., Cespedes, N., \& Carrasco, J. (2010). Tertiary
+streets and the strength of autocorrelation using moran's coefficient.
+\emph{57th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6991}{}}%
+\CSLLeftMargin{34. }%
+\CSLRightInline{Moniruzzaman, M., \& Paez, A. (2010). Accessibility to
+transit, by transit, and mode share: Application of a logistic model
+with spatial filters. \emph{57th Annual North American Meetings of the
+Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6998}{}}%
+\CSLLeftMargin{35. }%
+\CSLRightInline{Farber, S., Ruiz, M., \& Paez, A. (2010). A
+non-parametric test for network and spatial dependence using symbolic
+logic. \emph{89th Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6992}{}}%
+\CSLLeftMargin{36. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2010). Who am i? Where am i?
+Socio-spatial perceptions of clustering. \emph{57th Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN6994}{}}%
+\CSLLeftMargin{37. }%
+\CSLRightInline{Barufi, A., Haddad, E., \& Paez, A. (2010). Regional
+dimensions of infant mortality in brazil. \emph{50th European Congress
+of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7002}{}}%
+\CSLLeftMargin{38. }%
+\CSLRightInline{Whalen, K., \& Paez, A. (2009). Exploratory analysis of
+the enjoyment of commuting: A comparison of different modes. \emph{56th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7010}{}}%
+\CSLLeftMargin{39. }%
+\CSLRightInline{Saberton, P., Paez, A., \& Newbold, K. (2009). Using
+canadian blood donor count data to generate positively autocorrelated
+regression models. \emph{88th Annual Meeting of the Association of
+American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7003}{}}%
+\CSLLeftMargin{40. }%
+\CSLRightInline{Ruiz, M., Lopez, F., \& Paez, A. (2009). Map comparison
+using symbolic dynamics. \emph{56th Annual North American Meetings of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7006}{}}%
+\CSLLeftMargin{41. }%
+\CSLRightInline{Ruiz, M., Lopez, F., \& Paez, A. (2009). Spatial
+association of qualitative variables: A new test based on symbolic
+logic. \emph{3rd World Conference of the Spatial Econometrics
+Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7004}{}}%
+\CSLLeftMargin{42. }%
+\CSLRightInline{Paez, A., Ruiz, M., Lopez, F., \& Logan, J. (2009).
+Yankees, irish, and germans: An exploratory analysis of co-location
+patterns in late 19th century newark. \emph{56th Annual North American
+Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7001}{}}%
+\CSLLeftMargin{43. }%
+\CSLRightInline{Paez, A., \& Le, J., Gallo. (2009). Using synthetic
+variables in instrumental variable estimation of spatial series.
+\emph{56th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7007}{}}%
+\CSLLeftMargin{44. }%
+\CSLRightInline{Paez, A., Farber, S., \& Wheeler, D. (2009).
+Multicollinearity in GWR models: Results of a new experiment. \emph{3rd
+World Conference of the Spatial Econometrics Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7000}{}}%
+\CSLLeftMargin{45. }%
+\CSLRightInline{Paez, A., Bonin, J., \& Habib, K. (2009). Shopping trip
+frequency and duration in canada: An analysis of personal trends based
+on the general social surveys of 1998 and 2005. \emph{12th International
+Conference on Travel Behaviour Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7011}{}}%
+\CSLLeftMargin{46. }%
+\CSLRightInline{Mercado, R., Paez, A., Farber, S., Morency, C., \&
+Roorda, M. (2009). Journey to work in urban areas: Explaining travel
+mode choice of low-income persons in ontario and quebec. \emph{88th
+Annual Meeting of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7005}{}}%
+\CSLLeftMargin{47. }%
+\CSLRightInline{Griffith, D., \& Paez, A. (2009). Simulating spatially
+autocorrelated random variables. \emph{56th Annual North American
+Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7008}{}}%
+\CSLLeftMargin{48. }%
+\CSLRightInline{Dam, I., Scott, D., Paez, A., \& Wilton, R. (2009).
+Exploring the relationship between social influence and telecommuting:
+Some preliminary evidence. \emph{88th Annual Meeting of the Association
+of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7009}{}}%
+\CSLLeftMargin{49. }%
+\CSLRightInline{Bonomi, A., Haddade, E., \& Paez, A. (2009). From good
+to great: Development and growth in brazilian minimum comparable areas
+in the last decades. \emph{88th Annual Meeting of the Association of
+American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7012}{}}%
+\CSLLeftMargin{50. }%
+\CSLRightInline{Saberton, N., PJ, \& Paez, A. (2008). Testing for
+heterogeneity among canadian blood donors. \emph{55th Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7017}{}}%
+\CSLLeftMargin{51. }%
+\CSLRightInline{Ruminot, N., Paez, A., \& Carrasco, J. (2008).
+Vulnerable nodes in networks: An autocorrelation approach. \emph{2nd
+World Conference of the Spatial Econometrics Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7023}{}}%
+\CSLLeftMargin{52. }%
+\CSLRightInline{Paez, A., Wheeler, D., \& Farber, S. (2008).
+Multicollinearity in GWR models: A comment and some further experiments.
+\emph{8th World Congress of Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7020}{}}%
+\CSLLeftMargin{53. }%
+\CSLRightInline{Paez, A., Ribeiro, A., \& Antunes, A. (2008). Modeling
+the impact of regional accessibility with spatially autoregressive
+models. \emph{NECTAR Accessibility Workshop}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7019}{}}%
+\CSLLeftMargin{54. }%
+\CSLRightInline{Paez, A., Morency, C., Roorda, M., Mercado, R., \&
+Farber, S. (2008). Fast food for thought: A tale of accessibility of low
+income individuals in montreal. \emph{VI National Encounter of the
+Brazilian Association of Regional Studies}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7022}{}}%
+\CSLLeftMargin{55. }%
+\CSLRightInline{Paez, A., Morency, C., \& Roorda, M. (2008). New
+mobilities of the old. A study of the evolution of elderly mobility in
+the greater montreal area. \emph{87th Annual Meeting of the Association
+of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7015}{}}%
+\CSLLeftMargin{56. }%
+\CSLRightInline{Paez, A., Mercado, R., Farber, S., Morency, C., \&
+Roorda, M. (2008). Access to health care facilities by canadian elderly:
+An application of relative accessibility indicators. \emph{55th Annual
+North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7014}{}}%
+\CSLLeftMargin{57. }%
+\CSLRightInline{Paez, A., Mercado, R., Farber, S., Morency, C., \&
+Roorda, M. (2008). At the intersection between opportunities and travel:
+Development of a new indicator of relative accessibility. \emph{55th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7016}{}}%
+\CSLLeftMargin{58. }%
+\CSLRightInline{Paez, A. (2008). Demand for para-transit rides: A
+poisson regression with spatial filters approach. \emph{2nd World
+Conference of the Spatial Econometrics Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7013}{}}%
+\CSLLeftMargin{59. }%
+\CSLRightInline{Farber, S., Paez, A., Mercado, R., Roorda, M., \&
+Morency, C. (2008). A simultaneous equations approach to measuring
+social exclusion through activities and time use. \emph{55th Annual
+North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7021}{}}%
+\CSLLeftMargin{60. }%
+\CSLRightInline{Farber, S., Paez, A., \& Axhausen, K. (2008). Any given
+monday: An exploration of the stability of long term activity patterns.
+\emph{87th Annual Meeting of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7018}{}}%
+\CSLLeftMargin{61. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2008). Model specification
+searches in spatial econometrics. \emph{2nd World Conference of the
+Spatial Econometrics Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7030}{}}%
+\CSLLeftMargin{62. }%
+\CSLRightInline{Wilton, R., Paez, A., \& Scott, D. (2007). Why do you
+care what other people think? A qualitative investigation of social
+contact and telework. \emph{Workshop Frontiers in Transportation: Social
+Interaction}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7028}{}}%
+\CSLLeftMargin{63. }%
+\CSLRightInline{Wheeler, D., Paez, A., \& Waller, L. (2007). Housing
+sub-markets and hedonic price analysis: A bayesian approach. \emph{54th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7029}{}}%
+\CSLLeftMargin{64. }%
+\CSLRightInline{Ribeiro, A., Antunes, A., \& Paez, A. (2007). The
+misunderstood influence of road accessibility in regional development -
+spatial regression models for portuguese less developed regions.
+\emph{54th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7027}{}}%
+\CSLLeftMargin{65. }%
+\CSLRightInline{Paez, A., Wheeler, D., \& Farber, S. (2007).
+Multicollinearity in GWR models: A comment and some further experiments.
+\emph{54th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7035}{}}%
+\CSLLeftMargin{66. }%
+\CSLRightInline{Paez, A., Scott, D., \& Volz, E. (2007). Autocorrelation
+in social networks: A preliminary investigation of sampling issues.
+\emph{1st World Conference of the Spatial Econometrics Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7032}{}}%
+\CSLLeftMargin{67. }%
+\CSLRightInline{Paez, A., Scott, D., \& Volz, E. (2007). Weight matrices
+for social influence analysis: A monte-carlo investigation of
+specification issues. \emph{Workshop Frontiers in Transportation: Social
+Interaction}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7036}{}}%
+\CSLLeftMargin{68. }%
+\CSLRightInline{Paez, A. (2007). Density and travel indicators:
+Implications for understanding quality of life issues of the elderly.
+\emph{Meeting of the Special Interest Group 1 of the World Conference
+for Transport Research Society}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7033}{}}%
+\CSLLeftMargin{69. }%
+\CSLRightInline{Paez, and, A. (2007). Geographical analysis of elderly
+mobility: The case of the greater montreal area. \emph{Annual Meeting of
+the Canadian Regional Science Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7037}{}}%
+\CSLLeftMargin{70. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2007). Age, gender, and
+neighborhood determinants of distance traveled: A multilevel analysis in
+the hamilton CMA. \emph{86th Annual Meeting of the Association of
+American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7024}{}}%
+\CSLLeftMargin{71. }%
+\CSLRightInline{Farber, S., Paez, A., \& Volz, E. (2007). Topology and
+dependency tests in spatial and network autoregressive models.
+\emph{54th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7031}{}}%
+\CSLLeftMargin{72. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2007). Automobile dependency
+and social activities: A hidden cost of automobility? \emph{Workshop
+Frontiers in Transportation: Social Interaction}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7025}{}}%
+\CSLLeftMargin{73. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2007). My car, my friends, and
+me: An exploratory analysis of automobility and social activities.
+\emph{54th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7026}{}}%
+\CSLLeftMargin{74. }%
+\CSLRightInline{Bonin, J., \& Paez, A. (2007). Individual shopping trip
+duration: Is there a metropolitan-non-metropolitan divide? \emph{54th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7034}{}}%
+\CSLLeftMargin{75. }%
+\CSLRightInline{Bonin, and, J. (2007). Individual shopping trip
+duration: Is there a metropolitan-non-metropolitan divide. \emph{Annual
+Meeting of the Canadian Regional Science Association}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7043}{}}%
+\CSLLeftMargin{76. }%
+\CSLRightInline{Paez, A., Scott, D., \& Volz, E. (2006). Autocorrelation
+in social networks: A preliminary investigation of sampling issues.
+\emph{XXVI International Sunbelt Social Network Conference}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7042}{}}%
+\CSLLeftMargin{77. }%
+\CSLRightInline{Paez, A., Scott, D., Potoglou, D., Kanaroglou, P., \&
+Newbold, K. (2006). A mixed ordered probit analysis of elderly trip
+generation in the hamilton CMA. \emph{11th International Conference on
+Travel Behaviour Research}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7045}{}}%
+\CSLLeftMargin{78. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2006). The influence of
+socio-demographic characteristics and urban form on travel behaviour of
+canadian older population in the hamilton CMA: Evidence from a
+multilevel model analysis. \emph{2006 Annual Meeting of the Association
+of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7041}{}}%
+\CSLLeftMargin{79. }%
+\CSLRightInline{Mercado, R., \& Paez, A. (2006). Mobility of canadian
+elderly: Multilevel analysis of distance traveled in the hamilton CMA,
+ontario, canada. \emph{53rd Annual North American Meetings of the
+Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7040}{}}%
+\CSLLeftMargin{80. }%
+\CSLRightInline{Mercado, R., Maoh, H., Paez, A., Kanaroglou, P., Scott,
+D., \& Newbold, K. (2006). A policy simulation framework for analyzing
+elderly transport mobility issues: An application to the hamilton census
+metropolitan area (CMA). \emph{53rd Annual North American Meetings of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7038}{}}%
+\CSLLeftMargin{81. }%
+\CSLRightInline{Long, F., Paez, A., \& Farber, S. (2006). Moving window
+approaches for hedonic price estimation. \emph{53rd Annual North
+American Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7044}{}}%
+\CSLLeftMargin{82. }%
+\CSLRightInline{Long, F., \& Paez, A. (2006). Modeling spatial variation
+in housing prices: A shift from global regression to local regression,
+from global variogram to local variogram. \emph{2006 Annual Meeting of
+the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7039}{}}%
+\CSLLeftMargin{83. }%
+\CSLRightInline{Farber, S., \& Paez, A. (2006). The effect of
+influential points in cross-validation on GWR model estimation.
+\emph{53rd Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7049}{}}%
+\CSLLeftMargin{84. }%
+\CSLRightInline{Scott, D., Newbold, K., Paez, A., \& Kanaroglou, P.
+(2005). Transportation implications of canada's aging population: A
+GEOIDE project. \emph{2005 Annual Meeting of the Association of American
+Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7052}{}}%
+\CSLLeftMargin{85. }%
+\CSLRightInline{Potoglou, D., Paez, A., Scott, D., Kanaroglou, P., \&
+and, K., Newbold. (2005). Canada's elderly travel behavior: Experience
+from the hamilton census metropolitan area. \emph{2005 Annual Meeting of
+the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7046}{}}%
+\CSLLeftMargin{86. }%
+\CSLRightInline{Paez, A., Scott, D., \& Volz, E. (2005). Autocorrelation
+in social networks: A preliminary investigation of sampling issues.
+\emph{52nd Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7047}{}}%
+\CSLLeftMargin{87. }%
+\CSLRightInline{Paez, A., Scott, D., Potoglou, D., Kanaroglou, P., \&
+Newbold, K. (2005). Elderly mobility: Demographic and spatial of trip
+making in the hamilton CMA. \emph{52nd Annual North American Meetings of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7050}{}}%
+\CSLLeftMargin{88. }%
+\CSLRightInline{Mercado, R., Paez, A., Newbold, K., Scott, D., \&
+Kanaroglou, P. (2005). Transport policy responses to elderly mobility in
+ageing societies: An international comparison. \emph{2005 Annual Meeting
+of the Association of American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7048}{}}%
+\CSLLeftMargin{89. }%
+\CSLRightInline{Kanaroglou, P., Maoh, H., Scott, D., Newbold, K., \&
+Paez, A. (2005). Modeling the spatial distribution of population change
+within a predictive transportation system for the hamilton census
+metropolitan area (CMA). \emph{52nd Annual North American Meetings of
+the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7051}{}}%
+\CSLLeftMargin{90. }%
+\CSLRightInline{Kanaroglou, P., Maoh, H., Newbold, K., Scott, D., \&
+Paez, A. (2005). A GIS-based decision support tool to study the impact
+of elderly population on the transportation system in hamilton census
+metropolitan area. \emph{2005 Annual Meeting of the Association of
+American Geographers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7053}{}}%
+\CSLLeftMargin{91. }%
+\CSLRightInline{Paez, A., \& Scott, D. (2004). A discrete choice
+approach to modeling social influence on individual decision making.
+\emph{51th Annual North American Meetings of the Regional Science
+Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7055}{}}%
+\CSLLeftMargin{92. }%
+\CSLRightInline{Paez, A., \& Scott, D. (2004). Social influence and the
+decision to telecommute: A simulation example. \emph{Meeting of Special
+Interest Group 1 of the World Conference for Transport Research
+Society}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7054}{}}%
+\CSLLeftMargin{93. }%
+\CSLRightInline{Paez, A. (2004). Spatially weighted regression:
+Exploring spatial non-stationarity in multiple contexts. \emph{51th
+Annual North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7056}{}}%
+\CSLLeftMargin{94. }%
+\CSLRightInline{Paez, A. (2003). Investigating heterogeneity in hedonic
+price models using geographically weighted regression. \emph{50th Annual
+North American Meetings of the Regional Science Association
+International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7057}{}}%
+\CSLLeftMargin{95. }%
+\CSLRightInline{Paez, A. (2003). Network accessibility and the spatial
+distribution of economic activity in eastern asia. \emph{Meeting of
+Special Interest Group 1 of the World Conference for Transport Research
+Society}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7058}{}}%
+\CSLLeftMargin{96. }%
+\CSLRightInline{Paez, A. (2002). Spatial parametric nonstationarity: A
+variance heterogeneity approach. \emph{49th Annual North American
+Meetings of the Regional Science Association International}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7059}{}}%
+\CSLLeftMargin{97. }%
+\CSLRightInline{Kawai, K., Vichiensan, V., Paez, A., \& Miyamoto, K.
+(2002). Interpolation for spatial data in urban models based on
+geographically weighted regression and kriging. \emph{57th Annual
+Conference of the Japan Society of Civil Engineers}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7060}{}}%
+\CSLLeftMargin{98. }%
+\CSLRightInline{Black, J., Paez, A., \& Suthanaya, P. (2001). Spatial
+targets for sustainable transport: Some examples from international
+practice. \emph{SMART Targets for Sustainable Transport}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7061}{}}%
+\CSLLeftMargin{99. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (1998). Analysis
+of urbanization related environmental impacts from their spatial
+perspective. \emph{Annual Meeting of the Tohoku Chapter, Japan Society
+of Civil Engineering}.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-RN7062}{}}%
+\CSLLeftMargin{100. }%
+\CSLRightInline{Paez, A., Uchida, T., \& Miyamoto, K. (1997). Modeling
+land uses and environmental indicators. \emph{Annual Meeting of the
+Tohoku Chapter, Japan Society of Civil Engineering}.}
+
+\hypertarget{unsolicited-advice}{%
+\section{Unsolicited Advice}\label{unsolicited-advice}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{May 20-2022}{Polytechique Montr\'{e}al}{Accessibility and Threshold Selection}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Unsolicited Advice, NA%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 4-2022}{School of Earth, Environment and Society, McMaster University}{Creating Programmatic CVs with R}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Unsolicited Advice, Presenter%
+\end{itemize}%
+\end{minipage}}
+\end{twenty}
+
+\hypertarget{invited-talks-seminars-workshops-courses-and-panels}{%
+\section{Invited Talks, Seminars, Workshops, Courses, and
+Panels}\label{invited-talks-seminars-workshops-courses-and-panels}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{June 10, 20, 24, 27 and 29-2022}{Gran Sasso Science Institute}{An introduction to exploratory data analysis in R}{L'Aquila, Italy\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited workshop, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 4-2022}{Newcastle University}{Mobilizing Justice: Developing Data-Driven Equity Standards}{Newcastle-upon-Tyne, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 3-2022}{Alan Turing Institute}{Spatial Data and Analytics}{Newcastle-upon-Tyne, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item SAD Interview, Interviewee%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 7-2022}{MacPherson Institute and McMaster University Library}{Developing a companion package to support teaching spatial statistics with Introduction to Spatial Data Analysis and Statistics}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Lightning Round: Teaching in the Open at McMaster, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 10-2021}{Instituto de Pesquisa Econ\^{o}mica Aplicada}{Introducing Spatial Availability: A Singly Constrained Measure of Accessibility}{Brasilia, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{November 29-2021}{Doctorado en Econom\'{i}a Interuniversitario}{Investigaci\'{o}n Reproducible}{Cartagena, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item VI Jornadas de Doctorado y Seminarios Novel, Keynote Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 28-2021}{MacPherson Institute and McMaster University Library}{Creation of a Living Textbook for Teaching Spatial Statistics}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Lightning Round: Teaching in the Open at McMaster, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 25-2021}{Polytechique Montr\'{e}al}{Examining spatial equity of bike share: A balanced floating catchment area approach}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 17- 2021}{Gran Sasso Science Institute}{What's a school worth to a neighborhood}{L'Aquila, Italy\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 1-2020}{ITE Transportation Research Seminar (McMaster Chapter)}{Transportation research seminar}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 16-2020}{Polytechique Montr\'{e}al}{Using CycleStreets and spatial interaction analysis to infer cycling routes}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 9-2019}{TRANSyT, Universidad Polit\'{e}cnica de Madrid}{Big data and behavioral analysis}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 8-2019}{Department of Applied Economics, Universidad Aut\'{o}noma de Madrid}{Como integrar aprendizaje de m\'{a}quinas y econometr\'{i}a espacial para el an\'{a}lisis de precios hed\'{o}nicos: un ejemplo de segmentaci\'{o}n espacial de mercados en tres ciudades espa\~{n}olas}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 1-2019}{Department of Civil, Environmental, and Geomatics Engineering, ETH Zurich}{Accessibility in Infrastructure Poor Regions}{Zurich, Switzerland\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 6-2019}{Universidad Polit\'{e}cnica de Cartagena}{Big data and behavioral analysis}{Cartagena, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item XXIII Applied Economics Meeting, Keynote Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 21-2019}{Polytechique Montr\'{e}al}{Cost Functions for Accessibility by Walking}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 18-2018}{McMaster Library, RHPCS, MacDATA, and the Tier 3 Research Data Management IT Committee}{McMaster Research Data Forum}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item McMaster Research Data Forum, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 5-2018}{Department of Geography, Universidad Complutense de Madrid}{Accesibilidad a los servicios de salud}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 23-2018}{Polytechique Montr\'{e}al}{Developing Dashboards to Communicate Transportation Information}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 12 to 14-2018}{Gran Sasso Science Institute}{Methodology: spatial statistics with R}{L'Aquila, Italy\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Short Course, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 26-2017}{University of Toronto}{Travel and Time Poverty among Canadian Single Parent Households}{Toronto, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item CIHR Workshop: Considering the role of Time Pressure and Geography In Food Shopping and dietary behaviours, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 11-2017}{Department of Land Economy, University of Cambridge}{Built environment and violent crime: An environmental audit approach using Google Street View}{Cambridge, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 9-2017}{Bartlett School of Planning, University College London}{A simple indicator for inequality analysis in activity/travel behavior}{London, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 3 to 4-2017}{Regional Science Association International-Gran Sasso Science Institute Summer School}{Exploratory spatial data analysis of categorical data}{L'Aquila, Italy\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited workshop, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 12-2017}{Polytechique Montr\'{e}al}{Spatial Clustering of Traveller Attitudinal Profiles}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 19-2017}{Ecole Superieure d'amenagament du territoire et de developpement regional, Laval University}{Mode Use Propensity by Attitudinal and Spatial Cluster: An Exploratory Analysis}{Quebec, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 6-2017}{Centro de Desarrollo Sustentable Universidad de Concepci\'{o}n}{Gender or Role? Analysis of activity participation of single-parent household heads in Canada considering Time-Use Patterns}{Concepci\'{o}n, Chile\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 6-2015}{Transport Equity Analysis COST Action}{Indicators for inequality analysis in activity/travel behavior}{Thessaloniki, Greece\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 23-2015}{Association of American Geographers}{Accessible Accessibility Research Challenges}{Chicago, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Fleming Lecture in Transport Geography (Prof. Bert van Wee), Discussant%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 29-2015}{Department of Geography, University of California Santa Barbara}{Transportation and Spatial Analysis}{Santa Barbara, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 12-2015}{School of Geography, Earth and Environmental Sciences, University of Birmingham}{In the Beginning There was Transportation (There was also GIS)}{Birmingham, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 12 to 17-2014}{The University of Western Australia Business School}{Selected topics in spatial analysis}{Perth, Australia\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited workshop, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 15-2014}{The University of Western Australia}{Mobility for sustainable communities}{Perth, Australia\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 10-2014}{The University of Western Australia}{Mobility-based geodemographics}{Perth, Australia\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{December 8-2014}{Department of Spatial Sciences, Curtin University}{Mapping traveler attitudes: Does space matter?}{Perth, Australia\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 11-2014}{Institute of Transport Geography and Spatial Planning, Shaanxi Normal University}{An investigation of the attributes of walkable environments from the perspective of seniors in Montreal}{Xi'an, China\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Workshop Low-Carbon Cites: Land Use and Transportation Intervention, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 26-2014}{School of Economic, Political and Policy Sciences, University of Texas at Dallas}{Using spatial analysis to support site selection for field work: The case of walkability audits}{Dallas, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 13-2014}{Polytechique Montr\'{e}al}{An investigation of the attributes of walkable environments from the perspective of seniors in Montreal}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 21-2014}{University of Utrecht}{Mobility and the potential for social contact among children in Montreal}{Utrecht, The Netherlands\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Living in Enclave Cities: Towards Mobility-Based Perspectives on Urban Segregation, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 18-2014}{Department of Civil Engineering, Instituto Tecnol\'{o}gico y de Estudios Superiores de Monterrey}{Contribuciones de las geotecnolog\'{i}as y an\'{a}lisis espacial al estudio de sistemas de transporte}{Monterrey, Mexico\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 6-2014}{Institute for Prospective Technological Studies, European Commission}{Accounting for facility congestion using individual-based estimates of accessibility}{Sevilla, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item NECTAR Cluster 6 Meeting, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 12-2014}{93rd Annual Meeting of the Transportation Research Board}{The Next 50 Years in Travel Analysis: What We Don't Know but Need to Know}{Washington, D.C., USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Panel Session, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 8 to 12-2013}{Universidade Federal de Pernambuco}{Special Topics in Spatial Analysis}{Recife, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 4-2013}{Shad Valley McMaster}{Mobility for Sustainable Communities}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 20-2013}{School of Geosciences, University of Aberdeen}{In the Beginning There was Transportation (There was also GIS)}{Aberdeen, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 13-2013}{Polytechique Montr\'{e}al}{Mapping Traveler Attitudes: Does Space Matter?}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 29-2013}{Department of Geography, University of Utah}{Driving out of choices: An investigation of transport modality in a university sample}{Salt Lake City, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 4-2013}{School of Geography and Earth Sciences, McMaster University}{Gender or Role? Analysis of activity participation of single-parent household heads in Canada considering time-use patterns}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 23-2012}{Polytechique Montr\'{e}al}{Web-based accessibility calculator for Montreal}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 3-2012}{Departamento de M\'{e}todos Cuantitativos para la Econom\'{i}a, Universidad de Murcia}{Desarrollo de un indicador de ajuste espacial para modelos de selecci\'{o}n discreta}{Murcia, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 20-2012}{Center for Urban Transportation Research, University of South Florida}{Mapping traveler attitudes: Does space matter?}{Tampa, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 13-2012}{Department of Civil Engineering, McMaster University}{Time geography and potential applications for space-time scheduling}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Seminar, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 18-2012}{School of Geographical Sciences and Urban Planning, University of Pennsylvania}{Developing a web-based accessibility calculator prototype}{Philadelphia, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 13-2012}{School of Geographical Sciences and Urban Planning, Arizona State University}{Using the Q statistic to explore segregation patterns of ethnic groups}{Tempe, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{November 1-2011}{Centre for Hip Health and Mobility, University of British Columbia}{Developing a web-based accessibility calculator prototype}{Vancouver, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Symposium "If We Build It Will They Walk?", Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{September 14-2011}{Accommodation Review Committee (Dalewood Area), Hamilton-Wentworth District School Board}{Walkable schools for sustainable communities}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{September 13-2011}{Department of Geography and Environmental Management, University of Waterloo}{Spatial analysis: Progress, prospects, and challenges}{Waterloo, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 23-2011}{Universidade de S\~{a}o Paulo}{Introduction to spatial interaction and modal split analysis}{S\~{a}o Paulo, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 15-2011}{LATTICE, Universidade Federal de Pernambuco}{From meso-scale analysis to micro-scale environments: A model-based approach for selecting walkability audit sites}{Recife, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 15 to 16-2011}{Universidade Federal de Pernambuco}{Modeling spatial heterogeneity in multivariate regression analysis}{Recife, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 11 to 13-2011}{The University of Western Australia Business School}{Applied Spatial Modeling}{Perth, Australia\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 15-2011}{3rd Annual TRANSLOG Conference}{Rapid Transit: Does it Drive Local Economic Development?}{Hamilton, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Panel Session, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 10-2011}{Polytechique Montr\'{e}al}{Accessibility measures and the contribution of spatial models}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Colloque Annuel de la Chaire Mobilit\'{e}, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 8-2011}{Department of Transportation, Universidad Polit\'[e]cnica de Madrid}{Accesibilidad y actividad comercial: Teor\'{i}a y m\'{e}todos}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 7-2011}{Department of Transportation, Universidad Polit\'[e]cnica de Madrid}{Movilidad en la tercera edad: Conceptos y evidencia}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Transport Sustainability Course, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 25-2011}{Department de genies civil, geologique et des mines, Ecole Polytechnique Montreal}{A model-based approach to select case sites for conducting walkability audits}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 15-2011}{School of Design, University of Pennsylvania}{From meso-scale analysis to micro-scale environments: A model-based approach for selecting walkability audit sites}{Philadelphia, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 11-2011}{University of Manchester}{On the confluence of social and spatial networks: an example of sense of community among university students}{Manchester, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Workshop Social Network Analysis in Transport, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 26-2010}{Dept. of Economics, Universidade Federal de Pernambuco}{Using the Q statistic to explore segregation patterns of ethnic groups}{Recife, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 24 to 25-2010}{Universidade Federal de Pernambuco}{Spatial pricing and the analysis of point patterns}{Recife, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 12 and 27-2010}{Universidade de S\~{a}o Paulo}{Selected topics in spatial analysis}{S\~{a}o Paulo, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{April 20-2010}{Centre for Hip Health and Mobility, University of British Columbia}{Mobility and social exclusion: analytical framework and state of knowledge}{Vancouver, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Symposium "Walk-the-Talk: Linking Research and Community on the Built Environment for Healthy Aging", Keynote Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 11-2010}{Edinburgh College of Art}{Riding cars with seniors: Accessibility implications of mode of travel}{Edinburgh, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item UK-Canada Study Tour "The Science of Age-Supportive Environments", Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 10-2010}{London Metropolitan University}{Mobility in aging: Time geography perspectives}{London, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item UK-Canada Study Tour "The Science of Age-Supportive Environments", Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 4-2010}{Transport Studies Unit, University of Oxford}{Mobility and social exclusion: Results of recent research in Canada}{Oxford, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 2-2010}{University of Nottingham}{Social influence and the decision to telework}{Nottingham, UK\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Workshop Social Network Analysis in Transport, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 18-2010}{Department de genies civil, geologique et des mines, Ecole Polytechnique Montreal}{Demographic aging and sustainable transportation}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 16-2010}{Institut national de la recherche scientifique-Urbanisation Culture Soci\'{e}t\'{e}}{Positive and Normative Aspects of Accessibility Measurements}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 13-2010}{89th Annual Meeting of the Transportation Research Board}{Social Networks and Information and Communication Technology: Implications for Activities in Real and Virtual Spaces}{Washington, D.C., USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Panel Session, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 18-2009}{Universidade de S\~{a}o Paulo}{Selected topics in spatial analysis}{S\~{a}o Paulo, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 14-2009}{Instituto Nacional de Pesquisas Espaciais}{Networks and behavior}{S\~{a}o Jos\'{e} dos Campos, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{August 6-2009}{Dept. of Transport Engineering, Universidade S\~{a}o Paulo-Sao C\~{a}rlos}{Introducing spatial analysis in transportation research}{Sao C\~{a}rlos, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 15-2009}{TRANSyT, Universidad Polit\'{e}cnica de Madrid}{Elecci\'{o}n de modos de transporte y planificaci\'{o}n de infraestructuras}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 22-2009}{Annual Meeting of the Association of American Geographers}{Publishing in a spatial analysis journal}{Las Vegas, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Panel Session, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 12-2009}{Dept. of of Civil Engineering, Universidad de Concepci\'{o}n}{An\'{a}lisis espacial y sistemas de transporte, matrimonio de conveniencia o amor a segunda vista?}{Concepci\'{o}n, Chile\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 9-2009}{Dept. of of Civil Engineering, Universidad de Concepci\'{o}n}{Uso de tiempo y exclusi\'{o}n social en Canad\'{a}: Una investigaci\'{o}n de actividades comerciales y de servicios desde la perspectiva de grupos vulnerables}{Concepci\'{o}n, Chile\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 13-2009}{Human Resources and Social Development Canada}{Mobility and social exclusion in Canadian communities: An empirical investigation of opportunity access and deprivation from the perspective of vulnerable groups}{Ottawa, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Presentation of Final Report, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 12-2009}{School of Urban Planning, McGill University}{Modeling activity spaces using short term travel surveys}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 9 to 12-2009}{Department de genies civil, geologique et des mines, Ecole Polytechnique Montreal}{Econometric techniques for urban transport and land use analysis}{Montreal, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Short Course, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{January 11-2009}{88th Annual Meeting of the Transportation Research Board}{Social Networks and Travel}{Washington, D.C., USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Panel Session, Panelist%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 31-2008}{Faculty of Economics, Administration, and Accounting of the Universidade de S\~{a}o Paulo}{Jobs and the Single Parent: Accessibility Analysis in the City of Toronto}{S\~{a}o Paulo, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 23 and 30-2008}{Universidade de S\~{a}o Paulo}{Selected topics in spatial analysis}{S\~{a}o Paulo, Brazil\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Short Course, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{October 10-2008}{Universidad Polit\'{e}cnica de Cartagena}{A simulation investigation of weight matrix coding schemes}{Cartagena, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item 3rd Seminar of Spatial Econometrics Jean Paelinck, Keynote Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 31-2008}{Universidad Internacional Men\'{e}ndez Pelayo}{Movilidad Sostenible}{Santander, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 25-2008}{Institute for Economic Geography and GIScience, Vienna University of Economics and Business Administration}{Spatial analysis of property prices, a comparison of techniques and heuristics}{Vienna, Austria\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 17-2008}{Institute Lawrence R. Klein, Universidad Aut\'{o}noma de Madrid}{Modelos locales: reflexiones sobre su utilidad para an\'{a}lisis inferencial e interpolaci\'{o}n espacial}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 23 to 25-2008}{Department of Transportation, Universidad Polit\'{e}cnica de Madrid}{T\'{e}cnicas econom\'{e}tricas para el an\'{a}lisis de sistemas de transporte y usos de suelo urbano}{Madrid, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Graduate Seminar, Instructor%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 20-2008}{Universidad Polit\'{e}cnica de Cartagena}{Pruebas de hip\'{o}tesis en estad\'{i}sticos y modelos espaciales locales}{Cartagena, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{May 23-2008}{Department of Economics, Universidad de Zaragoza}{Topolog\'{i}a de redes y econometr\'{i}a espacial}{Zaragoza, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 12-2008}{Department of Geography, University of Toronto in Mississauga}{"Riding in Cars with Seniors" Geographical perspectives on transportation modes and distance traveled by the elderly}{Mississauga, Spain\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{November 30-2007}{Department of Civil Engineering, University of Toronto}{Eliciting travel cost information using a web-based data collection tool: Preliminary results from a graduate teaching project}{Toronto, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{November 19-2007}{Department of Geography, Ryerson University}{Transportation and spatial analysis: Marriage of convenience or love at second sight?}{Toronto, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 23-2007}{Department of Geography, State University of New York at Buffalo}{Spatial analysis and travel behavior}{Buffalo, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{February 23-2007}{State University of New York at Buffalo}{Networks, social influence, and behavior: Current research and outstanding challenges}{Buffalo, USA\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Geographic Information Science Integrative Graduate Education and Research Training Program, Presenter%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{June 12 to 15-2005}{University of Toronto}{Integrated Land-use and Transportation Models: Frameworks, Models and Applications}{Toronto, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Processus: Second International Colloquium on the Behavioural Foundations of Integrated Land-use and Transportation Models, Discussant%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{July 22-2003}{Centre for the Study of Commercial Activity, Ryerson University}{Spatial effects in hedonic price functions}{Toronto, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Invited Talk, Speaker%
+\end{itemize}%
+\end{minipage}}
+    \twentyitem{March 13-2003}{Wilfried Laurier University}{Spatial parametric nonstationarity}{Waterloo, Canada\par\begin{minipage}{0.7\textwidth}%
+\begin{itemize}%
+\item Students of Spatial Statistics (SOS2), Speaker%
+\end{itemize}%
+\end{minipage}}
+\end{twenty}
+
+\hypertarget{departmental-faculty-university-service}{%
+\section{Departmental, Faculty, University
+Service}\label{departmental-faculty-university-service}}
+
+\nopagebreak
+
+\begin{twenty}
+    \twentyitem{September 2021-March 2022}{Member}{2022 NSERC CGM-Master Ranking Committee}{Faculty of Science, McMaster University\par\empty}
+    \twentyitem{February 2022-March 2022}{Member}{2021 CPM Committee}{School of Earth, Environment and Society, McMaster University\par\empty}
+    \twentyitem{February 2020-March 2020}{Member}{2019 CPM Committee}{School of Earth, Environment and Society, McMaster University\par\empty}
+    \twentyitem{July 2019-present}{Member}{Graduate Committee}{School of Earth, Environment and Society, McMaster University\par\empty}
+    \twentyitem{February 2019-March 2019}{Member}{2018 CPM Committee}{School of Earth, Environment and Society, McMaster University\par\empty}
+    \twentyitem{June 2018-April 2019}{Chair}{Search Committee Geology Hire}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{June 2017-May 2018}{Chair}{Search Committee Teaching Stream Hire}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2014-July 2015}{Member}{Teaching Workload Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{January 2013-July 2013}{Member}{University Librarian Search Committee}{McMaster University\par\empty}
+    \twentyitem{July 2011-July 2014}{Member}{Space Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2010-July 2013}{Member}{Tenure and Promotion Committee}{Faculty of Science, McMaster University\par\empty}
+    \twentyitem{July 2010-July 2011}{Member}{High School and Community Outreach, Publicity Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2009-July 2010}{Member}{Building safety committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2007-July 2008}{Member}{Space Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2006-July 2008}{Member}{Publicity Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{September 2006-April 2007}{Member}{Search Committee Geography Hire}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{July 2003-July 2008}{Member}{Graduate Committee}{School of Geography and Earth Sciences, McMaster University\par\empty}
+    \twentyitem{September 2003-April 2004}{Member}{Search Committee Geography Hire}{School of Geography and Geology, McMaster University\par\empty}
+\end{twenty}
+
+
+\end{document}

@@ -1,4 +1,0 @@
-*Conference Paper						
-Author	Year	Title	Conference Name	Conference Location	Date	Type
-"Paez, A; Soares, S; Menezes, T, "	2015	Assessing spatial inequalities based on the probabilities of an ordinal model	91th Annual Meeting of the Association of American Geographers	"Chicago, Illinois"	April 21-25	Not peer reviewed
-"Reyes, M; Paez, A; Morency, C, "	2014	Accounting for Facility Crowding in Individual-Based Estimates of Accessibility	61th Annual North American Meetings of the Regional Science Association International	Washington DC	November 12-15	Not peer reviewed

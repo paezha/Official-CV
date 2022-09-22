@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  7 SEP 2022 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.21)  22 SEP 2022 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -24,7 +24,7 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 ) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/clearsans/ClearSans.sty
-Package: ClearSans 2019/10/16 (Bob Tennent) Supports Clear-Sans fonts for all LaTeX engines.
+Package: ClearSans 2022/09/15 (Bob Tennent) Supports Clear-Sans fonts for all LaTeX engines.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
@@ -477,7 +477,7 @@ Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 ) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
 \csq@reset=\count297
 \csq@gtype=\count298
 \csq@glevel=\count299
@@ -486,7 +486,7 @@ Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
 \csq@tshold=\count302
 \csq@ltx@everypar=\toks34
 (c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -533,7 +533,8 @@ Package csquotes Info: ... none found.
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box64
-) (./twentysecondscv.aux)
+)
+No file twentysecondscv.aux.
 \openout1 = `twentysecondscv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
@@ -597,11 +598,10 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 94.
-(./twentysecondscv.out) (./twentysecondscv.out)
 \@outlinefile=\write4
 \openout4 = `twentysecondscv.out'.
 
-<apaez.jpg, id=43, 2055.68pt x 2055.68pt>
+<apaez.jpg, id=7, 2055.68pt x 2055.68pt>
 File: apaez.jpg Graphic file (type jpg)
 <use apaez.jpg>
 Package pdftex.def Info: apaez.jpg  used on input line 103.
@@ -755,7 +755,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 200--215
 
  []
 
-<twentysecondscv_files/figure-latex/review-to-publication-1.pdf, id=63, 469.755pt x 325.215pt>
+
+LaTeX Warning: Reference `fig:reviews-pubs' on page 2 undefined on input line 235.
+
+<twentysecondscv_files/figure-latex/review-to-publication-1.pdf, id=26, 469.755pt x 325.215pt>
 File: twentysecondscv_files/figure-latex/review-to-publication-1.pdf Graphic file (type pdf)
 <use twentysecondscv_files/figure-latex/review-to-publication-1.pdf>
 Package pdftex.def Info: twentysecondscv_files/figure-latex/review-to-publication-1.pdf  used on input line 241.
@@ -780,8 +783,8 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
+(fancyhdr)                Make it at least 15.86002pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.86002pt}.
 
 [2]
 Overfull \vbox (1149.53636pt too high) has occurred while \output is active []
@@ -795,8 +798,8 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
+(fancyhdr)                Make it at least 15.86002pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.86002pt}.
 
 [3 <./twentysecondscv_files/figure-latex/review-to-publication-1.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 337--340
@@ -852,302 +855,27 @@ Package fancyhdr Warning: \headheight is too small (0.0pt):
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
+(fancyhdr)                Make it at least 15.86002pt, for example:
+(fancyhdr)                \setlength{\footskip}{15.86002pt}.
 
 [4]
-<twentysecondscv_files/figure-latex/citations-plot-1.pdf, id=101, 469.755pt x 325.215pt>
-File: twentysecondscv_files/figure-latex/citations-plot-1.pdf Graphic file (type pdf)
-<use twentysecondscv_files/figure-latex/citations-plot-1.pdf>
-Package pdftex.def Info: twentysecondscv_files/figure-latex/citations-plot-1.pdf  used on input line 429.
-(pdftex.def)             Requested size: 211.69057pt x 146.55382pt.
-LaTeX Font Info:    Font shape `T1/ClearSans-TLF/m/it' in size <10> not available
-(Font)              Font shape `T1/ClearSans-TLF/regular/it' tried instead on input line 450.
-LaTeX Font Info:    Font shape `T1/ClearSans-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 450.
 
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[5
-pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.511 \leavevmode
-                 \vadjust pre{\hypertarget{ref-brown2022spatial}{}}% <./twentysecondscv_files/figure-latex/citations-plot-1.pdf>]
-Underfull \hbox (badness 2626) in paragraph at lines 626--626
-[]\T1/ClearSans-TLF/regular/n/10 Sarlas, G., Paez, A., & Ax-hausen, K. W. (2020). Betweenness-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[6]
-Underfull \hbox (badness 1028) in paragraph at lines 651--651
-[]\T1/ClearSans-TLF/regular/n/10 Paez, A., An-jum, Z., Dickson-Anderson, S. E., Schuster-Wallace, C.
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[7]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[8]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[9]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[10]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[11]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[12]
-Underfull \hbox (badness 1490) in paragraph at lines 1447--1447
-[]\T1/ClearSans-TLF/regular/n/10 Paez, A. (2004). Anisotropic vari-ance func-tions in ge-o-graph-i-cally
- []
-
-
-Underfull \hbox (badness 1215) in paragraph at lines 1447--1447
-\T1/ClearSans-TLF/regular/n/10 weighted re-gres-sion mod-els [Jour-nal Ar-ti-cle]. \T1/ClearSans-TLF/regular/it/10 Ge-o-graph-i-cal Anal-y-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[13]
-pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1549 \hypertarget{bibliography}{}
-                                   
-pdfTeX warning (ext4): destination with the same identifier (name{bibliography}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1562 \hypertarget{bibliography}{}
-                                   
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[14]
-Underfull \hbox (badness 10000) in alignment at lines 1639--1640
-[][]
- []
-
-
-Overfull \hbox (17.97098pt too wide) in paragraph at lines 1644--1645
-[][][]
- []
-
-
-Underfull \hbox (badness 1264) in paragraph at lines 1713--1713
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Ap-plied Eco-nomics, Uni-ver-si-dad Autónoma de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
-[]\T1/ClearSans-TLF/regular/n/10 XXIII Ap-plied Eco-nomics Meet-ing, Keynote
- []
-
-
-Underfull \hbox (badness 5970) in paragraph at lines 1968--1968
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
- []
-
-
-Underfull \hbox (badness 5970) in paragraph at lines 1973--1973
-[][]\T1/ClearSans-TLF/regular/n/10 Department of Trans-porta-tion, Uni-ver-si-dad Polit[][e]cnica de
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 2013--2013
-[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 2018--2018
-[]\T1/ClearSans-TLF/regular/n/10 UK-Canada Study Tour "The Sci-ence of Age-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2113
-[]\T1/ClearSans-TLF/regular/n/10 3rd Sem-i-nar of Spa-tial Econo-met-rics Jean
- []
-
-
-Overfull \hbox (89.56909pt too wide) in alignment at lines 1648--2184
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1648--2185
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[15]
-Overfull \vbox (5118.05515pt too high) has occurred while \output is active []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[16]
-Overfull \hbox (73.57008pt too wide) in alignment at lines 2192--2211
-[] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2192--2212
-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 15.4pt, for example:
-(fancyhdr)                \setlength{\footskip}{15.4pt}.
-
-[17] (./twentysecondscv.aux)
-Package rerunfilecheck Info: File `twentysecondscv.out' has not changed.
-(rerunfilecheck)             Checksum: 412C32EE7953E8C069D98E4ED0632833;1805.
- )
-(\end occurred when \ifnum on line 31 was incomplete) 
+! LaTeX Error: Unicode character Â’ (U+0092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.438 \end{minipage}}
+                      
 Here is how much of TeX's memory you used:
- 23496 strings out of 477035
- 442273 string characters out of 5826645
- 887869 words of memory out of 5000000
- 44004 multiletter control sequences out of 15000+600000
- 506074 words of font info for 45 fonts, out of 8000000 for 9000
+ 23244 strings out of 477035
+ 438326 string characters out of 5826644
+ 764723 words of memory out of 5000000
+ 43952 multiletter control sequences out of 15000+600000
+ 505635 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  115i,12n,118p,593b,780s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_zxbkm4.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/dejavu/dejavumono_t1-type1.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc}{c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/clearsans/clr_nrghxx.enc}<c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Italic.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/intel/clearsans/ClearSans-Regular.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/dejavu/DejaVuSansMono.pfb><c:/Users/paezha/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on twentysecondscv.pdf (17 pages, 1348836 bytes).
-PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 571 compressed objects within 6 object streams
- 225 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+!  ==> Fatal error occurred, no output PDF file produced!
