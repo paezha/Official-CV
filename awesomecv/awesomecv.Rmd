@@ -88,24 +88,47 @@ survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Wo
 
 \newpage
 
-# Scholarly and Professional Activities
+# Editorial Activities
 
-## Editor-in-Chief:
-
-Journal of Geographical Systems (January, 2008-present)
-
-## Associate Editor:
-
-Papers in Regional Science (November, 2016-August, 2019)
-
-## Editorial Board Membership
-
-```{r editorial-board-details}
-read_csv(paste0(here(),"/assets/editorial-board.csv")) %>%
+```{r editor-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Editor-in-Chief") |>
   detailed_entries(what = Journal, 
-                   when = Year,
+                   where = Year,
+                   with = What,
                    .protect = FALSE)
 ```
+
+```{r associate-editor-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Associate Editor") |>
+  detailed_entries(what = Journal, 
+                   where = Year,
+                   with = What,
+                   .protect = FALSE)
+```
+
+```{r guest-editor-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Guest Editor") |>
+  detailed_entries(what = Editors, 
+                   when = Year,
+                   with = What,
+                   where = glue::glue("{Journal} {Volume}"),
+                   why = Title,
+                   .protect = FALSE)
+```
+
+```{r editorial-board-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Editorial Board Member") |>
+  detailed_entries(what = Journal, 
+                   where = Year,
+                   with = What,
+                   .protect = FALSE)
+```
+
+# Scholarly and Professional Activities
 
 ## Journal Referee
 
