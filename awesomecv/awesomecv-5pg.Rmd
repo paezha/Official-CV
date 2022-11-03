@@ -1,0 +1,203 @@
+---
+name: Antonio
+surname: Paez
+position: "Professor"
+address: |
+         | School of Earth, Environment and Society
+         | McMaster University
+         | 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4
+phone: +1 905 525 9140
+www: experts.mcmaster.ca/display/paezha
+email: "paezha@mcmaster.ca"
+orcid: 0000-0001-6912-9919
+github: paezha
+publons: 2897251
+#researchgate: 7004827878
+googlescholar: paezha
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    extra_dependencies: ["flafter"]
+---
+
+```{r knitr-setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      fig.show='asis', 
+                      out.width="0.6\\linewidth", 
+                      fig.align='center')
+```
+
+```{r current-year}
+# Retrieve current year
+current_year <- as.numeric(as.character(Sys.time(), '%Y')) # Update year
+```
+
+```{r load-packages}
+library(here)
+library(readr)
+library(scholar)
+library(tibble)
+library(tidyverse)
+library(vitae)
+```
+
+# About me
+
+ * I trained in civil engineering before being adopted into geography.
+ * My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
+ * Also, too, mathematics, computer languages, science fiction, poetry, and memes.
+ * I have been known to look professorial on occasion.
+ * At this rate my only hope of being recognized is as the most promising oldest researcher in my discipline.
+
+# Education
+
+```{r education-details}
+read_csv(paste0(here(),"/assets/education.csv")) %>% 
+  detailed_entries(what = Degree, 
+                   when = Year, 
+                   with = Institution,
+                   where = Where, 
+                   why = Thesis,
+                   .protect = FALSE)
+```
+
+# Current Status at McMaster
+
+Full Professor in the School of Earth, Environment and Society since 2014. Tenured since 2007.
+
+# Employment History
+
+## Academic
+
+```{r employment-details}
+read_csv(paste0(here(),"/assets/employment.csv")) %>% 
+  detailed_entries(what = Position, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+# Editorial Activities
+
+```{r editor-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Editor-in-Chief") |>
+  detailed_entries(what = Journal, 
+                   where = Year,
+                   with = What,
+                   .protect = FALSE)
+```
+
+```{r associate-editor-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Associate Editor") |>
+  detailed_entries(what = Journal, 
+                   where = Year,
+                   with = What,
+                   .protect = FALSE)
+```
+
+```{r editorial-board-details}
+read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
+  filter(What == "Editorial Board Member") |>
+  detailed_entries(what = Journal, 
+                   where = Year,
+                   with = What,
+                   .protect = FALSE)
+```
+
+# Scholarly and Professional Activities
+
+## Journal Referee
+
+```{r journal-referee}
+referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) %>% 
+  pivot_longer(-Journal, 
+               names_to = "Year", 
+               values_to = "Reviews")
+```
+
+### Number of Total Lifetime Reviews
+
+`r sum(referee$Reviews)`
+
+### Number of Reviews in `r current_year`
+
+`r referee %>% filter(Year == current_year) %>% pull(Reviews) %>% sum()`
+
+# Areas of Interest
+
+Spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
+
+# Research Impact
+
+Fig. \ref{fig:citations} is a summary of research impact according to Google Scholar.
+
+```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+id <- "bLY377kAAAAJ" # Replace with your own google scholar id
+citations_scholar <- scholar::get_citation_history(id)
+
+citations_scholar %>%
+  ggplot() + 
+  geom_col(aes(x = year, 
+               y = cites),
+           color = "black",
+           fill = "white") + 
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 950, 
+           hjust = 0,
+           label = paste0("Total cites = ", 
+                          prettyNum(get_profile(id)$total_cites, big.mark = ","))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 900, 
+           hjust = 0,
+           label = paste0("h-index = ", 
+                          as.character(get_profile(id)$h_index))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 850, 
+           hjust = 0,
+           label = paste0("i10-index = ", 
+                          as.character(get_profile(id)$i10_index))) +
+  ggthemes::theme_tufte()
+```
+
+# Lifetime Publications
+
+### Edited Books
+
+```{r edited-books}
+bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
+#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+### Journal Articles (30 most recent)
+
+```{r journal-articles-published}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  arrange(desc(issued), desc(author$family)) |>
+  slice_head(n = 30)
+```
+
+\newpage
+
+# Invited Talks, Seminars, Workshops, Courses, and Panels (15 most recent)
+
+```{r talks-courses-details}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(What != "Unsolicited Advice") |>
+  slice_head(n = 15) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
