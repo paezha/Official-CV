@@ -336,13 +336,9 @@ citations_scholar %>%
 
 # Lifetime Publications
 
-## Edited Books
-
 ## Books
 
-## Peer-Reviewed 
-
-### Edited Books
+## Edited Books
 
 ```{r edited-books}
 bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
@@ -350,16 +346,22 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-### Book Chapters
+## Book Chapters
 
-### Journal Articles (Published)
+```{r book-chapters}
+bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) %>%
+#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) %>%
+  arrange(desc(issued), desc(author$family))
+```
+
+## Peer-Reviewed Journal Articles (Published)
 
 ```{r journal-articles-published}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-### Journal Articles (Accepted for Publication in Final Form)
+## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
 
 ```{r journal-articles-accepted-for-publication}
 rpa <- bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib"))
@@ -371,7 +373,7 @@ if(nrow(rpa) > 0){
 }
 ```
 
-### Journal Articles (Submitted for Publication)
+## Peer-Reviewed Journal Articles (Submitted for Publication)
 
 ```{r journal-articles-submitted-for-publication}
 rsp <- bibliography_entries(paste0(here(),"/assets/refereed-publications-submitted.bib")) 
@@ -383,14 +385,14 @@ if(nrow(rpa) > 0){
 }
 ```
 
-# Peer-reviewed Conference Presentations
+## Peer-reviewed Conference Presentations
 
 ```{r peer-reviewed-conference-presentations}
 bibliography_entries(paste0(here(),"/assets/conference-presentations-peer-reviewed.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-# Non-peer-reviewed Conference Presentations
+## Non-peer-reviewed Conference Presentations
 
 ```{r not-peer-reviewed-conference-presentations}
 bibliography_entries(paste0(here(),"/assets/conference-presentations-not-peer-reviewed.bib")) %>%
