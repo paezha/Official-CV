@@ -477,17 +477,20 @@ Ruben Mercado (McMaster University; August 2007) Policy perspectives on transpor
 
 # Supervisory Committees (All are doctoral unless otherwise noted)
 
-Jeremy Gabriel (McMaster University; 2023) Strata analysis
+Ricardo Lourenco Barros (McMaster University; 2022-) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
 
-Samira Hamidetehrani (McMaster University; 2020-) Shared autonomous vehicles 
+Samira Hamidetehrani (McMaster University; 2020-) User Preferences and Intentions Regarding Shared Automated Vehicles in Canadian Metropolitan Areas 
 
 Christina Borowiec (McMaster University; 2019-) Active travel
 
-Shaila Jamal (McMaster University; 2019-) Generational differences in travel behavior 
+Shaila Jamal (McMaster University; 2023) Generational differences in travel behavior 
+
+Jeremy Gabriel (McMaster University; 2023) Strata analysis
 
 Elnaz Abotalebi (McMaster University; 2019) Consumer stated preferences survey for electric cars
 
 Wade Genders (McMaster University; 2018) Deep Reinforcement Learning Adaptive Traffic Signal Control 
+
 Randy Bui (McMaster University; withdrew from program) Understanding Network Robustness and Critical Roadway Links in the Greater Toronto and Hamilton Area under Short-Term Disruption
 
 Nazila Roofigari-Esfahan (McMaster University; 2016) A Framework for Spatio-Temporal Uncertainty-Aware Scheduling and Control of Linear Projects
@@ -526,6 +529,10 @@ Hejun Kang (McMaster University; completed: August 2008) Intra-households intera
 Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
 
 # Examination Committees
+
+Daniela Arias Molinares (Ph.D. Facultad de Geografía e Historia, Universidad Complutense de Madrid) May 10, 2023
+
+Shaila Jamal (Ph.D. McMaster University; School of Earth, Environment and Society) May 9, 2023
 
 Lucy Joseph Chabariko (Ph.D. School of Transportation Sciences, University of Hasselt) December 21, 2020
 
