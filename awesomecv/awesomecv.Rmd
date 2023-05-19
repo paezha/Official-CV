@@ -392,6 +392,8 @@ Salvatore Vivona (McMaster University, April 2017) Using Blended Two-Stage Float
 
 Niloofar Nalaee (McMaster University, September 2021 - in progress) Mobility analytics using social media
 
+Bruno Dias dos Santos (INPE, Brazil, May 2023) Identifying urban and socio-environmental patterns of Amazon cities (with Silvana Amaral and Carolina Pinho)
+
 John Merral (McMaster University, September 2021) School closures and property values in Hamilton
 
 Elise Desjardins (McMaster University; Masters in Public Health, September 2020) Cycling patterns in Hamilton
@@ -399,6 +401,7 @@ Elise Desjardins (McMaster University; Masters in Public Health, September 2020)
 Sean Sears (McMaster University, July 2020) Goods movement in Canada
 
 Zoha Anjum (McMaster University; Masters in Public Health, September 2019) Water and health in Kenya (co-supervised with Sarah Dickson and Corinne Wallace) 
+
 Rodrigo Victoriano (Universidad de Concepcion, Chile; January 2018) Time, Space, Money, and Social Interaction: Using Machine Learning to Classify People's Mobility Strategies through Four Key Dimensions (with Juan A. Carrasco)
 
 Alvaro E. Toledo (Universidad de Concepcion, Chile; January 2018) A Spatial Analysis of the Impacts of a New Subway Line on Public Transport Demand Using Smart Card Data (with Juan A. Carrasco)
@@ -529,6 +532,8 @@ Hejun Kang (McMaster University; completed: August 2008) Intra-households intera
 Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
 
 # Examination Committees
+
+Bruno Dias dos Santos (M.Sc., INPE, Brazil) May 18, 2023
 
 Daniela Arias Molinares (Ph.D. Facultad de Geografía e Historia, Universidad Complutense de Madrid) May 10, 2023
 
