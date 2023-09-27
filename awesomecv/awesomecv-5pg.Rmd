@@ -169,6 +169,13 @@ citations_scholar %>%
 
 # Lifetime Publications
 
+### Books
+
+```{r books}
+bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
 ### Edited Books
 
 ```{r edited-books}
@@ -177,22 +184,22 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) %>%
   arrange(desc(issued), desc(author$family))
 ```
 
-### Journal Articles (30 most recent)
+### Journal Articles (35 most recent)
 
 ```{r journal-articles-published}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
   arrange(desc(issued), desc(author$family)) |>
-  slice_head(n = 30)
+  slice_head(n = 35)
 ```
 
-\newpage
+<!--\newpage-->
 
-# Invited Talks, Seminars, Workshops, Courses, and Panels (15 most recent)
+# Invited Talks, Seminars, Workshops, Courses, and Panels (2022-2023)
 
 ```{r talks-courses-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(What != "Unsolicited Advice") |>
-  slice_head(n = 15) |>
+  slice_head(n = 12) |>
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,
