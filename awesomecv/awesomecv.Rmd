@@ -390,6 +390,8 @@ Salvatore Vivona (McMaster University, April 2017) Using Blended Two-Stage Float
 
 ## Master
 
+Mahdis Moghadasi (McMaster University; September 2021-in progress) Developing data-driven standards for evaluation of active transportation equity
+
 Niloofar Nalaee (McMaster University, September 2021 - in progress) Mobility analytics using social media
 
 Bruno Dias dos Santos (INPE, Brazil, May 2023) Identifying urban and socio-environmental patterns of Amazon cities (with Silvana Amaral and Carolina Pinho)
@@ -450,9 +452,9 @@ Eri Yamada (Tohoku University; March 2001) Accessibility Analysis of Transportat
 
 ## Doctoral
 
-Anastasia Soukhov (McMaster University; September 2021-in progress) Developing data-driven standards for evaluation of motorized transportation equity
+Bruno Dias dos Santos (INPE, Brazil, May 2023) Identifying urban and socio-environmental patterns of Amazon cities (with Silvana Amaral and Carolina Pinho)
 
-Mahdis Moghadasi (McMaster University; September 2021-in progress) Developing data-driven standards for evaluation of active transportation equity
+Anastasia Soukhov (McMaster University; September 2021-in progress) Developing data-driven standards for evaluation of motorized transportation equity
 
 Elise Desjardins (McMaster University; September 2020-in progress) Children independent mobility
 
@@ -739,12 +741,16 @@ bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
+\newpage
+
 ## Peer-Reviewed Journal Articles (Published)
 
 ```{r journal-articles-published}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
+
+\newpage
 
 ## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
 
@@ -758,6 +764,8 @@ if(nrow(rpa) > 0){
 }
 ```
 
+\newpage
+
 ## Peer-Reviewed Journal Articles (Submitted for Publication)
 
 ```{r journal-articles-submitted-for-publication}
@@ -769,6 +777,8 @@ if(nrow(rpa) > 0){
     arrange(desc(issued), desc(author$family))
 }
 ```
+
+\newpage
 
 ## Peer-reviewed Conference Presentations
 
