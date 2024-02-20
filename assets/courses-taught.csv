@@ -1,7 +1,12 @@
 Code,Name,Year,Session,Level,Enrolment,Tas,Coinstructor,Where,Load
+ENVSOCTY 4GA3,Applied Spatial Statistics,2024,Winter,Undergraduate,48,1,,McMaster University,Load
+GEOG 6LP3,Transport Policy,2024,Winter,Graduate,4,0,,McMaster University,Load
+ENVSOCTY 4LP3,Transport Policy,2024,Winter,Undergraduate,23,0,,McMaster University,Load
+GEO *738,Discrete Choice and Policy Analysis,2024,Winter,Graduate,2,0,,McMaster University,Load
 GEO *712,Reproducible Research Workflow,2023,Fall,Graduate,10,0,,McMaster University,Overload
 ENVSOCTY 4GA3,Applied Spatial Statistics,2022,Winter,Undergraduate,31,1,,McMaster University,Load
-ENVSOCTY 4LP3,Transport Policy,2022,Winter,Undergraduate,18,0,,McMaster University,Load
+GEOG 6LP3,Transport Policy,2022,Winter,Graduate,1,0,,McMaster University,Load
+ENVSOCTY 4LP3,Transport Policy,2022,Winter,Undergraduate,17,0,,McMaster University,Load
 GEO *738,Discrete Choice and Policy Analysis,2022,Winter,Graduate,6,0,,McMaster University,Load
 ENVSOCTY 3LT3,Transportation Geography,2021,Fall,Undergraduate,30,1,,McMaster University,Load
 GEO *712,Reproducible Research Workflow,2021,Fall,Graduate,5,0,Krysha Dukacz,McMaster University,Overload
@@ -9,12 +14,14 @@ ENVSOCTY 4GA3,Applied Spatial Statistics,2021,Winter,Undergraduate,34,1.5,,McMas
 ENVSOCTY 4LP3,Transport Policy,2021,Winter,Undergraduate,6,0,,McMaster University,Load
 ENVSOCTY 3LT3,Transportation Geography,2020,Fall,Undergraduate,50,1.5,,McMaster University,Load
 GEOG 4GA3,Applied Spatial Statistics,2020,Winter,Undergraduate,46,1,,McMaster University,Load
-GEOG 4LP3,Transport Policy,2020,Winter,Undergraduate,15,0,,McMaster University,Load
-GEO *738,Discrete Choice and Policy Analysis,2020,Winter,Graduate,6,0,,McMaster University,Load
+GEOG 6LP3,Transport Policy,2020,Winter,Graduate,1,0,,McMaster University,Load
+GEOG 4LP3,Transport Policy,2020,Winter,Undergraduate,14,0,,McMaster University,Load
+GEO *738,Discrete Choice and Policy Analysis,2020,Winter,Graduate,3,0,,McMaster University,Load
 GEOG 3LT3,Transportation Geography,2019,Fall,Undergraduate,52,1.5,,McMaster University,Load
 GEO *712,Reproducible Research Workflow,2019,Fall,Graduate,8,0,Krysha Dukacz,McMaster University,Overload
 GEOG 4GA3,Applied Spatial Statistics,2019,Winter,Undergraduate,26,1,,McMaster University,Load
-GEOG 4LP3,Transport Policy,2019,Winter,Undergraduate,15,0,,McMaster University,Load
+GEOG 6LP3,Transport Policy,2019,Winter,Graduate,1,0,,McMaster University,
+GEOG 4LP3,Transport Policy,2019,Winter,Undergraduate,14,0,,McMaster University,Load
 GEO *738,Discrete Choice and Policy Analysis,2019,Winter,Graduate,6,0,,McMaster University,Load
 GEOG 3LT3,Transportation Geography,2018,Fall,Undergraduate,30,1,,McMaster University,Load
 GEOG 4GA3,Applied Spatial Statistics,2018,Winter,Undergraduate,42,1,,McMaster University,Load
