@@ -32,19 +32,20 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ```{r current-year}
 # Retrieve current year
-current_year <- as.numeric(as.character(Sys.time(), '%Y')) # Update year
+current_year <- lubridate::year(Sys.time()) # Update year
 ```
 
 ```{r load-packages}
-library(dplyr)
-library(ggplot2)
-library(glue)
-library(here)
-library(readr)
-library(scholar)
-library(tibble)
-library(tidyr)
-library(vitae)
+library(dplyr) # A Grammar of Data Manipulation
+library(ggplot2) # Create Elegant Data Visualisations Using the Grammar of Graphics
+library(glue) # Interpreted String Literals
+library(here) # A Simpler Way to Find Your Files
+library(lubridate) # Make Dealing with Dates a Little Easier
+library(readr) # Read Rectangular Text Data
+library(scholar) # Analyse Citation Data from Google Scholar
+library(tibble) # Simple Data Frames
+library(tidyr) # Tidy Messy Data
+library(vitae) # Curriculum Vitae for R Markdown
 ```
 
 # About me
@@ -832,6 +833,7 @@ read_csv(paste0(here(),"/assets/internal-service.csv")) |>
                    with = Organization,
                    where = Where)
 ```
+
 
 
 
