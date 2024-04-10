@@ -30,11 +30,6 @@ knitr::opts_chunk$set(echo = FALSE,
                       fig.align='center')
 ```
 
-```{r current-year}
-# Retrieve current year
-current_year <- lubridate::year(Sys.time()) # Update year
-```
-
 ```{r load-packages}
 library(dplyr) # A Grammar of Data Manipulation
 library(ggplot2) # Create Elegant Data Visualisations Using the Grammar of Graphics
@@ -46,6 +41,11 @@ library(scholar) # Analyse Citation Data from Google Scholar
 library(tibble) # Simple Data Frames
 library(tidyr) # Tidy Messy Data
 library(vitae) # Curriculum Vitae for R Markdown
+```
+
+```{r current-year}
+# Retrieve current year
+current_year <- lubridate::year(Sys.time()) # Update year
 ```
 
 # About me
