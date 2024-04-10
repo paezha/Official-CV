@@ -673,6 +673,7 @@ Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil
 
 ```{r research-funding-details}
 read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  arrange(desc(Year)) |>
   detailed_entries(what = Title, 
                    when = Year, 
                    where = Amount,
