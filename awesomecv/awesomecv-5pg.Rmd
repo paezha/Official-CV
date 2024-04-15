@@ -19,6 +19,8 @@ output:
   vitae::awesomecv:
     page_total: true
     extra_dependencies: ["flafter"]
+header-includes:
+  - \usepackage{soul}    
 ---
 
 ```{r knitr-setup, include=FALSE}
@@ -50,7 +52,8 @@ current_year <- lubridate::year(Sys.time()) # Update year
  * My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
  * Also, too, mathematics, computer languages, science fiction, poetry, and memes.
  * I have been known to look professorial on occasion.
- * At this rate my only hope of being recognized is as the most promising oldest researcher in my discipline.
+ * \st{At this rate my only hope of being recognized is as the most promising oldest researcher in my discipline.}
+ * I was recognized with the Edward L. Ullman of the Association of American Geogeraphers for lifelong commitment and contributions to the field of transportation geography.
 
 # Education
 
@@ -194,7 +197,7 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
 
 <!--\newpage-->
 
-# Invited Talks, Seminars, Workshops, Courses, and Panels (2022-2023)
+# Invited Talks, Seminars, Workshops, Courses, and Panels (12 most recent)
 
 ```{r talks-courses-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
