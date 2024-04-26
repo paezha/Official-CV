@@ -56,8 +56,8 @@ current_year <- lubridate::year(Sys.time()) # Update year
  * My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
  * Also, too, mathematics, computer languages, science fiction, poetry, and memes.
  * I have been known to look professorial on occasion.
- * \st{At this rate my only hope of being recognized is as the most promising oldest researcher in my discipline.}
- * I was recognized with the Edward L. Ullman of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
+ * In 2010 a research team I led was recognized with the **Meredith F. Burrill  Award** of the Association of American Geographers for exceptional work at the intersection basic research in geography and policy.
+ * In 2024 I was recognized with the **Edward L. Ullman Award** of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
 
 # Education
 
@@ -296,9 +296,10 @@ read_csv(paste0(here(),"/assets/honors.csv")) |>
 
 # Teaching
 
+<!--
 ## Courses
 
-```{r courses}
+```{r courses, eval=FALSE}
 courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
 
 courses |>
@@ -309,7 +310,55 @@ courses |>
                    why = glue::glue("Enrolment: {Enrolment} students"),
                    .protect = FALSE)
 ```
+-->
 
+<!-- Compressed version of courses -->
+
+## Undergraduate Teaching
+
+```{r courses-brief-undergraduate}
+courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
+
+courses_summary <- courses |>
+  group_by(Code) |> 
+  summarize(Name = first(Name), 
+            offerings = n(),
+            total_students = sum(Enrolment), 
+            level = first(Level)) |> 
+  arrange(level)
+
+courses_summary |>
+  filter(level == "Undergraduate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   when = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   with = Name,
+                   .protect = FALSE)
+```
+
+## Graduate Teaching
+
+```{r courses-brief-graduate}
+courses_summary |>
+  filter(level == "Graduate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   when = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   with = Name,
+                   .protect = FALSE)
+```
+
+## Diploma-Certificate Teaching
+
+```{r courses-brief-diploma}
+courses_summary |>
+  filter(level == "Diploma-Certificate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   when = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   with = Name,
+                   .protect = FALSE)
+```
 
 ## Total number of courses taught
 
@@ -721,7 +770,9 @@ citations_scholar |>
   ggthemes::theme_tufte()
 ```
 
+<!--
 \newpage
+-->
 
 # Lifetime Publications
 
@@ -748,7 +799,9 @@ bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
+<!--
 \newpage
+-->
 
 ## Peer-Reviewed Journal Articles (Published)
 
@@ -771,7 +824,9 @@ if(nrow(rpa) > 0){
 }
 ```
 
+<!--
 \newpage
+-->
 
 ## Peer-Reviewed Journal Articles (Submitted for Publication)
 
@@ -785,7 +840,9 @@ if(nrow(rpa) > 0){
 }
 ```
 
+<!--
 \newpage
+-->
 
 ## Peer-reviewed Conference Presentations
 
@@ -819,6 +876,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
 ```{r talks-courses-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(What != "Unsolicited Advice") |>
+  #slice_head(n = 39) |>
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,
