@@ -30,6 +30,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       fig.show='asis', 
                       out.width="0.6\\linewidth", 
                       fig.align='center')
+
+#pandoc::pandoc_activate()
 ```
 
 ```{r load-packages}
