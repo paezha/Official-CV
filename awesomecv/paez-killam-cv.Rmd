@@ -6,7 +6,7 @@ address: |
          | School of Earth, Environment and Society
          | McMaster University
          | 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4
-phone: +1 905 525 9140
+         | phone: +1 905 525 9140
 www: experts.mcmaster.ca/display/paezha
 email: "paezha@mcmaster.ca"
 orcid: 0000-0001-6912-9919
@@ -21,6 +21,8 @@ output:
     extra_dependencies: ["flafter"]
 header-includes:
   - \usepackage{soul}
+  - \usepackage{longtable}
+  - \usepackage{float}
 ---
 
 ```{r knitr-setup, include=FALSE}
@@ -35,15 +37,21 @@ knitr::opts_chunk$set(echo = FALSE,
 ```
 
 ```{r load-packages}
+library(bibliometrix) # Comprehensive Science Mapping Analysis
 library(dplyr) # A Grammar of Data Manipulation
+library(ggraph) # An Implementation of Grammar of Graphics for Graphs and Networks
 library(ggplot2) # Create Elegant Data Visualisations Using the Grammar of Graphics
-library(glue) # Interpreted String Literals
-library(here) # A Simpler Way to Find Your Files
+library(glue) # Interpreted String Literals # Interpreted String Literals
+library(here) # A Simpler Way to Find Your Files # A Simpler Way to Find Your Files
+library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax 
 library(lubridate) # Make Dealing with Dates a Little Easier
 library(readr) # Read Rectangular Text Data
 library(scholar) # Analyse Citation Data from Google Scholar
+library(stringr) # Simple, Consistent Wrappers for Common String Operations
 library(tibble) # Simple Data Frames
+library(tidygraph) # A Tidy API for Graph Manipulation
 library(tidyr) # Tidy Messy Data
+library(treemapify) # Draw Treemaps in 'ggplot2'
 library(vitae) # Curriculum Vitae for R Markdown
 ```
 
@@ -52,14 +60,19 @@ library(vitae) # Curriculum Vitae for R Markdown
 current_year <- lubridate::year(Sys.time()) # Update year
 ```
 
+```{r google-scholar-id}
+id <- "bLY377kAAAAJ" # Replace with your own google scholar id
+```
+
+
 # About me
 
- * I trained in civil engineering before being adopted into geography.
- * My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
- * Also, too, mathematics, computer languages, science fiction, poetry, and memes.
- * I have been known to look professorial on occasion.
- * In 2010 a research team I led was recognized with the **Meredith F. Burrill  Award** of the Association of American Geographers for exceptional work at the intersection basic research in geography and policy.
- * In 2024 I was recognized with the **Edward L. Ullman Award** of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
+* I trained in civil engineering before being adopted into geography.
+* My areas of interest include spatial analysis, spatial statistics, transportation, travel behavior, cities.
+* Also, too, mathematics, computer languages, science fiction, poetry, and memes.
+* I have been known to look professorial on occasion.
+* In 2010 a research team I led was recognized with the **Meredith F. Burrill  Award** of the Association of American Geographers for exceptional work at the intersection basic research in geography and policy.
+* In 2024 I was recognized with the **Edward L. Ullman Award** of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
 
 # Education
 
@@ -93,11 +106,67 @@ read_csv(paste0(here(),"/assets/employment.csv")) |>
 ## Industry
 
 Surveyor and construction site supervisor (August 1993 - March 1995) Topographical
-survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz. These projects involved in-field data collection and computer aided design. Construction site supervision.
+survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz.
 
-\newpage
+Consultant (2015 - present) Environics Analytics, Toronto, Canada. 
+
+# Honours
+
+## Visiting Professorships
+
+```{r professorship-details}
+read_csv(paste0(here(),"/assets/honors.csv")) |>
+  dplyr::filter(Type == "Professorship") |> 
+  arrange(desc(Year)) |>
+  detailed_entries(what = Honor, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+## Scholarships
+
+```{r scholarships-details}
+read_csv(paste0(here(),"/assets/honors.csv")) |>
+  dplyr::filter(Type == "Scholarship") |>  
+  arrange(desc(Year)) |>
+  detailed_entries(what = Honor, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+## Scientific Awards
+
+```{r scientific-awards-details}
+read_csv(paste0(here(),"/assets/honors.csv")) |>
+  dplyr::filter(Type == "Scientific Awards") |> 
+  arrange(desc(Year)) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Honor,
+                   where = Where,
+                   why = With,
+                   .protect = FALSE)
+```
+
+## Trainee Honours
+
+```{r trainee-honors-details}
+read_csv(paste0(here(),"/assets/honors.csv")) |>
+  dplyr::filter(Type == "Trainee") |> 
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = With,
+                   where = Honor,
+                   .protect = FALSE)
+```
 
 # Editorial Activities
+
+## Editorships
 
 ```{r editor-details}
 read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
@@ -117,6 +186,8 @@ read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
                    .protect = FALSE)
 ```
 
+## Guest Editorships
+
 ```{r guest-editor-details}
 read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
   filter(What == "Guest Editor") |>
@@ -127,6 +198,8 @@ read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
                    why = Title,
                    .protect = FALSE)
 ```
+
+## Editorial Boards
 
 ```{r editorial-board-details}
 read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
@@ -201,6 +274,7 @@ rbind(df_pubs,
         legend.title = element_blank())
 ```
 
+<!--
 ### Reviews per journal
 
 ```{r journal-referee-details}
@@ -212,6 +286,9 @@ referee |>
                    when = Reviews,
                    .protect = FALSE)
 ```
+-->
+
+\newpage
 
 # Grant Reviews
 
@@ -225,78 +302,28 @@ read_csv(paste0(here(),"/assets/grant-reviews.csv")) |>
                    .protect = FALSE)
 ```
 
-
-
 # Areas of Interest
 
 Spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
 
-# Honours
-
-## Visiting Professorships
-
-```{r professorship-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Professorship") |> 
-  detailed_entries(what = Honor, 
-                   when = Year, 
-                   with = Organization,
-                   where = Where,
-                   .protect = FALSE)
-```
-
-## Scholarships
-
-```{r scholarships-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Scholarship") |> 
-  detailed_entries(what = Honor, 
-                   when = Year, 
-                   with = Organization,
-                   where = Where,
-                   .protect = FALSE)
-```
-
-## Scientific Awards
-
-```{r scientific-awards-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Scientific Awards") |> 
-  detailed_entries(what = Honor, 
-                   when = Year, 
-                   with = Organization,
-                   where = Where,
-                   why = With,
-                   .protect = FALSE)
-```
-
-## Trainee Honours
-
-```{r trainee-honors-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Trainee") |> 
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = With,
-                   where = Honor,
-                   .protect = FALSE)
-```
-
-## Other
-
-```{r other-honors-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Other") |> 
-  mutate(Year = current_year) |>
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = Honor,
-                   why = With,
-                   .protect = FALSE) |>
-  mutate(Year = current_year)
-```
-
 # Teaching
+
+```{r read-courses-asset}
+courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
+```
+
+
+## Total number of courses taught
+
+`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> nrow())`
+
+`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> nrow())`
+
+## Total number of students
+
+`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
+
+`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
 
 <!--
 ## Courses
@@ -305,12 +332,12 @@ read_csv(paste0(here(),"/assets/honors.csv")) |>
 courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
 
 courses |>
-  detailed_entries(what = Level, 
-                   when = glue::glue("TA support (1 TA = 130 h): {Tas}/ Co-Instructor(s): {Coinstructor}"),
-                   where = glue::glue("{Year} ({Session})"),
-                   with = glue::glue("{Code} {Name}"),# glue("{Code}, {Name}"),
-                   why = glue::glue("Enrolment: {Enrolment} students"),
-                   .protect = FALSE)
+detailed_entries(what = Level, 
+when = glue::glue("TA support (1 TA = 130 h): {Tas}/ Co-Instructor(s): {Coinstructor}"),
+where = glue::glue("{Year} ({Session})"),
+with = glue::glue("{Code} {Name}"),# glue("{Code}, {Name}"),
+why = glue::glue("Enrolment: {Enrolment} students"),
+.protect = FALSE)
 ```
 -->
 
@@ -332,9 +359,9 @@ courses_summary <- courses |>
 courses_summary |>
   filter(level == "Undergraduate") |>
   detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   when = Name,
-                   where = glue::glue("Times offered: {offerings}"),
                    with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
                    .protect = FALSE)
 ```
 
@@ -344,9 +371,9 @@ courses_summary |>
 courses_summary |>
   filter(level == "Graduate") |>
   detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   when = Name,
-                   where = glue::glue("Times offered: {offerings}"),
                    with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
                    .protect = FALSE)
 ```
 
@@ -356,23 +383,13 @@ courses_summary |>
 courses_summary |>
   filter(level == "Diploma-Certificate") |>
   detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   when = Name,
-                   where = glue::glue("Times offered: {offerings}"),
                    with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
                    .protect = FALSE)
 ```
 
-## Total number of courses taught
-
-`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> nrow())`
-
-`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> nrow())`
-
-## Total number of students
-
-`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> pull(Enrolment) |> sum())`
-
-`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> pull(Enrolment) |> sum())`
+\newpage
 
 # Supervisorships
 
@@ -441,7 +458,6 @@ Nadhiyya Shabir (McMaster University, April 2021) The Occurrences of Infectious 
 ## Undergraduate (Physics):
 
 Salvatore Vivona (McMaster University, April 2017) Using Blended Two-Stage Floating Catchment Areas to Calculate Accessibility to Primary Health Care by Seniors
-
 
 ## Master
 
@@ -588,6 +604,7 @@ Hejun Kang (McMaster University; completed: August 2008) Intra-households intera
 
 Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
 
+<!--
 # Examination Committees
 
 Samira Hamidetehrani (Ph.D., McMaster University; School of Earth, Environment and Society ) September 15, 2023
@@ -723,8 +740,43 @@ Jennifer L. Campos (Ph.D., McMaster University; Psychology and Neuroscience) Sep
 Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) September 17, 2007
 
 Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
+-->
+
+\newpage
 
 # Research and Other Funding
+
+## Funding at a Glance
+
+```{r research-funding}
+research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  mutate(Amount_num = str_replace_all(Amount, ",", ""),
+         Amount_num = str_extract_all(Amount_num, "\\d+") |>
+           as.numeric(),
+         Share = Amount_num * Share,
+         Share_chr = prettyNum(Share, big.mark =",", digits = 4),
+         Share_chr = paste0("$", Share_chr))
+```
+The total funds of all projects that I have been part of is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num), big.mark = ",", digits = 4))`. Of this amount, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Research"]), big.mark = ",", digits = 4))` has been research grants from various organizations, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))` has been for pedagogical research, and `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Travel"]), big.mark = ",", digits = 4))` has been to support event participation.
+
+My personal share of these funds to date amounts to `r paste0("CAD ", prettyNum(sum(research_funding$Share), big.mark = ",", digits = 4))`. The distribution of these funds for research, teaching, and travel, and from various organizations, can be seen in Fig. \ref{fig:research-funding-share}.
+
+```{r research-funding-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:research-funding-share}My share of research funds by source"}
+ggplot(research_funding, 
+       aes(area = Share, 
+           fill = Purpose,
+           subgroup = Funder_Short,
+           label = Share_chr)) +
+  geom_treemap() +
+  geom_treemap_subgroup_border() +
+  geom_treemap_subgroup_text(place = "centre", grow = T, alpha = 0.25, 
+                             colour =
+                             "black", fontface = "italic", min.size = 0) +
+  geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
+  scale_fill_manual(values = c("Research" = "deepskyblue", "Teaching" = "darkorange", "Travel" = "darkolivegreen3")) +
+  theme(legend.position = "bottom")
+```
+## Detailed Funding
 
 ```{r research-funding-details}
 read_csv(paste0(here(),"/assets/research-funding.csv")) |>
@@ -739,10 +791,11 @@ read_csv(paste0(here(),"/assets/research-funding.csv")) |>
 
 # Research Impact
 
-Fig. \ref{fig:citations} is a summary of research impact according to Google Scholar.
+Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`.
+
+The impact of my work can be appreciated by the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably Transportation, Geography, Economics, Environmental Studies and Science, Computer Science, and Civil Engineering. My publications have been cited by researchers in more than a 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the United States, China, Canada, England, and Spain.
 
 ```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
-id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 citations_scholar <- scholar::get_citation_history(id)
 
 citations_scholar |>
@@ -772,9 +825,225 @@ citations_scholar |>
   ggthemes::theme_tufte()
 ```
 
-<!--
-\newpage
--->
+```{r citations-field, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-field}Fields where my research is cited according to Web of Science"}
+knitr::include_graphics(glue(here(), "/assets/visualization_fields_2024_05_13.png"))
+```
+
+```{r citations-country, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-country}Countries where my research is cited according to Web of Science"}
+knitr::include_graphics(glue(here(), "/assets/visualization_countries_2024_05_13.png"))
+```
+
+# Research Output
+
+It is conventional in my fields of expertise to list authors in order of their contributions. The first and second authors are credited with doing a majority of the work. The exception to this general rule is when the last author is the senior author and has provided, in addition to other contributions, supervisory support to the rest of the team.
+
+## Bibliography at a Glance
+
+Table \ref{tab:bibliography-at-a-glance} provides some key information about my publication record. In addition to the items listed there, I am co-editor of `r bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |> nrow()` edited books. Fig. \ref{fig:key-topics} maps the relationship between key topics in my peer-reviewed publications, based on keywords of the documents. Fig. \ref{fig:intl-colabs} maps my international research collaborations.
+
+```{r summary-bibliography, include=FALSE}
+books <- bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  arrange(desc(issued), desc(author$family))
+
+books_authors <- csl_name(books)
+books_authors <- books_authors$family$author
+books_authors <- books_authors$family
+n_authors <- str_split(books_authors, ",") |>
+           lapply(length) |>
+           unlist()
+
+summary_books <- books |>
+  mutate(n_authors = n_authors,
+         first_author = str_split_i(books_authors, ",", 1),
+         second_author = str_split_i(books_authors, ",", 2),
+         senior_author = str_split_i(books_authors, ",", -1),
+         case_author = case_when(n_authors == 1 ~ "single",
+                                 n_authors >= 2 & str_detect(second_author, "Páez") ~ "second",
+                                 n_authors > 1 & str_detect(first_author, "Páez") ~ "first",
+                                 n_authors > 2 & str_detect(senior_author, "Páez") ~ "senior",
+                                 TRUE ~ "other")) |> select(ends_with("author")) |>
+  summarize(type = "Books",
+            total = n(),
+            mean_authors = round(mean(n_authors), 2),
+            max_authors = max(n_authors),
+            single_author = glue(sum(case_author == "single"), " (", round(sum(case_author == "single")/n(), 2) * 100, "%)"),
+            first_author = glue(sum(case_author == "first"), " (", round(sum(case_author == "first")/n(), 2) * 100, "%)"),
+            second_author = glue(sum(case_author == "second"), " (", round(sum(case_author == "second")/n(), 2) * 100, "%)"),
+            senior_author = glue(sum(case_author == "senior"), " (", round(sum(case_author == "senior")/n(), 2) * 100, "%)"),
+            other_author = glue(sum(case_author == "other"), " (", round(sum(case_author == "other")/n(), 2) * 100, "%)"))
+
+edited_books <- bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+
+
+book_chapters <- bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+
+book_chapters_authors <- csl_name(book_chapters)
+book_chapters_authors <- book_chapters_authors$family$author
+book_chapters_authors <- book_chapters_authors$family
+n_authors <- str_split(book_chapters_authors, ",") |>
+           lapply(length) |>
+           unlist()
+
+summary_book_chapters <- book_chapters |>
+  mutate(n_authors = n_authors,
+         first_author = str_split_i(book_chapters_authors, ",", 1),
+         second_author = str_split_i(book_chapters_authors, ",", 2),
+         senior_author = str_split_i(book_chapters_authors, ",", -1),
+         case_author = case_when(n_authors == 1 ~ "single",
+                                 n_authors >= 2 & str_detect(second_author, "Páez") ~ "second",
+                                 n_authors > 1 & str_detect(first_author, "Páez") ~ "first",
+                                 n_authors > 2 & str_detect(senior_author, "Páez") ~ "senior",
+                                 TRUE ~ "other")) |> select(ends_with("author")) |>
+  summarize(type = "Book chapters",
+            total = n(),
+            mean_authors = round(mean(n_authors), 2),
+            max_authors = max(n_authors),
+            single_author = glue(sum(case_author == "single"), " (", round(sum(case_author == "single")/n(), 2) * 100, "%)"),
+            first_author = glue(sum(case_author == "first"), " (", round(sum(case_author == "first")/n(), 2) * 100, "%)"),
+            second_author = glue(sum(case_author == "second"), " (", round(sum(case_author == "second")/n() * 100, 2), "%)"),
+            senior_author = glue(sum(case_author == "senior"), " (", round(sum(case_author == "senior")/n() * 100, 2), "%)"),
+            other_author = glue(sum(case_author == "other"), " (", round(sum(case_author == "other")/n(), 2), "%)"))
+
+peer_reviewed_articles <- bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  arrange(desc(issued), desc(author$family))
+
+peer_reviewed_articles_authors <- csl_name(peer_reviewed_articles)
+peer_reviewed_articles_authors <- peer_reviewed_articles_authors$family$author
+peer_reviewed_articles_authors <- peer_reviewed_articles_authors$family
+
+n_authors <- str_split(peer_reviewed_articles_authors, ",") |>
+           lapply(length) |>
+           unlist()
+
+summary_peer_reviewed_articles <- peer_reviewed_articles |>
+  cbind(n_authors) |>
+  mutate(first_author = str_split_i(peer_reviewed_articles_authors, ",", 1),
+         second_author = str_split_i(peer_reviewed_articles_authors, ",", 2),
+         senior_author = str_split_i(peer_reviewed_articles_authors, ",", -1),
+         case_author = case_when(n_authors == 1 ~ "single",
+                                 n_authors >= 2 & str_detect(second_author, "Páez") ~ "second",
+                                 n_authors > 1 & str_detect(first_author, "Páez") ~ "first",
+                                 n_authors > 2 & str_detect(senior_author, "Páez") ~ "senior",
+                                 TRUE ~ "other")) |> select(ends_with("author")) |>
+  summarize(type = "Peer reviewed articles",
+            total = n(),
+            mean_authors = round(mean(n_authors), 2),
+            max_authors = max(n_authors),
+            single_author = glue(sum(case_author == "single"), " (", round(sum(case_author == "single")/n(), 2) * 100, "%)"),
+            first_author = glue(sum(case_author == "first"), " (", round(sum(case_author == "first")/n(), 2) * 100, "%)"),
+            second_author = glue(sum(case_author == "second"), " (", round(sum(case_author == "second")/n(), 2) * 100, "%)"),
+            senior_author = glue(sum(case_author == "senior"), " (", round(sum(case_author == "senior")/n(), 2) * 100, "%)"),
+            other_author = glue(sum(case_author == "other"), " (", round(sum(case_author == "other")/n(), 2) * 100, "%)"))
+
+bibliography_glance <- rbind(summary_books,
+                             summary_book_chapters,
+                             summary_peer_reviewed_articles)
+```
+
+```{r}
+kable(bibliography_glance,
+      "latex",
+      col.names = c("Type", 
+                    "No. of Items",
+                    "Mean No. Authors",
+                    "Max. No. Authors", 
+                    "Single Author", 
+                    "First Author", 
+                    "Second Author", 
+                    "Senior Author", 
+                    "Other Author"),
+      booktabes = TRUE,
+      caption = "\\label{tab:bibliography-at-a-glance}Bibliography at a glance") |>
+  kable_styling(font_size = 7, 
+                latex_options = "HOLD_position")
+```
+
+
+```{r convert-bibliography-for-bibliometric-analysis, include=FALSE}
+# This chunk uses package {bibliometrix}
+
+M <- convert2df(glue::glue(here::here(), "/assets/wos_0.bib"),
+                dbsource = "wos",
+                format = "bibtex")
+```
+
+```{r key-word-co-occurrences, include=FALSE}
+# This chunk uses package {bibliometrix}
+
+NetMatrix <- biblioNetwork(M, 
+                           analysis = "co-occurrences", 
+                           network = "keywords", 
+                           sep = ";")
+
+net <- networkPlot(NetMatrix, 
+                   normalize="association", 
+                   weighted = T, 
+                   n = 35, 
+                   Title = "Keyword Co-occurrences", 
+                   type = "fruchterman", 
+                   size = TRUE,
+                   edgesize = 5,
+                   labelsize=0.5)
+
+graph <- as_tbl_graph(net$graph)
+```
+
+```{r}
+set.seed(10)
+
+key_research_themes <- ggraph(graph, layout = "fr") +
+  geom_edge_fan(aes(alpha = weight)) +
+  geom_node_label(aes(color = factor(community),
+                      label = name,
+                      size = size),
+                  repel = TRUE) +
+  scale_size_continuous(range = c(2.5, 4.5)) +
+  theme_void() +
+  theme(legend.position = "none")
+```
+
+```{r network-of-collaborations, include=FALSE}
+# This chunk uses package {bibliometrix}
+
+M <- metaTagExtraction(M, Field = "AU_CO", sep = ";")
+
+NetMatrix <- biblioNetwork(M, 
+                           analysis = "collaboration", 
+                           network = "countries", sep = ";")
+
+net <- networkPlot(NetMatrix, 
+                   n = dim(NetMatrix)[1], 
+                   label.cex = TRUE,
+                   Title = "Country Collaboration", 
+                   type = "circle", size=TRUE, 
+                   remove.multiple=FALSE,
+                   labelsize=0.7,
+                   cluster="none")
+
+graph <- as_tbl_graph(net$graph)
+```
+
+```{r plot-network-of-collaborations}
+intl_collabs <- ggraph(graph, layout = "linear", circular = TRUE) +
+  geom_edge_fan(aes(alpha = weight)) +
+  geom_node_label(aes(label = name,
+                      size = size)) +
+  scale_size_continuous(range = c(2.5, 4.5)) +
+  theme_void() +
+  theme(legend.position = "none")
+```
+
+```{r key-topics-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:key-topics}Key topics in my peer-reviewed publications"}
+key_research_themes
+```
+
+```{r intl-colabs-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:intl-colabs}International collaborations"}
+intl_collabs
+```
 
 # Lifetime Publications
 
@@ -789,7 +1058,7 @@ bibliography_entries(paste0(here(),"/assets/books.bib")) |>
 
 ```{r edited-books}
 bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |>
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
@@ -797,7 +1066,7 @@ bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |>
 
 ```{r book-chapters}
 bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
-#bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
@@ -811,8 +1080,6 @@ bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
-
-\newpage
 
 ## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
 
@@ -849,18 +1116,24 @@ if(nrow(rpa) > 0){
 ## Peer-reviewed Conference Presentations
 
 ```{r peer-reviewed-conference-presentations}
-bibliography_entries(paste0(here(),"/assets/conference-presentations-peer-reviewed.bib")) |>
+peer_reviewed_conference <- bibliography_entries(paste0(here(),"/assets/conference-presentations-peer-reviewed.bib")) |>
   arrange(desc(issued), desc(author$family))
+
+peer_reviewed_conference
 ```
+
+<!--Number of lifetime peer-reviewed conference presentations is `r nrow(peer_reviewed_conference)`.-->
 
 ## Non-peer-reviewed Conference Presentations
 
-```{r not-peer-reviewed-conference-presentations}
-bibliography_entries(paste0(here(),"/assets/conference-presentations-not-peer-reviewed.bib")) |>
+```{r not-peer-reviewed-conference-presentations, include=FALSE}
+non_peer_reviewed_conference <- bibliography_entries(paste0(here(),"/assets/conference-presentations-not-peer-reviewed.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
-# Unsolicited Advice
+Number of lifetime non-peer-reviewed conference presentations is `r nrow(non_peer_reviewed_conference)`.
+
+# Knowledge Mobilization Activities
 
 ```{r unsolicited-advice-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
@@ -876,7 +1149,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
 # Invited Talks, Seminars, Workshops, Courses, and Panels
 
 ```{r talks-courses-details}
-read_csv(paste0(here(),"/assets/talks.csv")) |>
+talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(What != "Unsolicited Advice") |>
   #slice_head(n = 39) |>
   detailed_entries(what = Organization, 
@@ -886,6 +1159,25 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    why = paste0(What, ", ", Role),
                    .protect = FALSE)
 ```
+## Lifetime talks, seminars, workshops, panels
+
+My lifetime number of talks is `r nrow(talks)`.
+
+## Most recent 7 years
+
+```{r}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(What != "Unsolicited Advice") |>
+  slice_head(n = 39) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
+
 
 # Departmental, Faculty, University Service
 
@@ -896,8 +1188,4 @@ read_csv(paste0(here(),"/assets/internal-service.csv")) |>
                    with = Organization,
                    where = Where)
 ```
-
-
-
-
 

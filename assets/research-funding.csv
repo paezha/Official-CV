@@ -1,30 +1,31 @@
-Amount,Year,Funder,PI,Participants,Where,Title
-"CAD 50,000",2002,McMaster University,Antonio Paez,1,Canada,Start-up Funds
-"CAD 5,000",2004,McMaster University,Antonio Paez,1,Canada,Incentive Funding
-"CAD 3,078",2004,Centre for Leadership in Learning McMaster University,Antonio Paez,1,Canada,Using spreadsheets and graphics to improve mathematical intuition in geographical problem solving: The case of Locational Analysis 
-"CAD 8,660",2005,Natural Sciences and Engineering Research Council,Antonio Paez,4,Canada,International Workshop Frontiers in Transportation: Social and Spatial Interactions
-"CAD 2,703",2005,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant
-"CAD 2,045",2007,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant
-CAD 800,2008,Centre for Leadership in Learning McMaster University,Antonio Paez,1,Canada,Developing a web-based survey to collect student travel behavior information 
-USD 500,2008,North American Regional Science Council,Antonio Paez,1,US,Travel Grant
-"CAD 56,804",2008,Human Resources and Social Development Canada,Antonio Paez,5,Canada,Spatial Mismatch in Canadian Communities: The Socio-economic Outcomes of Transportation Infrastructure and Access
-"CAD 35,982",2009,Human Resources and Social Development Canada,Antonio Paez,3,Canada,Understanding the transportation situation of Canadian adults with disabilities: Identifying barriers for adults with disabilities who travel locally and long-distance
-"CAD 1,326",2010,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant
-"CAD 25,000",2011,Canadian Institutes of Health Research,Heather McKay,6,Canada,Enhancing the Mobility and Health of Older Adults
-"CAD 5,000",2014,McMaster University,Antonio Paez,1,Canada,Incentive Funding
-"CAD 150,000",2003-2004,Geomatics for Informed Decisions (GEOIDE),Darren M. Scott,6,Canada,Transportation Implications of Canada’s Aging Society
-"CAD 105,000",2003-2007,Natural Sciences and Engineering Research Council,Antonio Paez,1,Canada,Modeling Continuous-space Contextual Effects in Transportation Systems
-"CAD 88,212",2005-2007,Social Sciences and Humanities Research Council,Antonio Paez,2,Canada,Social Influence on Travel Behavior: A Case Study of the Decision to Telecommute
-"CAD 40,000",2007-2008,Social Sciences and Humanities Research Council,Antonio Paez,3,Canada,Blood donor research: Individual determinants and geographical profile of blood donors
-"CAD 106,500",2008-2011,Social Sciences and Humanities Research Council,Darren M. Scott,2,Canada,Understanding barriers to participation in sport and other physical activities
-"CAD 91,550",2010-2012,Social Sciences and Humanities Research Council,Antonio Paez,2,Canada,"Parks, shops, and friends: how do the built and social environments influence travel behavior? "
-"CAD 240,723",2010-2013,Canadian Institutes of Health Research,Antonio Paez,4,Canada,"Canada’s Blood Futures: Geography, Demographic Change, and the Supply and Demand of Blood in Canada"
-"CAD 1,500,000",2010-2016,Canadian Institutes of Health Research,Heather McKay,10,Canada,Walk the Talk: Transforming the Built Environment to Enhance Mobility in Seniors
-"CAD 95,000",2011-2016,Natural Sciences and Engineering Research Council,Antonio Paez,1,Canada,Critical infrastructure: evaluating the effect of network topology and autocorrelation 
-"CAD 50,449",2014-2015,Labrage Optimal Aging Initiative,Amanda Grenier,4,Canada,"Technology for Optimal Aging: An exploratory study of the effects of automobile innovations on the lived experience of older drivers, their mobility, and social policy"
-"CAD 49,705",2017-2018,Social Sciences and Humanities Research Council,Christopher Higgins,2,Canada,Do Closed Schools Mean Disappearing Value? Exploring the Decapitalization of Education in Neighbourhood House Prices in Hamilton 
-"CAD 42,000",2018-2019,McMaster Interdisciplinary Research Fund,Antonio Paez,4,Canada,Examining traffic safety challenges of older Pedestrians in Canada
-"CAD 2,498,195",2020-2025,Social Sciences and Humanities Research Council,Steven Farber,10,Canada,Mobilizing Justice
-"CAD 296,830",2020-2025,Social Sciences and Humanities Research Council,E. Owen D. Waygood,4,Canada,CHildren's Independent Mobility Environments (CHIME)
-"CAD 4,932",2021-2022,McPherson Institute-McMaster University Libraries,Antonio Paez,2,Canada,Publication and evaluation of the effectiveness of an open-source book to teach spatial statistics
-"CAD  5,000",2024,"McMaster University, International Initiatives Micro Fund",Antonio Paez,2,Canada,Active sustainable transportation: barriers to cycling among university students
+Amount,Year,Funder,PI,Participants,Where,Title,Share,Purpose,Funder_Short
+"CAD 50,000",2002,McMaster University,Antonio Paez,1,Canada,Start-up Funds,1,Research,McMaster
+"CAD 5,000",2004,McMaster University,Antonio Paez,1,Canada,Incentive Funding,1,Research,McMaster
+"CAD 3,078",2004,Centre for Leadership in Learning McMaster University,Antonio Paez,1,Canada,Using spreadsheets and graphics to improve mathematical intuition in geographical problem solving: The case of Locational Analysis ,1,Teaching,McMaster
+"CAD 8,660",2005,Natural Sciences and Engineering Research Council,Antonio Paez,4,Canada,International Workshop Frontiers in Transportation: Social and Spatial Interactions,1,Research,NSERC
+"CAD 2,703",2005,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant,1,Travel,McMaster
+"CAD 2,045",2007,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant,1,Travel,McMaster
+CAD 800,2008,Centre for Leadership in Learning McMaster University,Antonio Paez,1,Canada,Developing a web-based survey to collect student travel behavior information ,1,Teaching,McMaster
+USD 500,2008,North American Regional Science Council,Antonio Paez,1,US,Travel Grant,1,Travel,NARSC
+"CAD 56,804",2008,Human Resources and Social Development Canada,Antonio Paez,5,Canada,Spatial Mismatch in Canadian Communities: The Socio-economic Outcomes of Transportation Infrastructure and Access,1,Research,HRSDC
+"CAD 35,982",2009,Human Resources and Social Development Canada,Antonio Paez,3,Canada,Understanding the transportation situation of Canadian adults with disabilities: Identifying barriers for adults with disabilities who travel locally and long-distance,1,Research,HRSDC
+"CAD 1,326",2010,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant,1,Travel,McMaster
+"CAD 25,000",2011,Canadian Institutes of Health Research,Heather McKay,6,Canada,Enhancing the Mobility and Health of Older Adults,0.1,Research,CIHR
+"CAD 5,000",2014,McMaster University,Antonio Paez,1,Canada,Incentive Funding,1,Research,McMaster
+"CAD 150,000",2003-2004,Geomatics for Informed Decisions (GEOIDE),Darren M. Scott,6,Canada,Transportation Implications of Canada's Aging Society,0.2,Research,GEOIDE
+"CAD 105,000",2003-2007,Natural Sciences and Engineering Research Council,Antonio Paez,1,Canada,Modeling Continuous-space Contextual Effects in Transportation Systems,1,Research,NSERC
+"CAD 88,212",2005-2007,Social Sciences and Humanities Research Council,Antonio Paez,2,Canada,Social Influence on Travel Behavior: A Case Study of the Decision to Telecommute,0.8,Research,SSHRC
+"CAD 40,000",2007-2008,Social Sciences and Humanities Research Council,Antonio Paez,3,Canada,Blood donor research: Individual determinants and geographical profile of blood donors,0.8,Research,SSHRC
+"CAD 106,500",2008-2011,Social Sciences and Humanities Research Council,Darren M. Scott,2,Canada,Understanding barriers to participation in sport and other physical activities,0.2,Research,SSHRC
+"CAD 91,550",2010-2012,Social Sciences and Humanities Research Council,Antonio Paez,2,Canada,"Parks, shops, and friends: how do the built and social environments influence travel behavior? ",0.8,Research,SSHRC
+"CAD 240,723",2010-2013,Canadian Institutes of Health Research,Antonio Paez,4,Canada,"Canada’s Blood Futures: Geography, Demographic Change, and the Supply and Demand of Blood in Canada",0.8,Research,CIHR
+"CAD 1,500,000",2010-2016,Canadian Institutes of Health Research,Heather McKay,10,Canada,Walk the Talk: Transforming the Built Environment to Enhance Mobility in Seniors,0.05,Research,CIHR
+"CAD 95,000",2011-2016,Natural Sciences and Engineering Research Council,Antonio Paez,1,Canada,Critical infrastructure: evaluating the effect of network topology and autocorrelation ,1,Research,NSERC
+"CAD 50,449",2014-2015,Labrage Optimal Aging Initiative,Amanda Grenier,4,Canada,"Technology for Optimal Aging: An exploratory study of the effects of automobile innovations on the lived experience of older drivers, their mobility, and social policy",0.2,Research,McMaster
+"CAD 49,705",2017-2018,Social Sciences and Humanities Research Council,Christopher Higgins,2,Canada,Do Closed Schools Mean Disappearing Value? Exploring the Decapitalization of Education in Neighbourhood House Prices in Hamilton ,0.8,Research,SSHRC
+"CAD 42,000",2018-2019,McMaster Interdisciplinary Research Fund,Antonio Paez,4,Canada,Examining traffic safety challenges of older Pedestrians in Canada,0.3,Research,McMaster
+"CAD 2,498,195",2020-2025,Social Sciences and Humanities Research Council,Steven Farber,10,Canada,Mobilizing Justice,0.05,Research,SSHRC
+"CAD 296,830",2020-2025,Social Sciences and Humanities Research Council,E. Owen D. Waygood,4,Canada,CHildren's Independent Mobility Environments (CHIME),0.2,Research,SSHRC
+"CAD 4,932",2021-2022,McPherson Institute-McMaster University Libraries,Antonio Paez,2,Canada,Publication and evaluation of the effectiveness of an open-source book to teach spatial statistics,1,Teaching,McMaster
+"CAD  5,000",2024,"McMaster University, International Initiatives Micro Fund",Antonio Paez,2,Canada,Active sustainable transportation: barriers to cycling among university students,1,Research,McMaster
+"CAD 1,700",2024,Arts and Research Board McMaster University,Antonio Paez,1,Canada,Conference Grant,1,Travel,McMaster
