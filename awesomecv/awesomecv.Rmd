@@ -772,11 +772,7 @@ citations_scholar |>
   ggthemes::theme_tufte()
 ```
 
-<!--
-\newpage
--->
-
-# Lifetime Publications
+\# Lifetime Publications
 
 ## Books
 
