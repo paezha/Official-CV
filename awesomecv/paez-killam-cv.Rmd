@@ -42,6 +42,7 @@ library(dplyr) # A Grammar of Data Manipulation
 library(ggraph) # An Implementation of Grammar of Graphics for Graphs and Networks
 library(ggplot2) # Create Elegant Data Visualisations Using the Grammar of Graphics
 library(glue) # Interpreted String Literals # Interpreted String Literals
+library(gt) # Easily Create Presentation-Ready Display Tables
 library(here) # A Simpler Way to Find Your Files # A Simpler Way to Find Your Files
 library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax 
 library(lubridate) # Make Dealing with Dates a Little Easier
@@ -231,7 +232,7 @@ referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) |>
 
 ### Reviews-to-Publications per Year
 
-Fig. \ref{fig:reviews-pubs} is a summary of journal reviews-to-publications per year showing contributions to peer-review relative to demands on peer-review.
+Fig. \ref{fig:reviews-pubs} is a summary of journal reviews and publications per year. This is an indicator of my contributions to peer-reviewing relative to the demands my submissions put on peer-reviewers.
 
 ```{r reviews-per-year, include=FALSE, fig.cap="\\label{fig:reviews-annual-summary}Number of journal reviews per year"}
 referee |>
@@ -306,12 +307,11 @@ read_csv(paste0(here(),"/assets/grant-reviews.csv")) |>
 
 Spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
 
-# Teaching
+# Teaching at a Glance
 
 ```{r read-courses-asset}
 courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
 ```
-
 
 ## Total number of courses taught
 
@@ -325,23 +325,7 @@ courses <- read_csv(paste0(here(),"/assets/courses-taught.csv"))
 
 `r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
 
-<!--
-## Courses
-
-```{r courses, eval=FALSE}
-courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
-
-courses |>
-detailed_entries(what = Level, 
-when = glue::glue("TA support (1 TA = 130 h): {Tas}/ Co-Instructor(s): {Coinstructor}"),
-where = glue::glue("{Year} ({Session})"),
-with = glue::glue("{Code} {Name}"),# glue("{Code}, {Name}"),
-why = glue::glue("Enrolment: {Enrolment} students"),
-.protect = FALSE)
-```
--->
-
-<!-- Compressed version of courses -->
+# Teaching (Details)
 
 ## Undergraduate Teaching
 
@@ -391,7 +375,93 @@ courses_summary |>
 
 \newpage
 
-# Supervisorships
+# Training of Highly Qualified Personnel
+
+## Supervision at a Glance
+
+```{r supervisorhip}
+supervision <- read_csv(paste0(here(),"/assets/supervision.csv")) 
+```
+
+```{r supervision-at-a-glance}
+supervision |>
+  filter(is.na(With), Status != "Withdrew from Program") |>
+  group_by(Level, Program) |>
+  summarize(Supervision = n(),
+            .groups = "drop") |>
+  full_join(supervision |>
+              filter(!is.na(With), Status != "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Cosupervision = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  full_join(supervision |>
+              filter(Status == "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Withdrew = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  arrange(Level) |>
+  mutate(Supervision = as.character(Supervision),
+         Cosupervision = as.character(Cosupervision),
+         Withdrew = as.character(Withdrew)) |>
+  replace_na(list(Supervision = "-",
+                  Cosupervision = "-",
+                  Withdrew = "-")) |>
+  gt() |>
+  cols_label(Supervision = "Sole Supervisor",
+             Cosupervision = "Co-supervisor",
+             Withdrew = "Withdrawn from Program") |>
+    as_latex()
+```
+
+
+## Undergraduate Supervision
+
+```{r supervisorship-undergraduate}
+supervision |>
+  filter(Level == "Undergraduate") |>
+  arrange(Program, desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+## Master's Supervision
+
+```{r supervisorship-masters}
+supervision |>
+  filter(Level == "Master") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""),
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+## Doctoral Supervision
+
+```{r supervisorship-doctoral}
+supervision |>
+  filter(Level == "Doctoral") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+<!--
 
 ## Undergraduate (Civil Engineering):
 
@@ -550,6 +620,7 @@ Lucia Mejia (Universidad Politecnica de Madrid; April 2011) Transportation Infra
 Steven Farber (McMaster University; June 2010) The social costs of automobility
 
 Ruben Mercado (McMaster University; August 2007) Policy perspectives on transportation and aging
+-->
 
 # Supervisory Committees (All are doctoral unless otherwise noted)
 
@@ -742,7 +813,6 @@ Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) Septemb
 Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
 -->
 
-\newpage
 
 # Research and Other Funding
 
@@ -757,7 +827,8 @@ research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
          Share_chr = prettyNum(Share, big.mark =",", digits = 4),
          Share_chr = paste0("$", Share_chr))
 ```
-The total funds of all projects that I have been part of is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num), big.mark = ",", digits = 4))`. Of this amount, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Research"]), big.mark = ",", digits = 4))` has been research grants from various organizations, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))` has been for pedagogical research, and `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Travel"]), big.mark = ",", digits = 4))` has been to support event participation.
+
+The funding total of all projects that I have been part of is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num), big.mark = ",", digits = 4))`. Of this amount, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Research"]), big.mark = ",", digits = 4))` has been research grants from various organizations, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))` has been for pedagogical research, and `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Travel"]), big.mark = ",", digits = 4))` has been to support event participation.
 
 My personal share of these funds to date amounts to `r paste0("CAD ", prettyNum(sum(research_funding$Share), big.mark = ",", digits = 4))`. The distribution of these funds for research, teaching, and travel, and from various organizations, can be seen in Fig. \ref{fig:research-funding-share}.
 
@@ -776,6 +847,7 @@ ggplot(research_funding,
   scale_fill_manual(values = c("Research" = "deepskyblue", "Teaching" = "darkorange", "Travel" = "darkolivegreen3")) +
   theme(legend.position = "bottom")
 ```
+
 ## Detailed Funding
 
 ```{r research-funding-details}
@@ -790,56 +862,6 @@ read_csv(paste0(here(),"/assets/research-funding.csv")) |>
 ```
 
 # Research Impact
-
-Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`.
-
-The impact of my work can be appreciated by the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably Transportation, Geography, Economics, Environmental Studies and Science, Computer Science, and Civil Engineering. My publications have been cited by researchers in more than a 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the United States, China, Canada, England, and Spain.
-
-```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
-citations_scholar <- scholar::get_citation_history(id)
-
-citations_scholar |>
-  ggplot() + 
-  geom_col(aes(x = year, 
-               y = cites),
-           color = "black",
-           fill = "white") + 
-  annotate(geom = "text", 
-           x = 2004, 
-           y = 950, 
-           hjust = 0,
-           label = paste0("Total cites = ", 
-                          prettyNum(get_profile(id)$total_cites, big.mark = ","))) +
-  annotate(geom = "text", 
-           x = 2004, 
-           y = 900, 
-           hjust = 0,
-           label = paste0("h-index = ", 
-                          as.character(get_profile(id)$h_index))) +
-  annotate(geom = "text", 
-           x = 2004, 
-           y = 850, 
-           hjust = 0,
-           label = paste0("i10-index = ", 
-                          as.character(get_profile(id)$i10_index))) +
-  ggthemes::theme_tufte()
-```
-
-```{r citations-field, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-field}Fields where my research is cited according to Web of Science"}
-knitr::include_graphics(glue(here(), "/assets/visualization_fields_2024_05_13.png"))
-```
-
-```{r citations-country, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-country}Countries where my research is cited according to Web of Science"}
-knitr::include_graphics(glue(here(), "/assets/visualization_countries_2024_05_13.png"))
-```
-
-# Research Output
-
-It is conventional in my fields of expertise to list authors in order of their contributions. The first and second authors are credited with doing a majority of the work. The exception to this general rule is when the last author is the senior author and has provided, in addition to other contributions, supervisory support to the rest of the team.
-
-## Bibliography at a Glance
-
-Table \ref{tab:bibliography-at-a-glance} provides some key information about my publication record. In addition to the items listed there, I am co-editor of `r bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |> nrow()` edited books. Fig. \ref{fig:key-topics} maps the relationship between key topics in my peer-reviewed publications, based on keywords of the documents. Fig. \ref{fig:intl-colabs} maps my international research collaborations.
 
 ```{r summary-bibliography, include=FALSE}
 books <- bibliography_entries(paste0(here(),"/assets/books.bib")) |>
@@ -943,6 +965,58 @@ bibliography_glance <- rbind(summary_books,
                              summary_book_chapters,
                              summary_peer_reviewed_articles)
 ```
+
+Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`. The i10-index indicates that `r as.character(get_profile(id)$i10_index)`, or approximately `r paste0(round(100 * get_profile(id)$i10_index/sum(bibliography_glance$total)), "%")` of my publications have been cited ten times or more. 
+
+Combined with the level of funding described above, the cost-effect of my research is approximately `r paste0("CAD ", prettyNum(sum(research_funding$Share)/bibliography_glance$total[3], big.mark = ",", digits = 2))` per peer-reviewed article (not counting book chapters, edited books, or books). To put this number in context, this is equivalent to `r paste0(prettyNum(sum(research_funding$Share)/bibliography_glance$total[3]/13271.94 * 100, big.mark = ",", digits = 2), "%")` of a one-year graduate research assistantship at my institution. In terms of impact, the cost-effect of my research is `r paste0("CAD ", prettyNum(sum(research_funding$Share)/get_profile(id)$total_cites, big.mark = ",", digits = 2))` per citation.
+
+The impact of my work can also be appreciated by the breadth of the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably Transportation, Geography, Economics, Environmental Studies and Science, Computer Science, and Civil Engineering. My publications have been cited by researchers in more than a 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the United States, China, Canada, England, and Spain.
+
+```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+citations_scholar <- scholar::get_citation_history(id)
+
+citations_scholar |>
+  ggplot() + 
+  geom_col(aes(x = year, 
+               y = cites),
+           color = "black",
+           fill = "white") + 
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 950, 
+           hjust = 0,
+           label = paste0("Total cites = ", 
+                          prettyNum(get_profile(id)$total_cites, big.mark = ","))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 900, 
+           hjust = 0,
+           label = paste0("h-index = ", 
+                          as.character(get_profile(id)$h_index))) +
+  annotate(geom = "text", 
+           x = 2004, 
+           y = 850, 
+           hjust = 0,
+           label = paste0("i10-index = ", 
+                          as.character(get_profile(id)$i10_index))) +
+  ggthemes::theme_tufte()
+```
+
+```{r citations-field, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-field}Fields where my research is cited according to Web of Science"}
+knitr::include_graphics(glue(here(), "/assets/visualization_fields_2024_05_13.png"))
+```
+
+```{r citations-country, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-country}Countries where my research is cited according to Web of Science"}
+knitr::include_graphics(glue(here(), "/assets/visualization_countries_2024_05_13.png"))
+```
+
+# Research Output
+
+It is conventional in my fields of expertise to list authors in order of their contributions. The first and second authors are credited with doing a majority of the work. The exception to this general rule is when the last author is the senior author and has provided, in addition to other contributions, supervisory support to the rest of the team.
+
+## At a Glance
+
+Table \ref{tab:bibliography-at-a-glance} provides some key information about my publication record. In addition to the items listed there, I am co-editor of `r bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |> nrow()` edited books. Fig. \ref{fig:key-topics} maps the relationship between key topics in my peer-reviewed publications, based on keywords of the documents. Fig. \ref{fig:intl-colabs} maps my international research collaborations.
 
 ```{r}
 kable(bibliography_glance,
@@ -1177,15 +1251,14 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    .protect = FALSE)
 ```
 
-
-
 # Departmental, Faculty, University Service
 
 ```{r internal-service-details}
-read_csv(paste0(here(),"/assets/internal-service.csv")) |>
+read_csv(paste0(here(),"/assets/service-internal.csv")) |>
   detailed_entries(what = Position, 
                    when = Year, 
                    with = Organization,
                    where = Where)
 ```
+
 

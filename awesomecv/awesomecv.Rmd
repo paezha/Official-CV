@@ -886,7 +886,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
 # Departmental, Faculty, University Service
 
 ```{r internal-service-details}
-read_csv(paste0(here(),"/assets/internal-service.csv")) |>
+read_csv(paste0(here(),"/assets/service-internal.csv")) |>
   detailed_entries(what = Position, 
                    when = Year, 
                    with = Organization,
