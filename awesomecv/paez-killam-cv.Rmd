@@ -1,6 +1,6 @@
 ---
 name: Antonio
-surname: Paez
+surname: Páez
 position: "Professor"
 address: |
          | School of Earth, Environment and Society
@@ -113,6 +113,20 @@ Consultant (2015 - present) Environics Analytics, Toronto, Canada.
 
 # Honours
 
+## Scientific Awards
+
+```{r scientific-awards-details}
+read_csv(paste0(here(),"/assets/honors.csv")) |>
+  dplyr::filter(Type == "Scientific Awards") |> 
+  arrange(desc(Year)) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Honor,
+                   where = Where,
+                   why = With,
+                   .protect = FALSE)
+```
+
 ## Visiting Professorships
 
 ```{r professorship-details}
@@ -136,20 +150,6 @@ read_csv(paste0(here(),"/assets/honors.csv")) |>
                    when = Year, 
                    with = Organization,
                    where = Where,
-                   .protect = FALSE)
-```
-
-## Scientific Awards
-
-```{r scientific-awards-details}
-read_csv(paste0(here(),"/assets/honors.csv")) |>
-  dplyr::filter(Type == "Scientific Awards") |> 
-  arrange(desc(Year)) |>
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = Honor,
-                   where = Where,
-                   why = With,
                    .protect = FALSE)
 ```
 
@@ -828,11 +828,11 @@ research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
          Share_chr = paste0("$", Share_chr))
 ```
 
-The funding total of all projects that I have been part of is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num), big.mark = ",", digits = 4))`. Of this amount, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Research"]), big.mark = ",", digits = 4))` has been research grants from various organizations, `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))` has been for pedagogical research, and `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Travel"]), big.mark = ",", digits = 4))` has been to support event participation.
+The funding total of all projects that I have been part of is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num), big.mark = ",", digits = 4))`. The total in research grants from various organizations, including the Canadian Institutes of Health Research (CIHR), the Natural Sciences and Engineering Research Council of Canada (NSERC), and the Social Sciences and Humanities Research Council of Canada (SSHRC) is `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Research"]), big.mark = ",", digits = 4))`. I have also been the recipient of several grants to improve teaching practice, to the total of `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))`. And, I have received numerous travel grants, amounting to `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Travel"]), big.mark = ",", digits = 4))`.
 
 My personal share of these funds to date amounts to `r paste0("CAD ", prettyNum(sum(research_funding$Share), big.mark = ",", digits = 4))`. The distribution of these funds for research, teaching, and travel, and from various organizations, can be seen in Fig. \ref{fig:research-funding-share}.
 
-```{r research-funding-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:research-funding-share}My share of research funds by source"}
+```{r research-funding-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:research-funding-share}My share of research funds by source"}
 ggplot(research_funding, 
        aes(area = Share, 
            fill = Purpose,
@@ -966,13 +966,50 @@ bibliography_glance <- rbind(summary_books,
                              summary_peer_reviewed_articles)
 ```
 
+```{r citations-by-category}
+citation_categories <- read_delim(glue(here(), "/assets/wos_cited_fields_2024_05_16.txt")) |>
+  transmute(Category = `Web of Science Categories`,
+            Count = `Record Count`) |>
+  mutate(super_category = case_when(str_detect(Category, "Transport") ~ "Transportation",
+                                    str_detect(Category, "Environmental") ~ "Environmental Science/Studies",
+                                    TRUE ~ Category)) |>
+  group_by(super_category) |>
+  summarize(Category = first(super_category),
+            Count = sum(Count),
+            .groups = "drop") |>
+  arrange(desc(Count)) |>
+  slice_head(n = 12)
+```
+
+```{r citations-by-country}
+citation_countries <- read_delim(glue(here(), "/assets/wos_cited_countries_2024_05_16.txt")) |>
+  transmute(Country = `Countries/Regions`,
+            Count = `Record Count`) |>
+  mutate(Country = str_to_title(Country),
+         Country = case_when(str_detect(Country, "Peoples R China") ~ "China",
+                             str_detect(Country, "Usa") ~ "United States",
+                             TRUE ~ Country)) |>
+  arrange(desc(Count)) |>
+  slice_head(n = 12)
+```
+```{r citations-by-sdg}
+citation_sdg <- read_delim(glue(here(), "/assets/wos_cited_sdg_2024_05_16.txt"),
+                           delim = ",") |>
+  transmute(Goal = `Sustainable Development Goals`,
+            Count = as.numeric(`\tRecord Count`)) |>
+  arrange(desc(Count)) |>
+  slice_head(n = 12)
+```
+
 Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`. The i10-index indicates that `r as.character(get_profile(id)$i10_index)`, or approximately `r paste0(round(100 * get_profile(id)$i10_index/sum(bibliography_glance$total)), "%")` of my publications have been cited ten times or more. 
+
+The impact of my work can also be appreciated by the breadth of the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably in  `r citation_categories$super_category[1]`, `r citation_categories$super_category[2]`, `r citation_categories$super_category[3]`, `r citation_categories$super_category[4]`, and `r citation_categories$super_category[5]`. My publications have been cited by researchers in more than a 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the `r citation_countries$Country[1]`, `r citation_countries$Country[2]`, `r citation_countries$Country[3]`, `r citation_countries$Country[4]`, and `r citation_countries$Country[5]`.
+
+Lastly, my work has contributed to inform research that aligns with the United Nations Sustainable Development Goals (see Fig. \ref{fig:citations-by-sdg}), particularly goals `r citation_sdg$Goal[1]`, `r citation_sdg$Goal[2]`, `r citation_sdg$Goal[3]`, `r citation_sdg$Goal[4]`, and `r citation_sdg$Goal[5]`.
 
 Combined with the level of funding described above, the cost-effect of my research is approximately `r paste0("CAD ", prettyNum(sum(research_funding$Share)/bibliography_glance$total[3], big.mark = ",", digits = 2))` per peer-reviewed article (not counting book chapters, edited books, or books). To put this number in context, this is equivalent to `r paste0(prettyNum(sum(research_funding$Share)/bibliography_glance$total[3]/13271.94 * 100, big.mark = ",", digits = 2), "%")` of a one-year graduate research assistantship at my institution. In terms of impact, the cost-effect of my research is `r paste0("CAD ", prettyNum(sum(research_funding$Share)/get_profile(id)$total_cites, big.mark = ",", digits = 2))` per citation.
 
-The impact of my work can also be appreciated by the breadth of the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably Transportation, Geography, Economics, Environmental Studies and Science, Computer Science, and Civil Engineering. My publications have been cited by researchers in more than a 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the United States, China, Canada, England, and Spain.
-
-```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year according to Google Scholar"}
+```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year (data from Google Scholar)"}
 citations_scholar <- scholar::get_citation_history(id)
 
 citations_scholar |>
@@ -1002,12 +1039,57 @@ citations_scholar |>
   ggthemes::theme_tufte()
 ```
 
-```{r citations-field, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-field}Fields where my research is cited according to Web of Science"}
-knitr::include_graphics(glue(here(), "/assets/visualization_fields_2024_05_13.png"))
+```{r citations-field, out.width="0.7\\linewidth", fig.cap="\\label{fig:citations-by-field}Citations by field (data from Web of Science)"}
+citation_categories |>
+  mutate(label = glue("{super_category} ({Count})")) |>
+  ggplot(aes(area = Count, 
+             fill = super_category,
+             label = label)) +
+  geom_treemap() +
+  #geom_treemap_subgroup_border() +
+  #geom_treemap_subgroup_text(place = "centre", grow = T, alpha = 0.25, 
+  #                           colour =
+  #                           "black", fontface = "italic", min.size = 0) +
+  geom_treemap_text(colour = "black", 
+                    place = "topleft",
+                    padding.x = grid::unit(2, "mm"),
+                    padding.y = grid::unit(2, "mm"), 
+                    reflow = T) +
+  scale_fill_brewer(palette = "Set3") +
+  theme(legend.position = "none")
 ```
 
-```{r citations-country, out.width="0.9\\linewidth", fig.cap="\\label{fig:citations-by-country}Countries where my research is cited according to Web of Science"}
-knitr::include_graphics(glue(here(), "/assets/visualization_countries_2024_05_13.png"))
+```{r citations-country, out.width="0.7\\linewidth", fig.cap="\\label{fig:citations-by-sdg}Citations by country (data from Web of Science)"}
+citation_countries |>
+  mutate(label = glue("{Country} ({Count})")) |>
+  ggplot(aes(area = Count, 
+             fill = Country,
+             label = label)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "black", 
+                    place = "topleft",
+                    padding.x = grid::unit(2, "mm"),
+                    padding.y = grid::unit(2, "mm"), 
+                    reflow = T) +
+  scale_fill_brewer(palette = "Set3") +
+  theme(legend.position = "none")
+
+```
+
+```{r citations-sdg, out.width="0.7\\linewidth", fig.cap="\\label{fig:citations-by-country}Citations by Sustainable Development Goal (data from Web of Science)"}
+citation_sdg |>
+  mutate(label = glue("{Goal} ({Count})")) |>
+  ggplot(aes(area = Count, 
+             fill = Goal,
+             label = label)) +
+  geom_treemap() +
+  geom_treemap_text(colour = "black", 
+                    place = "topleft",
+                    padding.x = grid::unit(2, "mm"),
+                    padding.y = grid::unit(2, "mm"), 
+                    reflow = T) +
+  scale_fill_brewer(palette = "Set3") +
+  theme(legend.position = "none")
 ```
 
 # Research Output
@@ -1035,7 +1117,6 @@ kable(bibliography_glance,
   kable_styling(font_size = 7, 
                 latex_options = "HOLD_position")
 ```
-
 
 ```{r convert-bibliography-for-bibliometric-analysis, include=FALSE}
 # This chunk uses package {bibliometrix}
@@ -1066,10 +1147,13 @@ net <- networkPlot(NetMatrix,
 graph <- as_tbl_graph(net$graph)
 ```
 
-```{r}
-set.seed(10)
+```{r key-research-themes}
+set.seed(35)
 
-key_research_themes <- ggraph(graph, layout = "fr") +
+key_research_themes <- ggraph(graph |>
+                                filter(!str_detect(name, "hamilton")) |>
+                                mutate(name = str_to_title(name)),
+                              layout = "fr") +
   geom_edge_fan(aes(alpha = weight)) +
   geom_node_label(aes(color = factor(community),
                       label = name,
@@ -1102,7 +1186,11 @@ graph <- as_tbl_graph(net$graph)
 ```
 
 ```{r plot-network-of-collaborations}
-intl_collabs <- ggraph(graph, layout = "linear", circular = TRUE) +
+intl_collabs <- ggraph(graph  |>
+                         mutate(name = str_to_title(name),
+                                name = ifelse(name == "Usa", "USA", name)), 
+                       layout = "linear", 
+                       circular = TRUE) +
   geom_edge_fan(aes(alpha = weight)) +
   geom_node_label(aes(label = name,
                       size = size)) +
@@ -1111,13 +1199,15 @@ intl_collabs <- ggraph(graph, layout = "linear", circular = TRUE) +
   theme(legend.position = "none")
 ```
 
-```{r key-topics-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:key-topics}Key topics in my peer-reviewed publications"}
+```{r key-topics-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:key-topics}Key topics in my peer-reviewed publications"}
 key_research_themes
 ```
 
-```{r intl-colabs-plot, out.width="0.8\\linewidth", fig.cap="\\label{fig:intl-colabs}International collaborations"}
+```{r intl-colabs-plot, out.width="0.6\\linewidth", fig.cap="\\label{fig:intl-colabs}International collaborations"}
 intl_collabs
 ```
+
+\newpage
 
 # Lifetime Publications
 
@@ -1198,6 +1288,8 @@ peer_reviewed_conference
 
 <!--Number of lifetime peer-reviewed conference presentations is `r nrow(peer_reviewed_conference)`.-->
 
+\newpage
+
 ## Non-peer-reviewed Conference Presentations
 
 ```{r not-peer-reviewed-conference-presentations, include=FALSE}
@@ -1216,7 +1308,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    when = Year, 
                    with = Title,
                    where = Where,
-                   why = paste0(What, ", ", Role),
+                   why = Role,
                    .protect = FALSE)
 ```
 
@@ -1225,7 +1317,6 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
 ```{r talks-courses-details}
 talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(What != "Unsolicited Advice") |>
-  #slice_head(n = 39) |>
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,
@@ -1233,16 +1324,17 @@ talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
                    why = paste0(What, ", ", Role),
                    .protect = FALSE)
 ```
+
 ## Lifetime talks, seminars, workshops, panels
 
 My lifetime number of talks is `r nrow(talks)`.
 
-## Most recent 7 years
+## Most recent 10 years
 
 ```{r}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(What != "Unsolicited Advice") |>
-  slice_head(n = 39) |>
+  slice_head(n = 46) |>
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,
@@ -1251,7 +1343,21 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    .protect = FALSE)
 ```
 
-# Departmental, Faculty, University Service
+# External Service
+
+```{r external-service-details}
+read_csv(paste0(here(),"/assets/service-external.csv")) |>
+  arrange(desc(Start)) |>
+  detailed_entries(what = Position, 
+                   when = case_when(Start != End ~ glue::glue("{Start}-{End}"),
+                                    Start == End ~ as.character(Start)),
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+<!--
+# Internal (Departmental, Faculty, University) Service (Most Recent 10 Years)
 
 ```{r internal-service-details}
 read_csv(paste0(here(),"/assets/service-internal.csv")) |>
@@ -1261,4 +1367,4 @@ read_csv(paste0(here(),"/assets/service-internal.csv")) |>
                    where = Where)
 ```
 
-
+-->

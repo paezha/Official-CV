@@ -1,0 +1,154 @@
+Web of Science Categories	Record Count	% of 4,114
+Transportation	1330	32.329
+Geography	1011	24.575
+Economics	794	19.300
+Environmental Studies	767	18.644
+Transportation Science Technology	598	14.536
+Environmental Sciences	418	10.160
+Urban Studies	394	9.577
+Regional Urban Planning	350	8.508
+Engineering Civil	339	8.240
+Green Sustainable Science Technology	324	7.876
+Public Environmental Occupational Health	270	6.563
+Geography Physical	168	4.084
+Computer Science Information Systems	140	3.403
+Remote Sensing	128	3.111
+Computer Science Interdisciplinary Applications	103	2.504
+Operations Research Management Science	102	2.479
+Engineering Environmental	77	1.872
+Construction Building Technology	76	1.847
+Multidisciplinary Sciences	61	1.483
+Energy Fuels	60	1.458
+Management	56	1.361
+Geosciences Multidisciplinary	53	1.288
+Social Sciences Interdisciplinary	53	1.288
+Development Studies	50	1.215
+Ecology	50	1.215
+Information Science Library Science	48	1.167
+Engineering Electrical Electronic	46	1.118
+Statistics Probability	46	1.118
+Hospitality Leisure Sport Tourism	45	1.094
+Hematology	44	1.070
+Mathematics Interdisciplinary Applications	42	1.021
+Computer Science Artificial Intelligence	41	0.997
+Sociology	40	0.972
+Business	38	0.924
+Computer Science Theory Methods	38	0.924
+Psychology Applied	37	0.899
+Gerontology	36	0.875
+Forestry	34	0.826
+Engineering Multidisciplinary	33	0.802
+Health Care Sciences Services	30	0.729
+Demography	27	0.656
+Engineering Industrial	27	0.656
+Water Resources	23	0.559
+Plant Sciences	21	0.510
+Medicine General Internal	20	0.486
+Meteorology Atmospheric Sciences	20	0.486
+Social Sciences Mathematical Methods	20	0.486
+Criminology Penology	19	0.462
+Imaging Science Photographic Technology	19	0.462
+Social Sciences Biomedical	18	0.438
+Ergonomics	17	0.413
+Education Educational Research	16	0.389
+Biodiversity Conservation	15	0.365
+Physics Multidisciplinary	15	0.365
+Physics Applied	14	0.340
+Materials Science Multidisciplinary	13	0.316
+Architecture	12	0.292
+Geriatrics Gerontology	11	0.267
+Health Policy Services	11	0.267
+Infectious Diseases	11	0.267
+Telecommunications	11	0.267
+Chemistry Multidisciplinary	10	0.243
+Mathematics Applied	10	0.243
+Business Finance	9	0.219
+Medical Informatics	9	0.219
+Nutrition Dietetics	9	0.219
+Political Science	9	0.219
+Engineering Mechanical	8	0.194
+Agricultural Economics Policy	7	0.170
+Agriculture Multidisciplinary	7	0.170
+Anthropology	7	0.170
+Instruments Instrumentation	7	0.170
+Parasitology	7	0.170
+Psychology Multidisciplinary	7	0.170
+Rehabilitation	7	0.170
+Tropical Medicine	7	0.170
+Agronomy	6	0.146
+Automation Control Systems	6	0.146
+Chemistry Analytical	6	0.146
+Communication	6	0.146
+Engineering Manufacturing	6	0.146
+Immunology	6	0.146
+Mathematics	6	0.146
+Psychology Clinical	6	0.146
+Public Administration	6	0.146
+Computer Science Software Engineering	5	0.122
+International Relations	5	0.122
+Psychiatry	5	0.122
+Social Issues	5	0.122
+Soil Science	5	0.122
+Area Studies	4	0.097
+Biology	4	0.097
+Computer Science Cybernetics	4	0.097
+Mathematical Computational Biology	4	0.097
+Medicine Research Experimental	4	0.097
+Physiology	4	0.097
+Psychology	4	0.097
+Sport Sciences	4	0.097
+Behavioral Sciences	3	0.073
+Geochemistry Geophysics	3	0.073
+Humanities Multidisciplinary	3	0.073
+Neurosciences	3	0.073
+Oncology	3	0.073
+Pharmacology Pharmacy	3	0.073
+Physics Mathematical	3	0.073
+Social Work	3	0.073
+Surgery	3	0.073
+Thermodynamics	3	0.073
+Toxicology	3	0.073
+Cardiac Cardiovascular Systems	2	0.049
+Chemistry Organic	2	0.049
+Computer Science Hardware Architecture	2	0.049
+Emergency Medicine	2	0.049
+Engineering Chemical	2	0.049
+Food Science Technology	2	0.049
+History	2	0.049
+Law	2	0.049
+Materials Science Characterization Testing	2	0.049
+Nursing	2	0.049
+Optics	2	0.049
+Pediatrics	2	0.049
+Physics Condensed Matter	2	0.049
+Psychology Mathematical	2	0.049
+Substance Abuse	2	0.049
+Acoustics	1	0.024
+Anesthesiology	1	0.024
+Biochemistry Molecular Biology	1	0.024
+Biophysics	1	0.024
+Cell Biology	1	0.024
+Chemistry Applied	1	0.024
+Education Scientific Disciplines	1	0.024
+Endocrinology Metabolism	1	0.024
+Engineering Geological	1	0.024
+Ethnic Studies	1	0.024
+Family Studies	1	0.024
+History Philosophy Of Science	1	0.024
+Limnology	1	0.024
+Linguistics	1	0.024
+Mechanics	1	0.024
+Microbiology	1	0.024
+Mining Mineral Processing	1	0.024
+Obstetrics Gynecology	1	0.024
+Oceanography	1	0.024
+Physics Fluids Plasmas	1	0.024
+Polymer Science	1	0.024
+Psychology Biological	1	0.024
+Psychology Experimental	1	0.024
+Psychology Social	1	0.024
+Radiology Nuclear Medicine Medical Imaging	1	0.024
+Respiratory System	1	0.024
+Virology	1	0.024
+Women S Studies	1	0.024
+Zoology	1	0.024
