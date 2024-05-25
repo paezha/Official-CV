@@ -65,8 +65,12 @@ current_year <- lubridate::year(Sys.time()) # Update year
 id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 ```
 
+# About this CV
 
-# About me
+This CV was created programmatically using the `R` statistical language, and it can be accessed here:  
+https://github.com/paezha/Official-CV/blob/master/awesomecv/paez-killam-cv.pdf
+
+# About Me
 
 * I trained in civil engineering before being adopted into geography.
 * My areas of interest include transportation, equity, justice, spatial analysis, spatial statistics, travel behavior, and cities.
@@ -99,6 +103,7 @@ Full Professor in the School of Earth, Environment and Society since 2014. Tenur
 
 ```{r employment-details}
 read_csv(paste0(here(),"/assets/employment.csv")) |> 
+  slice_head(n = 4) |>
   detailed_entries(what = Position, 
                    when = Year, 
                    with = Organization,
@@ -107,9 +112,10 @@ read_csv(paste0(here(),"/assets/employment.csv")) |>
 ```
 
 ## Industry
-
+<!--
 Surveyor and construction site supervisor (August 1993 - March 1995) Topographical
 survey projects in Nuevo León, Mexico, sponsored by various Municipal Public Works Departments (Monterrey, Guadalupe, Santa Catarina), and by Mercedes-Benz.
+-->
 
 Consultant (2015 - present) Environics Analytics, Toronto, Canada. 
 
@@ -374,8 +380,6 @@ courses_summary |>
                    when = Code,
                    .protect = FALSE)
 ```
-
-\newpage
 
 # Training of Highly Qualified Personnel
 
@@ -1289,8 +1293,6 @@ peer_reviewed_conference
 ```
 
 <!--Number of lifetime peer-reviewed conference presentations is `r nrow(peer_reviewed_conference)`.-->
-
-\newpage
 
 ## Non-peer-reviewed Conference Presentations
 
