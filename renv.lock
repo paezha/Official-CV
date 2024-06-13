@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.3",
+    "Version": "4.4.0",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -1855,13 +1855,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.5",
+      "Version": "1.0.7",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "utils"
       ],
-      "Hash": "32c3f93e8360f667ca5863272ec8ba6a"
+      "Hash": "397b7b2a265bc5a7a06852524dabae20"
     },
     "reprex": {
       "Package": "reprex",
@@ -2465,9 +2465,14 @@
     },
     "vitae": {
       "Package": "vitae",
-      "Version": "0.5.2",
-      "Source": "Repository",
-      "Repository": "RSPM",
+      "Version": "0.6.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "mitchelloharawild",
+      "RemoteRepo": "vitae",
+      "RemoteRef": "master",
+      "RemoteSha": "d31961a78962503b587ad08153fc6ca18188ff65",
       "Requirements": [
         "R",
         "dplyr",
@@ -2482,7 +2487,7 @@
         "xfun",
         "yaml"
       ],
-      "Hash": "2a58d47f1fa2d75eb804a5cf3d14039f"
+      "Hash": "6c25b83c3b70de0e7ff6887560113519"
     },
     "vroom": {
       "Package": "vroom",
