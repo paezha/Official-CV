@@ -284,7 +284,6 @@ rbind(df_pubs,
         legend.title = element_blank())
 ```
 
-<!--
 ### Reviews per journal
 
 ```{r journal-referee-details}
@@ -296,9 +295,6 @@ referee |>
                    when = Reviews,
                    .protect = FALSE)
 ```
--->
-
-\newpage
 
 # Grant Reviews
 
