@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.0",
+    "Version": "4.4.1",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -46,9 +46,9 @@
     },
     "MASS": {
       "Package": "MASS",
-      "Version": "7.3-60.0.1",
+      "Version": "7.3-61",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "grDevices",
@@ -57,7 +57,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "b765b28387acc8ec9e9c1530713cb19c"
+      "Hash": "0cafd6f0500e5deba33be22c46bf6055"
     },
     "Matrix": {
       "Package": "Matrix",
