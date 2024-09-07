@@ -1358,11 +1358,11 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
 ```{r external-service-details}
 read_csv(paste0(here(),"/assets/service-external.csv")) |>
   arrange(desc(Start)) |>
-  detailed_entries(what = Position, 
+  detailed_entries(what = Where, 
                    when = case_when(Start != End ~ glue::glue("{Start}-{End}"),
                                     Start == End ~ as.character(Start)),
                    with = Organization,
-                   where = Where,
+                   where = Position,
                    .protect = FALSE)
 ```
 
@@ -1371,8 +1371,8 @@ read_csv(paste0(here(),"/assets/service-external.csv")) |>
 
 ```{r internal-service-details}
 read_csv(paste0(here(),"/assets/service-internal.csv")) |>
-  detailed_entries(what = Position, 
+  detailed_entries(what = Where, 
                    when = Year, 
                    with = Organization,
-                   where = Where)
+                   where = Position)
 ```
