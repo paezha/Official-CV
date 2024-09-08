@@ -219,7 +219,7 @@ read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
                    with = What,
                    .protect = FALSE)
 ```
-
+<!--
 # Scholarly and Professional Activities
 
 ## Journal Referee
@@ -307,13 +307,13 @@ read_csv(paste0(here(),"/assets/grant-reviews.csv")) |>
                    where = Year,
                    .protect = FALSE)
 ```
-
+-->
 
 # Areas of Interest
 
-Transportation; accessibility; equity; justice; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
+Transportation; accessibility; equity; justicel; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
 
-
+<!--
 # Teaching at a Glance
 
 ```{r read-courses-asset}
@@ -379,7 +379,7 @@ courses_summary |>
                    when = Code,
                    .protect = FALSE)
 ```
-
+-->
 
 # Training of Highly Qualified Personnel
 
@@ -467,6 +467,7 @@ supervision |>
                    .protect = FALSE)
 ```
 
+<!--
 
 # Supervisory Committees (All are doctoral unless otherwise noted)
 
@@ -657,6 +658,7 @@ Jennifer L. Campos (Ph.D., McMaster University; Psychology and Neuroscience) Sep
 Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) September 17, 2007
 
 Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
+-->
 
 
 # Research and Other Funding
@@ -1239,6 +1241,7 @@ read_csv(paste0(here(),"/assets/service-external.csv")) |>
                    where = Position,
                    .protect = FALSE)
 ```
+
 
 # Internal (Departmental, Faculty, University) Service (Most Recent 10 Years)
 

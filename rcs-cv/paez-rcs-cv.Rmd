@@ -220,448 +220,13 @@ read_csv(paste0(here(),"/assets/editorial-board.csv")) |>
                    .protect = FALSE)
 ```
 
-# Scholarly and Professional Activities
-
-## Journal Referee
-
-```{r journal-referee}
-referee <- read_csv(paste0(here(),"/assets/paper-reviews.csv")) |> 
-  pivot_longer(-Journal, 
-               names_to = "Year", 
-               values_to = "Reviews")
-```
-
-### Number of Total Lifetime Reviews
-
-`r sum(referee$Reviews)`
-
-### Number of Reviews in `r current_year`
-
-`r referee |> filter(Year == current_year) |> pull(Reviews) |> sum()`
-
-### Reviews-to-Publications per Year
-
-Fig. \ref{fig:reviews-pubs} is a summary of journal reviews and publications per year. This is an indicator of my contributions to peer-reviewing relative to the demands my submissions put on peer-reviewers.
-
-```{r reviews-per-year, include=FALSE, fig.cap="\\label{fig:reviews-annual-summary}Number of journal reviews per year"}
-referee |>
-  group_by(Year) |>
-  summarize(Reviews = sum(Reviews),
-            .groups = "drop") |>
-  ggplot() +
-  geom_col(aes(x = Year, y = Reviews)) +
-  ggthemes::theme_tufte() +
-  theme(axis.text = element_text(angle = 45))
-```
-
-```{r review-to-publication, fig.cap="\\label{fig:reviews-pubs}Reviews-to-publications by year"}
-# Check publication vs. review activity
-df_pubs <- bibliography_entries(paste0(here(),"/assets/refereed-publications.bib"))
-df_pubs <- data.frame(Year = df_pubs$issued |> 
-                        unlist()) |>
-  group_by(Year) |>
-  summarize(items = n(),
-            .groups = "drop") |>
-  mutate(type = "Publication")
-
-df_referee <- referee |>
-  group_by(Year) |>
-  summarize(items = sum(Reviews),
-            .groups = "drop") |>
-  mutate(type = "Paper Review")
-
-rbind(df_pubs,
-      df_referee) |>
-  ggplot() +
-  geom_col(aes(x = Year,
-               y = items,
-               fill = type),
-           color = "black",
-           position = position_dodge(preserve = "single")) +
-  scale_fill_manual(values = c("Publication" = "white", "Paper Review" = "black")) +
-  ggthemes::theme_tufte() +
-  theme(axis.text.x = element_text(angle = 45),
-        legend.title = element_blank())
-```
-
-### Reviews per journal
-
-```{r journal-referee-details}
-referee |>
-  group_by(Journal) |> 
-  summarize(Reviews = sum(Reviews), 
-            .groups = "drop") |>
-  detailed_entries(what = Journal, 
-                   when = Reviews,
-                   .protect = FALSE)
-```
-
-# Grant Reviews
-
-```{r}
-read_csv(paste0(here(),"/assets/grant-reviews.csv")) |> 
-  arrange(desc(Year)) |>
-  detailed_entries(what = Role, 
-                   when = glue::glue("Number of reviews: {Number}"), 
-                   with = glue::glue("{Funder} ({Where})"),
-                   where = Year,
-                   .protect = FALSE)
-```
-
-
 # Areas of Interest
 
 Transportation; accessibility; equity; justice; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
 
+# Research Funds
 
-# Teaching at a Glance
-
-```{r read-courses-asset}
-courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
-```
-
-## Total number of courses taught
-
-`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> nrow())`
-
-`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> nrow())`
-
-## Total number of students
-
-`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
-
-`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
-
-# Teaching (Details)
-
-## Undergraduate Teaching
-
-```{r courses-brief-undergraduate}
-courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
-
-courses_summary <- courses |>
-  group_by(Code) |> 
-  summarize(Name = first(Name), 
-            offerings = n(),
-            total_students = sum(Enrolment), 
-            level = first(Level)) |> 
-  arrange(level)
-
-courses_summary |>
-  filter(level == "Undergraduate") |>
-  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   with = Name,
-                   where = glue::glue("Times offered: {offerings}"),
-                   when = Code,
-                   .protect = FALSE)
-```
-
-## Graduate Teaching
-
-```{r courses-brief-graduate}
-courses_summary |>
-  filter(level == "Graduate") |>
-  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   with = Name,
-                   where = glue::glue("Times offered: {offerings}"),
-                   when = Code,
-                   .protect = FALSE)
-```
-
-## Diploma-Certificate Teaching
-
-```{r courses-brief-diploma}
-courses_summary |>
-  filter(level == "Diploma-Certificate") |>
-  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
-                   with = Name,
-                   where = glue::glue("Times offered: {offerings}"),
-                   when = Code,
-                   .protect = FALSE)
-```
-
-
-# Training of Highly Qualified Personnel
-
-## Supervision at a Glance
-
-```{r supervisorhip}
-supervision <- read_csv(paste0(here(),"/assets/supervision.csv")) 
-```
-
-```{r supervision-at-a-glance}
-supervision |>
-  filter(is.na(With), Status != "Withdrew from Program") |>
-  group_by(Level, Program) |>
-  summarize(Supervision = n(),
-            .groups = "drop") |>
-  full_join(supervision |>
-              filter(!is.na(With), Status != "Withdrew from Program") |>
-              group_by(Level, Program) |>
-              summarize(Cosupervision = n(),
-                        .groups = "drop"),
-            by = c("Level", "Program")) |>
-  full_join(supervision |>
-              filter(Status == "Withdrew from Program") |>
-              group_by(Level, Program) |>
-              summarize(Withdrew = n(),
-                        .groups = "drop"),
-            by = c("Level", "Program")) |>
-  arrange(Level) |>
-  mutate(Supervision = as.character(Supervision),
-         Cosupervision = as.character(Cosupervision),
-         Withdrew = as.character(Withdrew)) |>
-  replace_na(list(Supervision = "-",
-                  Cosupervision = "-",
-                  Withdrew = "-")) |>
-  gt() |>
-  cols_label(Supervision = "Sole Supervisor",
-             Cosupervision = "Co-supervisor",
-             Withdrew = "Withdrawn from Program") |>
-    as_latex()
-```
-
-
-## Undergraduate Supervision
-
-```{r supervisorship-undergraduate}
-supervision |>
-  filter(Level == "Undergraduate") |>
-  arrange(Program, desc(Year)) |>
-  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
-                   with = glue::glue("{Name} ({Institution}, {Country})"),
-                   where = case_when(Status == "Complete" ~ as.character(Year),
-                                     Status == "In Progress" ~ "In Progress",
-                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
-                   when = Program,
-                   .protect = FALSE)
-```
-
-## Master's Supervision
-
-```{r supervisorship-masters}
-supervision |>
-  filter(Level == "Master") |>
-  arrange(desc(Year)) |>
-  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""),
-                   with = glue::glue("{Name} ({Institution}, {Country})"),
-                   where = case_when(Status == "Complete" ~ as.character(Year),
-                                     Status == "In Progress" ~ "In Progress",
-                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
-                   when = Program,
-                   .protect = FALSE)
-```
-
-## Doctoral Supervision
-
-```{r supervisorship-doctoral}
-supervision |>
-  filter(Level == "Doctoral") |>
-  arrange(desc(Year)) |>
-  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
-                   with = glue::glue("{Name} ({Institution}, {Country})"),
-                   where = case_when(Status == "Complete" ~ as.character(Year),
-                                     Status == "In Progress" ~ "In Progress",
-                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
-                   when = Program,
-                   .protect = FALSE)
-```
-
-
-# Supervisory Committees (All are doctoral unless otherwise noted)
-
-Ricardo Lourenco Barros (McMaster University; 2022-) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
-
-Samira Hamidetehrani (McMaster University; 2020-) User Preferences and Intentions Regarding Shared Automated Vehicles in Canadian Metropolitan Areas 
-
-Christina Borowiec (McMaster University; 2019-) Active travel
-
-Shaila Jamal (McMaster University; 2023) Generational differences in travel behavior 
-
-Jeremy Gabriel (McMaster University; 2023) Strata analysis
-
-Elnaz Abotalebi (McMaster University; 2019) Consumer stated preferences survey for electric cars
-
-Wade Genders (McMaster University; 2018) Deep Reinforcement Learning Adaptive Traffic Signal Control 
-
-Randy Bui (McMaster University; withdrew from program) Understanding Network Robustness and Critical Roadway Links in the Greater Toronto and Hamilton Area under Short-Term Disruption
-
-Nazila Roofigari-Esfahan (McMaster University; 2016) A Framework for Spatio-Temporal Uncertainty-Aware Scheduling and Control of Linear Projects
-
-Arash Olia (McMaster University; 2016) Modelling and Assessment of the Transportation Potential and Impacts of Connected and Automated Vehicles
-
-Chris Higgins (McMaster University; 2015) A Value Planning Framework for Predicting and
-Recapturing the Value of Rapid Transit Infrastructure
-
-Matthew Adams (McMaster University; 2015) Advancing the use of mobile monitoring data for air pollution modelling
-
-Scott Bennett (McMaster University; 2015) Safer walking routes to school: applied and methodological geographies of child pedestrian injury
-
-Sarah Dickin (McMaster University; September 2014) Mapping vulnerability to water-related infectious disease: an ecosystem approach 
-
-Ron Dalumpines (McMaster University; July 2014) Route choice analysis in time-geographic perspective
-
-Kathleen Deutsch (University of California Santa Barbara; June 2013) Sense of place and travel behavior
-
-Andrew Clarke (McMaster University; January 2013) Understanding determinants of active travel
-
-Xudong Liu (McMaster University; withdrew from program in 2011) Integrating firmography in urban models
-
-Jia Yang (McMaster University; withdrew from program in 2011) Modeling firm survival
-
-Renilson Rodriguez da Silva (Universidade de Sao Paulo; completed: March 2011) Accessibility and development in the Amazon region (with Danilo Igliori)
-
-Jamie E.L. Spinney (McMaster University; completed: September 2010) Geography, Land Values, and Municipal Taxation: A Spatial Paradigm for the Estimation and Reclamation of Rent
-
-Kelsey MacCormack (McMaster University; completed: July 2010) Delineation of subsurface gravel units beneath the Dundas Valley, Ontario
-
-Theodora Pouliou (McMaster University; completed: September 2009) Individual and Socio-Environmental Determinants of Obesity in Canada
-
-Hejun Kang (McMaster University; completed: August 2008) Intra-households interactions and travel behavior
-
-Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
-
-
-# Examination Committees
-
-Samira Hamidetehrani (Ph.D., McMaster University; School of Earth, Environment and Society ) September 15, 2023
-
-Daniel Van Veghel (M.Sc., McMaster University; School of Earth, Environment and Society ) August 28, 2023
-
-Bruno Dias dos Santos (M.Sc., INPE, Brazil) May 18, 2023
-
-Daniela Arias Molinares (Ph.D., Facultad de Geografía e Historia, Universidad Complutense de Madrid) May 10, 2023
-
-Shaila Jamal (Ph.D. McMaster University; School of Earth, Environment and Society) May 9, 2023
-
-Lucy Joseph Chabariko (Ph.D., School of Transportation Sciences, University of Hasselt) December 21, 2020
-
-Darcy Reynard (Ph.D., Department of Earth and Atmospheric Sciences, University of Alberta) December 18, 2020
-
-Jose Carpio-Pinedo (Ph.D., ETS Arquitectura, Universidad Politecnica de Madrid) November 19, 2020
-
-Sami Kurani (M.A., McMaster University; School of Earth, Environment and Society) September 28, 2020
-
-Geun (Jayden) Choi (M.A., McMaster University; School of Earth, Environment and Society) August 25, 2020
-
-Matthew Brown (M.A., McMaster University; School of Earth, Environment and Society) April 3, 2020
-
-Javier Delso (Ph.D., ETSI Montes, Universidad Politecnica de Madrid) February 25, 2020
-
-Shaila Jamal (Ph.D., Comprehensive Examination, School of Geography and Earth Sciences) February 11, 2020
-
-Kyran Cupido (Ph.D., Arizona State University, School of Mathematics and Statistical Sciences) December 6, 2019
-
-Zoha Anjum (MPH, McMaster University, Health Research Methods, Evidence, and Impact) September 2019
-
-Georgios Sarlas (Ph.D., ETH Zurich, Civil, Environmental, and Geomatics Engineering) July 1, 2019
-
-Matthew Quick (Ph.D., University of Waterloo; School of Planning) April 24, 2019
-
-Wade Genders (Ph.D., McMaster University; Civil Engineering) November 22, 2018
-
-Quinn Hachey (M.A., McMaster University; School of Geography and Earth Sciences) December 18, 2017
-
-Wei Lu (M.A., McMaster University; School of Geography and Earth Sciences) September 28, 2017
-
-Charles Burke (Ph.D., McMaster University; School of Geography and Earth Sciences) December 5, 2016
-
-Nazila Roofigari-Esfahan (Ph.D., McMaster University; Civil Engineering) August 8, 2016
-
-Juan Pablo Ospina Zapata (Ph.D., Comprehensive Examination. Universidad Nacional de Colombia – Medellin; Civil Engineering) June 10, 2016
-
-Arash Olia (Ph.D., McMaster University; Civil Engineering) June 8, 2016
-
-Geraldine Fuenmayor (Ph.D., University of Calgary; Civil Engineering) May 19, 2016
-
-Sadia Yawar (M.A., McMaster University; School of Geography and Earth Sciences) April 29, 2016
-
-An Neven (Ph.D., Hasselt University; School of Transportation Sciences) September 7, 2015
-
-Chris Higgins (Ph.D., McMaster University; School of Geography and Earth Sciences) August 28, 2015
-
-Matthew Adams (Ph.D., McMaster University; School of Geography and Earth Sciences) July 31, 2015
-
-Scott Bennett (Ph.D., McMaster University; School of Geography and Earth Sciences) July 3, 2015
-
-Wade Genders (M.A.Sc., McMaster University; Civil Engineering) November 17, 2014
-
-Sarah Dickin (Ph.D., McMaster University; Geography) September 5, 2014
-
-Simon Minelli (M.A.Sc., McMaster University; Civil Engineering) September 3, 2014
-
-Ron Dalumpines (Ph.D., McMaster University; Geography) July 28, 2014
-
-Markus Botte (Ph.D., University of Western Australia; Business) July 4, 2014
-
-Kathleen Deutsch (Ph.D., University of California Santa Barbara; Geography) June 20, 2013
-
-Chris Higgins (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) February 14, 2013
-
-Andrew Clarke (Ph.D., McMaster University; Geography and Earth Sciences) September 24, 2012
-
-Adrian Klisz (M.A., McMaster University; Geography and Earth Sciences) July 24, 2012
-
-Sarah Dickin (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) October 24, 2011
-
-Jia Yang (M.A., McMaster University; Geography and Earth Sciences) September 12, 2011
-
-Xudong Liu (M.A., McMaster University; Geography and Earth Sciences) September 12, 2011 
-
-Ron Dalumpines (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 3, 2010 
-
-Jia Yang (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 2, 2010
-
-Xudong Liu (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 2, 2010 
-
-Jamie E.L. Spinney (Ph.D., McMaster University; Geography and Earth Sciences) September 24, 2010
-
-Kelsey McCormack (Ph.D., McMaster University; Geography and Earth Sciences) July 27, 2010
-
-PJ Saberton (M.A., McMaster University; Geography and Earth Sciences) July 26, 2010
-
-Adam Drackley (M.A., McMaster University; Geography and Earth Sciences) July 26, 2010
-
-Kathleen Deutsch (Ph.D., Proposal Defense. University of California Santa Barbara) April 14, 2010
-
-Daniela Schettini (Ph.D., Universidade de São Paulo; Economics) April 9, 2010
-
-Ana Maria Bonomi Barufi (M.A., Universidade de São Paulo; Economics) February 12, 2010
-
-Logan McLeod (Ph.D., McMaster University; Economics) November 13, 2009
-
-Yifei Wang (M.A., McMaster University; Geography and Earth Sciences) September 18, 2009
-
-Ivy Dam (M.A., McMaster University; Geography and Earth Sciences) September 18, 2009
-
-Karen Wiley (M.A., McMaster University; Geography and Earth Sciences) September 10, 2009
-
-Theodora Pouliou (Ph.D., McMaster University; Geography and Earth Sciences) September 8, 2009
-
-Terry Li (Ph.D., The University of Queensland; School of Geography, Planning and Environmental Management) August, 2009
-
-Gustavo Renno Rocha (M.Sc., Qualification Examination. Universidade de São Paulo; Escola de Engenharia de São Carlos) August 7, 2009
-
-Dan Harrington (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) January 20, 2009
-
-Kelsey MacCormack (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) September 22, 2008
-
-Hejun Kang (Ph.D., McMaster University; Geography and Earth Sciences) August18, 2008
-
-Kenneth Harold Doust (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) May, 2008
-
-Sylvia He (M.A., McMaster University; Geography and Earth Sciences) August 8, 2006
-
-Jennifer L. Campos (Ph.D., McMaster University; Psychology and Neuroscience) September 11, 2007
-
-Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) September 17, 2007
-
-Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
-
-
-# Research and Other Funding
-
-## Funding at a Glance
+## Funds at a Glance
 
 ```{r research-funding}
 research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
@@ -693,7 +258,7 @@ ggplot(research_funding,
   theme(legend.position = "bottom")
 ```
 
-## Detailed Funding
+## Detailed Funds
 
 ```{r research-funding-details}
 read_csv(paste0(here(),"/assets/research-funding.csv")) |>
@@ -884,7 +449,7 @@ The impact of my work can also be appreciated by the breadth of the fields in wh
 
 Lastly, my work has contributed to inform research that aligns with the United Nations Sustainable Development Goals (see Fig. \ref{fig:citations-by-sdg}), particularly goals `r citation_sdg$Goal[1]`, `r citation_sdg$Goal[2]`, `r citation_sdg$Goal[3]`, `r citation_sdg$Goal[4]`, and `r citation_sdg$Goal[5]`.
 
-Combined with the level of funding described above, the cost-effect of my research is approximately `r paste0("CAD ", prettyNum(sum(research_funding$Share)/bibliography_glance$total[3], big.mark = ",", digits = 2))` per peer-reviewed article (not counting book chapters, edited books, or books). To put this number in context, this is equivalent to `r paste0(prettyNum(sum(research_funding$Share)/bibliography_glance$total[3]/13271.94 * 100, big.mark = ",", digits = 2), "%")` of a one-year graduate research assistantship at my institution. In terms of impact, the cost-effect of my research is `r paste0("CAD ", prettyNum(sum(research_funding$Share)/get_profile(id)$total_cites, big.mark = ",", digits = 2))` per citation.
+Combined with the level of funding described above, the cost-effect of my research is approximately `r paste0("CAD ", prettyNum(sum(research_funding$Share)/bibliography_glance$total[3], big.mark = ",", digits = 2))` per peer-reviewed article (excluding book chapters, edited books, books, and conference presentations). To put this number in context, this is equivalent to `r paste0(prettyNum(sum(research_funding$Share)/bibliography_glance$total[3]/13271.94 * 100, big.mark = ",", digits = 2), "%")` of a one-year graduate research assistantship at my institution. In terms of impact, the cost-effect of my research is `r paste0("CAD ", prettyNum(sum(research_funding$Share)/get_profile(id)$total_cites, big.mark = ",", digits = 2))` per citation.
 
 ```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year (data from Google Scholar)"}
 citations_scholar <- scholar::get_citation_history(id)
@@ -969,11 +534,11 @@ citation_sdg |>
   theme(legend.position = "none")
 ```
 
-# Research Output
+# Publications
 
 It is conventional in my fields of expertise to list authors in order of their contributions. The first and second authors are credited with doing a majority of the work. The exception to this general rule is when the last author is the senior author and has provided, in addition to other contributions, supervisory support to the rest of the team.
 
-## At a Glance
+## Publications at a Glance
 
 Table \ref{tab:bibliography-at-a-glance} provides some key information about my publication record. In addition to the items listed there, I am co-editor of `r bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |> nrow()` edited books. Fig. \ref{fig:key-topics} maps the relationship between key topics in my peer-reviewed publications, based on keywords of the documents. Fig. \ref{fig:intl-colabs} maps my international research collaborations.
 
@@ -992,7 +557,7 @@ kable(bibliography_glance,
       booktabes = TRUE,
       caption = "\\label{tab:bibliography-at-a-glance}Bibliography at a glance") |>
   kable_styling(font_size = 7, 
-                latex_options = "HOLD_position")
+                latex_options = c("HOLD_position", "scale_down"))
 ```
 
 ```{r convert-bibliography-for-bibliometric-analysis, include=FALSE}
@@ -1227,25 +792,88 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    .protect = FALSE)
 ```
 
-# External Service
+# Training of Highly Qualified Personnel
 
-```{r external-service-details}
-read_csv(paste0(here(),"/assets/service-external.csv")) |>
-  arrange(desc(Start)) |>
-  detailed_entries(what = Where, 
-                   when = case_when(Start != End ~ glue::glue("{Start}-{End}"),
-                                    Start == End ~ as.character(Start)),
-                   with = Organization,
-                   where = Position,
+## Supervision at a Glance
+
+```{r supervisorhip}
+supervision <- read_csv(paste0(here(),"/assets/supervision.csv")) 
+```
+
+```{r supervision-at-a-glance}
+supervision |>
+  filter(is.na(With), Status != "Withdrew from Program") |>
+  group_by(Level, Program) |>
+  summarize(Supervision = n(),
+            .groups = "drop") |>
+  full_join(supervision |>
+              filter(!is.na(With), Status != "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Cosupervision = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  full_join(supervision |>
+              filter(Status == "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Withdrew = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  arrange(Level) |>
+  mutate(Supervision = as.character(Supervision),
+         Cosupervision = as.character(Cosupervision),
+         Withdrew = as.character(Withdrew)) |>
+  replace_na(list(Supervision = "-",
+                  Cosupervision = "-",
+                  Withdrew = "-")) |>
+  gt() |>
+  cols_label(Supervision = "Sole Supervisor",
+             Cosupervision = "Co-supervisor",
+             Withdrew = "Withdrawn from Program") |>
+    as_latex()
+```
+
+
+## Undergraduate Supervision
+
+```{r supervisorship-undergraduate}
+supervision |>
+  filter(Level == "Undergraduate") |>
+  arrange(Program, desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
                    .protect = FALSE)
 ```
 
-# Internal (Departmental, Faculty, University) Service (Most Recent 10 Years)
+## Master's Supervision
 
-```{r internal-service-details}
-read_csv(paste0(here(),"/assets/service-internal.csv")) |>
-  detailed_entries(what = Where, 
-                   when = Year, 
-                   with = Organization,
-                   where = Position)
+```{r supervisorship-masters}
+supervision |>
+  filter(Level == "Master") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""),
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+## Doctoral Supervision
+
+```{r supervisorship-doctoral}
+supervision |>
+  filter(Level == "Doctoral") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
 ```
