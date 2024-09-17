@@ -412,7 +412,7 @@ bibliography_glance <- rbind(summary_books,
 ```
 
 ```{r citations-by-category}
-citation_categories <- read_delim(glue(here(), "/assets/wos_cited_fields_2024_05_16.txt")) |>
+citation_categories <- read_delim(glue(here(), "/assets/wos_cited_fields_2024_09_17.txt")) |>
   transmute(Category = `Web of Science Categories`,
             Count = `Record Count`) |>
   mutate(super_category = case_when(str_detect(Category, "Transport") ~ "Transportation",
@@ -427,7 +427,7 @@ citation_categories <- read_delim(glue(here(), "/assets/wos_cited_fields_2024_05
 ```
 
 ```{r citations-by-country}
-citation_countries <- read_delim(glue(here(), "/assets/wos_cited_countries_2024_05_16.txt")) |>
+citation_countries <- read_delim(glue(here(), "/assets/wos_cited_countries_2024_09_17.txt")) |>
   transmute(Country = `Countries/Regions`,
             Count = `Record Count`) |>
   mutate(Country = str_to_title(Country),
@@ -438,12 +438,12 @@ citation_countries <- read_delim(glue(here(), "/assets/wos_cited_countries_2024_
   slice_head(n = 12)
 ```
 ```{r citations-by-sdg}
-citation_sdg <- read_delim(glue(here(), "/assets/wos_cited_sdg_2024_05_16.txt"),
-                           delim = ",") |>
+citation_sdg <- read_delim(glue(here(), "/assets/wos_cited_sdg_2024_09_17.txt"),
+                           delim = "\t") |>
   transmute(Goal = `Sustainable Development Goals`,
-            Count = as.numeric(`\tRecord Count`)) |>
+            Count = as.numeric(`Record Count`)) |>
   arrange(desc(Count)) |>
-  slice_head(n = 12)
+  slice_head(n = 11)
 ```
 
 Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`. The i10-index indicates that `r as.character(get_profile(id)$i10_index)`, or approximately `r paste0(round(100 * get_profile(id)$i10_index/sum(bibliography_glance$total)), "%")` of my publications have been cited ten times or more. 
