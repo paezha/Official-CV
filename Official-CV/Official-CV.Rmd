@@ -47,8 +47,10 @@ library(gt) # Easily Create Presentation-Ready Display Tables
 library(here) # A Simpler Way to Find Your Files # A Simpler Way to Find Your Files
 library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax 
 library(lubridate) # Make Dealing with Dates a Little Easier
+library(maps) # Draw Geographical Maps
 library(readr) # Read Rectangular Text Data
 library(scholar) # Analyse Citation Data from Google Scholar
+library(sf) # Simple Features for R 
 library(stringr) # Simple, Consistent Wrappers for Common String Operations
 library(tibble) # Simple Data Frames
 library(tidygraph) # A Tidy API for Graph Manipulation
@@ -1249,3 +1251,4 @@ read_csv(paste0(here(),"/assets/service-internal.csv")) |>
                    with = Organization,
                    where = Position)
 ```
+
