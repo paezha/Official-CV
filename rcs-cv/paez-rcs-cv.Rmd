@@ -663,7 +663,7 @@ policy_impact |>
                              colour =
                              "black", fontface = "italic", min.size = 0) +
   geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
-  scale_fill_manual(values = c("Government" = "red", "IGO" = "blue", "Think Tank" = "darkolivegreen3", "Other" = "darkgrey")) +
+  scale_fill_manual(values = c("Government" = "chocolate2", "IGO" = "steelblue", "Think Tank" = "darkolivegreen3", "Other" = "darkgrey")) +
   labs(caption = "Data source: Overton.io") +
   theme(legend.position = "bottom")
 ```
@@ -686,7 +686,7 @@ policy_impact_topics |>
                              "black", fontface = "italic", min.size = 0) +
   geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
   scale_fill_manual(name = "Frequency of topic",
-                    values = c("seen frequently" = "blue", 
+                    values = c("seen frequently" = "steelblue", 
                                "seen more often than expected in this context" = "darkolivegreen3")) +
   labs(caption = "Data source: Overton.io") +
   theme(legend.position = "bottom")
