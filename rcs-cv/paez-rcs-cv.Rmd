@@ -48,8 +48,8 @@ library(here) # A Simpler Way to Find Your Files # A Simpler Way to Find Your Fi
 library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax 
 library(lubridate) # Make Dealing with Dates a Little Easier
 library(readr) # Read Rectangular Text Data
-library(rnaturalearth)
-library(rnaturalearthdata)
+library(rnaturalearth) # World Map Data from Natural Earth
+library(rnaturalearthdata) # World Vector Map Data from Natural Earth Used in 'rnaturalearth'
 library(scholar) # Analyse Citation Data from Google Scholar
 library(sf) # Simple Features for R
 library(stringr) # Simple, Consistent Wrappers for Common String Operations
@@ -664,12 +664,13 @@ policy_impact |>
                              "black", fontface = "italic", min.size = 0) +
   geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
   scale_fill_manual(values = c("Government" = "red", "IGO" = "blue", "Think Tank" = "darkolivegreen3", "Other" = "darkgrey")) +
+  labs(caption = "Data source: Overton.io") +
   theme(legend.position = "bottom")
 ```
 
 Analysis of policy documents that cite my research identifies the main topics where my work has been influential. In Fig. \ref{fig:policy-impact-topics} we can see the wide-range of topics, from the economy and transportation, to air pollution and food security. The topics that my research is found more than expected relate to cyclying, bus and rapid transit, accessibility, and public transport.
 
-```{r policy-impact-topics-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:policy-impact-topics}Topics informed by my research"}
+```{r policy-impact-topics-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:policy-impact-topics}Policy topics informed by my research"}
 
 policy_impact_topics |> 
   arrange(desc(Document_count)) |>
@@ -687,6 +688,7 @@ policy_impact_topics |>
   scale_fill_manual(name = "Frequency of topic",
                     values = c("seen frequently" = "blue", 
                                "seen more often than expected in this context" = "darkolivegreen3")) +
+  labs(caption = "Data source: Overton.io") +
   theme(legend.position = "bottom")
 ```
 
@@ -1033,4 +1035,5 @@ supervision |>
                    when = Program,
                    .protect = FALSE)
 ```
+
 
