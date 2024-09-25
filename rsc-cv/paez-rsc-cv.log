@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.8)  18 SEP 2024 10:17
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.8)  25 SEP 2024 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paez-rcs-cv.tex
-(./paez-rcs-cv.tex
+**paez-rsc-cv.tex
+(./paez-rsc-cv.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
 (./awesome-cv.cls
@@ -779,12 +779,12 @@ Package caption Info: wrapfig package is loaded.
 \csllabelwidth=\skip96
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 145.
-(./paez-rcs-cv.aux
+(./paez-rsc-cv.aux
 
 LaTeX Warning: Label `fig:policy-impact-map' multiply defined.
 
 )
-\openout1 = `paez-rcs-cv.aux'.
+\openout1 = `paez-rsc-cv.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
 LaTeX Font Info:    ... okay on input line 145.
@@ -875,9 +875,9 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 145.
 Package hyperref Info: Link coloring OFF on input line 145.
-(./paez-rcs-cv.out) (./paez-rcs-cv.out)
+(./paez-rsc-cv.out) (./paez-rsc-cv.out)
 \@outlinefile=\write4
-\openout4 = `paez-rcs-cv.out'.
+\openout4 = `paez-rsc-cv.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -961,8 +961,8 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 [2]
 
 [3]
-File: paez-rcs-cv_files/figure-latex/research-funding-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/research-funding-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/research-funding-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/research-funding-plot-1.png>
 
 
 [4]
@@ -970,14 +970,14 @@ File: paez-rcs-cv_files/figure-latex/research-funding-plot-1.png Graphic file (t
 [5]
 
 [6]
-File: paez-rcs-cv_files/figure-latex/citations-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/citations-plot-1.png>
-File: paez-rcs-cv_files/figure-latex/citations-field-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/citations-field-1.png>
-File: paez-rcs-cv_files/figure-latex/citations-country-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/citations-country-1.png>
-File: paez-rcs-cv_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/citations-sdg-1.png>
+File: paez-rsc-cv_files/figure-latex/citations-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/citations-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/citations-field-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/citations-field-1.png>
+File: paez-rsc-cv_files/figure-latex/citations-country-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/citations-country-1.png>
+File: paez-rsc-cv_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/citations-sdg-1.png>
 
 
 [7]
@@ -1005,22 +1005,22 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 543.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 543.
-File: paez-rcs-cv_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/policy-impact-map-1.png>
-File: paez-rcs-cv_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/policy-impact-plot-1.png>
-File: paez-rcs-cv_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/policy-impact-topics-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/policy-impact-map-1.png>
+File: paez-rsc-cv_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/policy-impact-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/policy-impact-topics-plot-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 642.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 7.00075pt on input line 642.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 642.
-File: paez-rcs-cv_files/figure-latex/key-topics-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/key-topics-plot-1.png>
-File: paez-rcs-cv_files/figure-latex/intl-colabs-plot-1.png Graphic file (type bmp)
-<paez-rcs-cv_files/figure-latex/intl-colabs-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/key-topics-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/key-topics-plot-1.png>
+File: paez-rsc-cv_files/figure-latex/intl-colabs-plot-1.png Graphic file (type bmp)
+<paez-rsc-cv_files/figure-latex/intl-colabs-plot-1.png>
 
 
 [11]
@@ -1155,7 +1155,7 @@ Underfull \hbox (badness 3312) in paragraph at lines 1495--1495
 
 [37]
 
-[38] (./paez-rcs-cv.aux)
+[38] (./paez-rsc-cv.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-08-16>
@@ -1163,16 +1163,16 @@ L3 programming layer <2024-08-16>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `paez-rcs-cv.out' has not changed.
+Package rerunfilecheck Info: File `paez-rsc-cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 36494 strings out of 476234
- 741930 string characters out of 5786469
+ 36495 strings out of 476234
+ 741953 string characters out of 5786469
  2083609 words of memory out of 5000000
- 58401 multiletter control sequences out of 15000+600000
+ 58402 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paez-rcs-cv.pdf (38 pages).
+Output written on paez-rsc-cv.pdf (38 pages).

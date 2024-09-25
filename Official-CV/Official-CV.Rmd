@@ -431,7 +431,7 @@ supervision |>
 ```{r supervisorship-undergraduate}
 supervision |>
   filter(Level == "Undergraduate") |>
-  arrange(Program, desc(Year)) |>
+  arrange(desc(Year), Program) |>
   detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
                    with = glue::glue("{Name} ({Institution}, {Country})"),
                    where = case_when(Status == "Complete" ~ as.character(Year),

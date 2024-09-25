@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.8)  18 SEP 2024 10:31
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.8)  25 SEP 2024 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -971,7 +971,9 @@ File: Official-CV_files/figure-latex/review-to-publication-1.png Graphic file (t
 
 [6]
 
-[7] [8]
+[7]
+
+[8]
 
 [9]
 
@@ -1002,23 +1004,23 @@ File: Official-CV_files/figure-latex/citations-country-1.png Graphic file (type 
 File: Official-CV_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/citations-sdg-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 1124.
+(Font)              scaled to size 7.665pt on input line 1127.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1125.
+(Font)              scaled to size 9.0pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 1125.
+(Font)              scaled to size 9.00096pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 1125.
+(Font)              scaled to size 6.00064pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 1125.
+(Font)              scaled to size 5.00053pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 1125.
+(Font)              scaled to size 8.99904pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 1125.
+(Font)              scaled to size 5.99936pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 1125.
+(Font)              scaled to size 4.99947pt on input line 1128.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1125.
+(Font)              scaled to size 6.0pt on input line 1128.
 
 
 [18]
@@ -1035,13 +1037,13 @@ File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type
 File: Official-CV_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/policy-impact-topics-plot-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1210.
+(Font)              scaled to size 7.0pt on input line 1213.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 1211.
+(Font)              scaled to size 7.00075pt on input line 1214.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 1211.
+(Font)              scaled to size 6.99925pt on input line 1214.
 
-Overfull \hbox (42.79202pt too wide) in paragraph at lines 1211--1224
+Overfull \hbox (42.79202pt too wide) in paragraph at lines 1214--1227
  [][] 
  []
 
@@ -1059,69 +1061,69 @@ File: Official-CV_files/figure-latex/intl-colabs-plot-1.png Graphic file (type b
 
 [25]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 1256.
+(Font)              scaled to size 10.95pt on input line 1259.
 
-Underfull \hbox (badness 1577) in paragraph at lines 1366--1366
+Underfull \hbox (badness 1577) in paragraph at lines 1369--1369
 []|\TU/SourceSansPro(0)/m/n/10.95 Soukhov, A., Tiznado-Aitken, I., Palm, M., Farber, S., & Páez, A. (2023). \TU/SourceSansPro(0)/m/it/10.95 Searching for standards of
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 1373--1373
+Underfull \hbox (badness 2573) in paragraph at lines 1376--1376
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, & Páez, A. (2010). \TU/SourceSansPro(0)/m/it/10.95 Understanding the transportation situation of canadian adults with dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1376
 \TU/SourceSansPro(0)/m/it/10.95 abilities\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1376
 [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1373
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1376
 [][][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][] [] [][][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (2.40437pt too wide) in paragraph at lines 1373--1373
+Overfull \hbox (2.40437pt too wide) in paragraph at lines 1376--1376
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 1382--1382
+Underfull \hbox (badness 2884) in paragraph at lines 1385--1385
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, Páez, A., Mercado, R. G., Farber, S., Morency, C., & Roorda, M. (2009). \TU/SourceSansPro(0)/m/it/10.95 Mobility and so-
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 1382--1382
+Underfull \hbox (badness 5893) in paragraph at lines 1385--1385
 \TU/SourceSansPro(0)/m/it/10.95 cial exclusion in canadian communities: An empirical investigation of opportunity access and de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
 \TU/SourceSansPro(0)/m/it/10.95 privation from the perspective of vulnerable groups\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
 \TU/SourceSansPro(0)/m/n/10.95 Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
 [][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1385--1385
 [][][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (206.11058pt too wide) in paragraph at lines 1382--1382
+Overfull \hbox (206.11058pt too wide) in paragraph at lines 1385--1385
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
@@ -1136,12 +1138,12 @@ Overfull \hbox (206.11058pt too wide) in paragraph at lines 1382--1382
 [29]
 
 [30]
-Underfull \hbox (badness 2837) in paragraph at lines 2076--2076
+Underfull \hbox (badness 2837) in paragraph at lines 2079--2079
 []|\TU/SourceSansPro(0)/m/n/10.95 Páez, A., & Farber, S. (2012). Participation and desire: Leisure activities among Canadian adults
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 2076--2076
+Underfull \hbox (badness 3312) in paragraph at lines 2079--2079
 \TU/SourceSansPro(0)/m/n/10.95 with disabilities [Journal Article]. \TU/SourceSansPro(0)/m/it/10.95 Transportation\TU/SourceSansPro(0)/m/n/10.95 , \TU/SourceSansPro(0)/m/it/10.95 39\TU/SourceSansPro(0)/m/n/10.95 (6), 1055–1078. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
  []
 
@@ -1176,7 +1178,7 @@ Underfull \hbox (badness 3312) in paragraph at lines 2076--2076
 [44]
 
 [45]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3383--3384
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3392--3393
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
@@ -1196,10 +1198,10 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: EDB4682E532ECF952F8823240CEC92CA;788.
  ) 
 Here is how much of TeX's memory you used:
- 36536 strings out of 476234
- 743697 string characters out of 5786469
+ 36537 strings out of 476234
+ 743720 string characters out of 5786469
  2083609 words of memory out of 5000000
- 58442 multiletter control sequences out of 15000+600000
+ 58443 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
