@@ -315,7 +315,7 @@ read_csv(paste0(here(),"/assets/grant-reviews.csv")) |>
 
 # Areas of Interest
 
-Transportation; accessibility; equity; justice; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems.
+Transportation; accessibility; equity; justice; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems; Open Science; Open Educational Resources.
 
 
 # Teaching at a Glance
