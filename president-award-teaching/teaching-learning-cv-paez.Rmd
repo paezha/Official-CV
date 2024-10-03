@@ -190,6 +190,86 @@ courses_summary |>
                    .protect = FALSE)
 ```
 
+# Funding for Teaching and Learning Projects
+
+```{r research-funding}
+research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  filter(Purpose == "Teaching") |>
+  mutate(Amount_num = str_replace_all(Amount, ",", ""),
+         Amount_num = str_extract_all(Amount_num, "\\d+") |>
+           as.numeric(),
+         Share = Amount_num * Share,
+         Share_chr = prettyNum(Share, big.mark =",", digits = 4),
+         Share_chr = paste0("$", Share_chr))
+```
+
+I have been the recipient of several grants to improve my teaching practice, to the total of `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))`. The funding sources as well as the projects are as shown below. 
+
+```{r research-funding-details}
+read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  filter(Purpose == "Teaching") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = Title, 
+                   when = Year, 
+                   where = Amount,
+                   with = glue::glue("{Funder}, {Where}"),
+                   why = glue::glue("PI: {PI}; team size: {Participants} researchers"),
+                   .protect = FALSE)
+```
+
+# Open Educational Resources
+
+I am the sole or lead author of several Open Educational Resources. Open educational resources are materials used for teaching and learning that are released publicly under open licenses that allow the materials to be used, re-used, re-purposed, re-distributed, and adapted by anyone free-of-charge.
+
+## Books
+
+```{r oer-books}
+bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  filter(note == "Open Educational Resource") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Packages
+
+```{r oer-packages}
+bibliography_entries(paste0(here(),"/assets/packages.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+# Scholarship of Teaching and Learning
+
+This is research related to teaching and learning.
+
+## Peer reviewed
+
+```{r pedagogical-research}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  filter(note == "Pedagogical Research") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Work in Progress
+
+```{r work-in-progress}
+bibliography_entries(paste0(here(),"/assets/work-in-progress.bib")) |>
+  filter(note == "Pedagogical Research") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+# Talks Related to Teaching and Learning
+
+```{r talks-courses-details}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(Note == "Pedagogical Research") |>
+  mutate(ifelse(What == "Unsolicited Advice", "Presentation", What)) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
 # Training of Highly Qualified Personnel
 
 ## Supervision at a Glance
@@ -275,8 +355,9 @@ supervision |>
                    .protect = FALSE)
 ```
 
+# Other Contributions to Teaching and Learning
 
-# Supervisory Committees (All are doctoral unless otherwise noted)
+## Supervisory Committees (All are doctoral unless otherwise noted)
 
 Ricardo Lourenco Barros (McMaster University; 2022-) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
 
@@ -330,7 +411,7 @@ Hejun Kang (McMaster University; completed: August 2008) Intra-households intera
 Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
 
 
-# Examination Committees
+## Examination Committees
 
 Samira Hamidetehrani (Ph.D., McMaster University; School of Earth, Environment and Society ) September 15, 2023
 
@@ -456,6 +537,8 @@ Kelsey MacCormack (Ph.D., Comprehensive Examination. McMaster University; Geogra
 
 Hejun Kang (Ph.D., McMaster University; Geography and Earth Sciences) August18, 2008
 
+<!--
+
 Kenneth Harold Doust (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) May, 2008
 
 Sylvia He (M.A., McMaster University; Geography and Earth Sciences) August 8, 2006
@@ -466,81 +549,4 @@ Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) Septemb
 
 Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
 
-# Funding for Teaching and Learning Projects
-
-```{r research-funding}
-research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
-  filter(Purpose == "Teaching") |>
-  mutate(Amount_num = str_replace_all(Amount, ",", ""),
-         Amount_num = str_extract_all(Amount_num, "\\d+") |>
-           as.numeric(),
-         Share = Amount_num * Share,
-         Share_chr = prettyNum(Share, big.mark =",", digits = 4),
-         Share_chr = paste0("$", Share_chr))
-```
-
-I have been the recipient of several grants to improve my teaching practice, to the total of `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))`. The funding sources as well as the projects are as shown below. 
-
-```{r research-funding-details}
-read_csv(paste0(here(),"/assets/research-funding.csv")) |>
-  filter(Purpose == "Teaching") |>
-  arrange(desc(Year)) |>
-  detailed_entries(what = Title, 
-                   when = Year, 
-                   where = Amount,
-                   with = glue::glue("{Funder}, {Where}"),
-                   why = glue::glue("PI: {PI}; team size: {Participants} researchers"),
-                   .protect = FALSE)
-```
-
-# Open Educational Resources
-
-I am the sole or lead author of several Open Educational Resources. Open educational resources are materials used for teaching and learning that are released publicly under open licenses that allow the materials to be used, re-used, re-purposed, re-distributed, and adapted by anyone free-of-charge.
-
-## Books
-
-```{r oer-books}
-bibliography_entries(paste0(here(),"/assets/books.bib")) |>
-  filter(note == "Open Educational Resource") |>
-  arrange(desc(issued), desc(author$family))
-```
-
-## Packages
-
-```{r oer-packages}
-bibliography_entries(paste0(here(),"/assets/packages.bib")) |>
-  arrange(desc(issued), desc(author$family))
-```
-
-# Scholarship of Teaching and Learning
-
-This is research related to teaching and learning.
-
-## Peer reviewed
-
-```{r pedagogical-research}
-bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
-  filter(note == "Pedagogical Research") |>
-  arrange(desc(issued), desc(author$family))
-```
-
-## Work in Progress
-
-```{r work-in-progress}
-bibliography_entries(paste0(here(),"/assets/work-in-progress.bib")) |>
-  filter(note == "Pedagogical Research") |>
-  arrange(desc(issued), desc(author$family))
-```
-
-# Talks Related to Teaching and Learning
-
-```{r talks-courses-details}
-read_csv(paste0(here(),"/assets/talks.csv")) |>
-  filter(Note == "Pedagogical Research") |>
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = Title,
-                   where = Where,
-                   why = paste0(What, ", ", Role),
-                   .protect = FALSE)
-```
+-->
