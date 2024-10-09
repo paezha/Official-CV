@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.8)  26 SEP 2024 08:29
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.30)  9 OCT 2024 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Official-CV.tex
 (./Official-CV.tex
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-09-10>
 (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -134,7 +134,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-08-16 L3 programming layer (loader) 
+Package: expl3 2024-09-10 L3 programming layer (loader) 
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 \g__graphics_track_int=\count273
@@ -1013,23 +1013,23 @@ File: Official-CV_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
 
 [21]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 1133.
+(Font)              scaled to size 7.665pt on input line 1134.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1134.
+(Font)              scaled to size 9.0pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 1134.
+(Font)              scaled to size 9.00096pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 1134.
+(Font)              scaled to size 6.00064pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 1134.
+(Font)              scaled to size 5.00053pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 1134.
+(Font)              scaled to size 8.99904pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 1134.
+(Font)              scaled to size 5.99936pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 1134.
+(Font)              scaled to size 4.99947pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1134.
+(Font)              scaled to size 6.0pt on input line 1135.
 File: Official-CV_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/policy-impact-map-1.png>
 File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
@@ -1037,13 +1037,13 @@ File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type
 File: Official-CV_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/policy-impact-topics-plot-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1219.
+(Font)              scaled to size 7.0pt on input line 1220.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 1220.
+(Font)              scaled to size 7.00075pt on input line 1221.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 1220.
+(Font)              scaled to size 6.99925pt on input line 1221.
 
-Overfull \hbox (42.79202pt too wide) in paragraph at lines 1220--1233
+Overfull \hbox (42.79202pt too wide) in paragraph at lines 1221--1234
  [][] 
  []
 
@@ -1061,69 +1061,69 @@ File: Official-CV_files/figure-latex/intl-colabs-plot-1.png Graphic file (type b
 
 [25]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 1265.
+(Font)              scaled to size 10.95pt on input line 1266.
 
-Underfull \hbox (badness 1577) in paragraph at lines 1375--1375
+Underfull \hbox (badness 1577) in paragraph at lines 1382--1382
 []|\TU/SourceSansPro(0)/m/n/10.95 Soukhov, A., Tiznado-Aitken, I., Palm, M., Farber, S., & Páez, A. (2023). \TU/SourceSansPro(0)/m/it/10.95 Searching for standards of
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 1382--1382
+Underfull \hbox (badness 2573) in paragraph at lines 1389--1389
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, & Páez, A. (2010). \TU/SourceSansPro(0)/m/it/10.95 Understanding the transportation situation of canadian adults with dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1389
 \TU/SourceSansPro(0)/m/it/10.95 abilities\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1389
 [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1389
 [][][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][] [] [][][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (2.40437pt too wide) in paragraph at lines 1382--1382
+Overfull \hbox (2.40437pt too wide) in paragraph at lines 1389--1389
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 1391--1391
+Underfull \hbox (badness 2884) in paragraph at lines 1398--1398
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, Páez, A., Mercado, R. G., Farber, S., Morency, C., & Roorda, M. (2009). \TU/SourceSansPro(0)/m/it/10.95 Mobility and so-
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 1391--1391
+Underfull \hbox (badness 5893) in paragraph at lines 1398--1398
 \TU/SourceSansPro(0)/m/it/10.95 cial exclusion in canadian communities: An empirical investigation of opportunity access and de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
 \TU/SourceSansPro(0)/m/it/10.95 privation from the perspective of vulnerable groups\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
 \TU/SourceSansPro(0)/m/n/10.95 Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
 [][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
 [][][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (206.11058pt too wide) in paragraph at lines 1391--1391
+Overfull \hbox (206.11058pt too wide) in paragraph at lines 1398--1398
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
@@ -1138,12 +1138,12 @@ Overfull \hbox (206.11058pt too wide) in paragraph at lines 1391--1391
 [29]
 
 [30]
-Underfull \hbox (badness 2837) in paragraph at lines 2085--2085
+Underfull \hbox (badness 2837) in paragraph at lines 2092--2092
 []|\TU/SourceSansPro(0)/m/n/10.95 Páez, A., & Farber, S. (2012). Participation and desire: Leisure activities among Canadian adults
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 2085--2085
+Underfull \hbox (badness 3312) in paragraph at lines 2092--2092
 \TU/SourceSansPro(0)/m/n/10.95 with disabilities [Journal Article]. \TU/SourceSansPro(0)/m/it/10.95 Transportation\TU/SourceSansPro(0)/m/n/10.95 , \TU/SourceSansPro(0)/m/it/10.95 39\TU/SourceSansPro(0)/m/n/10.95 (6), 1055–1078. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
  []
 
@@ -1178,18 +1178,20 @@ Underfull \hbox (badness 3312) in paragraph at lines 2085--2085
 [44]
 
 [45]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3398--3399
+
+[46]
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3418--3419
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
 
 
-[46]
+[47]
 
-[47] (./Official-CV.aux)
+[48] (./Official-CV.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
-L3 programming layer <2024-08-16>
+L3 programming layer <2024-09-10>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1198,12 +1200,12 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: EDB4682E532ECF952F8823240CEC92CA;788.
  ) 
 Here is how much of TeX's memory you used:
- 36537 strings out of 476234
- 743720 string characters out of 5786469
- 2083609 words of memory out of 5000000
- 58443 multiletter control sequences out of 15000+600000
+ 36539 strings out of 476234
+ 743780 string characters out of 5786468
+ 1435298 words of memory out of 5000000
+ 58445 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Official-CV.pdf (47 pages).
+Output written on Official-CV.pdf (48 pages).
