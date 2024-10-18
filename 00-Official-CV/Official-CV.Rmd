@@ -1293,7 +1293,7 @@ bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
 
 ## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
 
-```{r journal-articles-accepted-for-publication}
+```{r journal-articles-accepted-for-publication, results='asis'}
 rpa <- bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib"))
 
 # Check that the table is not empty
