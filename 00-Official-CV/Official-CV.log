@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 10:14
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1185,7 +1185,7 @@ Underfull \hbox (badness 3312) in paragraph at lines 2102--2102
 [45]
 
 [46]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3431--3432
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3462--3463
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
@@ -1205,10 +1205,10 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: EDB4682E532ECF952F8823240CEC92CA;788.
  ) 
 Here is how much of TeX's memory you used:
- 36520 strings out of 475994
- 743720 string characters out of 5778280
- 1438420 words of memory out of 5000000
- 58657 multiletter control sequences out of 15000+600000
+ 36526 strings out of 475994
+ 743869 string characters out of 5778280
+ 1440252 words of memory out of 5000000
+ 58663 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
