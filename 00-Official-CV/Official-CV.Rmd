@@ -1059,9 +1059,31 @@ Non-health researchers in the database with more citations:
 - Pavlos S. Kanaroglou (172: Economy, Business, and Finance) (Deceased)
 - Arthur Sweetman (158: education) (Active)
 - Antonio Paez (137: Economy, Business, and Finance)
+
+Analysis updated on November 12, 2024. At this time I am in the 20th place on the eight page of the search for McMaster researchers. Since each page is 25 researchers, this means I am in the top 25 * 7 + 20 = 195 most cited researchers. There are 10,000 researchers.
+
+Non-health researchers in the database with more citations:
+
+- John Burbridge (280: social sciences) (Emeritus)
+- Lonnie Maggie (261: social sciences) (Emeritus)
+*-* Magdalena Janus (244: education) (Active)
+*-* Michael R. Veall (230: Social Sciences) (Active)
+- Frank T. Denton (227: Economy, Business, and Finance) (Emeritus)
+- Thomas F. Crossley (206: Social Sciences) (No longer at McMaster)
+- Chris M. Wood (199: environment) (No longer at McMaster)
+- A. Leslie Robb (194: Social Sciences) (Emeritus)
+- Dustin Garrick (175L environment) (Not at McMaster)
+- Nidhi Nagabhatla (175: environment) (Not at McMaster)
+*-* Arthur Sweetman (166: education) (Active)
+- Pavlos S. Kanaroglou (166: Economy, Business, and Finance) (Deceased)
+- Abigail Payne (154: education) (Not at McMaster)
+- Evert Nieboer (152: Economic sector) (Emeritus - Biomedical Sciences)
+*-* Eric Duku (149: Education) (Part-time, PBN)
+*-* K. Bruce Newbold (148: social sciences)(Active)
+*-* Antonio Paez (137: Economy, Business, and Finance)
 -->
 
-In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on September 17, 2024], I am in the top `r round((25 * 7 + 4)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers outside of the field of health, I am the fourth scholar in McMaster most cited in policy documents, after Prof. Michael R. Veall (Dept. of Economics), Prof. Magdalena Janus (Faculty of Health Sciences), and Prof. Arthur Sweet (Dept. of Economics). 
+In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on September 17, 2024], I am in the top `r round((25 * 7 + 20)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers in the social sciences, I am the fifth scholar at McMaster most cited scholar in policy documents, after Prof. Michael R. Veall (Dept. of Economics), Prof. Magdalena Janus (Faculty of Health Sciences), Prof. Arthur Sweet (Dept. of Economics), and Prof. Bruce Newbold (School of Earth, Environment and Society.
 
 The impact of my research on policy is reflected in citations in multiple languages, including `r policy_impact_languages$Languages[1]`, `r policy_impact_languages$Languages[2]`, `r policy_impact_languages$Languages[3]`, `r policy_impact_languages$Languages[4]`, and `r policy_impact_languages$Languages[5]`. The international reach of this impact can be appreciated in Fig. \ref{fig:policy-impact-map}, where it can be seen the source countries of documents that cite my work. These countries include Canada, US, Mexico, Brazil, several European countries, Australia, and New Zealand. Besides governments at various levels in said countries, numerous International Government Organizations also refer to my work in their policy documents, including the European Union, OECD, the World Health Organization, the Pan American Health Organization, the World Bank, the Inter-American Development Bank, the International Transport Forum, and the Global Commission on the Economy and Climate. Think tanks that cite my research in policy documents include [IPEA](https://www.ipea.gov.br/forumbrics/en/) (Brazil), the [Lincoln Institute](https://www.lincolninst.edu) (US), [MOTU](https://www.motu.nz) (New Zealand), and [DIW](https://www.diw.de/en) (Germany).
 
@@ -1083,13 +1105,15 @@ The distribution of citations in policy documents is more or less evenly distrib
 policy_impact |> 
   group_by(`Source type`, 
            `Source title`) |> 
-  summarize(n = n()) |>
+  summarize(n = n(),
+            .groups = "drop") |>
   rename(Source_type = `Source type`, 
          Source_title = `Source title`) |>
   mutate(Source_type = case_when(Source_type == "government" ~ "Government",
                                  Source_type == "igo" ~ "IGO",
                                  Source_type == "think tank" ~ "Think Tank",
                                  Source_type == "other" ~ "Other")) |>
+  drop_na() |>
   ggplot(aes(area = n, 
            fill = Source_type,
            subgroup = Source_type,

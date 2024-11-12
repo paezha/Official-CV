@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 09:47
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paez-rsc-cv.tex
-(./paez-rsc-cv.tex
+**Official-CV.tex
+(./Official-CV.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (./awesome-cv.cls
@@ -779,12 +779,12 @@ Package caption Info: wrapfig package is loaded.
 \csllabelwidth=\skip96
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 145.
-(./paez-rsc-cv.aux
+(./Official-CV.aux
 
 LaTeX Warning: Label `fig:policy-impact-map' multiply defined.
 
 )
-\openout1 = `paez-rsc-cv.aux'.
+\openout1 = `Official-CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
 LaTeX Font Info:    ... okay on input line 145.
@@ -875,9 +875,9 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 145.
 Package hyperref Info: Link coloring OFF on input line 145.
-(./paez-rsc-cv.out) (./paez-rsc-cv.out)
+(./Official-CV.out) (./Official-CV.out)
 \@outlinefile=\write4
-\openout4 = `paez-rsc-cv.out'.
+\openout4 = `Official-CV.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -961,8 +961,8 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 [2]
 
 [3]
-File: paez-rsc-cv_files/figure-latex/research-funding-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/research-funding-plot-1.png>
+File: Official-CV_files/figure-latex/review-to-publication-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/review-to-publication-1.png>
 
 
 [4]
@@ -972,49 +972,6 @@ File: paez-rsc-cv_files/figure-latex/research-funding-plot-1.png Graphic file (t
 [6]
 
 [7]
-File: paez-rsc-cv_files/figure-latex/citations-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/citations-plot-1.png>
-File: paez-rsc-cv_files/figure-latex/citations-field-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/citations-field-1.png>
-File: paez-rsc-cv_files/figure-latex/citations-country-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/citations-country-1.png>
-File: paez-rsc-cv_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/citations-sdg-1.png>
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 548.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 549.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 549.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 549.
-File: paez-rsc-cv_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/policy-impact-map-1.png>
-File: paez-rsc-cv_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/policy-impact-plot-1.png>
-File: paez-rsc-cv_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/policy-impact-topics-plot-1.png>
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 649.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 649.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 649.
-File: paez-rsc-cv_files/figure-latex/key-topics-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/key-topics-plot-1.png>
-File: paez-rsc-cv_files/figure-latex/intl-colabs-plot-1.png Graphic file (type bmp)
-<paez-rsc-cv_files/figure-latex/intl-colabs-plot-1.png>
-
 
 [8]
 
@@ -1029,73 +986,8 @@ File: paez-rsc-cv_files/figure-latex/intl-colabs-plot-1.png Graphic file (type b
 [13]
 
 [14]
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 682.
-
-Underfull \hbox (badness 1577) in paragraph at lines 798--798
-[]|\TU/SourceSansPro(0)/m/n/10.95 Soukhov, A., Tiznado-Aitken, I., Palm, M., Farber, S., & Páez, A. (2023). \TU/SourceSansPro(0)/m/it/10.95 Searching for standards of
- []
-
-
-Underfull \hbox (badness 2573) in paragraph at lines 805--805
-[]|\TU/SourceSansPro(0)/m/n/10.95 Steven, & Páez, A. (2010). \TU/SourceSansPro(0)/m/it/10.95 Understanding the transportation situation of canadian adults with dis-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 805--805
-\TU/SourceSansPro(0)/m/it/10.95 abilities\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 805--805
-[][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 805--805
-[][][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][] [] [][][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
- []
-
-
-Overfull \hbox (2.40437pt too wide) in paragraph at lines 805--805
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 2884) in paragraph at lines 814--814
-[]|\TU/SourceSansPro(0)/m/n/10.95 Steven, Páez, A., Mercado, R. G., Farber, S., Morency, C., & Roorda, M. (2009). \TU/SourceSansPro(0)/m/it/10.95 Mobility and so-
- []
-
-
-Underfull \hbox (badness 5893) in paragraph at lines 814--814
-\TU/SourceSansPro(0)/m/it/10.95 cial exclusion in canadian communities: An empirical investigation of opportunity access and de-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 814--814
-\TU/SourceSansPro(0)/m/it/10.95 privation from the perspective of vulnerable groups\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 814--814
-\TU/SourceSansPro(0)/m/n/10.95 Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 814--814
-[][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 814--814
-[][][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
- []
-
-
-Overfull \hbox (206.11058pt too wide) in paragraph at lines 814--814
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
- []
-
+File: Official-CV_files/figure-latex/research-funding-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/research-funding-plot-1.png>
 
 
 [15]
@@ -1103,24 +995,63 @@ Overfull \hbox (206.11058pt too wide) in paragraph at lines 814--814
 [16]
 
 [17]
+File: Official-CV_files/figure-latex/citations-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/citations-plot-1.png>
+File: Official-CV_files/figure-latex/citations-field-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/citations-field-1.png>
+File: Official-CV_files/figure-latex/citations-country-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/citations-country-1.png>
+File: Official-CV_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/citations-sdg-1.png>
+
 
 [18]
 
 [19]
-Underfull \hbox (badness 2837) in paragraph at lines 1516--1516
-[]|\TU/SourceSansPro(0)/m/n/10.95 Páez, A., & Farber, S. (2012). Participation and desire: Leisure activities among Canadian adults
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 1516--1516
-\TU/SourceSansPro(0)/m/n/10.95 with disabilities [Journal Article]. \TU/SourceSansPro(0)/m/it/10.95 Transportation\TU/SourceSansPro(0)/m/n/10.95 , \TU/SourceSansPro(0)/m/it/10.95 39\TU/SourceSansPro(0)/m/n/10.95 (6), 1055–1078. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
- []
-
-
 
 [20]
 
 [21]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 7.665pt on input line 1134.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 9.00096pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.99904pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 1135.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 1135.
+File: Official-CV_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/policy-impact-map-1.png>
+File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/policy-impact-plot-1.png>
+File: Official-CV_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/policy-impact-topics-plot-1.png>
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1221.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 1222.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 1222.
+
+Overfull \hbox (42.79202pt too wide) in paragraph at lines 1222--1235
+ [][] 
+ []
+
+File: Official-CV_files/figure-latex/key-topics-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/key-topics-plot-1.png>
+File: Official-CV_files/figure-latex/intl-colabs-plot-1.png Graphic file (type bmp)
+<Official-CV_files/figure-latex/intl-colabs-plot-1.png>
+
 
 [22]
 
@@ -1129,6 +1060,74 @@ Underfull \hbox (badness 3312) in paragraph at lines 1516--1516
 [24]
 
 [25]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 1267.
+
+Underfull \hbox (badness 1577) in paragraph at lines 1383--1383
+[]|\TU/SourceSansPro(0)/m/n/10.95 Soukhov, A., Tiznado-Aitken, I., Palm, M., Farber, S., & Páez, A. (2023). \TU/SourceSansPro(0)/m/it/10.95 Searching for standards of
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 1390--1390
+[]|\TU/SourceSansPro(0)/m/n/10.95 Steven, & Páez, A. (2010). \TU/SourceSansPro(0)/m/it/10.95 Understanding the transportation situation of canadian adults with dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+\TU/SourceSansPro(0)/m/it/10.95 abilities\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+[][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+[][][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][] [] [][][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (2.40437pt too wide) in paragraph at lines 1390--1390
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 1399--1399
+[]|\TU/SourceSansPro(0)/m/n/10.95 Steven, Páez, A., Mercado, R. G., Farber, S., Morency, C., & Roorda, M. (2009). \TU/SourceSansPro(0)/m/it/10.95 Mobility and so-
+ []
+
+
+Underfull \hbox (badness 5893) in paragraph at lines 1399--1399
+\TU/SourceSansPro(0)/m/it/10.95 cial exclusion in canadian communities: An empirical investigation of opportunity access and de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+\TU/SourceSansPro(0)/m/it/10.95 privation from the perspective of vulnerable groups\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+\TU/SourceSansPro(0)/m/n/10.95 Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+[][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+[][][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Overfull \hbox (206.11058pt too wide) in paragraph at lines 1399--1399
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
 
 [26]
 
@@ -1139,6 +1138,16 @@ Underfull \hbox (badness 3312) in paragraph at lines 1516--1516
 [29]
 
 [30]
+Underfull \hbox (badness 2837) in paragraph at lines 2101--2101
+[]|\TU/SourceSansPro(0)/m/n/10.95 Páez, A., & Farber, S. (2012). Participation and desire: Leisure activities among Canadian adults
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 2101--2101
+\TU/SourceSansPro(0)/m/n/10.95 with disabilities [Journal Article]. \TU/SourceSansPro(0)/m/it/10.95 Transportation\TU/SourceSansPro(0)/m/n/10.95 , \TU/SourceSansPro(0)/m/it/10.95 39\TU/SourceSansPro(0)/m/n/10.95 (6), 1055–1078. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
+ []
+
+
 
 [31]
 
@@ -1156,7 +1165,30 @@ Underfull \hbox (badness 3312) in paragraph at lines 1516--1516
 
 [38]
 
-[39] (./paez-rsc-cv.aux)
+[39]
+
+[40]
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+[45]
+
+[46]
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3430--3431
+[]\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
+ []
+
+
+
+[47]
+
+[48] (./Official-CV.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -1164,16 +1196,16 @@ L3 programming layer <2024-11-02>
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `paez-rsc-cv.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `Official-CV.out' has not changed.
+(rerunfilecheck)             Checksum: EDB4682E532ECF952F8823240CEC92CA;788.
  ) 
 Here is how much of TeX's memory you used:
- 36478 strings out of 475994
- 741953 string characters out of 5778280
- 1436724 words of memory out of 5000000
- 58616 multiletter control sequences out of 15000+600000
+ 36520 strings out of 475994
+ 743720 string characters out of 5778280
+ 1438462 words of memory out of 5000000
+ 58657 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on paez-rsc-cv.pdf (39 pages).
+Output written on Official-CV.pdf (48 pages).
