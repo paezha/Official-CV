@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 09:37
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,36 +924,41 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 167.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 167.
+
+Overfull \hbox (39.91092pt too wide) in paragraph at lines 169--173
+[]\TU/SourceSansPro(0)/m/n/10.95 This CV was created programmatically using the \TU/lmtt/m/n/10.95 R \TU/SourceSansPro(0)/m/n/10.95 statistical language, and it can be accessed here in folder \TU/lmtt/m/n/10.95 00-Official-CV\TU/SourceSansPro(0)/m/n/10.95 : 
+ []
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 189.
+(Font)              scaled to size 10.95pt on input line 190.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 207.
+(Font)              scaled to size 10.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 207.
+(Font)              scaled to size 10.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 207.
+(Font)              scaled to size 9.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not available
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 207.
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 207.
+(Font)              scaled to size 9.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 207.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 207.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 207.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not available
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 207.
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 207.
+(Font)              scaled to size 8.0pt on input line 208.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 221.
+(Font)              scaled to size 12.0pt on input line 222.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 221.
+(Font)              scaled to size 12.0pt on input line 222.
 
 
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 16.0pt on input line 234.
+(Font)              scaled to size 16.0pt on input line 235.
 [1
 
 ]
@@ -1013,23 +1018,23 @@ File: Official-CV_files/figure-latex/citations-sdg-1.png Graphic file (type bmp)
 
 [21]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.665pt on input line 1134.
+(Font)              scaled to size 7.665pt on input line 1135.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 1135.
+(Font)              scaled to size 9.0pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.00096pt on input line 1135.
+(Font)              scaled to size 9.00096pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 1135.
+(Font)              scaled to size 6.00064pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 1135.
+(Font)              scaled to size 5.00053pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.99904pt on input line 1135.
+(Font)              scaled to size 8.99904pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 1135.
+(Font)              scaled to size 5.99936pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 1135.
+(Font)              scaled to size 4.99947pt on input line 1136.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1135.
+(Font)              scaled to size 6.0pt on input line 1136.
 File: Official-CV_files/figure-latex/policy-impact-map-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/policy-impact-map-1.png>
 File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type bmp)
@@ -1037,13 +1042,13 @@ File: Official-CV_files/figure-latex/policy-impact-plot-1.png Graphic file (type
 File: Official-CV_files/figure-latex/policy-impact-topics-plot-1.png Graphic file (type bmp)
 <Official-CV_files/figure-latex/policy-impact-topics-plot-1.png>
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1221.
+(Font)              scaled to size 7.0pt on input line 1222.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 1222.
+(Font)              scaled to size 7.00075pt on input line 1223.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 1222.
+(Font)              scaled to size 6.99925pt on input line 1223.
 
-Overfull \hbox (42.79202pt too wide) in paragraph at lines 1222--1235
+Overfull \hbox (42.79202pt too wide) in paragraph at lines 1223--1236
  [][] 
  []
 
@@ -1061,69 +1066,69 @@ File: Official-CV_files/figure-latex/intl-colabs-plot-1.png Graphic file (type b
 
 [25]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 1267.
+(Font)              scaled to size 10.95pt on input line 1268.
 
-Underfull \hbox (badness 1577) in paragraph at lines 1383--1383
+Underfull \hbox (badness 1577) in paragraph at lines 1384--1384
 []|\TU/SourceSansPro(0)/m/n/10.95 Soukhov, A., Tiznado-Aitken, I., Palm, M., Farber, S., & Páez, A. (2023). \TU/SourceSansPro(0)/m/it/10.95 Searching for standards of
  []
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 1390--1390
+Underfull \hbox (badness 2573) in paragraph at lines 1391--1391
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, & Páez, A. (2010). \TU/SourceSansPro(0)/m/it/10.95 Understanding the transportation situation of canadian adults with dis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
 \TU/SourceSansPro(0)/m/it/10.95 abilities\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
 [][][][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
 [][][][][][][][][][] [] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][] [] [][][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (2.40437pt too wide) in paragraph at lines 1390--1390
+Overfull \hbox (2.40437pt too wide) in paragraph at lines 1391--1391
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 2884) in paragraph at lines 1399--1399
+Underfull \hbox (badness 2884) in paragraph at lines 1400--1400
 []|\TU/SourceSansPro(0)/m/n/10.95 Steven, Páez, A., Mercado, R. G., Farber, S., Morency, C., & Roorda, M. (2009). \TU/SourceSansPro(0)/m/it/10.95 Mobility and so-
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 1399--1399
+Underfull \hbox (badness 5893) in paragraph at lines 1400--1400
 \TU/SourceSansPro(0)/m/it/10.95 cial exclusion in canadian communities: An empirical investigation of opportunity access and de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
 \TU/SourceSansPro(0)/m/it/10.95 privation from the perspective of vulnerable groups\TU/SourceSansPro(0)/m/n/10.95 . Human Resources; Social Development
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
 \TU/SourceSansPro(0)/m/n/10.95 Canada. []$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][] [] [][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
 [][][][][][][][][] [] [][][][][][][][] [] [][][] [] [][][][][][] [] [][][][][][][][][] [] [][] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][] [] [][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1399
+Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
 [][][][][][][][][][][][][] [] [][] [] [][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][][][][][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (206.11058pt too wide) in paragraph at lines 1399--1399
+Overfull \hbox (206.11058pt too wide) in paragraph at lines 1400--1400
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
@@ -1138,12 +1143,12 @@ Overfull \hbox (206.11058pt too wide) in paragraph at lines 1399--1399
 [29]
 
 [30]
-Underfull \hbox (badness 2837) in paragraph at lines 2101--2101
+Underfull \hbox (badness 2837) in paragraph at lines 2102--2102
 []|\TU/SourceSansPro(0)/m/n/10.95 Páez, A., & Farber, S. (2012). Participation and desire: Leisure activities among Canadian adults
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 2101--2101
+Underfull \hbox (badness 3312) in paragraph at lines 2102--2102
 \TU/SourceSansPro(0)/m/n/10.95 with disabilities [Journal Article]. \TU/SourceSansPro(0)/m/it/10.95 Transportation\TU/SourceSansPro(0)/m/n/10.95 , \TU/SourceSansPro(0)/m/it/10.95 39\TU/SourceSansPro(0)/m/n/10.95 (6), 1055–1078. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
  []
 
@@ -1180,7 +1185,7 @@ Underfull \hbox (badness 3312) in paragraph at lines 2101--2101
 [45]
 
 [46]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3430--3431
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3431--3432
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
@@ -1202,7 +1207,7 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 Here is how much of TeX's memory you used:
  36520 strings out of 475994
  743720 string characters out of 5778280
- 1438462 words of memory out of 5000000
+ 1438420 words of memory out of 5000000
  58657 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 09:52
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  12 NOV 2024 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,6 +924,11 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 (Font)              scaled to size 16.0pt on input line 167.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 167.
+
+Overfull \hbox (8.42967pt too wide) in paragraph at lines 169--172
+[]\TU/SourceSansPro(0)/m/n/10.95 This CV was created programmatically using the \TU/lmtt/m/n/10.95 R \TU/SourceSansPro(0)/m/n/10.95 statistical language, and it can be accessed here in folder \TU/lmtt/m/n/10.95 02-rsc-cv
+ []
+
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
 (Font)              scaled to size 10.95pt on input line 189.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
@@ -1170,7 +1175,7 @@ Package rerunfilecheck Info: File `paez-rsc-cv.out' has not changed.
 Here is how much of TeX's memory you used:
  36478 strings out of 475994
  741953 string characters out of 5778280
- 1436724 words of memory out of 5000000
+ 1436687 words of memory out of 5000000
  58616 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

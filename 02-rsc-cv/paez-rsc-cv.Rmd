@@ -71,8 +71,8 @@ id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 
 # About this CV
 
-This CV was created programmatically using the `R` statistical language, and it can be accessed here:  
-https://github.com/paezha/Official-CV/blob/master/02-rsc-cv/paez-rsc-cv.pdf
+This CV was created programmatically using the `R` statistical language, and it can be accessed here in folder `02-rsc-cv` :  
+https://github.com/paezha/Official-CV/
 
 # About Me
 
