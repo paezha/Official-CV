@@ -71,7 +71,8 @@ id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 
 # About this CV
 
-This CV was created programmatically using the `R` statistical language, and it can be accessed here in folder `02-rsc-cv` :  
+This CV was created programmatically using the `R` statistical language, and it can be accessed in folder `02-rsc-cv` of this repository:
+
 https://github.com/paezha/Official-CV/
 
 # About Me
@@ -942,20 +943,7 @@ Number of lifetime non-peer-reviewed conference presentations is `r nrow(non_pee
 
 ```{r unsolicited-advice-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
-  filter(What == "Unsolicited Advice") |>
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = Title,
-                   where = Where,
-                   why = Role,
-                   .protect = FALSE)
-```
-
-# Invited Talks, Seminars, Workshops, Courses, and Panels
-
-```{r talks-courses-details}
-talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
-  filter(What != "Unsolicited Advice") |>
+  filter(What == "Workshop" ) |>
   detailed_entries(what = Organization, 
                    when = Year, 
                    with = Title,
@@ -964,22 +952,27 @@ talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
                    .protect = FALSE)
 ```
 
-## Lifetime talks, seminars, workshops, panels
+# Invited Talks, Seminars, and Panels
+
+```{r talks-courses-details}
+talks <- read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(What != "Workshop") |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
+## Lifetime Talks, Seminars, and Panels
 
 My lifetime number of talks is `r nrow(talks)`.
 
 ## Details
 
 ```{r}
-read_csv(paste0(here(),"/assets/talks.csv")) |>
-  filter(What != "Unsolicited Advice") |>
-  #slice_head(n = 46) |>
-  detailed_entries(what = Organization, 
-                   when = Year, 
-                   with = Title,
-                   where = Where,
-                   why = paste0(What, ", ", Role),
-                   .protect = FALSE)
+talks
 ```
 
 # Training of Highly Qualified Personnel
