@@ -69,6 +69,12 @@ current_year <- lubridate::year(Sys.time()) # Update year
 id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 ```
 
+```{r google-scholar-bibliometrics}
+citations_scholar <- scholar::get_citation_history(id)
+h_index <- get_profile(id)$h_index
+i10_index <- get_profile(id)$i10_index
+```
+
 # About this CV
 
 This CV was created programmatically using the `R` statistical language, and it can be accessed in folder `02-rsc-cv` of this repository:
@@ -80,11 +86,12 @@ https://github.com/paezha/Official-CV/
 * I trained in civil engineering before being adopted into geography.
 * My areas of interest include transportation, equity, justice, spatial analysis, spatial statistics, travel behavior, and cities.
 * Also, too, mathematics, computer languages, science fiction, poetry, and history.
+* My research has been funded by all three agencies in the Tri-Council: CIHR, NSERC, and SSHRC.
+* As of `r paste0(month(ymd(Sys.Date()), label = TRUE), ". ", day(ymd(Sys.Date())), ", ", year(ymd(Sys.Date())))`, the total number of citations to my work is `r prettyNum(sum(citations_scholar$cites), big.mark = ",")`, my $h$-index is `r as.character(h_index)` and my $i10$-index is `r as.character(i10_index)`, meaning that `r as.character(i10_index)` of my publications have been cited 10 times or more (source: Google Scholar).
 * A 2024 global bibliometric analysis by [Research.com](https://research.com/scientists-rankings/social-sciences-and-humanities/ca) of the most influential scholars in the social sciences and humanities (about 16,000 researchers) places me in the **top 3%** of scholars in the world. 
 <!-- Ranked 1904 of 16,000 (12%), and the 16,000 are already in the top 2% of scholars according to the Stanford Science Wide Indicators--> 
 * In 2024 I was recognized with the **Edward L. Ullman Award** of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
 * In 2010 a research team I led was recognized with the **Meredith F. Burrill Award** of the Association of American Geographers for exceptional work at the intersection of policy and basic research in geography.
-
 
 # Education
 
@@ -447,7 +454,7 @@ citation_sdg <- read_delim(glue(here(), "/assets/wos_cited_sdg_2024_09_17.txt"),
   slice_head(n = 11)
 ```
 
-Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(get_profile(id)$h_index)`. The i10-index indicates that `r as.character(get_profile(id)$i10_index)`, or approximately `r paste0(round(100 * get_profile(id)$i10_index/sum(bibliography_glance$total)), "%")` of my publications have been cited ten times or more. 
+Fig. \ref{fig:citations} gives a summary of my research impact according to Google Scholar. As of `r lubridate::month(Sys.Date(), label = TRUE) |> as.character()`, `r lubridate::year(Sys.Date()) |> as.character()`, my research has been cited a total of `r prettyNum(get_profile(id)$total_cites, big.mark = ",")` times, and my h-index is `r as.character(h_index)`. The i10-index indicates that `r as.character(i10_index)`, or approximately `r paste0(round(100 * i10_index/sum(bibliography_glance$total)), "%")` of my publications have been cited ten times or more. 
 
 The impact of my work can also be appreciated by the breadth of the fields in which it is cited. According to Web of Science (Fig. \ref{fig:citations-by-field}), my research is cited by scholars in numerous disciplines, notably in  `r citation_categories$super_category[1]`, `r citation_categories$super_category[2]`, `r citation_categories$super_category[3]`, `r citation_categories$super_category[4]`, and `r citation_categories$super_category[5]`. My publications have been cited by researchers in more than 100 countries; as seen in Fig. \ref{fig:citations-by-country}, most citations to my work are by researchers in the `r citation_countries$Country[1]`, `r citation_countries$Country[2]`, `r citation_countries$Country[3]`, `r citation_countries$Country[4]`, and `r citation_countries$Country[5]`.
 
@@ -456,8 +463,6 @@ Lastly, my work has contributed to inform research that aligns with the United N
 Combined with the level of funding described above, the cost-effect of my research is approximately `r paste0("CAD ", prettyNum(sum(research_funding$Share)/bibliography_glance$total[3], big.mark = ",", digits = 2))` per peer-reviewed article (excluding book chapters, edited books, books, and conference presentations). To put this number in context, this is equivalent to `r paste0(prettyNum(sum(research_funding$Share)/bibliography_glance$total[3]/13271.94 * 100, big.mark = ",", digits = 2), "%")` of a one-year graduate research assistantship at my institution. In terms of impact, the cost-effect of my research is `r paste0("CAD ", prettyNum(sum(research_funding$Share)/get_profile(id)$total_cites, big.mark = ",", digits = 2))` per citation.
 
 ```{r citations-plot, fig.cap="\\label{fig:citations}Citations per year (data from Google Scholar)"}
-citations_scholar <- scholar::get_citation_history(id)
-
 citations_scholar |>
   ggplot() + 
   geom_col(aes(x = year, 
@@ -475,13 +480,13 @@ citations_scholar |>
            y = 900, 
            hjust = 0,
            label = paste0("h-index = ", 
-                          as.character(get_profile(id)$h_index))) +
+                          as.character(h_index))) +
   annotate(geom = "text", 
            x = 2004, 
            y = 850, 
            hjust = 0,
            label = paste0("i10-index = ", 
-                          as.character(get_profile(id)$i10_index))) +
+                          as.character(i10_index))) +
   ggthemes::theme_tufte()
 ```
 
