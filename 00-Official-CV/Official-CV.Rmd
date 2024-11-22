@@ -1091,9 +1091,9 @@ Non-health researchers in the database with more citations:
 *-* Antonio Paez (137: Economy, Business, and Finance)
 -->
 
-In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on September 17, 2024], I am in the top `r round((25 * 7 + 20)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers in the social sciences, I am the fifth scholar at McMaster most cited scholar in policy documents, after Prof. Michael R. Veall (Dept. of Economics), Prof. Magdalena Janus (Faculty of Health Sciences), Prof. Arthur Sweet (Dept. of Economics), and Prof. Bruce Newbold (School of Earth, Environment and Society.
+In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on November 18, 2024], I am in the top `r round((25 * 7 + 20)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers in the social sciences, I rank fifth at McMaster in terms of citations in policy documents, after Prof. Michael R. Veall (Dept. of Economics), Prof. Magdalena Janus (Faculty of Health Sciences), Prof. Arthur Sweet (Dept. of Economics), and Prof. Bruce Newbold (School of Earth, Environment and Society.
 
-The impact of my research on policy is reflected in citations in multiple languages, including `r policy_impact_languages$Languages[1]`, `r policy_impact_languages$Languages[2]`, `r policy_impact_languages$Languages[3]`, `r policy_impact_languages$Languages[4]`, and `r policy_impact_languages$Languages[5]`. The international reach of this impact can be appreciated in Fig. \ref{fig:policy-impact-map}, where it can be seen the source countries of documents that cite my work. These countries include Canada, US, Mexico, Brazil, several European countries, Australia, and New Zealand. Besides governments at various levels in said countries, numerous International Government Organizations also refer to my work in their policy documents, including the European Union, OECD, the World Health Organization, the Pan American Health Organization, the World Bank, the Inter-American Development Bank, the International Transport Forum, and the Global Commission on the Economy and Climate. Think tanks that cite my research in policy documents include [IPEA](https://www.ipea.gov.br/forumbrics/en/) (Brazil), the [Lincoln Institute](https://www.lincolninst.edu) (US), [MOTU](https://www.motu.nz) (New Zealand), and [DIW](https://www.diw.de/en) (Germany).
+The impact of my research on policy is reflected in citations in multiple languages, including `r policy_impact_languages$Languages[1]`, `r policy_impact_languages$Languages[2]`, `r policy_impact_languages$Languages[3]`, `r policy_impact_languages$Languages[4]`, and `r policy_impact_languages$Languages[5]`. The international reach of this impact can be appreciated in Fig. \ref{fig:policy-impact-map}, which shows the source countries of documents that cite my work. These countries include Canada, US, Mexico, Brazil, several European countries, Australia, and New Zealand. Besides governments at various levels in said countries, numerous Inter-governmental Organizations (IGOs) also refer to my work in their policy documents, including the European Union, OECD, the World Health Organization, the Pan American Health Organization, the World Bank, the Inter-American Development Bank, the International Transport Forum, and the Global Commission on the Economy and Climate. Think tanks that cite my research in policy documents include [IPEA](https://www.ipea.gov.br/forumbrics/en/) (Brazil), the [Lincoln Institute](https://www.lincolninst.edu) (US), [MOTU](https://www.motu.nz) (New Zealand), and [DIW](https://www.diw.de/en) (Germany).
 
 ```{r policy-impact-map, fig.cap="\\label{fig:policy-impact-map}Countries where policy documents reference my research"}
 ggplot() +
@@ -1106,7 +1106,7 @@ ggplot() +
   theme(legend.position = "none")
 ```
 
-The distribution of citations in policy documents is more or less evenly distributed between governments and International Government Organizations (IGOs), and is also cited by think tanks, as seen in Fig. \ref{fig:policy-impact-sources}.
+The distribution of citations in policy documents is more or less evenly distributed between governments and Inter-governmental Organizations, followed by think tanks, as seen in Fig. \ref{fig:policy-impact-sources}.
 
 ```{r policy-impact-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:policy-impact-sources}Policy sources that cite my research"}
 
@@ -1137,7 +1137,7 @@ policy_impact |>
   theme(legend.position = "bottom")
 ```
 
-Analysis of policy documents that cite my research identifies the main topics where my work has been influential. In Fig. \ref{fig:policy-impact-topics} we can see the wide-range of topics, from the economy and transportation, to air pollution and food security. The topics that my research is found more than expected relate to cyclying, bus and rapid transit, accessibility, and public transport.
+Analysis of policy documents that cite my research identifies the main topics where my work has been influential. In Fig. \ref{fig:policy-impact-topics} we can see the wide range of topics, from the economy and transportation, to air pollution and food security. The topics that my research is found more than expected relate to cycling, bus and rapid transit, accessibility, and public transport.
 
 ```{r policy-impact-topics-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:policy-impact-topics}Policy topics informed by my research"}
 
