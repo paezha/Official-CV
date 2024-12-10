@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.11.11)  22 NOV 2024 10:49
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.12.3)  10 DEC 2024 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Official-CV.tex
 (./Official-CV.tex
-LaTeX2e <2024-11-01>
+LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
 (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
@@ -81,7 +81,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks21
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and footers
+Package: fancyhdr 2024/11/20 v4.4 Extensive control of page headers and footers
 \f@nch@headwidth=\skip68
 \f@nch@O@elh=\skip69
 \f@nch@O@erh=\skip70
@@ -1184,19 +1184,17 @@ Underfull \hbox (badness 3312) in paragraph at lines 2111--2111
 [45]
 
 [46]
-
-[47]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3495--3496
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3489--3490
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
 
 
-[48]
+[47]
 
-[49] (./Official-CV.aux)
+[48] (./Official-CV.aux)
  ***********
-LaTeX2e <2024-11-01>
+LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
  ***********
 
@@ -1206,12 +1204,12 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: EDB4682E532ECF952F8823240CEC92CA;788.
  ) 
 Here is how much of TeX's memory you used:
- 36529 strings out of 475994
- 743901 string characters out of 5778280
- 1427018 words of memory out of 5000000
- 58666 multiletter control sequences out of 15000+600000
+ 36512 strings out of 475964
+ 743668 string characters out of 5777162
+ 1424554 words of memory out of 5000000
+ 58673 multiletter control sequences out of 15000+600000
  564369 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Official-CV.pdf (49 pages).
+Output written on Official-CV.pdf (48 pages).
