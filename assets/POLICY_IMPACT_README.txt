@@ -8,6 +8,8 @@ The searches were:
 
 "Documents connected to Antonio Páez at McMaster University"
 
-Policy impacts (policy-impact.csv) are obtained from the button "Export > Export all results to csv"
+"Documents connected to Antonio Páez at Tohoku University"
+
+Policy impacts (policy-impact-{mcmaster/tohoku}.csv) are obtained from the button "Export > Export all results to csv"
 
 Policy topics (policy-impact-topics.csv) are obtained from the button "Explore > Explore the topics in these documents"
