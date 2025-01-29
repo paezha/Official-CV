@@ -74,7 +74,7 @@ id <- "bLY377kAAAAJ" # Replace with your own google scholar id
 
 This CV was created programmatically using the `R` statistical language, and it can be accessed [here](https://github.com/paezha/Official-CV/blob/master/president-award-teaching/teaching-learning-cv-paez.pdf):  
 
-\url{https://github.com/paezha/Official-CV/tree/master/04-MSU-innovationt-award/}
+\url{https://github.com/paezha/Official-CV/tree/master/04-MSU-innovation--award}
 
 # About Me
 
