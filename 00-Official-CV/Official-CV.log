@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.8)  29 JAN 2025 09:56
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.8)  12 FEB 2025 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Official-CV.tex
 (./Official-CV.tex
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
 (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -34,7 +34,7 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \backup@length=\skip52
 \ar@cellbox=\box53
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
+Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitkv@toks@=\toks18
 \labelindent=\skip53
 \enit@outerparindent=\dimen144
@@ -81,7 +81,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutvoffset=\dimen152
 \Gm@dimlist=\toks21
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2025/01/06 v5.1 Extensive control of page headers and footers
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip68
 \f@nch@offset@elh=\skip69
 \f@nch@offset@erh=\skip70
@@ -140,7 +140,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-12-25 L3 programming layer (loader) 
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
 \g__graphics_track_int=\count275
@@ -1215,8 +1215,8 @@ Overfull \hbox (2.88481pt too wide) in paragraph at lines 3518--3519
 
 [50] (./Official-CV.aux)
  ***********
-LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-25>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1225,11 +1225,11 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: ACE14B1C25F043E4D2D449075A8B4AA2;788.
  ) 
 Here is how much of TeX's memory you used:
- 36654 strings out of 475884
- 747044 string characters out of 5775298
- 1434903 words of memory out of 5000000
- 58895 multiletter control sequences out of 15000+600000
- 564369 words of font info for 146 fonts, out of 8000000 for 9000
+ 36687 strings out of 475846
+ 747610 string characters out of 5774252
+ 1435507 words of memory out of 5000000
+ 58966 multiletter control sequences out of 15000+600000
+ 565137 words of font info for 146 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
