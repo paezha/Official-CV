@@ -258,7 +258,7 @@ bibliography_entries(paste0(here(),"/assets/work-in-progress.bib")) |>
 
 # Talks Related to Teaching and Learning
 
-```{r talks-courses-details}
+```{r pedagogicl-talks-courses-details}
 read_csv(paste0(here(),"/assets/talks.csv")) |>
   filter(Note == "Pedagogical Research") |>
   mutate(ifelse(What == "Unsolicited Advice", "Presentation", What)) |>
@@ -269,6 +269,8 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    why = paste0(What, ", ", Role),
                    .protect = FALSE)
 ```
+
+\newpage
 
 # Training of Highly Qualified Personnel
 
@@ -537,8 +539,6 @@ Kelsey MacCormack (Ph.D., Comprehensive Examination. McMaster University; Geogra
 
 Hejun Kang (Ph.D., McMaster University; Geography and Earth Sciences) August18, 2008
 
-<!--
-
 Kenneth Harold Doust (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) May, 2008
 
 Sylvia He (M.A., McMaster University; Geography and Earth Sciences) August 8, 2006
@@ -549,4 +549,73 @@ Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) Septemb
 
 Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
 
+# Knowledge Mobilization Activities
+
+```{r unsolicited-advice-details}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(What == "Workshop" ) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
+# Research Outputs
+
+## Books
+
+```{r books}
+bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  filter(id == "paez2023discrete") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Edited Books
+
+```{r edited-books}
+bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Book Chapters
+
+```{r book-chapters}
+bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+
+## Reports 
+
+```{r reports}
+bibliography_entries(paste0(here(),"/assets/reports.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+<!--
+\newpage
 -->
+
+## Peer-Reviewed Journal Articles (Published)
+
+```{r journal-articles-published}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
+
+```{r journal-articles-accepted-for-publication, results='asis'}
+rpa <- bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib"))
+
+# Check that the table is not empty
+if(nrow(rpa) > 0){
+  rpa |>
+    arrange(desc(issued), desc(author$family))
+}
+```
