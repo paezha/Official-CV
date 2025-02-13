@@ -236,6 +236,8 @@ bibliography_entries(paste0(here(),"/assets/packages.bib")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
+\newpage 
+
 # Scholarship of Teaching and Learning
 
 This is research related to teaching and learning.
@@ -562,7 +564,7 @@ read_csv(paste0(here(),"/assets/talks.csv")) |>
                    .protect = FALSE)
 ```
 
-# Research Outputs
+# Scholarly Outputs
 
 ## Books
 
