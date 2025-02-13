@@ -607,6 +607,7 @@ bibliography_entries(paste0(here(),"/assets/reports.bib")) |>
 
 ```{r journal-articles-published}
 bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  filter(!str_detect(title, "reflect")) |>
   arrange(desc(issued), desc(author$family))
 ```
 
