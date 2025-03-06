@@ -1,0 +1,624 @@
+---
+name: Antonio
+surname: Páez
+position: "Professor"
+address: |
+         | School of Earth, Environment and Society
+         | McMaster University
+         | 1280 Main St West, Hamilton, Ontario, Canada L8S 1S4
+         | phone: +1 905 525 9140
+www: experts.mcmaster.ca/display/paezha
+email: "paezha@mcmaster.ca"
+orcid: 0000-0001-6912-9919
+github: paezha
+publons: 2897251
+#researchgate: 7004827878
+googlescholar: paezha
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+    extra_dependencies: ["flafter"]
+header-includes:
+  - \usepackage{soul}
+  - \usepackage{longtable}
+  - \usepackage{float}
+---
+
+
+```{r knitr-setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      warning = FALSE, 
+                      message = FALSE,
+                      fig.show='asis', 
+                      out.width="0.6\\linewidth", 
+                      fig.align='center')
+
+#pandoc::pandoc_activate()
+```
+
+```{r load-packages}
+library(bibliometrix) # Comprehensive Science Mapping Analysis
+library(dplyr) # A Grammar of Data Manipulation
+library(ggraph) # An Implementation of Grammar of Graphics for Graphs and Networks
+library(ggplot2) # Create Elegant Data Visualisations Using the Grammar of Graphics
+library(glue) # Interpreted String Literals # Interpreted String Literals
+library(gt) # Easily Create Presentation-Ready Display Tables
+library(here) # A Simpler Way to Find Your Files # A Simpler Way to Find Your Files
+library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax 
+library(lubridate) # Make Dealing with Dates a Little Easier
+library(maps) # Draw Geographical Maps
+library(readr) # Read Rectangular Text Data
+library(rnaturalearth) # World Map Data from Natural Earth
+library(rnaturalearthdata) # World Vector Map Data from Natural Earth Used in 'rnaturalearth'
+library(scholar) # Analyse Citation Data from Google Scholar
+library(sf) # Simple Features for R
+library(stringr) # Simple, Consistent Wrappers for Common String Operations
+library(tibble) # Simple Data Frames
+library(tidygraph) # A Tidy API for Graph Manipulation
+library(tidyr) # Tidy Messy Data
+library(treemapify) # Draw Treemaps in 'ggplot2'
+library(vitae) # Curriculum Vitae for R Markdown
+```
+
+```{r current-year}
+# Retrieve current year
+current_year <- lubridate::year(Sys.time()) # Update year
+```
+
+```{r google-scholar-id}
+id <- "bLY377kAAAAJ" # Replace with your own google scholar id
+```
+
+# About this CV
+
+This CV was created programmatically using the `R` statistical language, and it can be accessed [here](https://github.com/paezha/Official-CV/blob/master/president-award-teaching/teaching-learning-cv-paez.pdf):  
+
+\url{https://github.com/paezha/Official-CV/tree/master/04-MSU-innovation--award}
+
+# About Me
+
+* I trained in civil engineering before being adopted into geography.
+* My areas of interest include transportation, equity, justice, spatial analysis, spatial statistics, travel behavior, and cities.
+* Also Open Science and Open Educational Resources.
+* A 2024 global bibliometric analysis by [Research.com](https://research.com/scientists-rankings/social-sciences-and-humanities/ca) of the most influential scholars in the social sciences and humanities (about 16,000 researchers) places me in the **top 3%** of scholars in the world. 
+<!-- Ranked 1904 of 16,000 (12%), and the 16,000 are already in the top 2% of scholars according to the Stanford Science Wide Indicators--> 
+* In 2024 I was recognized with the **Edward L. Ullman Award** of the Association of American Geographers for lifelong commitment and contributions to the field of transportation geography.
+* In 2010 a research team I led was recognized with the **Meredith F. Burrill Award** of the Association of American Geographers for exceptional work at the intersection of policy and basic research in geography.
+
+# Education
+
+```{r education-details}
+read_csv(paste0(here(),"/assets/education.csv")) |> 
+  detailed_entries(what = Degree, 
+                   when = Year, 
+                   with = Institution,
+                   where = Where, 
+                   why = Thesis,
+                   .protect = FALSE)
+```
+
+# Current Status at McMaster
+
+Full Professor in the School of Earth, Environment and Society since 2014. Tenured since 2007.
+
+# Employment History
+
+## Academic
+
+```{r employment-details}
+read_csv(paste0(here(),"/assets/employment.csv")) |> 
+  slice_head(n = 4) |>
+  detailed_entries(what = Position, 
+                   when = Year, 
+                   with = Organization,
+                   where = Where,
+                   .protect = FALSE)
+```
+
+\newpage
+
+<!--
+# Areas of Interest
+
+Transportation; accessibility; equity; justice; spatial data analysis and statistics; transportation modeling; travel behavior; health geography; Geographic Information Systems; Open Science; Open Educational Resources.
+-->
+
+# Teaching at a Glance
+
+```{r read-courses-asset}
+courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
+```
+
+## Total number of courses taught
+
+`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> nrow())`
+
+`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> nrow())`
+
+## Total number of students
+
+`r paste0("Undergraduate: ", courses |> filter(Level == "Undergraduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
+
+`r paste0("Graduate: ", courses |> filter(Level == "Graduate") |> pull(Enrolment) |> sum() |> prettyNum(big.mark = ","))`
+
+# Teaching (Details)
+
+## Undergraduate Teaching
+
+```{r courses-brief-undergraduate}
+courses <- read_csv(paste0(here(),"/assets/courses-taught.csv")) 
+
+courses_summary <- courses |>
+  group_by(Code) |> 
+  summarize(Name = first(Name), 
+            offerings = n(),
+            total_students = sum(Enrolment), 
+            level = first(Level)) |> 
+  arrange(level)
+
+courses_summary |>
+  filter(level == "Undergraduate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
+                   .protect = FALSE)
+```
+
+## Graduate Teaching
+
+```{r courses-brief-graduate}
+courses_summary |>
+  filter(level == "Graduate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
+                   .protect = FALSE)
+```
+
+## Diploma-Certificate Teaching
+
+```{r courses-brief-diploma}
+courses_summary |>
+  filter(level == "Diploma-Certificate") |>
+  detailed_entries(what = glue::glue("Total enrolment: {total_students} students"), 
+                   with = Name,
+                   where = glue::glue("Times offered: {offerings}"),
+                   when = Code,
+                   .protect = FALSE)
+```
+
+# Funding for Teaching and Learning Projects
+
+```{r research-funding}
+research_funding <- read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  filter(Purpose == "Teaching") |>
+  mutate(Amount_num = str_replace_all(Amount, ",", ""),
+         Amount_num = str_extract_all(Amount_num, "\\d+") |>
+           as.numeric(),
+         Share = Amount_num * Share,
+         Share_chr = prettyNum(Share, big.mark =",", digits = 4),
+         Share_chr = paste0("$", Share_chr))
+```
+
+I have been the recipient of several grants to improve my teaching practice, to the total of `r paste0("CAD ", prettyNum(sum(research_funding$Amount_num[research_funding$Purpose == "Teaching"]), big.mark = ",", digits = 4))`. The funding sources as well as the projects are as shown below. 
+
+```{r research-funding-details}
+read_csv(paste0(here(),"/assets/research-funding.csv")) |>
+  filter(Purpose == "Teaching") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = Title, 
+                   when = Year, 
+                   where = Amount,
+                   with = glue::glue("{Funder}, {Where}"),
+                   why = glue::glue("PI: {PI}; team size: {Participants} researchers"),
+                   .protect = FALSE)
+```
+
+# Open Educational Resources
+
+I am the sole or lead author of several Open Educational Resources. Open educational resources are materials used for teaching and learning that are released publicly under open licenses that allow the materials to be used, re-used, re-purposed, re-distributed, and adapted by anyone free-of-charge.
+
+## Books
+
+```{r oer-books}
+bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  filter(note == "Open Educational Resource") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Packages
+
+```{r oer-packages}
+bibliography_entries(paste0(here(),"/assets/packages.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+\newpage 
+
+# Scholarship of Teaching and Learning
+
+This is research related to teaching and learning.
+
+## Peer reviewed
+
+```{r pedagogical-research}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  filter(note == "Pedagogical Research") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Work in Progress
+
+```{r work-in-progress}
+bibliography_entries(paste0(here(),"/assets/work-in-progress.bib")) |>
+  filter(note == "Pedagogical Research") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+# Talks Related to Teaching and Learning
+
+```{r pedagogicl-talks-courses-details}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(Note == "Pedagogical Research") |>
+  mutate(ifelse(What == "Unsolicited Advice", "Presentation", What)) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
+\newpage
+
+# Training of Highly Qualified Personnel
+
+## Supervision at a Glance
+
+```{r supervisorhip}
+supervision <- read_csv(paste0(here(),"/assets/supervision.csv")) 
+```
+
+```{r supervision-at-a-glance}
+supervision |>
+  filter(is.na(With), Status != "Withdrew from Program") |>
+  group_by(Level, Program) |>
+  summarize(Supervision = n(),
+            .groups = "drop") |>
+  full_join(supervision |>
+              filter(!is.na(With), Status != "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Cosupervision = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  full_join(supervision |>
+              filter(Status == "Withdrew from Program") |>
+              group_by(Level, Program) |>
+              summarize(Withdrew = n(),
+                        .groups = "drop"),
+            by = c("Level", "Program")) |>
+  arrange(Level) |>
+  mutate(Supervision = as.character(Supervision),
+         Cosupervision = as.character(Cosupervision),
+         Withdrew = as.character(Withdrew)) |>
+  replace_na(list(Supervision = "-",
+                  Cosupervision = "-",
+                  Withdrew = "-")) |>
+  gt() |>
+  cols_label(Supervision = "Sole Supervisor",
+             Cosupervision = "Co-supervisor",
+             Withdrew = "Withdrawn from Program") |>
+    as_latex()
+```
+
+## Undergraduate Supervision
+
+```{r supervisorship-undergraduate}
+supervision |>
+  filter(Level == "Undergraduate") |>
+  arrange(desc(Year), Program) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+## Master's Supervision
+
+```{r supervisorship-masters}
+supervision |>
+  filter(Level == "Master") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""),
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+## Doctoral Supervision
+
+```{r supervisorship-doctoral}
+supervision |>
+  filter(Level == "Doctoral") |>
+  arrange(desc(Year)) |>
+  detailed_entries(what = ifelse(!is.na(With), glue::glue("Co-supervised with {With}"), ""), 
+                   with = glue::glue("{Name} ({Institution}, {Country})"),
+                   where = case_when(Status == "Complete" ~ as.character(Year),
+                                     Status == "In Progress" ~ "In Progress",
+                                     Status == "Withdrew from Program" ~ "Withdrew from Program"),
+                   when = Program,
+                   .protect = FALSE)
+```
+
+# Other Contributions to Teaching and Learning
+
+## Supervisory Committees (All are doctoral unless otherwise noted)
+
+Ricardo Lourenco Barros (McMaster University; 2022-) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
+
+Samira Hamidetehrani (McMaster University; 2020-) User Preferences and Intentions Regarding Shared Automated Vehicles in Canadian Metropolitan Areas 
+
+Christina Borowiec (McMaster University; 2019-) Active travel
+
+Shaila Jamal (McMaster University; 2023) Generational differences in travel behavior 
+
+Jeremy Gabriel (McMaster University; 2023) Strata analysis
+
+Elnaz Abotalebi (McMaster University; 2019) Consumer stated preferences survey for electric cars
+
+Wade Genders (McMaster University; 2018) Deep Reinforcement Learning Adaptive Traffic Signal Control 
+
+Randy Bui (McMaster University; withdrew from program) Understanding Network Robustness and Critical Roadway Links in the Greater Toronto and Hamilton Area under Short-Term Disruption
+
+Nazila Roofigari-Esfahan (McMaster University; 2016) A Framework for Spatio-Temporal Uncertainty-Aware Scheduling and Control of Linear Projects
+
+Arash Olia (McMaster University; 2016) Modelling and Assessment of the Transportation Potential and Impacts of Connected and Automated Vehicles
+
+Chris Higgins (McMaster University; 2015) A Value Planning Framework for Predicting and
+Recapturing the Value of Rapid Transit Infrastructure
+
+Matthew Adams (McMaster University; 2015) Advancing the use of mobile monitoring data for air pollution modelling
+
+Scott Bennett (McMaster University; 2015) Safer walking routes to school: applied and methodological geographies of child pedestrian injury
+
+Sarah Dickin (McMaster University; September 2014) Mapping vulnerability to water-related infectious disease: an ecosystem approach 
+
+Ron Dalumpines (McMaster University; July 2014) Route choice analysis in time-geographic perspective
+
+Kathleen Deutsch (University of California Santa Barbara; June 2013) Sense of place and travel behavior
+
+Andrew Clarke (McMaster University; January 2013) Understanding determinants of active travel
+
+Xudong Liu (McMaster University; withdrew from program in 2011) Integrating firmography in urban models
+
+Jia Yang (McMaster University; withdrew from program in 2011) Modeling firm survival
+
+Renilson Rodriguez da Silva (Universidade de Sao Paulo; completed: March 2011) Accessibility and development in the Amazon region (with Danilo Igliori)
+
+Jamie E.L. Spinney (McMaster University; completed: September 2010) Geography, Land Values, and Municipal Taxation: A Spatial Paradigm for the Estimation and Reclamation of Rent
+
+Kelsey MacCormack (McMaster University; completed: July 2010) Delineation of subsurface gravel units beneath the Dundas Valley, Ontario
+
+Theodora Pouliou (McMaster University; completed: September 2009) Individual and Socio-Environmental Determinants of Obesity in Canada
+
+Hejun Kang (McMaster University; completed: August 2008) Intra-households interactions and travel behavior
+
+Dimitris Potoglou (McMaster University; completed: April 2006) Potential demand for alternative fuelled vehicles in the City of Hamilton CMA
+
+
+## Examination Committees
+
+Samira Hamidetehrani (Ph.D., McMaster University; School of Earth, Environment and Society ) September 15, 2023
+
+Daniel Van Veghel (M.Sc., McMaster University; School of Earth, Environment and Society ) August 28, 2023
+
+Bruno Dias dos Santos (M.Sc., INPE, Brazil) May 18, 2023
+
+Daniela Arias Molinares (Ph.D., Facultad de Geografía e Historia, Universidad Complutense de Madrid) May 10, 2023
+
+Shaila Jamal (Ph.D. McMaster University; School of Earth, Environment and Society) May 9, 2023
+
+Lucy Joseph Chabariko (Ph.D., School of Transportation Sciences, University of Hasselt) December 21, 2020
+
+Darcy Reynard (Ph.D., Department of Earth and Atmospheric Sciences, University of Alberta) December 18, 2020
+
+Jose Carpio-Pinedo (Ph.D., ETS Arquitectura, Universidad Politecnica de Madrid) November 19, 2020
+
+Sami Kurani (M.A., McMaster University; School of Earth, Environment and Society) September 28, 2020
+
+Geun (Jayden) Choi (M.A., McMaster University; School of Earth, Environment and Society) August 25, 2020
+
+Matthew Brown (M.A., McMaster University; School of Earth, Environment and Society) April 3, 2020
+
+Javier Delso (Ph.D., ETSI Montes, Universidad Politecnica de Madrid) February 25, 2020
+
+Shaila Jamal (Ph.D., Comprehensive Examination, School of Geography and Earth Sciences) February 11, 2020
+
+Kyran Cupido (Ph.D., Arizona State University, School of Mathematics and Statistical Sciences) December 6, 2019
+
+Zoha Anjum (MPH, McMaster University, Health Research Methods, Evidence, and Impact) September 2019
+
+Georgios Sarlas (Ph.D., ETH Zurich, Civil, Environmental, and Geomatics Engineering) July 1, 2019
+
+Matthew Quick (Ph.D., University of Waterloo; School of Planning) April 24, 2019
+
+Wade Genders (Ph.D., McMaster University; Civil Engineering) November 22, 2018
+
+Quinn Hachey (M.A., McMaster University; School of Geography and Earth Sciences) December 18, 2017
+
+Wei Lu (M.A., McMaster University; School of Geography and Earth Sciences) September 28, 2017
+
+Charles Burke (Ph.D., McMaster University; School of Geography and Earth Sciences) December 5, 2016
+
+Nazila Roofigari-Esfahan (Ph.D., McMaster University; Civil Engineering) August 8, 2016
+
+Juan Pablo Ospina Zapata (Ph.D., Comprehensive Examination. Universidad Nacional de Colombia – Medellin; Civil Engineering) June 10, 2016
+
+Arash Olia (Ph.D., McMaster University; Civil Engineering) June 8, 2016
+
+Geraldine Fuenmayor (Ph.D., University of Calgary; Civil Engineering) May 19, 2016
+
+Sadia Yawar (M.A., McMaster University; School of Geography and Earth Sciences) April 29, 2016
+
+An Neven (Ph.D., Hasselt University; School of Transportation Sciences) September 7, 2015
+
+Chris Higgins (Ph.D., McMaster University; School of Geography and Earth Sciences) August 28, 2015
+
+Matthew Adams (Ph.D., McMaster University; School of Geography and Earth Sciences) July 31, 2015
+
+Scott Bennett (Ph.D., McMaster University; School of Geography and Earth Sciences) July 3, 2015
+
+Wade Genders (M.A.Sc., McMaster University; Civil Engineering) November 17, 2014
+
+Sarah Dickin (Ph.D., McMaster University; Geography) September 5, 2014
+
+Simon Minelli (M.A.Sc., McMaster University; Civil Engineering) September 3, 2014
+
+Ron Dalumpines (Ph.D., McMaster University; Geography) July 28, 2014
+
+Markus Botte (Ph.D., University of Western Australia; Business) July 4, 2014
+
+Kathleen Deutsch (Ph.D., University of California Santa Barbara; Geography) June 20, 2013
+
+Chris Higgins (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) February 14, 2013
+
+Andrew Clarke (Ph.D., McMaster University; Geography and Earth Sciences) September 24, 2012
+
+Adrian Klisz (M.A., McMaster University; Geography and Earth Sciences) July 24, 2012
+
+Sarah Dickin (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) October 24, 2011
+
+Jia Yang (M.A., McMaster University; Geography and Earth Sciences) September 12, 2011
+
+Xudong Liu (M.A., McMaster University; Geography and Earth Sciences) September 12, 2011 
+
+Ron Dalumpines (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 3, 2010 
+
+Jia Yang (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 2, 2010
+
+Xudong Liu (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) December 2, 2010 
+
+Jamie E.L. Spinney (Ph.D., McMaster University; Geography and Earth Sciences) September 24, 2010
+
+Kelsey McCormack (Ph.D., McMaster University; Geography and Earth Sciences) July 27, 2010
+
+PJ Saberton (M.A., McMaster University; Geography and Earth Sciences) July 26, 2010
+
+Adam Drackley (M.A., McMaster University; Geography and Earth Sciences) July 26, 2010
+
+Kathleen Deutsch (Ph.D., Proposal Defense. University of California Santa Barbara) April 14, 2010
+
+Daniela Schettini (Ph.D., Universidade de São Paulo; Economics) April 9, 2010
+
+Ana Maria Bonomi Barufi (M.A., Universidade de São Paulo; Economics) February 12, 2010
+
+Logan McLeod (Ph.D., McMaster University; Economics) November 13, 2009
+
+Yifei Wang (M.A., McMaster University; Geography and Earth Sciences) September 18, 2009
+
+Ivy Dam (M.A., McMaster University; Geography and Earth Sciences) September 18, 2009
+
+Karen Wiley (M.A., McMaster University; Geography and Earth Sciences) September 10, 2009
+
+Theodora Pouliou (Ph.D., McMaster University; Geography and Earth Sciences) September 8, 2009
+
+Terry Li (Ph.D., The University of Queensland; School of Geography, Planning and Environmental Management) August, 2009
+
+Gustavo Renno Rocha (M.Sc., Qualification Examination. Universidade de São Paulo; Escola de Engenharia de São Carlos) August 7, 2009
+
+Dan Harrington (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) January 20, 2009
+
+Kelsey MacCormack (Ph.D., Comprehensive Examination. McMaster University; Geography and Earth Sciences) September 22, 2008
+
+Hejun Kang (Ph.D., McMaster University; Geography and Earth Sciences) August18, 2008
+
+Kenneth Harold Doust (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) May, 2008
+
+Sylvia He (M.A., McMaster University; Geography and Earth Sciences) August 8, 2006
+
+Jennifer L. Campos (Ph.D., McMaster University; Psychology and Neuroscience) September 11, 2007
+
+Jessica Becker (M.A., McMaster University; Geography and Earth Sciences) September 17, 2007
+
+Charles Cheung (Ph.D., University of New South Wales, Australia; School of Civil and Environmental Engineering) June, 2005
+
+# Knowledge Mobilization Activities
+
+```{r unsolicited-advice-details}
+read_csv(paste0(here(),"/assets/talks.csv")) |>
+  filter(What == "Workshop" ) |>
+  detailed_entries(what = Organization, 
+                   when = Year, 
+                   with = Title,
+                   where = Where,
+                   why = paste0(What, ", ", Role),
+                   .protect = FALSE)
+```
+
+# Scholarly Outputs
+
+## Books
+
+```{r books}
+bibliography_entries(paste0(here(),"/assets/books.bib")) |>
+  filter(id == "paez2023discrete") |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Edited Books
+
+```{r edited-books}
+bibliography_entries(paste0(here(),"/assets/edited-books.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Book Chapters
+
+```{r book-chapters}
+bibliography_entries(paste0(here(),"/assets/book-chapters.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+
+## Reports 
+
+```{r reports}
+bibliography_entries(paste0(here(),"/assets/reports.bib")) |>
+  #bibliography_entries(paste0(here(),"/assets/savedrecs_2.bib")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+<!--
+\newpage
+-->
+
+## Peer-Reviewed Journal Articles (Published)
+
+```{r journal-articles-published}
+bibliography_entries(paste0(here(),"/assets/refereed-publications.bib")) |>
+  filter(!str_detect(title, "reflect")) |>
+  arrange(desc(issued), desc(author$family))
+```
+
+## Peer-Reviewed Journal Articles (Accepted for Publication in Final Form)
+
+```{r journal-articles-accepted-for-publication, results='asis'}
+rpa <- bibliography_entries(paste0(here(),"/assets/refereed-publications-accepted.bib"))
+
+# Check that the table is not empty
+if(nrow(rpa) > 0){
+  rpa |>
+    arrange(desc(issued), desc(author$family))
+}
+```
