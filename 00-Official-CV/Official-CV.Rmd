@@ -1092,7 +1092,7 @@ Non-health researchers in the database with more citations:
 *-* K. Bruce Newbold (148: social sciences)(Active)
 *-* Antonio Paez (137: Economy, Business, and Finance)
 
-Analysis updated on January 2 2024. At this time I am in the 25th place on the fifth page of the search for McMaster researchers. Since each page is 25 researchers, this means I am in the top 25 * 4 + 25 = 125 most cited researchers. There are 10,000 researchers.
+Analysis updated on January 2 2025. At this time I am in the 25th place on the fifth page of the search for McMaster researchers. Since each page is 25 researchers, this means I am in the top 25 * 4 + 25 = 125 most cited researchers. There are 10,000 researchers.
 
 Non-health researchers in the database with more citations:
 
@@ -1114,9 +1114,35 @@ Non-health researchers in the database with more citations:
 *-* Eric Duku (155: Education) (Part-time, PBN) 25 * 7 + 19 = 194
 - Abigail Payne (154: education) (Not at McMaster)
 *-* M. Altaf Arain (150: environment)(Active) 25 * 8 + 5 = 205
+
+Analysis updated on March 7 2025. At this time I am in the 7th place on the fifth page of the search for McMaster researchers. Since each page is 25 researchers, this means I am in the top 25 * 4 + 7 = 107 most cited researchers. There are 10,000 researchers.
+
+Non-health researchers in the database with more citations:
+
+- David R. Offord (331: education) (Deceased)
+- John Burbridge (298: social sciences) (Emeritus)
+- Lonnie Maggie (278: social sciences) (Emeritus)
+*-* Magdalena Janus (257: education) (Active)
+*-* Antonio Paez (249: Economy, Business, and Finance)
+---
+- Pavlos S. Kanaroglou (241: Economy, Business, and Finance) (Deceased)
+- Frank T. Denton (240: Economy, Business, and Finance) (Emeritus)
+*-* Darren M. Scott (238: social sciences)(Active)
+*-* Michael R. Veall (238: Social Sciences) (Active)
+- Chris M. Wood (232: environment) (No longer at McMaster) 
+- Thomas F. Crossley (215: Social Sciences) (No longer at McMaster)
+- Janet Ajzentat (213: Politics) (Deceased)
+- A. Leslie Robb (207: Social Sciences) (Emeritus)
+*-* K. Bruce Newbold (206: social sciences)(Active)
+- Evert Nieboer (186: Economic sector) (Emeritus - Biomedical Sciences)
+*-* Arthur Sweetman (185: education) (Active)
+*-* Eric Duku (164: Education) (Part-time, PBN)
+- Abigail Payne (159: education) (Not at McMaster)
+- Jim Stanford (156: labour)
+*-* M. Altaf Arain (147: environment)(Active)
 -->
 
-In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on November 18, 2024], I am in the top `r round((25 * 4 + 25)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers in the social sciences, I rank third at McMaster in terms of citations in policy documents, after Prof. Magdalena Janus (Faculty of Health Sciences) and Prof. Michael R. Veall (Dept. of Economics).
+In addition to the scholarly impact of my research, my work has helped to inform policy. According to an analysis of policy impact using data from [Overton.io](https://www.overton.io)^[Analysis done on November 18, 2024], I am in the top `r round((25 * 4 + 25)/10000 * 100)`% of all researchers at McMaster in terms of citations in policy documents. When we consider active researchers in the social sciences, I rank second at McMaster in terms of citations in policy documents, after Prof. Magdalena Janus (Faculty of Health Sciences).
 
 The impact of my research on policy is reflected in citations in multiple languages, including `r policy_impact_languages$Languages[1]`, `r policy_impact_languages$Languages[2]`, `r policy_impact_languages$Languages[3]`, `r policy_impact_languages$Languages[4]`, and `r policy_impact_languages$Languages[5]`. The international reach of this impact can be appreciated in Fig. \ref{fig:policy-impact-map}, which shows the source countries of documents that cite my work. These countries include Canada, US, Mexico, Brazil, several European countries, Australia, and New Zealand. Besides governments at various levels in said countries, numerous Inter-governmental Organizations (IGOs) also refer to my work in their policy documents, including the European Union, OECD, the World Health Organization, the Pan American Health Organization, the World Bank, the Inter-American Development Bank, the International Transport Forum, and the Global Commission on the Economy and Climate. Think tanks that cite my research in policy documents include [IPEA](https://www.ipea.gov.br/forumbrics/en/) (Brazil), the [Lincoln Institute](https://www.lincolninst.edu) (US), [MOTU](https://www.motu.nz) (New Zealand), and [DIW](https://www.diw.de/en) (Germany).
 
