@@ -1019,7 +1019,9 @@ country_centroids <- world |>
 
 policy_impact <- bind_rows(policy_impact_mac,
                            policy_impact_tohoku) |>
-  rename(Source_country = `Source country`) |>
+  rename(Source_country = `Source country`,
+         Source_type = `Source organisation type`,
+         Source_title = `Source title`) |>
   # Fix names of countries
   mutate(Source_country = ifelse(Source_country == "USA",
                                  "United States of America", 
@@ -1162,28 +1164,34 @@ The distribution of citations in policy documents is more or less evenly distrib
 ```{r policy-impact-plot, out.width="0.7\\linewidth", fig.cap="\\label{fig:policy-impact-sources}Policy sources that cite my research"}
 
 policy_impact |> 
-  group_by(`Source type`, 
-           `Source title`) |> 
+  group_by(Source_type, 
+           Source_title) |> 
   summarize(n = n(),
             .groups = "drop") |>
-  rename(Source_type = `Source type`, 
-         Source_title = `Source title`) |>
-  mutate(Source_type = case_when(Source_type == "government" ~ "Government",
-                                 Source_type == "igo" ~ "IGO",
-                                 Source_type == "think tank" ~ "Think Tank",
-                                 Source_type == "other" ~ "Other")) |>
+  # mutate(Source_type = case_when(Source_type == "government" ~ "Government",
+  #                                Source_type == "igo" ~ "IGO",
+  #                                Source_type == "think tank" ~ "Think Tank",
+  #                                Source_type == "other" ~ "Other")) |>
   drop_na() |>
   ggplot(aes(area = n, 
            fill = Source_type,
            subgroup = Source_type,
+           subgroup2 = Source_title,
            label = Source_title)) +
   geom_treemap() +
-  geom_treemap_subgroup_border() +
-  geom_treemap_subgroup_text(place = "centre", grow = T, alpha = 0.25, 
-                             colour =
-                             "black", fontface = "italic", min.size = 0) +
+  geom_treemap_subgroup_border(color = "white") +
+  geom_treemap_subgroup2_border(color = "white", size = 1) +
+  # geom_treemap_subgroup_text(place = "centre", grow = T, alpha = 0.25, 
+  #                            colour =
+  #                            "black", fontface = "italic", min.size = 0) +
   geom_treemap_text(colour = "white", place = "topleft", reflow = T) +
-  scale_fill_manual(values = c("Government" = "chocolate2", "IGO" = "steelblue", "Think Tank" = "darkolivegreen3", "Other" = "darkgrey")) +
+  scale_fill_manual(name = "Organization Type",
+                    values = c("Government" = "chocolate2", 
+                               "IGO" = "steelblue", 
+                               "Think Tank" = "darkolivegreen3", 
+                               "NGO" = "steelblue1", 
+                               "University" = "gray30",
+                               "Legislative Body" = "chocolate4")) +
   labs(caption = "Data source: Overton.io") +
   theme(legend.position = "bottom")
 ```
