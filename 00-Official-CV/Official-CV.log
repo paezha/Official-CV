@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.3.23)  27 MAR 2025 12:55
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.4.11)  22 APR 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Official-CV.tex
 (./Official-CV.tex
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+L3 programming layer <2025-03-26>
 (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/article.cls
@@ -13,35 +13,35 @@ Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count192
-\c@section=\count193
-\c@subsection=\count194
-\c@subsubsection=\count195
-\c@paragraph=\count196
-\c@subparagraph=\count197
-\c@figure=\count198
-\c@table=\count199
+\c@part=\count193
+\c@section=\count194
+\c@subsection=\count195
+\c@subsubsection=\count196
+\c@paragraph=\count197
+\c@subparagraph=\count198
+\c@figure=\count199
+\c@table=\count266
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen141
+\bibindent=\dimen146
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen142
-\ar@mcellbox=\box52
-\extrarowheight=\dimen143
+\col@sep=\dimen147
+\ar@mcellbox=\box53
+\extrarowheight=\dimen148
 \NC@list=\toks17
 \extratabsurround=\skip51
 \backup@length=\skip52
-\ar@cellbox=\box53
+\ar@cellbox=\box54
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitkv@toks@=\toks18
 \labelindent=\skip53
-\enit@outerparindent=\dimen144
+\enit@outerparindent=\dimen149
 \enit@toks=\toks19
-\enit@inbox=\box54
-\enit@count@id=\count266
-\enitdp@description=\count267
+\enit@inbox=\box55
+\enit@count@id=\count267
+\enitdp@description=\count268
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip54
@@ -68,17 +68,17 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count268
-\Gm@cntv=\count269
-\c@Gm@tempcnt=\count270
-\Gm@bindingoffset=\dimen145
-\Gm@wd@mp=\dimen146
-\Gm@odd@mp=\dimen147
-\Gm@even@mp=\dimen148
-\Gm@layoutwidth=\dimen149
-\Gm@layoutheight=\dimen150
-\Gm@layouthoffset=\dimen151
-\Gm@layoutvoffset=\dimen152
+\Gm@cnth=\count269
+\Gm@cntv=\count270
+\c@Gm@tempcnt=\count271
+\Gm@bindingoffset=\dimen150
+\Gm@wd@mp=\dimen151
+\Gm@odd@mp=\dimen152
+\Gm@even@mp=\dimen153
+\Gm@layoutwidth=\dimen154
+\Gm@layoutheight=\dimen155
+\Gm@layouthoffset=\dimen156
+\Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks21
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -120,15 +120,15 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count271
-\calc@Bcount=\count272
-\calc@Adimen=\dimen153
-\calc@Bdimen=\dimen154
+\calc@Acount=\count272
+\calc@Bcount=\count273
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
 \calc@Askip=\skip82
 \calc@Bskip=\skip83
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count273
+\calc@Ccount=\count274
 \calc@Cskip=\skip84
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
@@ -136,37 +136,36 @@ Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count274
+\etb@tempcnta=\count275
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-01-18 L3 programming layer (loader) 
+Package: expl3 2025-03-26 L3 programming layer (loader) 
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
-\g__graphics_track_int=\count275
-\l__pdf_internal_box=\box55
-\g__pdf_backend_annotation_int=\count276
-\g__pdf_backend_link_int=\count277
+File: l3backend-xetex.def 2025-03-14 L3 backend support: XeTeX
+\g__graphics_track_int=\count276
+\g__pdfannot_backend_int=\count277
+\g__pdfannot_backend_link_int=\count278
 ))
 Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count278
-\l__fontspec_language_int=\count279
-\l__fontspec_strnum_int=\count280
-\l__fontspec_tmp_int=\count281
-\l__fontspec_tmpa_int=\count282
-\l__fontspec_tmpb_int=\count283
-\l__fontspec_tmpc_int=\count284
-\l__fontspec_em_int=\count285
-\l__fontspec_emdef_int=\count286
-\l__fontspec_strong_int=\count287
-\l__fontspec_strongdef_int=\count288
-\l__fontspec_tmpa_dim=\dimen155
-\l__fontspec_tmpb_dim=\dimen156
-\l__fontspec_tmpc_dim=\dimen157
+\l__fontspec_script_int=\count279
+\l__fontspec_language_int=\count280
+\l__fontspec_strnum_int=\count281
+\l__fontspec_tmp_int=\count282
+\l__fontspec_tmpa_int=\count283
+\l__fontspec_tmpb_int=\count284
+\l__fontspec_tmpc_int=\count285
+\l__fontspec_em_int=\count286
+\l__fontspec_emdef_int=\count287
+\l__fontspec_strong_int=\count288
+\l__fontspec_strongdef_int=\count289
+\l__fontspec_tmpa_dim=\dimen160
+\l__fontspec_tmpb_dim=\dimen161
+\l__fontspec_tmpc_dim=\dimen162
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty
@@ -189,21 +188,21 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks23
-\ex@=\dimen158
+\ex@=\dimen163
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen159
+\pmbraise@=\dimen164
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count289
+\inf@bad=\count290
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count290
-\leftroot@=\count291
+\uproot@=\count291
+\leftroot@=\count292
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count292
-\DOTSCASE@=\count293
+\classnum@=\count293
+\DOTSCASE@=\count294
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -213,30 +212,30 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen160
+\big@size=\dimen165
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count294
+\macc@depth=\count295
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count295
+\c@MaxMatrixCols=\count296
 \dotsspace@=\muskip17
-\c@parentequation=\count296
-\dspbrk@lvl=\count297
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
 \tag@help=\toks24
-\row@=\count298
-\column@=\count299
-\maxfields@=\count300
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
 \andhelp@=\toks25
-\eqnshift@=\dimen161
-\alignsep@=\dimen162
-\tagshift@=\dimen163
-\tagwidth@=\dimen164
-\totwidth@=\dimen165
-\lineht@=\dimen166
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
 \@envbody=\toks26
 \multlinegap=\skip86
 \multlinetaggap=\skip87
@@ -244,9 +243,9 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-\g__um_fam_int=\count301
-\g__um_fonts_used_int=\count302
-\l__um_primecount_int=\count303
+\g__um_fam_int=\count302
+\g__um_fonts_used_int=\count303
+\l__um_primecount_int=\count304
 \g__um_primekern_muskip=\muskip18
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/fontawesome/fontawesome.sty
 Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
@@ -262,7 +261,7 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@toks=\toks28
 \XKV@tempa@toks=\toks29
 )
-\XKV@depth=\count304
+\XKV@depth=\count305
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
@@ -273,8 +272,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks30
-\pgfutil@tempdima=\dimen167
-\pgfutil@tempdimb=\dimen168
+\pgfutil@tempdima=\dimen172
+\pgfutil@tempdimb=\dimen173
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box58
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -292,8 +291,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 106.
 )
-\Gin@req@height=\dimen169
-\Gin@req@width=\dimen170
+\Gin@req@height=\dimen174
+\Gin@req@width=\dimen175
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
@@ -302,26 +301,26 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
-\pgf@x=\dimen171
-\pgf@y=\dimen172
-\pgf@xa=\dimen173
-\pgf@ya=\dimen174
-\pgf@xb=\dimen175
-\pgf@yb=\dimen176
-\pgf@xc=\dimen177
-\pgf@yc=\dimen178
-\pgf@xd=\dimen179
-\pgf@yd=\dimen180
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count305
-\c@pgf@countb=\count306
-\c@pgf@countc=\count307
-\c@pgf@countd=\count308
+\c@pgf@counta=\count306
+\c@pgf@countb=\count307
+\c@pgf@countc=\count308
+\c@pgf@countd=\count309
 \t@pgf@toka=\toks34
 \t@pgf@tokb=\toks35
 \t@pgf@tokc=\toks36
-\pgf@sys@id@count=\count309
+\pgf@sys@id@count=\count310
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -333,62 +332,62 @@ File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfsys@objnum=\count310
+\pgfsys@objnum=\count311
 ))) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count311
-\pgfsyssoftpath@bigbuffer@items=\count312
+\pgfsyssoftpath@smallbuffer@items=\count312
+\pgfsyssoftpath@bigbuffer@items=\count313
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen181
-\pgfmath@count=\count313
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count314
 \pgfmath@box=\box59
 \pgfmath@toks=\toks37
 \pgfmath@stack@operand=\toks38
 \pgfmath@stack@operation=\toks39
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count314
+\c@pgfmathroundto@lastzeros=\count315
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen182
-\pgf@picmaxx=\dimen183
-\pgf@picminy=\dimen184
-\pgf@picmaxy=\dimen185
-\pgf@pathminx=\dimen186
-\pgf@pathmaxx=\dimen187
-\pgf@pathminy=\dimen188
-\pgf@pathmaxy=\dimen189
-\pgf@xx=\dimen190
-\pgf@xy=\dimen191
-\pgf@yx=\dimen192
-\pgf@yy=\dimen193
-\pgf@zx=\dimen194
-\pgf@zy=\dimen195
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen196
-\pgf@path@lasty=\dimen197
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen198
-\pgf@shorten@start@additional=\dimen199
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box60
 \pgf@hbox=\box61
 \pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count315
+\pgf@picture@serial@count=\count316
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen256
+\pgflinewidth=\dimen261
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen257
-\pgf@pt@y=\dimen258
-\pgf@pt@temp=\dimen259
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -397,12 +396,12 @@ File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen260
+\pgfarrowsep=\dimen265
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen261
-\pgf@sys@shading@range@num=\count316
-\pgf@shadingcount=\count317
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count317
+\pgf@shadingcount=\count318
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -423,46 +422,46 @@ File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen262
-\pgf@nodesepend=\dimen263
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen264
-\pgffor@skip=\dimen265
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
 \pgffor@stack=\toks40
 \pgffor@toks=\toks41
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count318
-\pgfplotmarksize=\dimen266
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen271
 )
-\tikz@lastx=\dimen267
-\tikz@lasty=\dimen268
-\tikz@lastxsaved=\dimen269
-\tikz@lastysaved=\dimen270
-\tikz@lastmovetox=\dimen271
-\tikz@lastmovetoy=\dimen272
-\tikzleveldistance=\dimen273
-\tikzsiblingdistance=\dimen274
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikz@lastmovetox=\dimen276
+\tikz@lastmovetoy=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
 \tikz@figbox=\box65
 \tikz@figbox@bg=\box66
 \tikz@tempbox=\box67
 \tikz@tempbox@bg=\box68
-\tikztreelevel=\count319
-\tikznumberofchildren=\count320
-\tikznumberofcurrentchild=\count321
-\tikz@fig@count=\count322
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count323
-\pgfmatrixcurrentcolumn=\count324
-\pgf@matrix@numberofcolumns=\count325
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
 )
-\tikz@expandcount=\count326
+\tikz@expandcount=\count327
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
@@ -479,11 +478,11 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box70
 \tcb@lowerbox=\box71
 \tcb@phantombox=\box72
-\c@tcbbreakpart=\count327
-\c@tcblayer=\count328
-\c@tcolorbox@number=\count329
+\c@tcbbreakpart=\count328
+\c@tcblayer=\count329
+\c@tcolorbox@number=\count330
 \l__tcobox_tmpa_box=\box73
-\l__tcobox_tmpa_dim=\dimen275
+\l__tcobox_tmpa_dim=\dimen280
 \tcb@temp=\box74
 \tcb@temp=\box75
 \tcb@temp=\box76
@@ -530,19 +529,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count330
+\c@section@level=\count331
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen276
-\Hy@linkcounter=\count331
-\Hy@pagecounter=\count332
+\@linkdim=\dimen281
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count333
+\Hy@SavedSpaceFactor=\count334
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 )
@@ -554,21 +553,21 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count334
+\c@Hy@tempcnt=\count335
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip19
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen277
+\XeTeXLinkMargin=\dimen282
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count335
-\Field@Width=\dimen278
-\Fld@charsize=\dimen279
+\Fld@menulength=\count336
+\Field@Width=\dimen283
+\Fld@charsize=\dimen284
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -580,18 +579,18 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count336
-\c@Item=\count337
-\c@Hfootnote=\count338
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
 File: hxetex.def 2024-11-05 v7.01l Hyperref driver for XeTeX
 \pdfm@box=\box79
-\c@Hy@AnnotLevel=\count339
-\HyField@AnnotCount=\count340
-\Fld@listcount=\count341
-\c@bookmark@seq@number=\count342
+\c@Hy@AnnotLevel=\count340
+\HyField@AnnotCount=\count341
+\Fld@listcount=\count342
+\c@bookmark@seq@number=\count343
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -605,23 +604,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip88
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen280
-\lightrulewidth=\dimen281
-\cmidrulewidth=\dimen282
-\belowrulesep=\dimen283
-\belowbottomsep=\dimen284
-\aboverulesep=\dimen285
-\abovetopsep=\dimen286
-\cmidrulesep=\dimen287
-\cmidrulekern=\dimen288
-\defaultaddspace=\dimen289
-\@cmidla=\count343
-\@cmidlb=\count344
-\@aboverulesep=\dimen290
-\@belowrulesep=\dimen291
-\@thisruleclass=\count345
-\@lastruleclass=\count346
-\@thisrulewidth=\dimen292
+\heavyrulewidth=\dimen285
+\lightrulewidth=\dimen286
+\cmidrulewidth=\dimen287
+\belowrulesep=\dimen288
+\belowbottomsep=\dimen289
+\aboverulesep=\dimen290
+\abovetopsep=\dimen291
+\cmidrulesep=\dimen292
+\cmidrulekern=\dimen293
+\defaultaddspace=\dimen294
+\@cmidla=\count344
+\@cmidlb=\count345
+\@aboverulesep=\dimen295
+\@belowrulesep=\dimen296
+\@thisruleclass=\count346
+\@lastruleclass=\count347
+\@thisrulewidth=\dimen297
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/soul/soul.sty
 Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/soul/soul-ori.sty
@@ -632,20 +631,20 @@ Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
 \SOUL@cmds=\toks47
 \SOUL@buffer=\toks48
 \SOUL@token=\toks49
-\SOUL@syllgoal=\dimen293
-\SOUL@syllwidth=\dimen294
-\SOUL@charkern=\dimen295
-\SOUL@hyphkern=\dimen296
-\SOUL@dimen=\dimen297
-\SOUL@dimeni=\dimen298
-\SOUL@minus=\count347
-\SOUL@comma=\count348
-\SOUL@apo=\count349
-\SOUL@grave=\count350
+\SOUL@syllgoal=\dimen298
+\SOUL@syllwidth=\dimen299
+\SOUL@charkern=\dimen300
+\SOUL@hyphkern=\dimen301
+\SOUL@dimen=\dimen302
+\SOUL@dimeni=\dimen303
+\SOUL@minus=\count348
+\SOUL@comma=\count349
+\SOUL@apo=\count350
+\SOUL@grave=\count351
 \SOUL@spaceskip=\skip89
-\SOUL@ttwidth=\dimen299
-\SOUL@uldp=\dimen300
-\SOUL@ulht=\dimen301
+\SOUL@ttwidth=\dimen304
+\SOUL@uldp=\dimen305
+\SOUL@ulht=\dimen306
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
@@ -654,21 +653,21 @@ Package: longtable 2024-10-27 v4.22 Multi-page Table package (DPC)
 \LTright=\skip91
 \LTpre=\skip92
 \LTpost=\skip93
-\LTchunksize=\count351
-\LTcapwidth=\dimen302
+\LTchunksize=\count352
+\LTcapwidth=\dimen307
 \LT@head=\box80
 \LT@firsthead=\box81
 \LT@foot=\box82
 \LT@lastfoot=\box83
 \LT@gbox=\box84
-\LT@cols=\count352
-\LT@rows=\count353
-\c@LT@tables=\count354
-\c@LT@chunks=\count355
+\LT@cols=\count353
+\LT@rows=\count354
+\c@LT@tables=\count355
+\c@LT@chunks=\count356
 \LT@p@ftn=\toks50
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count356
+\c@float@type=\count357
 \float@exts=\toks51
 \float@box=\box85
 \@float@everytoks=\toks52
@@ -680,13 +679,13 @@ Already applied: [0000/00/00] float order in 2-column on input line 151.
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip94
-\multirow@cntb=\count357
+\multirow@cntb=\count358
 \multirow@dima=\skip95
-\bigstrutjot=\dimen303
+\bigstrutjot=\dimen308
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen304
-\WF@size=\dimen305
-\c@WF@wrappedlines=\count358
+\wrapoverhang=\dimen309
+\WF@size=\dimen310
+\c@WF@wrappedlines=\count359
 \WF@box=\box87
 \WF@everypar=\toks53
 Package: wrapfig 2003/01/31  v 3.6
@@ -694,7 +693,7 @@ Package: wrapfig 2003/01/31  v 3.6
 Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
 \everycr=\toks54
 \minrowclearance=\skip96
-\rownum=\count359
+\rownum=\count360
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -708,25 +707,25 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box88
-\sift@deathcycles=\count360
-\@vwid@loff=\dimen306
-\@vwid@roff=\dimen307
+\sift@deathcycles=\count361
+\@vwid@loff=\dimen311
+\@vwid@roff=\dimen312
 )
-\c@taburow=\count361
-\tabu@nbcols=\count362
-\tabu@cnt=\count363
-\tabu@Xcol=\count364
-\tabu@alloc=\count365
-\tabu@nested=\count366
-\tabu@target=\dimen308
-\tabu@spreadtarget=\dimen309
-\tabu@naturalX=\dimen310
-\tabucolX=\dimen311
-\tabu@Xsum=\dimen312
-\extrarowdepth=\dimen313
-\abovetabulinesep=\dimen314
-\belowtabulinesep=\dimen315
-\tabustrutrule=\dimen316
+\c@taburow=\count362
+\tabu@nbcols=\count363
+\tabu@cnt=\count364
+\tabu@Xcol=\count365
+\tabu@alloc=\count366
+\tabu@nested=\count367
+\tabu@target=\dimen313
+\tabu@spreadtarget=\dimen314
+\tabu@naturalX=\dimen315
+\tabucolX=\dimen316
+\tabu@Xsum=\dimen317
+\extrarowdepth=\dimen318
+\abovetabulinesep=\dimen319
+\belowtabulinesep=\dimen320
+\tabustrutrule=\dimen321
 \tabu@thebody=\toks55
 \tabu@footnotes=\toks56
 \tabu@box=\box89
@@ -745,33 +744,33 @@ Package: threeparttablex 2013/07/23 v0.3 by daleif
 \UL@hyphenbox=\box95
 \UL@skip=\skip99
 \UL@hook=\toks57
-\UL@height=\dimen317
-\UL@pe=\count367
-\UL@pixel=\dimen318
+\UL@height=\dimen322
+\UL@pe=\count368
+\UL@pixel=\dimen323
 \ULC@box=\box96
 Package: ulem 2019/11/18
-\ULdepth=\dimen319
+\ULdepth=\dimen324
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen320
-\c@nlinenum=\count368
+\rotheadsize=\dimen325
+\c@nlinenum=\count369
 \TeXr@lab=\toks58
 ) (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 (/home/antonio-paez/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen321
-\captionmargin=\dimen322
-\caption@leftmargin=\dimen323
-\caption@rightmargin=\dimen324
-\caption@width=\dimen325
-\caption@indent=\dimen326
-\caption@parindent=\dimen327
-\caption@hangindent=\dimen328
+\caption@tempdima=\dimen326
+\captionmargin=\dimen327
+\caption@leftmargin=\dimen328
+\caption@rightmargin=\dimen329
+\caption@width=\dimen330
+\caption@indent=\dimen331
+\caption@parindent=\dimen332
+\caption@hangindent=\dimen333
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count369
-\c@continuedfloat=\count370
+\c@caption@flags=\count370
+\c@continuedfloat=\count371
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1207,7 +1206,7 @@ Underfull \hbox (badness 3312) in paragraph at lines 2137--2137
 [47]
 
 [48]
-Overfull \hbox (2.88481pt too wide) in paragraph at lines 3530--3531
+Overfull \hbox (2.88481pt too wide) in paragraph at lines 3533--3534
 []\TU/SourceSansPro(1)/b/n/16 Int[]ernal (Departmental, Faculty, University) Service (Most Recent 10 Years)[]
  []
 
@@ -1218,7 +1217,7 @@ Overfull \hbox (2.88481pt too wide) in paragraph at lines 3530--3531
 [50] (./Official-CV.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
-L3 programming layer <2025-01-18>
+L3 programming layer <2025-03-26>
  ***********
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1227,11 +1226,11 @@ Package rerunfilecheck Info: File `Official-CV.out' has not changed.
 (rerunfilecheck)             Checksum: ACE14B1C25F043E4D2D449075A8B4AA2;788.
  ) 
 Here is how much of TeX's memory you used:
- 36690 strings out of 475848
- 747748 string characters out of 5775002
- 1441657 words of memory out of 5000000
- 58966 multiletter control sequences out of 15000+600000
- 565137 words of font info for 146 fonts, out of 8000000 for 9000
+ 36675 strings out of 472283
+ 747362 string characters out of 5529640
+ 1431490 words of memory out of 5000000
+ 62517 multiletter control sequences out of 15000+600000
+ 633125 words of font info for 150 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  131i,12n,135p,549b,641s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
