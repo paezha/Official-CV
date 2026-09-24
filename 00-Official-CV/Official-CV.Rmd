@@ -482,7 +482,9 @@ supervision |>
 
 # Supervisory Committees (All are doctoral unless otherwise noted)
 
-Ricardo Lourenco Barros (McMaster University; 2022-) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
+Haoran Xu (McMaster University; 2024-in progress)
+
+Ricardo Lourenco Barros (McMaster University; 2022-2025) Understanding vegetation dynamics with satellite observations and Explainable Artificial Intelligence (XAI)
 
 Samira Hamidetehrani (McMaster University; 2020-2024) User Preferences and Intentions Regarding Shared Automated Vehicles in Canadian Metropolitan Areas 
 
